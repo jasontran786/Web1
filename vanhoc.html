@@ -1,0 +1,743 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+	  <link rel="icon" type="image/png" href="img1/favicon.png">
+    <script language="javascript" src="index.js"></script>
+    <link rel="stylesheet" href="for1821.css" type="text/css">
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="fontawesome/css/all.css">
+   
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+        
+        body {
+            font-family: "Myriadpro", serif;
+         
+        }
+    </style>
+    <title>Nhà sách Tri thức</title>
+</head>
+
+<body>
+
+      <div class="row banner-top" style="background-color: #eeeeee;">
+            <div class="col-sm-9 headerr">
+                <h4 style="display: block;font-family: myriadpro"><strong style="margin-left:55%;">Miễn phí giao hàng</strong> Hóa đơn trên 150000VND</h4>
+            </div>
+            <div class="col-sm-3 headerr">
+                <span style="float:right;">
+                    <i class="fab fa-facebook-f fa-2x" title="facebook"></i>
+                    <i class="fab fa-twitter fa-2x" title="twitter"></i>
+                    <i class="fab fa-youtube fa-2x" title="youtobe"></i>
+                    <i class="fab fa-instagram fa-2x" title="instagram"></i>
+                    <i class="fab fa-pinterest fa-2x" title="pinterest"></i>
+                    <i class="fab fa-flickr fa-2x" title="flickr"></i>
+                </span>
+            </div>
+        </div>
+            <!--Đây là Line Giới thiệu-->
+	  <div class="container">
+   <div id="gioithieu"></div>
+        <div class="row">
+                <div class="col-sm-4 chuthich">
+                    <a href="index.html"><img src="img1/logo1.png" style="height: 100px;width: auto;" /></a>
+                </div>
+                <div class="col-sm-5">
+                    <div class="search">
+			   <input type="search" name="search" placeholder="Tìm kiếm...">
+                <a href="kinhte.html"><button type="button" ><i class="fa fa-search"></i></button></a>
+                
+                 </div>
+                </div>
+				<div class="col-sm-3 cart">
+					<a href="giohang.html" style="color: #66ccff">
+						<i class="fas fa-shopping-cart fa-2x"></i></a>
+				</div>
+            </div>
+            <!----------------------------------------------------------------------------------------------------------------------------------------------------------------->
+            <!--Day la Menu-->
+
+            <div style="display:flex; padding:8px; align-items: center; position: sticky; top:0; background: #66ccff; z-index: 1000;height: 40px;">
+                <div style="min-width: 250px; display: flex;justify-content: center; align-items: center;">
+                    <nav class="menuheader">
+                        <ul>
+                            <li><a href="index.html"><i class="fas fa-home"></i>TRANG CHỦ</a></li>
+                            <li>
+                                <a href="#" data-toggle="dropdown">SÁCH TIẾNG VIỆT <i class="fas fa-caret-down"></i></a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="kinhte.html">Kinh tế</a></li>
+                                    <li><a href="giaoduc.html">Giáo dục</a></li>
+                                    <li><a href="vanhoc.html">Văn học</a></li>
+                                    <li><a href="thieunhi.html">Thiếu Nhi</a></li>
+                                    <li><a href="truyentranh.html">Truyện tranh</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="tieuthuyet.html" >SÁCH NƯỚC NGOÀI </a>
+                            </li>
+                            <li><a href="#products">SÁCH BÁN CHẠY</a></li>
+                            <li><a href="map.html">LIÊN HỆ<i class="fas fa-phone"></i></a></li>
+                            <li>
+
+                                <a href="#" data-toggle="modal" data-target="#sign_in">ĐĂNG NHẬP</a>
+
+                            </li>
+                           
+                        </ul>
+                        <div class="icon">
+                            <i class="fas fa-bars"></i>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+        <hr style="margin-bottom: -4px;">
+        <!--sign in-->
+        <div class="modal fade" id="sign_in">
+            <div class="modal-dialog">
+                <div class="modal-content p-3">
+
+                    <!--modal header-->
+                    <div class="modal-header">
+                        <h2 class="modal-title sign_header">Đăng Nhập</h2>
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    </div>
+
+                    <!--modal body-->
+                    <div class="modal-body">
+                        <form action="">
+                            <!--email-->
+                            <div class="form-group">
+                                <label id="sign" for="email">Tên tài khoản:</label>
+                                <input type="email" name="email" class="form-control" id="email" placeholder="Email:">
+                            </div><!--end form group-->
+
+                            <div class="form-group">
+                                <label for="pwd">Mật khẩu</label>
+                                <input type="password" name="pwd" class="form-control" id="pwd" placeholder="Mật khẩu của bạn">
+                            </div><!--end form group-->
+                            <!--remember me-->
+                            <div class="form-group form-check">
+                                <label class="form-check-label">
+                                    <input type="checkbox" name="remember" class="form-check-input">Ghi nhớ tài khoản
+                                </label>
+                            </div><!--end form group-->
+                            <!--button-->
+                            <button type="submit" class="btn btn_buy" style="background-color:#66ccff;">Đăng nhập</button>
+                            <a href="#" class="font_16 text-secondary"> &nbsp Bạn quên mật khẩu?</a>
+                            <div class="row">
+                                <div class="col-6">
+                                    <button type="submit" class="btn btn-outline-primary border_30 mt-4"><i class="fab fa-facebook-f"></i> &nbsp;Đăng nhập bằng Facebook</button>
+                                </div>
+                                <div class="col-6">
+                                    <button type="submit" class="btn btn-outline-danger border_30 mt-4">
+                                        <i class="fab fa-google"></i>
+                                        &nbsp; Đăng nhập bằng Google
+                                    </button>
+                                </div>
+                            </div><br>
+                        </form>
+                    </div><!--end modal body-->
+
+                    <div class="modal-footer">
+                        <div class="d-flex justify-content-begin">
+                            <div>
+                                <p class="font_16">Bạn không có tài khoản?</p>
+                            </div>&nbsp; &nbsp;
+                            <div>
+                                 <a href="#" class="btn btn_view" data-dismiss="modal" data-toggle="modal" data-target="#sign_up" style="background-color:#66ccff;">Đăng Ký Ngay</a>
+                            </div>
+                        </div>
+                    </div>
+                </div><!--end modal content-->
+            </div><!--end modal dialog-->
+        </div><!---end modal-->
+       <div class="modal fade" id="sign_up">
+            <div class="modal-dialog">
+                <div class="modal-content p-3">
+                    <!--modal header-->
+                    <div class="modal-header">
+                        <h2>Đăng Ký</h2>
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    </div>
+
+                    <!--modal body-->
+
+                    <div class="modal-body">
+                        <p class="font_16">Bạn hãy điền vào form bên dưới</p>
+                        <form action="">
+                            <!--name-->
+
+
+                            <div class="form-group">
+                                <label for="hoten">Tên</label>
+                                <input type="name" name="hoten" class="form-control" id="hoten" placeholder="Tên của bạn">
+                            </div><!--end form group-->
+
+
+                            <div class="form-group">
+                                <label for="email1">Tên tài khoản</label>
+                                <input type="email" name="email1" class="form-control" id="email1" placeholder="Tên tài khoản">
+                            </div><!--end form group-->
+
+                            <div class="form-group">
+                                <label for="pwd1">Mật khẩu</label>
+                                <input type="password" name="pwd1" class="form-control" id="pwd1" placeholder="Mật khẩu">
+                            </div><!--end form group-->
+
+                            <div class="form-group">
+                                <label for="pwd2">Nhập lại mật khẩu</label>
+                                <input type="password" name="pwd2" class="form-control" id="pwd2" placeholder="Nhập lại mật khẩu">
+                            </div>
+                            <!--button-->
+                            <button type="submit" class="btn btn_buy" style="background-color:#66ccff;">Đăng ký</button>
+                        </form>
+                    </div><!--end modal body-->
+                    <div class="modal-footer">
+                        <a href="#" class="btn btn_view" data-dismiss="modal" data-toggle="modal" data-target="#sign_in" style="background-color:yellow;">Quay lại Đăng nhập</a>
+                    </div>
+                </div><!--end modal content-->
+            </div><!--end modal dialog-->
+		  </div><!--end modal-->
+
+		  <div class="main1">
+		  <!--gioithieusach1-->
+			<div>
+            <h3 style="text-align: center;margin: 35px;font-family: 'myriadpro';"><b>VĂN HỌC</b></h3>
+        	</div>
+		<!--vanhoc-->
+		  <div class="main1">
+			  <div class="row">
+				  <!--slide1--sp1--29-->
+					<div class="col-sm-3 sp">
+                    <div class="sp">
+                        <!-- Button to Open the Modal -->
+                        <button type="button" class="btn btn-link" data-toggle="modal" data-target="#myModal1">
+                            <img src="vanhoc/vh1.jpg" class="rounded"
+                                 width="100%" height="100%" style="margin-left: 0%;">
+                        </button>
+
+                        <!-- The Modal -->
+                        <div class="modal fade" id="myModal1">
+                            <div class="modal-dialog modal-lg">
+                                <div class="modal-content">
+
+                                    <!-- Modal Header -->
+                                    <div class="modal-header">
+                                        <img src="img1\TriThuc (1).png" width="100px" height="100px" style="margin-left:10px; margin-top:5px">
+                                        <h4 class="modal-title" style="margin: 5% 1%;">MẮT BIẾC (TÁI BẢN 2019) - TẶNG KÈM POSTCARD + SỐ TAY (SỐ LƯỢNG CÓ HẠN)</h4>
+                                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                    </div>
+
+                                    <!-- Modal body -->
+                                    <div class="modal-body spp" style="background-color: none;">
+                                        <p><b>MẮT BIẾC (TÁI BẢN 2019) - TẶNG KÈM POSTCARD + SỐ TAY (SỐ LƯỢNG CÓ HẠN)</b></p>
+                                        <p>110.000 VNĐ</p>
+                                        <div class="row">
+                                            <div class="col-sm-5">
+                                                <img src="vanhoc/vh1cover.jpg" class="rounded" width="100%" height="70%">
+                                            </div>
+                                            <div class="col-sm-6">
+
+                                                 <p><i>Mắt biếc là một tác phẩm được nhiều người bình chọn là hay nhất của nhà văn Nguyễn Nhật Ánh. Tác phẩm này cũng đã được dịch giả Kato Sakae dịch sang tiếng Nhật để giới thiệu với độc giả Nhật Bản.</i></p>
+												<p><i>“Tôi gửi tình yêu cho mùa hè, nhưng mùa hè không giữ nổi. Mùa hè chỉ biết ra hoa, phượng đỏ sân trường và tiếng ve nỉ non trong lá. Mùa hè ngây ngô, giống như tôi vậy. Nó chẳng làm được những điều tôi ký thác. Nó để Hà Lan đốt tôi, đốt rụi. Trái tim tôi cháy thành tro, rơi vãi trên đường về.”</i> </p>
+												<p>… Bởi sự trong sáng của một tình cảm, bởi cái kết thúc buồn, rất buồn khi xuyên suốt câu chuyện vẫn là những điều vui, buồn lẫn lộn… </p>
+												<p><b>Tác giả</b>Nguyễn Nhật Ánh</p>
+												
+                                    			 <p><b>Sản phẩm bán chạy nhất	</b>	Top 100 sản phẩm Tiểu thuyết bán chạy của tháng</p>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <!-- Modal footer -->
+                                    <div class="modal-footer">
+										 <button type="button" class="btn btn-danger" data-dismiss="modal" onclick="alert('Bạn cần phải Đăng Nhập')">Mua ngay</button>
+                                        <button type="button" class="btn btn-secondary" data-dismiss="modal" onclick="alert('Bạn cần phải Đăng Nhập')">Thêm vào giỏ hàng<i class="fas fa-shopping-cart"></i></button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <p><b>MẮT BIẾC (TÁI BẢN 2019) - TẶNG KÈM POSTCARD + SỐ TAY (SỐ LƯỢNG CÓ HẠN)</b></p>
+                    <p class="profsp">110.000 VNĐ</p>
+                </div>
+				  <!--slide1--sp2--30-->
+					<div class="col-sm-3 sp">
+                    <div class="sp">
+                        <!-- Button to Open the Modal -->
+                        <button type="button" class="btn btn-link" data-toggle="modal" data-target="#myModal2">
+                            <img src="vanhoc/vh2.jpg" class="rounded"
+                                 width="100%" height="100%" style="margin-left: 0%;">
+                        </button>
+
+                        <!-- The Modal -->
+                        <div class="modal fade" id="myModal2">
+                            <div class="modal-dialog modal-lg">
+                                <div class="modal-content">
+
+                                    <!-- Modal Header -->
+                                    <div class="modal-header">
+                                        <img src="img1\TriThuc (1).png" width="100px" height="100px" style="margin-left:10px; margin-top:5px">
+                                        <h4 class="modal-title" style="margin: 5% 1%;">KIM JI YOUNG, BORN 1982 - SINH NĂM 1982</h4>
+                                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                    </div>
+
+                                    <!-- Modal body -->
+                                    <div class="modal-body spp" style="background-color: none;">
+                                        <p><b>KIM JI YOUNG, BORN 1982 - SINH NĂM 1982 </b></p>
+                                        <p>59.000 VNĐ</p>
+                                        <div class="row">
+                                            <div class="col-sm-5">
+                                                <img src="vanhoc/vh2.jpg" class="rounded" width="100%" height="70%">
+                                            </div>
+                                            <div class="col-sm-6">
+
+                                            <p><i> Tác phẩm sinh năm 1982</i> là cuốn sách kể về cuộc đời của một người phụ nữ bị chứng rối loạn tâm lí sau sinh, tên là Kim Ji Young. Câu chuyện mở đầu bằng những dòng giới thiệu về cô - ở thời điểm hiện tại. Nếu tinh ý, độc giả sẽ có thể nhận thấy ở nhiều phân đoạn, tác giả thường gọi cả họ tên của nhân vật chính, lặp đi lặp lại chứ ít dùng đại từ thay thế. Đó là vì trong tiểu thuyết này tác giả đóng vai trò là một nam bác sĩ tâm lí trị liệu cho Kim Ji Young, và phần đầu được viết dưới dạng hồ sơ bệnh án của bác sĩ, mô tả chi tiết về bệnh chứng của bệnh nhân. Những trang viết dần hé lộ về cuộc đời tưởng như rất đỗi bình thường của thiếu phụ trẻ, từ khi cô sinh ra đến khi lấy chồng rồi sinh con như bao người phụ nữ Hàn Quốc rất bình thường khác.</p>
+                                                <p>Các triệu chứng kì lạ của Kim Ji Young xuất hiện sau khi cô sinh con, có những lúc dường như cô không phải là một Kim Ji Young thực sự, mà đã hóa thân thành những người phụ nữ khác, lúc thành mẹ cô, lúc lại thành người bạn gái cũ của chồng... Dường như cái vỏ thân xác Kim Ji Young cùng lúc có rất nhiều người khác nhau cùng tồn tại, có người còn sống và có người đã khuất, nhưng điểm chung nhất là họ đều là phụ nữ. Kim Ji Young như người phát ngôn hộ những người phụ nữ ấy những lời tự đáy lòng, nhưng bản thân họ thì có lẽ sẽ không bao giờ tự dám nói: “Ông thông gia, tôi xin mạn phép được nói điều này. Chỉ có nhà ông là có gia đình thôi sao? Chúng tôi cũng có gia đình chứ. Ba đứa nhà tôi cũng chỉ có ngày lễ tết mới có thể gặp mặt nhau. Bây giờ cuộc sống của đám trẻ đứa nào chẳng như vậy. Nhưng nếu con gái ông đã về thăm nhà rồi, thì cũng phải cho con gái chúng tôi về thăm nhà chứ”. Nghe những lời ấy, những người sống quanh cô sững sờ, thậm chí là bị sốc, bởi cô đã nói ra một cách khá thẳng thắn, đòi lại công bằng cho phụ nữ trước đặc quyền mà từ trước đến nay gần như cả xã hội vẫn mặc nhiên dành cho nam giới.....</p>
+                                                <p><b>Tác giả</b>:Cho Nam Joo.</p>
+                                                <p>Sinh năm 1978 tại Seoul. Tốt nghiệp khoa Xã hội học trường Nữ Ehwa và là biên kịch cho những chương trình truyền hình nổi tiếng như Sổ tay PD, Bất mãn zero, Truyền hình trực tiếp buổi sáng... trong suốt 10 năm.</p>
+                                                <p><b>Dịch giả:</b> : Dương Thanh Hoài</p>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <!-- Modal footer -->
+                                    <div class="modal-footer">
+										 <button type="button" class="btn btn-danger" data-dismiss="modal" onclick="alert('Bạn cần phải Đăng Nhập')">Mua ngay</button>
+                                        <button type="button" class="btn btn-secondary" data-dismiss="modal" onclick="alert('Bạn cần phải Đăng Nhập')">Thêm vào giỏ hàng<i class="fas fa-shopping-cart"></i></button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <p><b>KIM JI YOUNG, BORN 1982 - SINH NĂM 1982 </b></p>
+                    <p class="profsp">59.000 VNĐ</p>
+                </div>
+				  <!--slide1--sp3--31-->
+					<div class="col-sm-3 sp">
+                    <div class="sp">
+                        <!-- Button to Open the Modal -->
+                        <button type="button" class="btn btn-link" data-toggle="modal" data-target="#myModal3">
+                            <img src="vanhoc/vh3.jpg" class="rounded"
+                                 width="100%" height="100%" style="margin-left: 0%;">
+                        </button>
+
+                        <!-- The Modal -->
+                        <div class="modal fade" id="myModal3">
+                            <div class="modal-dialog modal-lg">
+                                <div class="modal-content">
+
+                                    <!-- Modal Header -->
+                                    <div class="modal-header">
+                                        <img src="img1\TriThuc (1).png" width="100px" height="100px" style="margin-left:10px; margin-top:5px">
+                                        <h4 class="modal-title" style="margin: 5% 1%;">LÀM BẠN VỚI BẦU TRỜI - TẶNG KÈM KHUNG HÌNH XINH XẮN (SỐ LƯỢNG CÓ HẠN)</h4>
+                                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                    </div>
+
+                                    <!-- Modal body -->
+                                    <div class="modal-body spp" style="background-color: none;">
+                                        <p><b>LÀM BẠN VỚI BẦU TRỜI - TẶNG KÈM KHUNG HÌNH XINH XẮN (SỐ LƯỢNG CÓ HẠN)</b></p>
+                                        <p>110.000 VNĐ</p>
+                                        <div class="row">
+                                            <div class="col-sm-5">
+                                                <img src="vanhoc/vh3cover.jpg" class="rounded" width="100%" height="70%">
+                                            </div>
+                                            <div class="col-sm-6">
+
+                                                 <p>Một câu chuyện giản dị, chứa đầy bất ngờ cho tới trang cuối cùng. Và đẹp lộng lẫy, vì lòng vị tha và tình yêu thương, khiến mắt rưng rưng vì một nỗi mừng vui hân hoan. Cuốn sách như một đốm lửa thắp lên lòng khát khao sống tốt trên đời.</p>
+												<p>viết về điều tốt đã không dễ, viết sao cho người đọc có thể đón nhận đầy cảm xúc tích cực, và muốn được hưởng, được làm những điều tốt dù nhỏ bé... mới thật là khó. Làm bạn với bầu trời của Nguyễn Nhật Ánh đã làm được điều này.</p>
+												<p>...</p>
+												<p><b>Tác giả</b>Nguyễn Nhật Ánh</p>
+												
+                                    			 <p><b>Sản phẩm bán chạy nhất	</b>	Top 100 sản phẩm Tiểu thuyết bán chạy của tháng</p>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <!-- Modal footer -->
+                                    <div class="modal-footer">
+										 <button type="button" class="btn btn-danger" data-dismiss="modal" onclick="alert('Bạn cần phải Đăng Nhập')">Mua ngay</button>
+                                        <button type="button" class="btn btn-secondary" data-dismiss="modal" onclick="alert('Bạn cần phải Đăng Nhập')">Thêm vào giỏ hàng<i class="fas fa-shopping-cart"></i></button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <p><b>LÀM BẠN VỚI BẦU TRỜI - TẶNG KÈM KHUNG HÌNH XINH XẮN (SỐ LƯỢNG CÓ HẠN)</b></p>
+                    <p class="profsp">110.000 VNĐ</p>
+                </div>
+				  <!--slide1--sp4--32-->
+					<div class="col-sm-3 sp">
+                    <div class="sp">
+                        <!-- Button to Open the Modal -->
+                        <button type="button" class="btn btn-link" data-toggle="modal" data-target="#myModal4">
+                            <img src="vanhoc/vh4.jpg" class="rounded"
+                                 width="100%" height="100%" style="margin-left: 0%;">
+                        </button>
+
+                        <!-- The Modal -->
+                        <div class="modal fade" id="myModal4">
+                            <div class="modal-dialog modal-lg">
+                                <div class="modal-content">
+
+                                    <!-- Modal Header -->
+                                    <div class="modal-header">
+                                        <img src="img1\TriThuc (1).png" width="100px" height="100px" style="margin-left:10px; margin-top:5px">
+                                        <h4 class="modal-title" style="margin: 5% 1%;">999 LÁ THƯ GỬI CHO CHÍNH MÌNH - MONG BẠN TRỞ THÀNH PHIÊN BẢN HOÀN HẢO NHẤT (TÁI BẢN 2019)</h4>
+                                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                    </div>
+
+                                    <!-- Modal body -->
+                                    <div class="modal-body spp" style="background-color: none;">
+                                        <p><b>999 LÁ THƯ GỬI CHO CHÍNH MÌNH - MONG BẠN TRỞ THÀNH PHIÊN BẢN HOÀN HẢO NHẤT (TÁI BẢN 2019)</b></p>
+                                        <p>99.000 VNĐ</p>
+                                        <div class="row">
+                                            <div class="col-sm-5">
+                                                <img src="vanhoc/vh4cover.jpg" class="rounded" width="100%" height="70%">
+                                            </div>
+                                            <div class="col-sm-6">
+
+                                                                                               <p>Đọc thử</p>
+                                                <p><i>999 lá thư gửi cho chính mình” là một tác phẩm đặc biệt đầy cảm hứng đến từ tác giả văn học mạng nổi tiếng Miêu Công Tử, mang một màu sắc riêng biệt qua những lời thư nhỏ nhắn nhủ đến người đọc về giá trị cuộc sống, tình yêu, tuổi trẻ, tương lai… v.v.. đã làm lay động trái tim của hàng vạn độc giả trẻ. </i></p>
+                                                <p>Cầm trên tay cuốn sách “999 lá thư gửi cho chính mình” – bạn sẽ hiểu rằng: tuổi trẻ của chúng ta dù có mong manh đến đâu thì cũng sẽ thành công vượt qua mọi khó khăn một cách mạnh mẽ ngoài sức tưởng tượng. Một ngày nào đó, bạn sẽ cảm nhận được hạnh phúc, tự tin của chính bản thân và học được cách mỉm cười trước những nỗi đau của quá khứ. Bạn sẽ biết cách nói lời cảm ơn với những ai đã rời bỏ bạn, hiểu ra rằng họ không phải người thích hợp để cùng đồng hành với bạn trên đoạn đường chông gai đi tới tương lai. Đôi lúc bạn có thể yếu đuối mỏi mệt rơi nước mắt, thế nhưng khi bất chợt nhìn lại, bạn sẽ thấy thì ra mình đã rất mạnh mẽ, dũng cảm đi hết cả một quãng đường dài.</p>
+                                                <p><i>“999 lá thư gửi cho chính mình” </i>– Mong bạn trở thành phiên bản hoàn hảo nhất. Cái gọi là vẻ đẹp nội tâm luôn luôn tốt hơn vẻ bề ngoài hào nhoáng, hy vọng bạn sẽ mãi luôn kiên cường, dũng cảm đứng ở nơi ánh sáng chiếu rọi, sống tốt một cuộc sống mà mình hằng mong ước. </p>
+                                                <p><b>Sản phẩm bán chạy nhất</b>:Top 100 sản phẩm Tiểu thuyết bán chạy của tháng</p>
+                                                <p><b>Năm XB</b>:2019</p>
+
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <!-- Modal footer -->
+                                    <div class="modal-footer">
+										 <button type="button" class="btn btn-danger" data-dismiss="modal" onclick="alert('Bạn cần phải Đăng Nhập')">Mua ngay</button>
+                                        <button type="button" class="btn btn-secondary" data-dismiss="modal" onclick="alert('Bạn cần phải Đăng Nhập')">Thêm vào giỏ hàng<i class="fas fa-shopping-cart"></i></button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <p><b>999 LÁ THƯ GỬI CHO CHÍNH MÌNH - MONG BẠN TRỞ THÀNH PHIÊN BẢN HOÀN HẢO NHẤT (TÁI BẢN 2019)</b></p>
+                    <p class="profsp">99.000 VNĐ</p>
+                </div>
+			  </div>
+			  <div class="row">
+				  <!--slide3--sp5--33-->
+					<div class="col-sm-3 sp">
+                    <div class="sp">
+                        <!-- Button to Open the Modal -->
+                        <button type="button" class="btn btn-link" data-toggle="modal" data-target="#myModal5">
+                            <img src="vanhoc/vh5.jpg" class="rounded"
+                                 width="100%" height="100%" style="margin-left: 0%;">
+                        </button>
+
+                        <!-- The Modal -->
+                        <div class="modal fade" id="myModal5">
+                            <div class="modal-dialog modal-lg">
+                                <div class="modal-content">
+
+                                    <!-- Modal Header -->
+                                    <div class="modal-header">
+                                        <img src="img1\TriThuc (1).png" width="100px" height="100px" style="margin-left:10px; margin-top:5px">
+                                        <h4 class="modal-title" style="margin: 5% 1%;">MÃI MÃI LÀ BAO XA (TÁI BẢN 2019)
+</h4>
+                                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                    </div>
+
+                                    <!-- Modal body -->
+                                    <div class="modal-body spp" style="background-color: none;">
+                                        <p><b>MÃI MÃI LÀ BAO XA (TÁI BẢN 2019) </b></p>
+                                        <p>135.000 VNĐ</p>
+                                        <div class="row">
+                                            <div class="col-sm-5">
+                                                <img src="vanhoc/vh5cover.jpg" class="rounded" width="100%" height="50%">
+                                            </div>
+                                            <div class="col-sm-6">
+
+                                              <p>Đọc thử</p>
+                                                <p><i>Bạch Lăng Lăng, nữ sinh khoa Điện khí, trẻ trung, xinh đẹp và rất tự hào khi quen được một người bạn lý tưởng qua mạng, chàng du học sinh của một trường nổi tiếng của Mỹ, người mang biệt danh “nhà khoa học”: Mãi Mãi Là Bao Xa.</i></p>
+                                                <p>. Qua những cuộc chuyện trò trên QQ, Lăng Lăng đã gắn bó với chàng trai đó lúc nào cô cũng không hay, cảm xúc lớn dần, sự chia sẻ lớn dần và đến một ngày cô phát hiện ra mình đã yêu người con trai “tài giỏi” và không một chút khuyết điểm ấy. Nhưng sự tỉnh táo giúp cô ý thức được rằng, thế giới mạng chỉ là ảo, họ ở cách nhau cả một đại dương mênh mông, anh lại quá xuất sắc và ưu tú, mối quan hệ của họ sẽ không có kết quả gì. Nhất là khi anh thông báo, nếu anh tiếp tục sự nghiệp nghiên cứu lần này, rất có thể anh phải định cư bên Mỹ, mãi mãi không trở về. Khi nghe tin đó, cô đã gục xuống trước màn hình máy tính và khóc. Tất cả như sụp đổ, tia hy vọng cuối cùng dập tắt, anh sẽ không về nước nữa, khoảng cách giữa họ là mãi mãi… Cô cay đắng nói với anh lời từ biệt và đưa nick của anh vào danh sách đen, không bao giờ xuất hiện khi cô đăng nhập QQ nữa…</p>
+                                                <p><b>Sản phẩm bán chạy nhất</b>Top 100 sản phẩm Ngôn Tình bán chạy của tháng</p>
+                                                <p><b>Tác giả</b>:	Diệp Lạc Vô Tâm</p>
+                                                <p><b>NXB</b>:	NXB Văn Học</p>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <!-- Modal footer -->
+                                    <div class="modal-footer">
+										 <button type="button" class="btn btn-danger" data-dismiss="modal" onclick="alert('Bạn cần phải Đăng Nhập')">Mua ngay</button>
+                                        <button type="button" class="btn btn-secondary" data-dismiss="modal" onclick="alert('Bạn cần phải Đăng Nhập')">Thêm vào giỏ hàng<i class="fas fa-shopping-cart"></i></button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <p><b>MÃI MÃI LÀ BAO XA (TÁI BẢN 2019)</b></p>
+                    <p class="profsp">135.000 VNĐ</p>
+                </div>
+				  <!--slide3--sp6--34-->
+					<div class="col-sm-3 sp">
+                    <div class="sp">
+                        <!-- Button to Open the Modal -->
+                        <button type="button" class="btn btn-link" data-toggle="modal" data-target="#myModal6">
+                            <img src="vanhoc/vh6.jpg" class="rounded"
+                                 width="100%" height="100%" style="margin-left: 0%;">
+                        </button>
+
+                        <!-- The Modal -->
+                        <div class="modal fade" id="myModal6">
+                            <div class="modal-dialog modal-lg">
+                                <div class="modal-content">
+
+                                    <!-- Modal Header -->
+                                    <div class="modal-header">
+                                        <img src="img1\TriThuc (1).png" width="100px" height="100px" style="margin-left:10px; margin-top:5px">
+                                        <h4 class="modal-title" style="margin: 5% 1%;">NỤ HÔN CỦA SÓI (TÁI BẢN 2019)</h4>
+                                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                    </div>
+
+                                    <!-- Modal body -->
+                                    <div class="modal-body spp" style="background-color: none;">
+                                        <p><b>NỤ HÔN CỦA SÓI (TÁI BẢN 2019)</b></p>
+                                        <p>119.000 VNĐ</p>
+                                        <div class="row">
+                                            <div class="col-sm-5">
+                                                <img src="vanhoc/vh6cover.jpg" class="rounded" width="100%" height="50%">
+                                            </div>
+                                            <div class="col-sm-6">
+
+                                                 <p><i>Nếu An Dĩ Phong không tính là đàn ông, trên thế giới này không ai dám nói chính mình là đàn ông!</i></p>
+												<p>Nếu An Dĩ Phong không tính là yêu nghiệt, như vậy, trên thế giới này cũng không hề có yêu nghiệt....</p>
+												<p>Hắn là một người đàn ông như vậy, rong ruổi giang hồ mười lăm năm, ai dám cùng hắn một câu trái ý, về sau đừng nghĩ mở miệng nói chuyện. Hắn kiêu ngạo ương ngạnh, hoành hành ngang dọc, hắn cô độc, mệt mỏi...nhưng mấy ai biết rằng, trong tim hắn chỉ có một bóng hình, và có một người lặng lẽ yêu hắn, chờ hắn... ở một nơi rất xa.
+												Hài hước, lãng mạn, miêu tả tâm lý nhân vật cực khéo, cốt truyện gay cấn, tác giả đã tạo cho câu chuyện tình yêu đầy màu sắc cổ tích giữa một nữ cảnh sát và anh chàng lừng lẫy chốn giang hồ sự hấp dẫn đặc biệt. Đan xen vào câu chuyện tình yêu này là câu chuyện của tình bạn, tình anh em, tình cha con, của nghĩa khí, chữ tín và sức mạnh của những ước mơ. Đó chính là những điều tốt đẹp trong cuộc đời này.</p>
+												<p><b>Tác giả</b>		Diệp Lạc Vô Tâm</p>
+                                    			 <p><b>Sản phẩm bán chạy nhất	</b>	Top 100 sản phẩm Ngôn Tình bán chạy của tháng</p>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <!-- Modal footer -->
+                                    <div class="modal-footer">
+										 <button type="button" class="btn btn-danger" data-dismiss="modal" onclick="alert('Bạn cần phải Đăng Nhập')">Mua ngay</button>
+                                        <button type="button" class="btn btn-secondary" data-dismiss="modal" onclick="alert('Bạn cần phải Đăng Nhập')">Thêm vào giỏ hàng<i class="fas fa-shopping-cart"></i></button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <p><b>NỤ HÔN CỦA SÓI (TÁI BẢN 2019)</b></p>
+                    <p class="profsp">119.000 VNĐ</p>
+                </div>
+				  <div class="col-sm-3 sp">
+                                <div class="sp">
+                                    <!-- Button to Open the Modal -->
+                                    <button type="button" class="btn btn-link" data-toggle="modal" data-target="#myModal7">
+                                        <img src="vanhoc/vh7.jpg" class="rounded"
+                                             width="100%" height="100%" style="margin-left: 0%;">
+                                    </button>
+
+                                    <!-- The Modal -->
+                                    <div class="modal fade" id="myModal7">
+                                        <div class="modal-dialog modal-lg">
+                                            <div class="modal-content">
+
+                                                <!-- Modal Header -->
+                                                <div class="modal-header">
+                                                    <img src="img1\TriThuc (1).png" width="100px" height="100px" style="margin-left:10px; margin-top:5px">
+                                                    <h4 class="modal-title" style="margin: 5% 1%;">HẸN ĐẸP NHƯ MƠ (TÁI BẢN 2019)</h4>
+                                                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                                </div>
+
+                                                <!-- Modal body -->
+                                                <div class="modal-body spp" style="background-color: none;">
+                                                    <p><b>HẸN ĐẸP NHƯ MƠ (TÁI BẢN 2019)</b></p>
+                                                    <p>109.000 VNĐ</p>
+                                                    <div class="row">
+                                                        <div class="col-sm-5">
+                                                            <img src="vanhoc/vh7cover.png" class="rounded" width="100%" height="50%">
+                                                        </div>
+                                                        <div class="col-sm-6">
+                                                            <p>Câu chuyện “mềm tựa như nước, đẹp tựa như mơ” của Mạnh Hòa Bình, Vưu Giai Kỳ, Nguyễn Chính Đông đã trở lại một lần nữa trong lòng những độc giả yêu mến ngòi bút của Phỉ Ngã Tư Tồn.</p>
+                                                            <p><i>Hẹn đẹp như mơ (tên gốc là Giai Kỳ Như Mộng) là một tác phẩm đỉnh cao trong các sáng tác của Phỉ Ngã Tư Tồn, đã lấy đi nước mắt của biết bao độc giả.</i></p>
+                                                            <p>Câu chuyện bắt đầu bằng tình tiết Giai K­­­­ỳ gặp Chính Đông, rồi lần giở về quá khứ - về mối tình mà Giai Kỳ luôn giấu trong sâu thẳm trái tim – mối tình với Mạnh Hòa Bình. Có một thời, cô và Mạnh Hòa Bình cứ tưởng rằng chỉ cần yêu nhau, chỉ cần cố gắng thì sẽ có thể xóa đi mọi khoảng cách về giai cấp, gia đình… Nhưng hóa ra không phải vậy, hóa ra sự kiên quyết, cố gắng ấy đã khiến Giai Kỳ mất nhiều hơn là được: người cha hết lòng thương yêu đã không còn, người yêu cô – Mạnh Hòa Bình chịu khổ sở, bỏ lỡ tương lai vì cô… Để giữ sự tôn nghiêm cho bản thân mình, Giai Kỳ lựa chọn ra đi.</p>
+                                                            <p>Cứ tưởng thời gian sẽ lặng lẽ trôi qua, có thể sống một cuộc đời bình thường qua ngày qua tháng, nhưng Nguyễn Chính Đông đã bước vào đời cô.</p>
+                                                            <p>Nếu Mạnh Hòa Bình ấm áp và dịu dàng bao nhiêu thì Nguyễn Chính Đông lạnh lùng, cao ngạo bấy nhiêu. Anh đến với Giai Kỳ, rồi lại chủ động rời xa cô. Đúng lúc đó, Mạnh Hòa Bình trở về. Giai Kỳ phát hiện Chính Đông và Hòa Bình có mối quan hệ thân thiết với nhau…</p>
+                                                            <p>Sau bao năm, Hòa Bình vẫn đợi chờ cô.</p>
+                                                            <p>Sau bao năm, tình cảm ấy vẫn chưa thôi cháy trong cô.</p>
+                                                            <p>Và cũng sau bao năm, đã có một Chính Đông xuất hiện trong cuộc đời cô.</p>
+                                                            <p><i> Trích dẫn nổi tiếng:</i> “Lúc còn trẻ chúng ta từ bỏ, cho rằng đó chỉ là tình cảm một thời, nhưng cuối cùng mới biết, đó thực ra là cả cuộc đời”.</p>
+
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <!-- Modal footer -->
+                                                <div class="modal-footer">
+													 <button type="button" class="btn btn-danger" data-dismiss="modal" onclick="alert('Bạn cần phải Đăng Nhập')">Mua ngay</button>
+                                                    <button type="button" class="btn btn-secondary" data-dismiss="modal" onclick="alert('Bạn cần phải Đăng Nhập')">Đặt Trước<i class="fas fa-shopping-cart"></i></button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <p><b>HẸN ĐẸP NHƯ MƠ (TÁI BẢN 2019)</b></p>
+                                <p class="profsp">109.000 VNĐ</p>
+                            </div>
+				  <div class="col-sm-3 sp">
+                                <div class="sp">
+                                    <!-- Button to Open the Modal -->
+                                    <button type="button" class="btn btn-link" data-toggle="modal" data-target="#myModal27">
+                                        <img src="vanhoc/VH8.jpg"="rounded"
+                                             width="100%" height="100%" style="margin-left: 0%;">
+                                    </button>
+
+                                    <!-- The Modal -->
+                                    <div class="modal fade" id="myModal27">
+                                        <div class="modal-dialog modal-lg">
+                                            <div class="modal-content">
+
+                                                <!-- Modal Header -->
+                                                <div class="modal-header">
+                                                    <img src="img1\TriThuc (1).png" width="100px" height="100px" style="margin-left:10px; margin-top:5px">
+                                                    <h4 class="modal-title" style="margin: 5% 1%;">TÔI CÓ MỘT CHÉN RƯỢU, CÓ THỂ XOA DỊU HỒNG TRẦN </h4>
+                                                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                                </div>
+
+                                                <!-- Modal body -->
+                                                <div class="modal-body spp" style="background-color: none;">
+                                                    <p><b>TÔI CÓ MỘT CHÉN RƯỢU, CÓ THỂ XOA DỊU HỒNG TRẦN </b></p>
+                                                    <p>109.000 VNĐ</p>
+                                                    <div class="row">
+                                                        <div class="col-sm-5">
+                                                            <img src="vanhoc/vh8cover.jpg" class="rounded" width="100%" height="50%">
+                                                        </div>
+                                                        <div class="col-sm-6">
+                                                            <p>Những câu chuyện trong cuốn sách này, có thể cho đến cuối đời cũng sẽ không xảy ra với bạn, nhưng chẳng ai dám nói chúng chưa từng xảy ra trên thế gian này, chỉ là tôi có may mắn gặp được những người đó, nghe được những chuyện đó, rồi kể lại cho bạn vào một thời điểm thích hợp.</p>
+                                                            <p>Hy vọng những người bạn có duyên đọc được cuốn sách này, bất kể gặp phải chuyện gì cũng sẽ được như ý nguyện, đêm đêm có rượu, ngày ngày có những bài ca, có được trái tim tự do và gia đình yên vui, mùa đông thì ấm áp, mùa xuân không phải rét buốt, suốt đời luôn nở nụ cười trên môi.</p>
+                                                            <p><i>“Cầu chúc cho bạn dù có đối diện với cố nhân lâu ngày không gặp, hay tình cờ gặp lại người đã từng yêu mà chẳng thể có được, cho dù trong lòng có trời rung biển động, thì ngoài mặt vẫn không thể hiện dù chỉ là một chút gợn sóng. Gương mặt bình thản như không có chuyện gì xảy ra của bạn mới là gương mặt đẹp nhất.</i></p>
+                                                            <p><i>Cầu chúc cho bạn có thể xông pha ngang dọc, cho dù có bị thương, có chảy máu, thì cũng phải yêu ghét phân minh, khóc cười thỏa sức như một thời niên thiếu đã từng qua.”</i></p>
+                                                            <p>Sản phẩm bán chạy nhất:Top 100 sản phẩm Ngôn Tình bán chạy của tháng</p>
+                                                            <p><b>Tác giả</b>:Quan Đông Dã Khách</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <!-- Modal footer -->
+                                                <div class="modal-footer">
+													 <button type="button" class="btn btn-danger" data-dismiss="modal" onclick="alert('Bạn cần phải Đăng Nhập')">Mua ngay</button>
+                                                    <button type="button" class="btn btn-secondary" data-dismiss="modal" onclick="alert('Bạn cần phải Đăng Nhập')">Đặt Trước<i class="fas fa-shopping-cart"></i></button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <p><b>TÔI CÓ MỘT CHÉN RƯỢU, CÓ THỂ XOA DỊU HỒNG TRẦN )</b></p>
+                                <p class="profsp">109.000 VNĐ</p>
+                            </div>
+			  </div><nav aria-label="Page navigation example">
+   <ul class="pagination">
+      <li class="page-item">
+         <a class="page-link" href="#" aria-label="Previous">
+         <span aria-hidden="true">&laquo;</span>
+         <span class="sr-only">Previous</span>
+         </a>
+      </li>
+      <li class="page-item active" >
+         <a class="page-link" href="#">1</a>
+      </li>
+      <li class="page-item">
+         <a class="page-link" href="#">2</a>
+      </li>
+      <li class="page-item">
+         <a class="page-link" href="#">3</a>
+      </li>
+      <li class="page-item">
+         <a class="page-link" href="#" aria-label="Next">
+         <span aria-hidden="true">&raquo;</span>
+         <span class="sr-only">Next</span>
+         </a>
+      </li>
+   </ul>
+</nav>
+</div>
+		  </div>
+</div><!--container-->
+                   <!--Footer-->
+                                <div id="lienhe"></div>
+                                <div class="footer">
+                                    <a class="btn-top" href="javascript:void(0);" title="Top" style="display: inline;"></a>
+                                </div>
+                                <div style="text-align: center;margin-top: 100px;">
+                                    <h3>LIÊN HỆ VỚI CHÚNG TÔI</h3>
+                                    <p style="color: #797979;margin-top: 15px;margin-bottom: 30px;">Nếu bạn có những thắc mắc gì, thì đừng ngần ngại hãy liên hệ với chúng tôi!Chúng tôi luôn 24/7 sẵn sàng và phục vụ Bạn...</p>
+                                </div>
+                                <div class="row" style="color: #797979;">
+                                    <div class=" col-sm-3 footer ">
+                                        <p style="margin-top: 20px; "><strong>Địa chỉ cửa hàng</strong></p>
+                                        <p>273 An Dương Vương ,phường 10 , quận 5,TPHCM</p>
+                                        <p>0906751622</p>
+                                        <p>nhasachtrithuc@gmail.com</p>
+                                    </div>
+
+                                    <div class="col-sm-3 footer ">
+                                        <p style="margin-top: 20px; "><strong>Giờ làm việc</strong></p>
+                                        <p>Ngày thường: 7:00AM đến 10:00PM</p>
+
+                                    </div>
+
+                                    <div class="col-sm-3 footer ">
+                                        <p style="margin-top: 20px; "><strong>Hỗ Trợ</strong></p>
+                                        <p>Hãy để lại email, chúng tôi sẽ tư vấn cho bạn.</p>
+                                        <p><input type="text " placeholder="email@example.com " name="email " size="30 " style="border: 0px;border-bottom: 1px solid #636363; "></p>
+                                        <p><input type="submit" value="Gửi Ngay!!! " style="color: white; background-color: #636363;border: 0px; "></p>
+                                    </div>
+
+                                    <div class="col-sm-3 footer">
+                                        <p style="margin-top: 20px; margin-left: 0px;"><strong>Liên Hệ</strong></p>
+                                        <span>
+                                            <i class="fab fa-facebook-f fa-2x" style="padding-left: 30px;"></i>
+                                            <i class="fab fa-twitter fa-2x"></i>
+                                            <i class="fab fa-youtube fa-2x"></i>
+                                            <i class="fab fa-instagram fa-2x"></i>
+                                            <i class="fab fa-pinterest fa-2x"></i>
+                                            <i class="fab fa-flickr fa-2x"></i>
+                                        </span>
+                                    </div>
+	</div>
+ <button type="button" onclick="topFunction()" id="myBtn" title="Go to top"><i class="fas fa-arrow-circle-up fa-3x" style="color: #66ccff" ;></i></button>
+<script>//Get the button:
+var mybutton = document.getElementById("myBtn");
+
+// When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    mybutton.style.display = "block";
+  } else {
+    mybutton.style.display = "none";
+  }
+}
+
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+  document.body.scrollTop = 0; // For Safari
+  document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+}
+	</script>
+				  <script src="jquery-3.4.1.min.js"></script>
+    <script src="popper.min.js"></script>
+    <script src="bootstrap/js/bootstrap.min.js"></script>
+</body>
+</html>

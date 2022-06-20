@@ -1,0 +1,550 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+	  <link rel="icon" type="image/png" href="img1/favicon.png">
+    <script language="javascript" src="index.js"></script>
+  
+    <link rel="stylesheet" href="for1821.css" type="text/css">
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="fontawesome/css/all.css">
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+        body {
+            font-family: "Myriadpro", serif;
+        }
+    </style>
+    <title>Nhà sách Tri Thức |&reg</title>
+</head>
+<body>
+    <div>
+      <div class="row banner-top" style="background-color: #eeeeee;">
+            <div class="col-sm-9 headerr">
+                <h4 style="display: block;font-family: myriadpro"><strong style="margin-left:55%;">Miễn phí giao hàng</strong> Hóa đơn trên 150 000 VND</h4>
+            </div>
+            <div class="col-sm-3 headerr">
+                <span style="float:right;">
+                    <i class="fab fa-facebook-f fa-2x" title="facebook"></i>
+                    <i class="fab fa-twitter fa-2x" title="twitter"></i>
+                    <i class="fab fa-youtube fa-2x" title="youtobe"></i>
+                    <i class="fab fa-instagram fa-2x" title="instagram"></i>
+                    <i class="fab fa-pinterest fa-2x" title="pinterest"></i>
+                    <i class="fab fa-flickr fa-2x" title="flickr"></i>
+                </span>
+            </div>
+        </div>
+            <!--Đây là Line Giới thiệu-->
+      <div class="container">
+          <div id="gioithieu"></div>
+          <div class="row">
+              <div class="col-sm-4 chuthich">
+                  <a href="index.html"><img src="img1/logo1.png" style="height: 100px;width: auto;" /></a>
+              </div>
+              <div class="col-sm-5">
+                  <div class="search">
+                      <input type="search" name="search" placeholder="Tìm kiếm...">
+                      <a href="kinhte.html"><button type="button"><i class="fa fa-search"></i></button></a>
+                  </div>
+              </div>
+              <div class="col-sm-3 cart">
+                  <a href="giohang.html" style="color: #66ccff">
+                      <i class="fas fa-shopping-cart fa-2x"></i>
+                  </a>
+              </div>
+          </div>
+          <!----------------------------------------------------------------------------------------------------------------------------------------------------------------->
+          <!--Day la Menu-->
+
+          <div style="display:flex; padding:8px; align-items: center; position: sticky; top:0; background: #66ccff; z-index: 1000;height: 40px;">
+              <div style="min-width: 250px; display: flex;justify-content: center; align-items: center;">
+                  <nav class="menuheader">
+                      <ul>
+                          <li><a href="index.html">TRANG CHỦ <i class="fas fa-home"></i></a></li>
+                          <li>
+                              <a href="#" data-toggle="dropdown">SÁCH TRONG NƯỚC</a>
+                              <ul class="dropdown-menu">
+                                  <li><a href="kinhte.html">Kinh tế</a></li>
+                                  <li><a href="giaoduc.html">Giáo dục</a></li>
+                                  <li><a href="vanhoc.html">Văn học</a></li>
+                                  <li><a href="thieunhi.html">Thiếu Nhi</a></li>
+                                  <li><a href="truyentranh.html">Truyện tranh</a></li>
+                              </ul>
+                          </li>
+                          <li>
+                              <a href="tieuthuyet.html">SÁCH NƯỚC NGOÀI<i class="fas fa-caret-down"></i></a>
+
+                          </li>
+                          <li><a href="#products">SÁCH BÁN CHẠY</a></li>
+                          <li><a href="map.html">LIÊN HỆ <i class="fas fa-phone"></i></a></li>
+                          <li>
+
+                              <a href="#" data-toggle="modal" data-target="#sign_in">ĐĂNG NHẬP</a>
+
+                          </li>
+                          
+                      </ul>
+                      <div class="icon">
+                          <i class="fas fa-bars"></i>
+                      </div>
+                  </nav>
+              </div>
+
+
+
+
+          </div>
+
+
+          <hr style="margin-bottom: -4px;">
+          <!--sign in-->
+          <div class="modal fade" id="sign_in">
+              <div class="modal-dialog">
+                  <div class="modal-content p-3">
+
+                      <!--modal header-->
+                      <div class="modal-header">
+                          <h2 class="modal-title sign_header">Đăng Nhập</h2>
+                          <button type="button" class="close" data-dismiss="modal">&times;</button>
+                      </div>
+
+                      <!--modal body-->
+                      <div class="modal-body">
+                          <form action="">
+                              <!--email-->
+                              <div class="form-group">
+                                  <label id="sign" for="email"><i class="fas fa-user-circle"></i>Tên tài khoản:</label>
+                                  <input type="email" name="email" class="form-control" id="email" placeholder="Email:">
+                              </div><!--end form group-->
+
+                              <div class="form-group">
+                                  <label for="pwd"><i class="fas fa-lock"></i>Mật khẩu</label>
+                                  <input type="password" name="pwd" class="form-control" id="pwd" placeholder="Mật khẩu của bạn">
+                              </div><!--end form group-->
+                              <!--remember me-->
+                              <div class="form-group form-check">
+                                  <label class="form-check-label">
+                                      <input type="checkbox" name="remember" class="form-check-input">Ghi nhớ tài khoản
+                                  </label>
+                              </div><!--end form group-->
+                              <!--button-->
+                              <button type="submit" class="btn btn_buy" style="background-color:#66ccff;">Đăng nhập</button>
+                              <a href="#" class="font_16 text-secondary"> &nbsp Bạn quên mật khẩu?</a>
+                              <div class="row">
+                                  <div class="col-6">
+                                      <button type="submit" class="btn btn-outline-primary border_30 mt-4"><i class="fab fa-facebook-f"></i> &nbsp;Đăng nhập bằng Facebook</button>
+                                  </div>
+                                  <div class="col-6">
+                                      <button type="submit" class="btn btn-outline-danger border_30 mt-4">
+                                          <i class="fab fa-google"></i>
+                                          &nbsp; Đăng nhập bằng Google
+                                      </button>
+                                  </div>
+                              </div><br>
+                          </form>
+                      </div><!--end modal body-->
+
+                      <div class="modal-footer">
+                          <div class="d-flex justify-content-begin">
+                              <div>
+                                  <p class="font_16">Bạn không có tài khoản?</p>
+                              </div>&nbsp; &nbsp;
+                              <div>
+                                  <a href="#" class="btn btn_view" data-dismiss="modal" data-toggle="modal" data-target="#sign_up" style="background-color:#66ccff;">Đăng Ký Ngay</a>
+                              </div>
+                          </div>
+                      </div>
+                  </div><!--end modal content-->
+              </div><!--end modal dialog-->
+          </div><!---end modal-->
+
+          <div class="modal fade" id="sign_up">
+              <div class="modal-dialog">
+                  <div class="modal-content p-3">
+                      <!--modal header-->
+                      <div class="modal-header">
+                          <h2>Đăng Ký</h2>
+                          <button type="button" class="close" data-dismiss="modal">&times;</button>
+                      </div>
+
+                      <!--modal body-->
+
+                      <div class="modal-body">
+                          <p class="font_16">Bạn hãy điền vào form bên dưới</p>
+                          <form action="">
+                              <!--name-->
+
+
+                              <div class="form-group">
+                                  <label for="hoten"><i class="fas fa-user"></i>Tên</label>
+                                  <input type="name" name="hoten" class="form-control" id="hoten" placeholder="Tên của bạn">
+                              </div><!--end form group-->
+
+
+                              <div class="form-group">
+                                  <label for="email1"><i class="fas fa-user-circle"></i>Tên tài khoản</label>
+                                  <input type="email" name="email1" class="form-control" id="email1" placeholder="Tên tài khoản">
+                              </div><!--end form group-->
+
+                              <div class="form-group">
+                                  <label for="pwd1"><i class="fas fa-lock"></i>Mật khẩu</label>
+                                  <input type="password" name="pwd1" class="form-control" id="pwd1" placeholder="Mật khẩu">
+                              </div><!--end form group-->
+
+                              <div class="form-group">
+                                  <label for="pwd2">Nhập lại mật khẩu</label>
+                                  <input type="password" name="pwd2" class="form-control" id="pwd2" placeholder="Nhập lại mật khẩu">
+                              </div>
+                              <!--button-->
+                              <button type="submit" class="btn btn_buy" style="background-color:#66ccff;">Đăng ký</button>
+                          </form>
+                      </div><!--end modal body-->
+                      <div class="modal-footer">
+                          <a href="#" class="btn btn_view" data-dismiss="modal" data-toggle="modal" data-target="#sign_in" style="background-color:yellow;">Quay lại Đăng nhập</a>
+                      </div>
+                  </div><!--end modal content-->
+              </div><!--end modal dialog-->
+          </div>
+          <!--end modal-->
+               <div>
+              <h3 style="text-align: center;margin: 35px;font-family: 'myriadpro';"><b>MEDICAL</b></h3>
+          </div>
+    <!--y khoa-->
+          <div class="main1">
+              <div class="row">
+                  <!--slide 1- sa1ch1-->
+                  <div class="col-sm-3 sp">
+                      <div class="sp">
+                          <!-- Button to Open the Modal -->
+                          <button type="button" class="btn btn-link" data-toggle="modal" data-target="#myModal1">
+                              <img src="medical/yk1.jpg" class="rounded"
+                                   width="100%" height="100%" style="margin-left: 0%;">
+                          </button>
+
+                          <!-- The Modal -->
+                          <div class="modal fade" id="myModal1">
+                              <div class="modal-dialog modal-lg">
+                                  <div class="modal-content">
+
+                                      <!-- Modal Header -->
+                                      <div class="modal-header">
+                                          <img src="img1\TriThuc (1).png" width="100px" height="100px" style="margin-left:10px; margin-top:5px">
+                                          <h4 class="modal-title" style="margin: 5% 1%;">BATES' GUIDE TO PHYSICAL EXAMINATION AND HISTORY TAKING</h4>
+                                          <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                      </div>
+
+                                      <!-- Modal body -->
+                                      <div class="modal-body spp" style="background-color: none;">
+                                          <p><b>BATES' GUIDE TO PHYSICAL EXAMINATION AND HISTORY TAKING </b></p>
+                                          <p><font color="red">499.000 VNĐ</font></p>
+                                          <div class="row">
+                                              <div class="col-sm-5">
+                                                  <img src="medical/yk1.jpg" class="rounded" width="100%" height="30%">
+                                              </div>
+                                              <div class="col-sm-6">
+                                                  <p><b>BOOK OVERVIEW:</b></p>
+                                                  <p>Perform an accurate, efficient, and effective physical examination with confidence.</p>
+                                                  <p><b>Bates’ Guide to Physical Examination and History Taking</b> provides authoritative, step-by-step guidance on performing the patient interview and physical examination, applying clinical reasoning, shared decision-making, and other core assessment skills—all based on a firm understanding of clinical evidence.</p>
+                                                  <p>This highly regarded text includes fully illustrated, step-by-step techniques that outline the correct performance of the physical examination and an easy-to-follow two-column format featuring examination techniques on the left and abnormalities (clearly indicated in red) with differential diagnoses on the right. Bates’ also includes a unit on special populations, covering special stages in the life cycle—infancy through adolescence, pregnancy, and aging.</p>
+                                                  <p>Clinical pearls , printed in blue, highlight key points throughout the text.</p>
+                                                  <p>Text boxes help readers quickly find important summaries of clinical conditions and tips for challenging examination techniques.</p>
+                                                  <p>Many new and updated photographs and illustrations support the text, and figures are now numbered for easy identification and reference.</p>
+                                                  <p>Rewritten chapter on evaluating clinical evidence clarifies key concepts to ensure student understanding.</p>
+                                                  <p>Revised and expanded chapter on the skin, hair, and nails includes new dermatology photographs and provides the framework for assessing common lesions and abnormalities.</p>
+                                                  <p>Updated behavior and mental status chapter now references DSM-5 .</p>
+                                                  <p>Significantly revised information on obesity and nutrition counseling; cardiovascular risk factor screening and new clinical guidelines; new screening guidelines for breast cancer, colon cancer, Papanicolau smears, and stroke risk factors; updated information on STIs; new geriatric assessment tools; and much more.</p>
+                                                  <p>New life cycle content , including an increased emphasis on cardiovascular health promotion and child development; updated pregnancy topics such as weight gain, substance abuse, and intimate partner violence; and new information on the older adult, including frailty, immunizations, cancer screening, cognitive decline and dementia screening, and a new algorithm for falls prevention.</p>
+                                                  <p>Bates’ Guide to Physical Examination and History Taking is the #1 choice for complete, authoritative guidance on mastering every aspect of the all-important physical examination.</p>
+                                                  <p><b>Tác giả</b>:Lynn S. Bickley MD, FACP</p>
+                                              </div>
+                                          </div>
+                                      </div>
+
+                                      <!-- Modal footer -->
+                                      <div class="modal-footer">
+                                          <button type="button" class="btn btn-danger" data-dismiss="modal">Mua ngay</button>
+                                          <button type="button" class="btn btn-secondary" data-dismiss="modal">Thêm vào giỏ hàng<i class="fas fa-shopping-cart"></i></button>
+                                      </div>
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+                      <p class><b>BATES' GUIDE TO PHYSICAL EXAMINATION AND HISTORY TAKING</b></p>
+                      <p class="profsp"><font color="red">499.000 VNĐ</font></p>
+                  </div>
+
+                  <!--slide 1- sa1ch2-->
+                  <div class="col-sm-3 sp">
+                      <div class="sp">
+                          <!-- Button to Open the Modal -->
+                          <button type="button" class="btn btn-link" data-toggle="modal" data-target="#myModal2">
+                              <img src="medical/yk2.jpg" class="rounded"
+                                   width="100%" height="100px" style="margin-left: 0%;">
+                          </button>
+
+                          <!-- The Modal -->
+                          <div class="modal fade" id="myModal2">
+                              <div class="modal-dialog modal-lg">
+                                  <div class="modal-content">
+
+                                      <!-- Modal Header -->
+                                      <div class="modal-header">
+                                          <img src="img1\TriThuc (1).png" width="100px" height="100px" style="margin-left:10px; margin-top:5px">
+                                          <h4 class="modal-title" style="margin: 5% 1%;">GUYTON AND HALL TEXTBOOK OF MEDICAL PHYSIOLOGY (GUYTON PHYSIOLOGY) 13TH EDITION</h4>
+                                          <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                      </div>
+
+                                      <!-- Modal body -->
+                                      <div class="modal-body spp" style="background-color: none;">
+                                          <p><b>GUYTON AND HALL TEXTBOOK OF MEDICAL PHYSIOLOGY (GUYTON PHYSIOLOGY) 13TH EDITION </b></p>
+                                          <p><font color="red">299.000 VNĐ</font></p>
+                                          <div class="row">
+                                              <div class="col-sm-5">
+                                                  <img src="medical/yk2.jpg" class="rounded" width="100%" height="50%">
+                                              </div>
+                                              <div class="col-sm-6">
+                                                  <p><b>BOOK OVERVIEW:</b></p>
+                                                  <p>The 13th edition of <b>Guyton and Hall Textbook of Medical Physiology</b> continues this bestselling title's long tradition as <b>the world’s foremost medical physiology textbook</b>. Unlike other textbooks on this topic, this clear and comprehensive guide has a consistent, single-author voice and focuses on the content most relevant to clinical and pre-clinical students. The detailed but lucid text is complemented by <b>didactic illustrations</b> that summarize key concepts in physiology and pathophysiology.</p>
+                                                  <p>Larger font size emphasizes core information around how the body must maintain homeostasis in order to remain healthy, while supporting information and examples are detailed in smaller font and highlighted in pale blue.</p>
+                                                  <p><b>Summary figures and tables </b>help quickly convey key processes covered in the text.</p>
+                                                  <p>Bold full-color drawings and diagrams</p>
+                                                  <p><b>Short, easy-to-read, masterfully edited chapters</b> and a user-friendly full-color design.</p>
+                                                  <p><b>Brand-new quick-reference chart</b> of normal lab values on the inside back cover.</p>
+                                                  <p>Increased number of <b>figures, clinical correlations, and cellular and molecular mechanisms</b> important for clinical medicine.</p>
+                                                  <p><b>Student Consult eBook version included with purchase</b>. This <b>enhanced eBook experience</b> includes the complete text, interactive figures, references, plus 50 self-assessment questions and more than a dozen animations. </p>
+
+                                                  <p><b>Tác giả</b>: John E.Hall</p>
+                                              </div>
+                                          </div>
+                                      </div>
+
+                                      <!-- Modal footer -->
+                                      <div class="modal-footer">
+                                          <button type="button" class="btn btn-danger" data-dismiss="modal">Mua ngay</button>
+                                          <button type="button" class="btn btn-secondary" data-dismiss="modal">Thêm vào giỏ hàng<i class="fas fa-shopping-cart"></i></button>
+                                      </div>
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+                      <p class><b>QUICK MEDICAL TERMINOLOGY: A SELF-TEACHING GUIDE 5th Edition</b></p>
+                      <p class="profsp"><font color="red">299.000 VNĐ</font></p>
+                  </div>
+                  <!--slide 1- sa1ch3-->
+                  <div class="col-sm-3 sp">
+                      <div class="sp">
+                          <!-- Button to Open the Modal -->
+                          <button type="button" class="btn btn-link" data-toggle="modal" data-target="#myModal3">
+                              <img src="medical/yk3.jpg" class="rounded"
+                                   width="100%" height="100px" style="margin-left: 0%;">
+                          </button>
+
+                          <!-- The Modal -->
+                          <div class="modal fade" id="myModal3">
+                              <div class="modal-dialog modal-lg">
+                                  <div class="modal-content">
+
+                                      <!-- Modal Header -->
+                                      <div class="modal-header">
+                                          <img src="img1\TriThuc (1).png" width="100px" height="100px" style="margin-left:10px; margin-top:5px">
+                                          <h4 class="modal-title" style="margin: 5% 1%;">QUICK MEDICAL TERMINOLOGY: A SELF-TEACHING GUIDE 5th Edition</h4>
+                                          <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                      </div>
+
+                                      <!-- Modal body -->
+                                      <div class="modal-body spp" style="background-color: none;">
+                                          <p><b>QUICK MEDICAL TERMINOLOGY: A SELF-TEACHING GUIDE 5th Edition </b></p>
+                                          <p><font color="red">399.000 VNĐ</font></p>
+                                          <div class="row">
+                                              <div class="col-sm-5">
+                                                  <img src="medical/yk3.jpg" class="rounded" width="100%" height="70%">
+                                              </div>
+                                              <div class="col-sm-6">
+                                                  <p><b>BOOK OVERVIEW:</b></p>
+                                                  <p><b>Quick Medical Terminology</b> has long been relied on by students and medical professionals looking to build or update their medical vocabulary. This new fifth edition provides the tools and information needed to understand the simple logic behind hundreds of seemingly incomprehensible words, along with fresh exercises and current examples.</p>
+                                                  <p>Features new review exercises and self-tests, more than 250 new terms, medical measurements, and up-to-date examples.</p>
+                                                  <p>Provides the tools necessary for building and sustaining a large working repertoire of medical terms.</p>
+                                                  <p>The reference of choice for health practitioners and others who need to expand, improve, or refresh their medical vocabularies.</p>
+                                                  <p>Filled with essential information presented in a clear and easy-to-follow format, Quick Medical Terminology is an invaluable learning tool and reference source.</p>
+                                                  <p><b>Tác giả</b>: Genevieve Love Smith</p>
+                                              </div>
+                                          </div>
+                                      </div>
+
+                                      <!-- Modal footer -->
+                                      <div class="modal-footer">
+                                          <button type="button" class="btn btn-danger" data-dismiss="modal">Mua ngay</button>
+                                          <button type="button" class="btn btn-secondary" data-dismiss="modal">Thêm vào giỏ hàng<i class="fas fa-shopping-cart"></i></button>
+                                      </div>
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+                      <p class><b>QUICK MEDICAL TERMINOLOGY: A SELF-TEACHING GUIDE 5th Edition</b></p>
+                      <p class="profsp"><font color="red">399.000 VNĐ</font></p>
+                  </div>
+                  <!--slide 1- sa1ch4-->
+                  <div class="col-sm-3 sp">
+                      <div class="sp">
+                          <!-- Button to Open the Modal -->
+                          <button type="button" class="btn btn-link" data-toggle="modal" data-target="#myModal4">
+                              <img src="medical/yk4.jpg" class="rounded"
+                                   width="100%" height="100px" style="margin-left: 0%;">
+                          </button>
+
+                          <!-- The Modal -->
+                          <div class="modal fade" id="myModal4">
+                              <div class="modal-dialog modal-lg">
+                                  <div class="modal-content">
+
+                                      <!-- Modal Header -->
+                                      <div class="modal-header">
+                                          <img src="img1\TriThuc (1).png" width="100px" height="100px" style="margin-left:10px; margin-top:5px">
+                                          <h4 class="modal-title" style="margin: 5% 1%;">
+                                              GRAY'S ANATOMY FOR STUDENTS: WITH STUDENT CONSULT ONLINE ACCESS 4th Edition
+                                          </h4>
+                                          <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                      </div>
+
+                                      <!-- Modal body -->
+                                      <div class="modal-body spp" style="background-color: none;">
+                                          <p>
+                                              <b>
+                                                  GRAY'S ANATOMY FOR STUDENTS: WITH STUDENT CONSULT ONLINE ACCESS 4th Edition
+                                              </b>
+                                          </p>
+                                          <p><font color="red">599.000 VNĐ</font></p>
+                                          <div class="row">
+                                              <div class="col-sm-5">
+                                                  <img src="medical/yk4.jpg" class="rounded" width="100%" height="50%">
+                                              </div>
+                                              <div class="col-sm-6">
+                                                  <p><b>BOOK OVERVIEW:</b></p>
+                                                  <p><b>2015 BMA Medical Book Awards Highly Commended in Basic and Clinical Sciences Category!</b> Anatomy texts just don’t get any better than <b>Gray's Anatomy for Students</b>! Now in its 4th edition, this completely revised medical textbook continues its <b>focus on just the core information you need for your anatomy courses</b>, presenting everything in an easy-to-read, visually appealing format that facilitates study.</p>
+                                                  <p><b>Obtain reliable, accessible coverage</b> of everything you will learn in your contemporary anatomy classes with expert knowledge from a team of authors who share a wealth of diverse teaching and clinical experience.</p>
+                                                  <p><b>Easily locate and remember specific structures</b>. More than 1,000 innovative, original illustrations by renowned illustrators Richard Tibbitts and Paul Richardson <b>capture anatomical features with unrivalled clarity</b>.</p>
+                                                  <p><b>Understand the practical applications of anatomical concepts</b> through unique coverage of surface anatomy, correlative diagnostic images, and clinical case studies.</p>
+                                                  <p><b>Expedite the review of basic concepts from each chapter</b> with Conceptual Overviews.</p>
+                                                  <p><b>Stay current and engaged in your anatomy courses</b> with many new "In the Clinic" boxes, which offer access to <b>in-depth clinical discussions</b> related to specific diseases or procedures.</p>
+                                                  <p><b>Source your review material quickly and easily</b> thanks to a list of additional relevant study aids at the beginning of each chapter.</p>
+                                                  <p><b>Improve your comprehension of cranial nerves</b> with help from a brand-new visual map summarizing cranial nerve distribution and function.</p>
+                                                  <p><b>Access the entire contents online at Student Consult</b>, where you can also take advantage of an online anatomy and embryology self-study course, medical clinical cases, physical therapy clinical cases, self-assessment questions, and more.</p>
+                                                  <p><b>Tác giả</b>:  Richard Drake, Adam W. M. Mitchell, Wayne Vogl</p>
+                                              </div>
+                                          </div>
+                                      </div>
+
+                                      <!-- Modal footer -->
+                                      <div class="modal-footer">
+                                          <button type="button" class="btn btn-danger" data-dismiss="modal">Mua ngay</button>
+                                          <button type="button" class="btn btn-secondary" data-dismiss="modal">Thêm vào giỏ hàng<i class="fas fa-shopping-cart"></i></button>
+                                      </div>
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+                      <p class><b>GRAY'S ANATOMY FOR STUDENTS: WITH STUDENT CONSULT ONLINE ACCESS 4th Edition</b></p>
+                      <p class="profsp"><font color="red">599.000 VNĐ</font></p>
+                  </div>
+				   </div>
+			   </div>
+		  
+	<nav aria-label="Page navigation example">
+   <ul class="pagination">
+      <li class="page-item">
+         <a class="page-link" href="#" aria-label="Previous">
+         <span aria-hidden="true">&laquo;</span>
+         <span class="sr-only">Previous</span>
+         </a>
+      </li>
+      <li class="page-item ">
+         <a class="page-link" href="tieuthuyet.html">1</a>
+      </li>
+      <li class="page-item active" >
+         <a class="page-link" href="#">2</a>
+      </li>
+      <li class="page-item">
+         <a class="page-link" href="#">3</a>
+      </li>
+      <li class="page-item">
+         <a class="page-link" href="#" aria-label="Next">
+         <span aria-hidden="true">&raquo;</span>
+         <span class="sr-only">Next</span>
+         </a>
+      </li>
+   </ul>
+</nav>
+		   </div>
+		 </div>
+	
+	 <div id="lienhe"></div>
+                                <div class="footer">
+                                    <a class="btn-top" href="javascript:void(0);" title="Top" style="display: inline;"></a>
+                                </div>
+                                <div style="text-align: center;margin-top: 100px;">
+                                    <h3>LIÊN HỆ VỚI CHÚNG TÔI</h3>
+                                    <p style="color: #797979;margin-top: 15px;margin-bottom: 30px;">Nếu bạn có những thắc mắc gì, thì đừng ngần ngại hãy liên hệ với chúng tôi!Chúng tôi luôn 24/7 sẵn sàng và phục vụ Bạn...</p>
+                                </div>
+                                <div class="row" style="color: #797979;">
+                                    <div class=" col-sm-3 footer ">
+                                        <p style="margin-top: 20px; "><strong>Địa chỉ cửa hàng</strong></p>
+                                        <p>273 An Dương Vương ,phường 10 , quận 5,TPHCM</p>
+                                        <p>0906751622</p>
+                                        <p>nhasachtrithuc@gmail.com</p>
+                                    </div>
+
+                                    <div class="col-sm-3 footer ">
+                                        <p style="margin-top: 20px; "><strong>Giờ làm việc</strong></p>
+                                        <p>Ngày thường: 7:00AM đến 10:00PM</p>
+
+                                    </div>
+
+                                    <div class="col-sm-3 footer ">
+                                        <p style="margin-top: 20px; "><strong>Hỗ Trợ</strong></p>
+                                        <p>Hãy để lại email, chúng tôi sẽ tư vấn cho bạn.</p>
+                                        <p><input type="text " placeholder="email@example.com " name="email " size="30 " style="border: 0px;border-bottom: 1px solid #636363; "></p>
+                                        <p><input type="submit" value="Gửi Ngay!!! " style="color: white; background-color: #636363;border: 0px; "></p>
+                                    </div>
+
+                                    <div class="col-sm-3 footer">
+                                        <p style="margin-top: 20px; margin-left: 0px;"><strong>Liên Hệ</strong></p>
+                                        <span>
+                                            <i class="fab fa-facebook-f fa-2x" style="padding-left: 30px;"></i>
+                                            <i class="fab fa-twitter fa-2x"></i>
+                                            <i class="fab fa-youtube fa-2x"></i>
+                                            <i class="fab fa-instagram fa-2x"></i>
+                                            <i class="fab fa-pinterest fa-2x"></i>
+                                            <i class="fab fa-flickr fa-2x"></i>
+                                        </span>
+                                    </div>
+	</div>
+	 <button type="button" onclick="topFunction()" id="myBtn" title="Go to top"><i class="fas fa-arrow-circle-up fa-3x" style="color: #66ccff" ;></i></button>
+<script>//Get the button:
+var mybutton = document.getElementById("myBtn");
+
+// When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    mybutton.style.display = "block";
+  } else {
+    mybutton.style.display = "none";
+  }
+}
+
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+  document.body.scrollTop = 0; // For Safari
+  document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+}
+	</script>
+				  <script src="jquery-3.4.1.min.js"></script>
+    <script src="popper.min.js"></script>
+    <script src="bootstrap/js/bootstrap.min.js"></script>
+				  </body>
+			  </html>

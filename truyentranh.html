@@ -1,0 +1,937 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+	  <link rel="icon" type="image/png" href="img1/favicon.png">
+    <script language="javascript" src="index.js"></script>
+    <link rel="stylesheet" href="for1821.css" type="text/css">
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="fontawesome/css/all.css">
+    
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+        body {
+            font-family: "Myriadpro", serif;
+        }
+    </style>
+    <title>Nhà sách Tri Thức |&reg</title>
+</head>
+<body>
+    <div>
+      <div class="row banner-top" style="background-color: #eeeeee;">
+            <div class="col-sm-9 headerr">
+                <h4 style="display: block;font-family: myriadpro"><strong style="margin-left:55%;">Miễn phí giao hàng</strong> Hóa đơn trên 150 000 VND</h4>
+            </div>
+            <div class="col-sm-3 headerr">
+                <span style="float:right;">
+                    <i class="fab fa-facebook-f fa-2x" title="facebook"></i>
+                    <i class="fab fa-twitter fa-2x" title="twitter"></i>
+                    <i class="fab fa-youtube fa-2x" title="youtobe"></i>
+                    <i class="fab fa-instagram fa-2x" title="instagram"></i>
+                    <i class="fab fa-pinterest fa-2x" title="pinterest"></i>
+                    <i class="fab fa-flickr fa-2x" title="flickr"></i>
+                </span>
+            </div>
+        </div>
+                 <!--Đây là Line Giới thiệu-->
+      <div class="container">
+   <div id="gioithieu"></div>
+            <div class="row">
+                <div class="col-sm-4 chuthich">
+                    <a href="index.html"><img src="img1/logo1.png" style="height: 100px;width: auto;" /></a>
+                </div>
+                <div class="col-sm-5">
+                    <div class="search">
+               <input type="search" name="search" placeholder="Tìm kiếm...">
+                <a href="kinhte.html"><button type="button" ><i class="fa fa-search"></i></button></a>
+                
+                 </div>
+                </div>
+                <div class="col-sm-3 cart">
+                    <a href="giohang.html" style="color: #66ccff">
+                        <i class="fas fa-shopping-cart fa-2x"></i></a>
+                </div>
+            </div>
+            <!----------------------------------------------------------------------------------------------------------------------------------------------------------------->
+            <!--Day la Menu-->
+
+            <div style="display:flex; padding:8px; align-items: center; position: sticky; top:0; background: #66ccff; z-index: 1000;height: 40px;">
+                <div style="min-width: 250px; display: flex;justify-content: center; align-items: center;">
+                    <nav class="menuheader">
+                        <ul>
+                            <li><a href="index.html">TRANG CHỦ <i class="fas fa-home"></i></a></li>
+                            <li>
+                                <a href="#" data-toggle="dropdown">SÁCH TIẾNG VIỆT<i class="fas fa-caret-down"></i></a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="kinhte.html">Kinh tế</a></li>
+                                    <li><a href="giaoduc.html">Giáo dục</a></li>
+                                    <li><a href="vanhoc.html">Văn học</a></li>
+                                    <li><a href="thieunhi.html">Thiếu Nhi</a></li>
+                                    <li><a href="truyentranh.html">Truyện tranh</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="tieuthuyet.html">SÁCH NƯỚC NGOÀI</a>
+                                
+                            </li>
+                            <li><a href="#products">SÁCH BÁN CHẠY</a></li>
+                            <li><a href="map.html">LIÊN HỆ <i class="fas fa-phone"></i></a></li>
+                            <li>
+
+                                <a href="#" data-toggle="modal" data-target="#sign_in">ĐĂNG NHẬP</a>
+
+                            </li>
+                          
+                        </ul>
+                        <div class="icon">
+                            <i class="fas fa-bars"></i>
+                        </div>
+                    </nav>
+                </div>
+
+
+
+
+            </div>
+    
+
+        <hr style="margin-bottom: -4px;">
+        <!--sign in-->
+        <div class="modal fade" id="sign_in">
+            <div class="modal-dialog">
+                <div class="modal-content p-3">
+
+                    <!--modal header-->
+                    <div class="modal-header">
+                        <h2 class="modal-title sign_header">Đăng Nhập</h2>
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    </div>
+
+                    <!--modal body-->
+                    <div class="modal-body">
+                        <form action="">
+                            <!--email-->
+                            <div class="form-group">
+                                <label id="sign" for="email"><i class="fas fa-user-circle"></i>Tên tài khoản:</label>
+                                <input type="email" name="email" class="form-control" id="email" placeholder="Email:">
+                            </div><!--end form group-->
+
+                            <div class="form-group">
+                                <label for="pwd"><i class="fas fa-lock"></i>Mật khẩu</label>
+                                <input type="password" name="pwd" class="form-control" id="pwd" placeholder="Mật khẩu của bạn">
+                            </div><!--end form group-->
+                            <!--remember me-->
+                            <div class="form-group form-check">
+                                <label class="form-check-label">
+                                    <input type="checkbox" name="remember" class="form-check-input">Ghi nhớ tài khoản
+                                </label>
+                            </div><!--end form group-->
+                            <!--button-->
+                            <button type="submit" class="btn btn_buy" style="background-color:#66ccff;">Đăng nhập</button>
+                            <a href="#" class="font_16 text-secondary"> &nbsp Bạn quên mật khẩu?</a>
+                            <div class="row">
+                                <div class="col-6">
+                                    <button type="submit" class="btn btn-outline-primary border_30 mt-4"><i class="fab fa-facebook-f"></i> &nbsp;Đăng nhập bằng Facebook</button>
+                                </div>
+                                <div class="col-6">
+                                    <button type="submit" class="btn btn-outline-danger border_30 mt-4">
+                                        <i class="fab fa-google"></i>
+                                        &nbsp; Đăng nhập bằng Google
+                                    </button>
+                                </div>
+                            </div><br>
+                        </form>
+                    </div><!--end modal body-->
+
+                    <div class="modal-footer">
+                        <div class="d-flex justify-content-begin">
+                            <div>
+                                <p class="font_16">Bạn không có tài khoản?</p>
+                            </div>&nbsp; &nbsp;
+                            <div>
+                                <a href="#" class="btn btn_view" data-dismiss="modal" data-toggle="modal" data-target="#sign_up" style="background-color:#66ccff;">Đăng Ký Ngay</a>
+                            </div>
+                        </div>
+                    </div>
+                </div><!--end modal content-->
+            </div><!--end modal dialog-->
+        </div><!---end modal-->
+
+        <div class="modal fade" id="sign_up">
+            <div class="modal-dialog">
+                <div class="modal-content p-3">
+                    <!--modal header-->
+                    <div class="modal-header">
+                        <h2>Đăng Ký</h2>
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    </div>
+
+                    <!--modal body-->
+
+                    <div class="modal-body">
+                        <p class="font_16">Bạn hãy điền vào form bên dưới</p>
+                        <form action="">
+                            <!--name-->
+
+
+                            <div class="form-group">
+                                <label for="hoten"><i class="fas fa-user"></i>Tên</label>
+                                <input type="name" name="hoten" class="form-control" id="hoten" placeholder="Tên của bạn">
+                            </div><!--end form group-->
+
+
+                            <div class="form-group">
+                                <label for="email1"><i class="fas fa-user-circle"></i>Tên tài khoản</label>
+                                <input type="email" name="email1" class="form-control" id="email1" placeholder="Tên tài khoản">
+                            </div><!--end form group-->
+
+                            <div class="form-group">
+                                <label for="pwd1"><i class="fas fa-lock"></i>Mật khẩu</label>
+                                <input type="password" name="pwd1" class="form-control" id="pwd1" placeholder="Mật khẩu">
+                            </div><!--end form group-->
+
+                            <div class="form-group">
+                                <label for="pwd2">Nhập lại mật khẩu</label>
+                                <input type="password" name="pwd2" class="form-control" id="pwd2" placeholder="Nhập lại mật khẩu">
+                            </div>
+                            <!--button-->
+                            <button type="submit" class="btn btn_buy" style="background-color:#66ccff;">Đăng ký</button>
+                        </form>
+                    </div><!--end modal body-->
+                    <div class="modal-footer">
+                        <a href="#" class="btn btn_view" data-dismiss="modal" data-toggle="modal" data-target="#sign_in" style="background-color:yellow;">Quay lại Đăng nhập</a>
+                    </div>
+                </div><!--end modal content-->
+            </div><!--end modal dialog-->
+        </div><!--end modal-->
+		    <div>
+              <h3 style="text-align: center;margin: 35px;font-family: 'myriadpro';"><b>TRUYỆN TRANH</b></h3>
+		  </div>
+        <!--San pham 1-->
+        <div class=" main1">
+            <div class="row">
+                <!--san pham line 1-->
+                <!--san pham 1-->
+                <div class="col-sm-3 sp">
+                    <div class="sp">
+                        <!-- Button to Open the Modal -->
+                        <button type="button" class="btn btn-link" data-toggle="modal" data-target="#myModal1">
+                            <img src="img1\sp1.jpg" class="rounded"
+                                 width="100%" height="100%" style="margin-left: 0%;">
+                        </button>
+
+                        <!-- The Modal -->
+                        <div class="modal fade" id="myModal1">
+                            <div class="modal-dialog modal-lg">
+                                <div class="modal-content">
+
+                                    <!-- Modal Header -->
+                                    <div class="modal-header">
+                                        <img src="img1\TriThuc (1).png" width="100px" height="100px" style="margin-left:10px; margin-top:5px">
+                                        <h4 class="modal-title" style="margin: 5% 1%;">FUJIKO F FUJIO ĐẠI TUYỂN TẬP - DORAEMON TRUYỆN NGẮN TẬP 16</h4>
+                                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                    </div>
+
+                                    <!-- Modal body -->
+                                    <div class="modal-body spp" style="background-color: none;">
+                                        <p><b>FUJIKO F FUJIO ĐẠI TUYỂN TẬP - DORAEMON TRUYỆN NGẮN TẬP 16</b></p>
+                                        <p><font color="red">45.000 VNĐ</font></p>
+                                        <div class="row">
+                                            <div class="col-sm-5">
+                                                <img src="img1\sp1.jpg" class="rounded" width="100%" height="50%">
+                                            </div>
+                                            <div class="col-sm-6">
+
+                                                <p><b><i>Bộ sách là phiên bản tập hợp đầy đủ nhất các truyện ngắn Doraemon</i></b></p>
+                                                <p> Trong đó đã bao gồm những truyện ngắn quen thuộc trong bộ 45 tập cùng những sáng tác chưa từng ra mắt của tác giả Fujiko F Fujio được đăng rải rác trên các tạp chí dành cho lứa tuổi Nhi Đồng tại Nhật Bản.</p>
+                                                <p><b>Tác giả - họa sĩ FUJIKO F FUJIO</b></p>
+                                                <p>Tên thật là Fujimoto Hiroshi. Ông sinh ngày 1 tháng 12 năm 1933 tại tỉnh Toyama, Nhật Bản. </p>
+                                                <p>Năm 1951 ông cho ra đời tác phẩm đầu tay “Thiên thần Tama” (đăng dài kì trên báo học sinh tiểu học hằng ngày). Sau đó, ông công bố các tác phẩm sáng tác cùng Abiko Motoo với bút danh “FUJIKO FUJIO” </p>
+                                                <p>Năm 1987, ông ngừng hợp tác với Abiko, lấy bút danh là: FUJIKO F FUJIO và bắt đầu chuyển sang sáng tác truyện tranh hướng tới đối tượng nhi đồng.</p>
+                                                <p>Những tác phẩm tiêu biểu nhất của ông phải kể đến là “Doraemon”, “Con ma Q-taro (chung bút danh)”, “Perman-Cậu bé siêu nhân”, “Cuốn từ điển kì bí”, “Siêu nhân Mami”... </p>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <!-- Modal footer -->
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-danger" data-dismiss="modal">Mua ngay</button>
+                                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Thêm vào giỏ hàng<i class="fas fa-shopping-cart"></i></button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <p><b>FUJIKO F FUJIO ĐẠI TUYỂN TẬP - DORAEMON TRUYỆN NGẮN TẬP 16</b></p>
+                    <p id="profsp"><font color="red">45.000 VNĐ</font></p>
+                </div>
+                <!--San pham 2-->
+        
+                <div class="col-sm-3 sp">
+                    <div class="sp">
+                        <!-- Button to Open the Modal -->
+                        <button type="button" class="btn btn-link" data-toggle="modal" data-target="#myModal2">
+                            <img src="truyentranh/ttr1.jpg" class="rounded"
+                                 width="100%" height="100%" style="margin-left: 0%;">
+                        </button>
+
+                        <!-- The Modal -->
+                        <div class="modal fade" id="myModal2">
+                            <div class="modal-dialog modal-lg">
+                                <div class="modal-content">
+
+                                    <!-- Modal Header -->
+                                    <div class="modal-header">
+                                        <img src="img1\TriThuc (1).png" width="100px" height="100px" style="margin-left:10px; margin-top:5px">
+                                        <h4 class="modal-title" style="margin: 5% 1%;">COMBO SHIN CẬU BÉ BÚT CHÌ - PHIÊN BẢN MÀU (52 TẬP )</h4>
+                                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                    </div>
+
+                                    <!-- Modal body -->
+                                    <div class="modal-body spp" style="background-color: none;">
+                                        <p><b>COMBO SHIN CẬU BÉ BÚT CHÌ - PHIÊN BẢN MÀU (52 TẬP )</b></p>
+                                        <p><font color="red">2.080.000 VNĐ</font></p>
+                                        <div class="row">
+                                            <div class="col-sm-5">
+                                                <img src="truyentranh/ttr1.jpg" class="rounded" width="130%" height="100%">
+                                            </div>
+                                            <div class="col-sm-6">
+                                                <p><b>TỔNG QUAN VỀ SÁCH :</b></p>
+                                                <p> Nội dung hài hước xoay quanh cuộc sống hàng ngày của cậu bé Shin 5 tuổi.</p>
+                                                <p> Cách kể chuyện hấp dẫn, tràn ngập tiếng cười.</p>
+                                                <p>Truyện mang ý nghĩa sâu sắc với những bài học giáo dục nhẹ nhàng.</p>
+                                                <p>Tác giả: Yoshito Usui</p>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <!-- Modal footer -->
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-danger" data-dismiss="modal">Mua ngay</button>
+                                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Thêm vào giỏ hàng<i class="fas fa-shopping-cart"></i></button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <p><b>COMBO SHIN CẬU BÉ BÚT CHÌ - PHIÊN BẢN MÀU (52 TẬP )</b></p>
+                    <p class="profsp"><font color="red">2.080.000 VNĐ</font></p>
+                </div>
+     <!--San pham 3-->
+       
+                <div class="col-sm-3 sp">
+                    <div class="sp">
+                        <!-- Button to Open the Modal -->
+                        <button type="button" class="btn btn-link" data-toggle="modal" data-target="#myModal3">
+                            <img src="truyentranh/ttr2.jpg" class="rounded"
+                                 width="100%" height="100%" style="margin-left: 0%;">
+                        </button>
+
+                        <!-- The Modal -->
+                        <div class="modal fade" id="myModal3">
+                            <div class="modal-dialog modal-lg">
+                                <div class="modal-content">
+
+                                    <!-- Modal Header -->
+                                    <div class="modal-header">
+                                        <img src="img1\TriThuc (1).png" width="100px" height="100px" style="margin-left:10px; margin-top:5px">
+                                        <h4 class="modal-title" style="margin: 5% 1%;">COMBO ĐỘI QUÂN DORAEMON (6 TẬP) - TÁI BẢN 2019</h4>
+                                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                    </div>
+
+                                    <!-- Modal body -->
+                                    <div class="modal-body spp" style="background-color: none;">
+                                        <p><b>COMBO ĐỘI QUÂN DORAEMON (6 TẬP) - TÁI BẢN 2019</b></p>
+                                        <p><font color="red">108.000 VNĐ</font></p>
+                                        <div class="row">
+                                            <div class="col-sm-5">
+                                                <img src="truyentranh/ttr2.jpg" class="rounded" width="115%" height="100%">
+                                            </div>
+                                            <div class="col-sm-6">
+                                                <p><b>TỔNG QUAN VỀ SÁCH :</b></p>
+                                                <p> Mỗi tập truyện là cuộc phiêu lưu đầy thử thách, thú vị của Doremon, Nobita và các bạn. Qua mỗi câu chuyện, người đọc đều cảm thấy trách nhiệm của những nhân vật nhỏ tuổi với trái đất, với môi trường, với thiên nhiên, với việc bảo tồn động vật. Xuyên suốt các tập truyện là sợi chỉ đỏ: Cái thiện sẽ thắng cái ác, sự cố gắng sẽ được đền đáp xứng đáng.</p>
+                                                <p> Cuốn sách sẽ đưa chúng ta bước vào thế giới hồn nhiên, trong sáng đầy ắp tiếng cười với một kho bảo bối kì diệu - những bảo bối biến ước mơ của chúng ta thành sự thật. Nhưng trên tất cả Doraemon là hiện thân của tình bạn cao đẹp, của niềm khát khao vươn tới những tầm cao.</p>
+                                                <p>Tác giả:Tanaka Michiaki & Fujiko F Fujio & Original Story</p>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <!-- Modal footer -->
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-danger" data-dismiss="modal">Mua ngay</button>
+                                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Thêm vào giỏ hàng<i class="fas fa-shopping-cart"></i></button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <p><b>COMBO ĐỘI QUÂN DORAEMON (6 TẬP) - TÁI BẢN 2019</b></p>
+                    <p class="profsp"><font color="red">108.000 VNĐ</font></p>
+                </div>
+
+            
+     <!--San pham 4-->
+  
+        
+                <div class="col-sm-3 sp">
+                    <div class="sp">
+                        <!-- Button to Open the Modal -->
+                        <button type="button" class="btn btn-link" data-toggle="modal" data-target="#myModal4">
+                            <img src="truyentranh/ttr3.jpg" class="rounded"
+                                 width="100%" height="100%" style="margin-left: 0%;">
+                        </button>
+
+                        <!-- The Modal -->
+                        <div class="modal fade" id="myModal4">
+                            <div class="modal-dialog modal-lg">
+                                <div class="modal-content">
+
+                                    <!-- Modal Header -->
+                                    <div class="modal-header">
+                                        <img src="img1\TriThuc (1).png" width="100px" height="100px" style="margin-left:10px; margin-top:5px">
+                                        <h4 class="modal-title" style="margin: 5% 1%;">COMBO TÌNH BẠN TRONG SÁNG (5 CUỐN )</h4>
+                                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                    </div>
+
+                                    <!-- Modal body -->
+                                    <div class="modal-body spp" style="background-color: none;">
+                                        <p><b>COMBO TÌNH BẠN TRONG SÁNG (5 CUỐN )</b></p>
+                                        <p><font color="red">124.600  VNĐ</font></p>
+                                        <div class="row">
+                                            <div class="col-sm-5">
+                                                <img src="truyentranh/ttr3.jpg" class="rounded" width="110%" height="80%">
+                                            </div>
+                                            <div class="col-sm-6">
+                                                <p><b>TỔNG QUAN VỀ SÁCH :</b></p>
+                                                <p> Tôi tên là Daniela nhưng mọi người thường gọi tôi là Dani.</p>
+                                                <p> Tôi có mái tóc vàng, phớt vàng. Phơn phớt vàng.</p>
+                                                <p>Đôi mắt tôi xanh thẳm.Bữa tối yêu thích của tôi là mì ống sốt cà chua, cuộc sống của tôi rất vui vẻ và hạnh phúc.</p>
+                                                <p>Thay vì đếm cừu, cô bé Dani có thói quen đếm những kí ức hạnh phúc để chìm vào giấc ngủ. Dani vô cùng háo hức chờ đợi ngày đầu tiên đến lớp. Trường học mới, thầy cô và bạn bè mới, liệu Dani có thể xoay xở êm đẹp? Cuốn truyện mang tên “Cuộc sống hạnh phúc của tôi” mà em viết mỗi sáng có được lấp đầy bằng những kỉ niệm vui tươi?</p>
+                                                <p>Tác giả Rose Lagercrantz, sinh năm 1947 là nhà văn Thụy Điển. Các sáng tác dành cho thiếu nhi của nhà văn Rose Lagercrantz đạt nhiều giải thưởng danh giá của Thụy Điển, được dịch sang nhiều thứ tiếng và được độc giả nhí khắp thế giới yêu thích.</p>
+                                                <p>Nhà văn - họa sĩ Eva Eriksson vẽ minh họa cho nhiều cuốn sách thiếu nhi, là thành viên chủ chốt điều hành Học viện Sách thiếu nhi Thụy Điển từ năm 2003 đến năm 2012.</p>
+                                               <p>Tác giả:Rose Lagercrantz, Eva Eriksson</p>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <!-- Modal footer -->
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-danger" data-dismiss="modal">Mua ngay</button>
+                                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Thêm vào giỏ hàng<i class="fas fa-shopping-cart"></i></button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <p><b>COMBO TÌNH BẠN TRONG SÁNG (5 CUỐN )</b></p>
+                    <p class="profsp"><font color="red">124.600  VNĐ</font></p>
+                </div>
+            
+<!--san pham 5-->
+                <div class="col-sm-3 sp">
+                    <div class="sp">
+                        <!-- Button to Open the Modal -->
+                        <button type="button" class="btn btn-link" data-toggle="modal" data-target="#myModal5">
+                            <img src="truyentranh/ttr4.jpg" class="rounded"
+                                 width="100%" height="100%" style="margin-left: 0%;">
+                        </button>
+
+                        <!-- The Modal -->
+                        <div class="modal fade" id="myModal5">
+                            <div class="modal-dialog modal-lg">
+                                <div class="modal-content">
+
+                                    <!-- Modal Header -->
+                                    <div class="modal-header">
+                                        <img src="img1\TriThuc (1).png" width="100px" height="100px" style="margin-left:10px; margin-top:5px">
+                                        <h4 class="modal-title" style="margin: 5% 1%;">COMBO THÁM TỬ LỪNG DANH CONAN - TUYỂN TẬP FAN BÌNH CHỌN (2 TẬP)</h4>
+                                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                    </div>
+
+                                    <!-- Modal body -->
+                                    <div class="modal-body spp" style="background-color: none;">
+                                        <p><b>COMBO THÁM TỬ LỪNG DANH CONAN - TUYỂN TẬP FAN BÌNH CHỌN (2 TẬP)</b></p>
+                                        <p><font color="red">70.000VNĐ</font></p>
+                                        <div class="row">
+                                            <div class="col-sm-5">
+                                                <img src="truyentranh/ttr4.jpg" class="rounded" width="100%" height="100%">
+                                            </div>
+                                            <div class="col-sm-6">
+                                                <p><b>TỔNG QUAN VỀ SÁCH :</b></p>
+                                                <p>Tuyển tập những vụ án trong "Thám tử lừng danh Conan", được các độc giả bình chọn nhiều nhất như: "Vụ án 12 triệu con tim chấn động Sở cảnh sát", "Sự hồi phục liều mạng" với vở kịch trong Lễ hội Văn hóa - Kị sĩ đeo Mặt nạ, "Trận giáp lá cà với Tổ chức Áo Đen, hai vụ án trong đêm trăng tròn", nhữngbí ẩn về Jodie và Akai xuất hiện trong truyện suốt một thời gian dài đến đây đã được làm sáng tỏ, "Vụ án Kudo Shinichi ở New York" sẽ làm hài lòng những ai yêu mến "Viên đạn bạc" - chàng thám tử Conan/Shinichi!</p>
+                                                <p>Tác giả: Aoyama Gosho</p>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <!-- Modal footer -->
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-danger" data-dismiss="modal">Mua ngay</button>
+                                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Thêm vào giỏ hàng<i class="fas fa-shopping-cart"></i></button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <p><b>COMBO THÁM TỬ LỪNG DANH CONAN - TUYỂN TẬP FAN BÌNH CHỌN (2 TẬP)</b></p>
+                    <p class="profsp"><font color="red">70.000VNĐ</font></p>
+            </div>
+
+            <!--san pham 6-->
+                <div class="col-sm-3 sp">
+                    <div class="sp">
+                        <!-- Button to Open the Modal -->
+                        <button type="button" class="btn btn-link" data-toggle="modal" data-target="#myModal6">
+                            <img src="truyentranh/ttr5.jpg" class="rounded"
+                                 width="100%" height="100%" style="margin-left: 0%;">
+                        </button>
+
+                        <!-- The Modal -->
+                        <div class="modal fade" id="myModal6">
+                            <div class="modal-dialog modal-lg">
+                                <div class="modal-content">
+
+                                    <!-- Modal Header -->
+                                    <div class="modal-header">
+                                        <img src="img1\TriThuc (1).png" width="100px" height="100px" style="margin-left:10px; margin-top:5px">
+                                        <h4 class="modal-title" style="margin: 5% 1%;">COMBO TRUY TÌM POKÉMON (3 CUỐN)</h4>
+                                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                    </div>
+
+                                    <!-- Modal body -->
+                                    <div class="modal-body spp" style="background-color: none;">
+                                        <p><b>COMBO TRUY TÌM POKÉMON (3 CUỐN)</b></p>
+                                        <p><font color="red">114.000 VNĐ</font></p>
+                                        <div class="row">
+                                            <div class="col-sm-5">
+                                                <img src="truyentranh/ttr5.jpg" class="rounded" width="115%" height="100%">
+                                            </div>
+                                            <div class="col-sm-6">
+                                                <p><b>TỔNG QUAN VỀ SÁCH :</b></p>
+                                                <p>Loạt truyện diễn ra trong một vũ trụ hư cấu. Trong thế giới này, những sinh vật sống với khả năng siêu nhiên - Pokemon. Mọi người, được gọi là Nhà huấn luyện Pokemon, huấn luyện Pokemon chiến đấu với Pokemon của các huấn luyện viên khác: ở một mức độ nhất định, các trận chiến Pokemon giống với các cuộc thi thể thao. Các trận đánh được tổ chức cho đến khi một trong hai bên không còn khả năng thi đấu. Theo quy định, nhà huấn luyện mạnh mẽ và giàu kinh nghiệm được tôn vinh. Nhân vật chính - nhà huấn luyện Pokemon Satoshi. Cùng với Pikachu là Pokemon đầu tiên của mình chu du khắp thế giới để trở thành Bậc thầy Huấn luyện Pokémon. Cùng với những người bạn của mình trong suốt hành trình đi qua các vùng khác nhau</p>
+                                                <p>Tác giả: Kazunori Aihara</p>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <!-- Modal footer -->
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-danger" data-dismiss="modal">Mua ngay</button>
+                                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Thêm vào giỏ hàng<i class="fas fa-shopping-cart"></i></button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <p><b>COMBO TRUY TÌM POKÉMON (3 CUỐN)</b></p>
+                    <p class="profsp"><font color="red">114.000 VNĐ</font></p>
+            </div>
+ <!--san pham 7-->
+                <div class="col-sm-3 sp">
+                    <div class="sp">
+                        <!-- Button to Open the Modal -->
+                        <button type="button" class="btn btn-link" data-toggle="modal" data-target="#myModal7">
+                            <img src="truyentranh/ttr6.jpg" class="rounded"
+                                 width="100%" height="100%" style="margin-left: 0%;">
+                        </button>
+
+                        <!-- The Modal -->
+                        <div class="modal fade" id="myModal7">
+                            <div class="modal-dialog modal-lg">
+                                <div class="modal-content">
+
+                                    <!-- Modal Header -->
+                                    <div class="modal-header">
+                                        <img src="img1\TriThuc (1).png" width="100px" height="100px" style="margin-left:10px; margin-top:5px">
+                                        <h4 class="modal-title" style="margin: 5% 1%;">COMBO HIỆP SĨ VINCELOT (4 CUỐN)</h4>
+                                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                    </div>
+
+                                    <!-- Modal body -->
+                                    <div class="modal-body spp" style="background-color: none;">
+                                        <p><b>COMBO HIỆP SĨ VINCELOT (4 CUỐN)</b></p>
+                                        <p><font color="red">117.600 VNĐ</font></p>
+                                        <div class="row">
+                                            <div class="col-sm-5">
+                                                <img src="truyentranh/ttr6.jpg" class="rounded" width="115%" height="100%">
+                                            </div>
+                                            <div class="col-sm-6">
+                                                <p><b>TỔNG QUAN VỀ SÁCH :</b></p>
+                                                <p>Một cơ hội tuyệt vời cho Vincelot! Lãnh chúa Hắc Ám xấu xa và con Rồng Lửa đáng sợ của lão đã phá tan hoang cả vương quốc và còn đe dọa bắt đi công chúa Paula. Không có hiệp sĩ nào đủ tự tin để đi đánh bọn xấu xa đó cả. Cuối cùng Vincelot cũng có cơ hội chứng minh cho tất cả mọi người thấy rằng cậu hoàn toàn có đủ khả năng trở thành một hiệp sĩ thực thụ. Kể cả khi thanh gươm pháp thuật Jaber hoàn toàn không có chung ý tưởng: “Ừ, nhưng mà. Chúng mình có nhất thiết phải chiến đấu không?”, Vincelot vẫn cương quyết: “Tất nhiên là có.” Nhưng họ đã không lường trước được điều gì chờ đón họ trong hang rồng. Một cuộc phiêu lưu kì thú với một hiệp sĩ dũng cảm, một thanh gươm pháp thuật, một con rồng đáng sợ.</p>
+                                                <p>Tác giả: Andrea Hebrock, Ellen Alpsten</p>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <!-- Modal footer -->
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-danger" data-dismiss="modal">Mua ngay</button>
+                                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Thêm vào giỏ hàng<i class="fas fa-shopping-cart"></i></button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <p><b>COMBO HIỆP SĨ VINCELOT (4 CUỐN)</b></p>
+                    <p class="profsp"><font color="red">117.600 VNĐ</font></p>
+                </div>
+
+ <!--san pham 8-->
+                <div class="col-sm-3 sp">
+                    <div class="sp">
+                        <!-- Button to Open the Modal -->
+                        <button type="button" class="btn btn-link" data-toggle="modal" data-target="#myModal8">
+                            <img src="truyentranh/ttr7.jpg" class="rounded"
+                                 width="100%" height="100%" style="margin-left: 0%;">
+                        </button>
+
+                        <!-- The Modal -->
+                        <div class="modal fade" id="myModal8">
+                            <div class="modal-dialog modal-lg">
+                                <div class="modal-content">
+
+                                    <!-- Modal Header -->
+                                    <div class="modal-header">
+                                        <img src="img1\TriThuc (1).png" width="100px" height="100px" style="margin-left:10px; margin-top:5px">
+                                        <h4 class="modal-title" style="margin: 5% 1%;">COMBO DRAGON BALL (TRỌN BỘ 42 TẬP)</h4>
+                                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                    </div>
+
+                                    <!-- Modal body -->
+                                    <div class="modal-body spp" style="background-color: none;">
+                                        <p><b>COMBO DRAGON BALL (TRỌN BỘ 42 TẬP)</b></p>
+                                        <p><font color="red">819.000 VNĐ</font></p>
+                                        <div class="row">
+                                            <div class="col-sm-5">
+                                                <img src="truyentranh/ttr7.jpg" class="rounded" width="115%" height="70%">
+                                            </div>
+                                            <div class="col-sm-6">
+                                                <p><b>TỔNG QUAN VỀ SÁCH :</b></p>
+                                                <p>Một cậu bé có đuôi khỉ tên là Goku được tìm thấy bởi một ông lão sống một mình trong rừng, ông lão xem đứa bé như là cháu của mình. Một ngày nọ Goku tình cờ gặp một cô gái tên là Bulma trên đường đi bắt cá về, Goku và Bulma đã cùng nhau truy tìm bảy viên ngọc rồng. Bảy viên ngọc rồng chứa đựng một bí mật có thể triệu hồi một con rồng và ban điều ước cho ai sở hữu chúng. Trên cuộc hành trình dài đi tìm bảy viên ngọc rồng, họ gặp những người bạn và những đấu sĩ huyền thoại cũng như nhiều ác quỷ. Họ trải qua những khó khăn và học hỏi các chiêu thức võ thuật đặc biệt để tham gia thi đấu trong đại hội võ thuật thế giới được tổ chức hằng năm. Ngoài các sự kiện đại hội võ thuật, Guku và các bạn còn phải đối phó với các thế lực độc ác như Đại vương Pilaf, Quân đoàn khăn đỏ của Độc nhãn tướng quân, Đại ma vương Pocollo và những đứa con của hắn. Rồi họ đi đến Namek, gặp rồng thần của Namek; chạm trán rô bô sát thủ, Fide và sau đó là Xên bọ hung, Ma bư….</p>
+                                                <p>Tâm điểm của câu chuyện Bảy viên ngọc rồng nói về triết lí của “tình bạn, sự chiến đấu và chiến thắng vẻ vang”. Trong tiếng Nhật là “Weekly Shōnen Jump”. Như một loạt các sự kiện xảy ra trong bộ truyện, lòng tốt và những hoạt động hướng về sự hòa bình của nhân loại. Các nhân vật chính tiến triển theo một quỹ đạo của sự chiến đấu, chiến thắng, chết đi và học được những bài học quan trọng trong cuộc sống để rồi tiếp tục chiến đấu. Cùng với sự tiến triển của bộ truyện, những anh hùng tiếp tục đạt được những tiến bộ võ thuật.</p>
+                                                <p>Tác giả:  Akira Toriyama</p>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <!-- Modal footer -->
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-danger" data-dismiss="modal">Mua ngay</button>
+                                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Thêm vào giỏ hàng<i class="fas fa-shopping-cart"></i></button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <p><b>COMBO DRAGON BALL (TRỌN BỘ 42 TẬP)</b></p>
+                    <p class="profsp"><font color="red">819.000 VNĐ</font></p>
+                </div>
+
+ <!--san pham 9-->
+                <div class="col-sm-3 sp">
+                    <div class="sp">
+                        <!-- Button to Open the Modal -->
+                        <button type="button" class="btn btn-link" data-toggle="modal" data-target="#myModal9">
+                            <img src="truyentranh/ttr8.jpg" class="rounded"
+                                 width="100%" height="100%" style="margin-left: 0%;">
+                        </button>
+
+                        <!-- The Modal -->
+                        <div class="modal fade" id="myModal9">
+                            <div class="modal-dialog modal-lg">
+                                <div class="modal-content">
+
+                                    <!-- Modal Header -->
+                                    <div class="modal-header">
+                                        <img src="img1\TriThuc (1).png" width="100px" height="100px" style="margin-left:10px; margin-top:5px">
+                                        <h4 class="modal-title" style="margin: 5% 1%;">COMBO DORAEMON - TRUYỆN DÀI (TRỌN BỘ 24 CUỐN) - TÁI BẢN</h4>
+                                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                    </div>
+
+                                    <!-- Modal body -->
+                                    <div class="modal-body spp" style="background-color: none;">
+                                        <p><b>COMBO DRAGON BALL (TRỌN BỘ 42 TẬP)</b></p>
+                                        <p><font color="red">432.000 VNĐ</font></p>
+                                        <div class="row">
+                                            <div class="col-sm-5">
+                                                <img src="truyentranh/ttr8.jpg" class="rounded" width="115%" height="100%">
+                                            </div>
+                                            <div class="col-sm-6">
+                                                <p><b>TỔNG QUAN VỀ SÁCH :</b></p>
+                                                <p>Nguyên mẫu Doraemon gồm 826 truyện ngắn do chính tác giả Fujiko.F.Fujio chọn lọc. Bộ truyện đã mang đến tiếng cười và gắn liền với kỷ niệm thời thơ ấu của biết bao thế hệ độc giả. Cuốn sách này tập hợp những câu chuyện vô cùng thú vị về chú mèo máy Doraemon.</p>
+                                                <p>Trong bộ truyện Doraemon, ta thấy có không ít những mẩu truyện khiến cho ta cảm động và nhận ra rằng thiên nhiên, sinh mệnh một con người hay bạn bè đều là những điều ta đáng phải trân trọng. Chính những thông điệp đầy ý nghĩa từ chú mèo máy Doraemon hiền lành, tốt bụng và các bạn đã chạm tới trái tim của các bạn độc giả một cách nhẹ nhàng, tinh tế.</p>
+                                                <p>Tác giả:  Fujiko.F.Fujio</p>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <!-- Modal footer -->
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-danger" data-dismiss="modal">Mua ngay</button>
+                                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Thêm vào giỏ hàng<i class="fas fa-shopping-cart"></i></button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <p><b>COMBO DORAEMON - TRUYỆN DÀI (TRỌN BỘ 24 CUỐN) - TÁI BẢN</b></p>
+                    <p class="profsp"><font color="red">432.000 VNĐ</font></p>
+                </div>
+                <!--san pham 10-->
+                <div class="col-sm-3 sp">
+                    <div class="sp">
+                        <!-- Button to Open the Modal -->
+                        <button type="button" class="btn btn-link" data-toggle="modal" data-target="#myModal10">
+                            <img src="truyentranh/ttr9.jpg" class="rounded"
+                                 width="100%" height="100%" style="margin-left: 0%;">
+                        </button>
+
+                        <!-- The Modal -->
+                        <div class="modal fade" id="myModal10">
+                            <div class="modal-dialog modal-lg">
+                                <div class="modal-content">
+
+                                    <!-- Modal Header -->
+                                    <div class="modal-header">
+                                        <img src="img1\TriThuc (1).png" width="100px" height="100px" style="margin-left:10px; margin-top:5px">
+                                        <h4 class="modal-title" style="margin: 5% 1%;">COMBO DORAEMON TRUYỆN NGẮN (45 TẬP) - TÁI BẢN</h4>
+                                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                    </div>
+
+                                    <!-- Modal body -->
+                                    <div class="modal-body spp" style="background-color: none;">
+                                        <p><b>COMBO DRAGON BALL (TRỌN BỘ 42 TẬP)</b></p>
+                                        <p><font color="red">810.000 VNĐ</font></p>
+                                        <div class="row">
+                                            <div class="col-sm-5">
+                                                <img src="truyentranh/ttr9.jpg" class="rounded" width="115%" height="100%">
+                                            </div>
+                                            <div class="col-sm-6">
+                                                <p><b>TỔNG QUAN VỀ SÁCH :</b></p>
+                                               <p>Doraemon là một chú mèo máy được Sewashi(Nobito),cháu ba đời của Nobita gửi về quá khứ cho ông mình để giúp đỡ Nobita tiến bộ,tức là cũng sẽ cải thiện hoàn cảnh của con cháu Nobita sau này.Còn ở hiện tại,Nobita là một cậu bé luôn thất bại ở trường học,và sau đó là thất bại trong công việc,đẩy gia đình và con cháu sau này vào cảnh nợ nần.</p>
+                                                <p>Các câu chuyện trong Doraemon thường có một công thức chung, đó là xoay quanh những rắc rối hay xảy ra với cậu bé Nobita học lớp năm, nhân vật chính thứ nhì của bộ truyện. Doraemon có một chiếc túi thần kỳ trước bụng với đủ loại bảo bối của tương lai. Cốt truyện thường gặp nhất sẽ là Nobita trở về nhà khóc lóc với những rắc rối mà cậu gặp phải ở trường hoặc với bạn bè. Sau khi bị cậu bé van nài hoặc thúc giục, Doraemon sẽ đưa ra một bảo bối giúp Nobita giải quyết những rắc rối của mình, hoặc là để trả đũa hay khoe khoang với bạn bè của cậu. Nobita sẽ lại thường đi quá xa so với dự định ban đầu của Doraemon, thậm chí với những bảo bối mới cậu còn gặp rắc rối lớn hơn trước đó. Đôi khi những người bạn của Nobita, thường là Suneo hoặc Jaian lại lấy trộm những bảo bối và sử dụng chúng không đúng mục đích. Tuy nhiên thường thì ở cuối mỗi câu chuyện, những ai sử dụng sai mục đích bảo bối sẽ phải chịu hậu quả do mình gây ra, và người đọc sẽ rút ra được bài học từ đó.</p>
+                                                <p>Tác giả:  Fujiko.F.Fujio</p>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <!-- Modal footer -->
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-danger" data-dismiss="modal">Mua ngay</button>
+                                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Thêm vào giỏ hàng<i class="fas fa-shopping-cart"></i></button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <p><b>COMBO DORAEMON TRUYỆN NGẮN (45 TẬP) - TÁI BẢN</b></p>
+                    <p class="profsp"><font color="red">810.000 VNĐ</font></p>
+                </div>
+          
+  <!--san pham 11-->
+                <div class="col-sm-3 sp">
+                    <div class="sp">
+                        <!-- Button to Open the Modal -->
+                        <button type="button" class="btn btn-link" data-toggle="modal" data-target="#myModal11">
+                            <img src="truyentranh/ttr10.jpg" class="rounded"
+                                 width="100%" height="100%" style="margin-left: 0%;">
+                        </button>
+
+                        <!-- The Modal -->
+                        <div class="modal fade" id="myModal11">
+                            <div class="modal-dialog modal-lg">
+                                <div class="modal-content">
+
+                                    <!-- Modal Header -->
+                                    <div class="modal-header">
+                                        <img src="img1\TriThuc (1).png" width="100px" height="100px" style="margin-left:10px; margin-top:5px">
+                                        <h4 class="modal-title" style="margin: 5% 1%;">COMBO DORAEMON TRUYỆN TRANH MÀU KỸ THUẬT SỐ (6 TẬP)</h4>
+                                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                    </div>
+
+                                    <!-- Modal body -->
+                                    <div class="modal-body spp" style="background-color: none;">
+                                        <p><b>COMBO DORAEMON TRUYỆN TRANH MÀU KỸ THUẬT SỐ (6 TẬP)</b></p>
+                                        <p><font color="red">150.000 VNĐ</font></p>
+                                        <div class="row">
+                                            <div class="col-sm-5">
+                                                <img src="truyentranh/ttr10.jpg" class="rounded" width="110%" height="100%">
+                                            </div>
+                                            <div class="col-sm-6">
+                                                <p><b>TỔNG QUAN VỀ SÁCH :</b></p>
+                                               <p>Ý tưởng độc đáo, ấn tượng, hài hước” là những điểm tạo nên sức hấp dẫn của bộ tranh truyện Doraemon mà các độc giả trên thế giới vô cùng yêu mến.</p>
+                                                <p>Tranh truyện Doraemon rất phong phú đa dạng. Ngoài những câu chuyện cười đến “nổ bụng”, chúng ta còn tìm thấy những câu chuyện mang nhiều màu sắc khác như viễn tưởng, phiêu lưu, mạo hiểm.</p>
+                                                <p>Nào, chúng ta cùng đọc để khám phá những màu sắc đặc biệt ấy nhé!</p>
+                                                <p>Tác giả:  Fujiko.F.Fujio</p>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <!-- Modal footer -->
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-danger" data-dismiss="modal">Mua ngay</button>
+                                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Thêm vào giỏ hàng<i class="fas fa-shopping-cart"></i></button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <p><b>COMBO DORAEMON TRUYỆN TRANH MÀU KỸ THUẬT SỐ (6 TẬP)</b></p>
+                    <p class="profsp"><font color="red">150.000 VNĐ</font></p>
+                </div>
+
+ <!--san pham 12-->
+                <div class="col-sm-3 sp">
+                    <div class="sp">
+                        <!-- Button to Open the Modal -->
+                        <button type="button" class="btn btn-link" data-toggle="modal" data-target="#myModal12">
+                            <img src="truyentranh/ttr11.jpg" class="rounded"
+                                 width="100%" height="100%" style="margin-left: 0%;">
+                        </button>
+
+                        <!-- The Modal -->
+                        <div class="modal fade" id="myModal12">
+                            <div class="modal-dialog modal-lg">
+                                <div class="modal-content">
+
+                                    <!-- Modal Header -->
+                                    <div class="modal-header">
+                                        <img src="img1\TriThuc (1).png" width="100px" height="100px" style="margin-left:10px; margin-top:5px">
+                                        <h4 class="modal-title" style="margin: 5% 1%;"> COMBO FUJIKO F FUJIO ĐẠI TUYỂN TẬP - DORAEMON TRUYỆN DÀI (6 TẬP)</h4>
+                                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                    </div>
+
+                                    <!-- Modal body -->
+                                    <div class="modal-body spp" style="background-color: none;">
+                                        <p><b> COMBO FUJIKO F FUJIO ĐẠI TUYỂN TẬP - DORAEMON TRUYỆN DÀI (6 TẬP)</b></p>
+                                        <p><font color="red">840.000 VNĐ</font></p>
+                                        <div class="row">
+                                            <div class="col-sm-5">
+                                                <img src="truyentranh/ttr11.jpg" class="rounded" width="110%" height="100%">
+                                            </div>
+                                            <div class="col-sm-6">
+                                                <p><b>TỔNG QUAN VỀ SÁCH :</b></p>
+                                               <p>Cũng giống như bộ truyện ngắn, đây là bộ tuyển tập gồm những chuyến phiêu lưu của Doraemon, Nobita và các bạn đến những vùng đất mới, vốn đã rất quen thuộc với độc giả nhiều thế hệ: Tới vương quốc trên mây, nước Nhật thời nguyên thủy, Khai phá vũ trụ, hành tinh muông thú.</p>
+                                                <p>Với độ dày hơn 600 trang cho một cuốn, đi kèm tập hợp những trang bản thảo màu và tâm sự của tác giả Fujiko, Tuyển tập truyện dài sẽ là một ấn phẩm đặc biệt nữa về Doraemon dành cho những độc giả muốn sưu tập lại những câu chuyện đầy hấp dẫn và lôi cuốn, với những bài học sâu sắc và ý nghĩa còn mãi với tuổi thơ.</p>
+                                                <p>Nào, chúng ta cùng đọc để khám phá những màu sắc đặc biệt ấy nhé!</p>
+                                                <p>Tác giả:  Fujiko.F.Fujio</p>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <!-- Modal footer -->
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-danger" data-dismiss="modal">Mua ngay</button>
+                                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Thêm vào giỏ hàng<i class="fas fa-shopping-cart"></i></button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+					</div>
+                    <p><b> COMBO FUJIKO F FUJIO ĐẠI TUYỂN TẬP - DORAEMON TRUYỆN DÀI (6 TẬP)</b></p>
+                    <p class="profsp"><font color="red">840.000 VNĐ</font></p>
+                </div>
+            </div>
+        </div>
+
+
+            <nav aria-label="Page navigation example">
+   <ul class="pagination">
+      <li class="page-item">
+         <a class="page-link" href="#" aria-label="Previous">
+         <span aria-hidden="true">&laquo;</span>
+         <span class="sr-only">Previous</span>
+         </a>
+      </li>
+      <li class="page-item  active">
+         <a class="page-link" href="#">1</a>
+      </li>
+      <li class="page-item">
+         <a class="page-link" href="#">2</a>
+      </li>
+      <li class="page-item">
+         <a class="page-link" href="#">3</a>
+      </li>
+      <li class="page-item">
+         <a class="page-link" href="#" aria-label="Next">
+         <span aria-hidden="true">&raquo;</span>
+         <span class="sr-only">Next</span>
+         </a>
+      </li>
+   </ul>
+</nav>
+</div>
+          </div>
+                              <div id="lienhe"></div>
+                                <div class="footer">
+                                    <a class="btn-top" href="javascript:void(0);" title="Top" style="display: inline;"></a>
+                                </div>
+                                <div style="text-align: center;margin-top: 100px;">
+                                    <h3> LIÊN HỆ NGAY VỚI CHÚNG TÔI !</h3>
+                                   
+                                </div>
+                                <div class="row" style="color: #797979;">
+                                    <div class=" col-sm-3 footer ">
+                                        <p style="margin-top: 20px; "><strong>Thông tin cửa hàng</strong></p>
+                                        <p>Địa chỉ:273 An Dương Vương, phường 10, quận 5, TPHCMM</p>
+                                        <p>SĐT: 0906751622</p>
+                                        <p>E-mail: nhasachtrithuc@gmail.com</p>
+                                    </div>
+
+                                    <div class="col-sm-3 footer ">
+                                        <p style="margin-top: 20px; "><strong>Giờ làm việc</strong></p>
+                                        <p>Từ thứ 2 - thứ 6 : 7:00 đến 22:00</p>
+                                        <p>Thứ 7 - Chủ nhật : 9:00 đến 18:00</p>
+
+                                    </div>
+
+                                    <div class="col-sm-3 footer ">
+                                        <p style="margin-top: 20px; "><strong>Hỗ Trợ</strong></p>
+                                        <p>Hãy để lại email, chúng tôi sẽ tư vấn cho bạn.</p>
+                                        <p><input type="text " placeholder="email@example.com " name="email " size="30 " style="border: 0px;border-bottom: 1px solid #636363; "></p>
+                                        <p><input type="submit" value="Gửi Ngay!!! " style="color: white; background-color: #636363;border: 0px; "></p>
+                                    </div>
+
+                                    <div class="col-sm-3 footer">
+                                        <p style="margin-top: 20px; margin-left: 0px;"><strong>Liên Hệ</strong></p>
+                                        <span>
+                                            <i class="fab fa-facebook-f fa-2x" style="padding-left: 30px;"></i>
+                                            <i class="fab fa-twitter fa-2x"></i>
+                                            <i class="fab fa-youtube fa-2x"></i>
+                                            <i class="fab fa-instagram fa-2x"></i>
+                                            <i class="fab fa-pinterest fa-2x"></i>
+                                            <i class="fab fa-flickr fa-2x"></i>
+                                        </span>
+                                    </div>
+    </div>
+	 <button type="button" onclick="topFunction()" id="myBtn" title="Go to top"><i class="fas fa-arrow-circle-up fa-3x" style="color: #66ccff" ;></i></button>
+<script>//Get the button:
+var mybutton = document.getElementById("myBtn");
+
+// When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    mybutton.style.display = "block";
+  } else {
+    mybutton.style.display = "none";
+  }
+}
+
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+  document.body.scrollTop = 0; // For Safari
+  document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+}
+	</script>
+				  <script src="jquery-3.4.1.min.js"></script>
+    <script src="popper.min.js"></script>
+    <script src="bootstrap/js/bootstrap.min.js"></script>
+	</body>
+</html>

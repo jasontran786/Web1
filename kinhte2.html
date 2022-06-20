@@ -1,0 +1,644 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script language="javascript" src="index.js"></script>
+	  <link rel="icon" type="image/png" href="img1/favicon.png">
+    <link rel="stylesheet" href="for1821.css" type="text/css">
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="fontawesome/css/all.css">
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+        
+        body {
+            font-family: "Myriadpro", serif;
+         
+        }
+    </style>
+    <title>Nhà sách Tri thức</title>
+</head>
+
+<body>
+
+      <div class="row banner-top" style="background-color: #eeeeee;">
+            <div class="col-sm-9 headerr">
+                <h4 style="display: block;font-family: myriadpro"><strong style="margin-left:55%;">Miễn phí giao hàng</strong> Hóa đơn trên 150000VND</h4>
+            </div>
+            <div class="col-sm-3 headerr">
+                <span style="float:right;">
+                    <i class="fab fa-facebook-f fa-2x" title="facebook"></i>
+                    <i class="fab fa-twitter fa-2x" title="twitter"></i>
+                    <i class="fab fa-youtube fa-2x" title="youtobe"></i>
+                    <i class="fab fa-instagram fa-2x" title="instagram"></i>
+                    <i class="fab fa-pinterest fa-2x" title="pinterest"></i>
+                    <i class="fab fa-flickr fa-2x" title="flickr"></i>
+                </span>
+            </div>
+        </div>
+            <!--Đây là Line Giới thiệu-->
+	  <div class="container">
+   <div id="gioithieu"></div>
+            <div class="row">
+                <div class="col-sm-4 chuthich">
+                    <a href="index.html"><img src="img1/logo1.png" style="height: 100px;width: auto;" /></a>
+                </div>
+                <div class="col-sm-5">
+                    <div class="search">
+			   <input type="search" name="search" placeholder="Tìm kiếm...">
+                <a href="kinhte.html"><button type="button" ><i class="fa fa-search"></i></button></a>
+                
+                 </div>
+                </div>
+				<div class="col-sm-3 cart">
+					<a href="giohang.html" style="color: #66ccff">
+						<i class="fas fa-shopping-cart fa-2x"></i></a>
+				</div>
+            </div>
+            <!----------------------------------------------------------------------------------------------------------------------------------------------------------------->
+            <!--Day la Menu-->
+
+            <div style="display:flex; padding:8px; align-items: center; position: sticky; top:0; background: #66ccff; z-index: 1000;height: 40px;">
+                <div style="min-width: 250px; display: flex;justify-content: center; align-items: center;">
+                    <nav class="menuheader">
+                        <ul>
+                            <li><a href="index.html"><i class="fas fa-home"></i>TRANG CHỦ</a></li>
+                            <li>
+                                <a href="#" data-toggle="dropdown">SÁCH TIẾNG VIỆT <i class="fas fa-caret-down"></i></a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="kinhte.html">Kinh tế</a></li>
+                                    <li><a href="giaoduc.html">Giáo dục</a></li>
+                                    <li><a href="vanhoc.html">Văn học</a></li>
+                                    <li><a href="thieunhi.html">Thiếu Nhi</a></li>
+                                    <li><a href="truyentranh.html">Truyện tranh</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="tieuthuyet.html" >SÁCH NƯỚC NGOÀI </a>
+                            </li>
+                            <li><a href="#products">SÁCH BÁN CHẠY</a></li>
+                            <li><a href="map.html">LIÊN HỆ<i class="fas fa-phone"></i></a></li>
+                            <li>
+
+                                <a href="#" data-toggle="modal" data-target="#sign_in">ĐĂNG NHẬP</a>
+
+                            </li>
+                           
+                        </ul>
+                        <div class="icon">
+                            <i class="fas fa-bars"></i>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+        <hr style="margin-bottom: -4px;">
+        <!--sign in-->
+        <div class="modal fade" id="sign_in">
+            <div class="modal-dialog">
+                <div class="modal-content p-3">
+
+                    <!--modal header-->
+                    <div class="modal-header">
+                        <h2 class="modal-title sign_header">Đăng Nhập</h2>
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    </div>
+
+                    <!--modal body-->
+                    <div class="modal-body">
+                        <form action="">
+                            <!--email-->
+                            <div class="form-group">
+                                <label id="sign" for="email">Tên tài khoản:</label>
+                                <input type="email" name="email" class="form-control" id="email" placeholder="Email:">
+                            </div><!--end form group-->
+
+                            <div class="form-group">
+                                <label for="pwd">Mật khẩu</label>
+                                <input type="password" name="pwd" class="form-control" id="pwd" placeholder="Mật khẩu của bạn">
+                            </div><!--end form group-->
+                            <!--remember me-->
+                            <div class="form-group form-check">
+                                <label class="form-check-label">
+                                    <input type="checkbox" name="remember" class="form-check-input">Ghi nhớ tài khoản
+                                </label>
+                            </div><!--end form group-->
+                            <!--button-->
+                            <button type="submit" class="btn btn_buy" style="background-color:#66ccff;">Đăng nhập</button>
+                            <a href="#" class="font_16 text-secondary"> &nbsp Bạn quên mật khẩu?</a>
+                            <div class="row">
+                                <div class="col-6">
+                                    <button type="submit" class="btn btn-outline-primary border_30 mt-4"><i class="fab fa-facebook-f"></i> &nbsp;Đăng nhập bằng Facebook</button>
+                                </div>
+                                <div class="col-6">
+                                    <button type="submit" class="btn btn-outline-danger border_30 mt-4">
+                                        <i class="fab fa-google"></i>
+                                        &nbsp; Đăng nhập bằng Google
+                                    </button>
+                                </div>
+                            </div><br>
+                        </form>
+                    </div><!--end modal body-->
+
+                    <div class="modal-footer">
+                        <div class="d-flex justify-content-begin">
+                            <div>
+                                <p class="font_16">Bạn không có tài khoản?</p>
+                            </div>&nbsp; &nbsp;
+                            <div>
+                                <a href="#" class="btn btn_view" data-dismiss="modal" data-toggle="modal" data-target="#sign_up" style="background-color:#66ccff;">Đăng Ký Ngay</a>
+                            </div>
+                        </div>
+                    </div>
+                </div><!--end modal content-->
+            </div><!--end modal dialog-->
+        </div><!---end modal-->
+       <div class="modal fade" id="sign_up">
+            <div class="modal-dialog">
+                <div class="modal-content p-3">
+                    <!--modal header-->
+                    <div class="modal-header">
+                        <h2>Đăng Ký</h2>
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    </div>
+
+                    <!--modal body-->
+
+                    <div class="modal-body">
+                        <p class="font_16">Bạn hãy điền vào form bên dưới</p>
+                        <form action="">
+                            <!--name-->
+
+
+                            <div class="form-group">
+                                <label for="hoten">Tên</label>
+                                <input type="name" name="hoten" class="form-control" id="hoten" placeholder="Tên của bạn">
+                            </div><!--end form group-->
+
+
+                            <div class="form-group">
+                                <label for="email1">Tên tài khoản</label>
+                                <input type="email" name="email1" class="form-control" id="email1" placeholder="Tên tài khoản">
+                            </div><!--end form group-->
+
+                            <div class="form-group">
+                                <label for="pwd1">Mật khẩu</label>
+                                <input type="password" name="pwd1" class="form-control" id="pwd1" placeholder="Mật khẩu">
+                            </div><!--end form group-->
+
+                            <div class="form-group">
+                                <label for="pwd2">Nhập lại mật khẩu</label>
+                                <input type="password" name="pwd2" class="form-control" id="pwd2" placeholder="Nhập lại mật khẩu">
+                            </div>
+                            <!--button-->
+                            <button type="submit" class="btn btn_buy" style="background-color:#66ccff;">Đăng ký</button>
+                        </form>
+                    </div><!--end modal body-->
+                    <div class="modal-footer">
+                        <a href="#" class="btn btn_view" data-dismiss="modal" data-toggle="modal" data-target="#sign_in" style="background-color:yellow;">Quay lại Đăng nhập</a>
+                    </div>
+                </div><!--end modal content-->
+            </div><!--end modal dialog-->
+		  </div><!--end modal-->
+  <!--gioithieusach1-->
+			<div>
+            <h3 style="text-align: center;margin: 35px;font-family: 'myriadpro';"><b>MARKETING-BÁN HÀNG</b></h3>
+        	</div>
+		  <div class="main1">
+		 
+		<!--Sáchmarketig bán hàng-->
+		  <div class="main1">
+			  <div class="row">
+				  <!--slide1--sp1--29-->
+					<div class="col-sm-3 sp">
+                    <div class="sp">
+                        <!-- Button to Open the Modal -->
+                        <button type="button" class="btn btn-link" data-toggle="modal" data-target="#myModal29">
+                            <img src="sachkinhte/mt1.jpg" class="rounded"
+                                 width="100%" height="100%" style="margin-left: 0%;">
+                        </button>
+
+                        <!-- The Modal -->
+                        <div class="modal fade" id="myModal29">
+                            <div class="modal-dialog modal-lg">
+                                <div class="modal-content">
+
+                                    <!-- Modal Header -->
+                                    <div class="modal-header">
+                                        <img src="img1\TriThuc (1).png" width="100px" height="100px" style="margin-left:10px; margin-top:5px">
+                                        <h4 class="modal-title" style="margin: 5% 1%;">CHỐT SALE (CLOSING) - ĐÀM PHÁN THÀNH CÔNG </h4>
+                                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                    </div>
+
+                                    <!-- Modal body -->
+                                    <div class="modal-body spp" style="background-color: none;">
+                                        <p><b>CHỐT SALE (CLOSING) - ĐÀM PHÁN THÀNH CÔNG </b></p>
+                                        <p>105.000 VNĐ</p>
+                                        <div class="row">
+                                            <div class="col-sm-5">
+                                                <img src="sachkinhte/mt1.jpg" class="rounded" width="100%" height="70%">
+                                            </div>
+                                            <div class="col-sm-6">
+
+                                                 <p><i>“Chốt Sales” chia sẻ những hiểu biết sâu sắc về nghề bán hàng với những kỹ năng & các bước quan trọng giúp mọi cá nhân có thể tiến hành việc chốt hợp đồng một cách hiệu quả nhất. Đơn giản mà nói, quyển sách này sẽ hướng dẫn chúng ta cách hoàn thành hợp đồng, tăng doanh số bán hàng đột phá bằng cách “giúp khách hàng thành công”.</i></p>
+												<p>Phương pháp được giới thiệu trong cuốn sách này đã được kiểm chứng qua thời gian, dựa trên những nguyên lý căn cơ làm nên thành công của những lãnh đạo kinh doanh hàng đầu và các bậc thầy bán hàng trên toàn thế giới. Phương pháp độc đáo này đã được nhóm tác giả đúc kết và hệ thống lại thành một hình mẫu chung vừa chuyên sâu, vừa vô cùng thực tế, hữu dụng cho tất cả lãnh đạo lẫn các chuyên gia bán hàng. Khi mỗi cá nhân và các đội bán hàng kiên trì áp dụng cách tư duy cùng bộ kỹ năng được hướng dẫn trong quyển sách tuyệt vời này, họ sẽ cải thiện được đáng kể khả năng chốt hợp đồng của mình, một cách hiệu quả hơn, thường xuyên hơn, và có kết quả dự đoán trước chính xác hơn. </p>
+												<p>...</p>
+												<p><b>Tác giả</b>Craig Christensen, Sean Frontz, Dennis Susa</p>
+												<p><b>Người dịch</b>Trịnh Hoàng Kim Phượng</p>
+                                    			 <p><b>Sản phẩm bán chạy nhất	</b>Top 100 sản phẩm Marketing - Bán Hàng bán chạy của tháng</p>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <!-- Modal footer -->
+                                    <div class="modal-footer">
+										 <button type="button" class="btn btn-danger" data-dismiss="modal" onclick="alert('Bạn cần phải Đăng Nhập')">Mua ngay</button>
+                                        <button type="button" class="btn btn-secondary" data-dismiss="modal" onclick="alert('Bạn cần phải Đăng Nhập')">Thêm vào giỏ hàng<i class="fas fa-shopping-cart"></i></button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <p><b>CHỐT SALE (CLOSING) - ĐÀM PHÁN THÀNH CÔNG </b></p>
+                    <p class="profsp">105.000 VNĐ</p>
+                </div>
+				  <!--slide1--sp2--30-->
+					<div class="col-sm-3 sp">
+                    <div class="sp">
+                        <!-- Button to Open the Modal -->
+                        <button type="button" class="btn btn-link" data-toggle="modal" data-target="#myModal30">
+                            <img src="sachkinhte/mt2.jpg" class="rounded"
+                                 width="100%" height="100%" style="margin-left: 0%;">
+                        </button>
+
+                        <!-- The Modal -->
+                        <div class="modal fade" id="myModal30">
+                            <div class="modal-dialog modal-lg">
+                                <div class="modal-content">
+
+                                    <!-- Modal Header -->
+                                    <div class="modal-header">
+                                        <img src="img1\TriThuc (1).png" width="100px" height="100px" style="margin-left:10px; margin-top:5px">
+                                        <h4 class="modal-title" style="margin: 5% 1%;">NGƯỜI BÁN HÀNG VĨ ĐẠI NHẤT THẾ GIỚI - TẬP 1 </h4>
+                                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                    </div>
+
+                                    <!-- Modal body -->
+                                    <div class="modal-body spp" style="background-color: none;">
+                                        <p><b>NGƯỜI BÁN HÀNG VĨ ĐẠI NHẤT THẾ GIỚI - TẬP 1  </b></p>
+                                        <p>58.000 VNĐ</p>
+                                        <div class="row">
+                                            <div class="col-sm-5">
+                                                <img src="sachkinhte/mt2.jpg" class="rounded" width="100%" height="70%">
+                                            </div>
+                                            <div class="col-sm-6">
+
+                                                 <p>Người bán hàng vĩ đại nhất thế giới của Og Mandino là một hành trình dài về câu chuyện của Hafid, một cậu bé chăn lạc đà nghèo, ở Jerusalem cổ đại. Người thanh niên đã học được từ một thương nhân giàu có và thành công về những bí quyết để trở thành một người bán hàng vĩ đại.</p>
+												<p>Cuốn sách này được gói gọn trong mười cuốn da dê giúp bạn trở thành một Người bán hàng vĩ đại nhất thế giới, tuy nhiên nó không chỉ dạy bạn cách “bán hàng”, mà nó còn là một cuốn sách dạy bạn làm người, giúp bạn trở thành người “vĩ đại nhất” trong lĩnh vực mà mình đã chọn. Nội dung cuốn sách này được đúc rút từ những kinh nghiệm xương máu mà nhờ đó nó đã biến các ước mơ của cổ nhân thành hiện thực. Chứ không phải do một cá nhân nào đó tưởng tượng ra trong khi lại chưa được thực nghiệm kiểm chứng. Mỗi người đều có quyền tự do lựa chọn con đường để thực hiện giấc mơ của mình tuỳ thuận với nhận thức riêng của họ. Quyển sách này, là một trong những con đường có thể giúp bạn đạt được ước mơ của chính mình.</p>
+												<p>...</p>
+												<p><b>Tác giả</b>Og Mandino</p>
+												<p><b>Người dịch</b>	Đoàn Phạm Gia Phú</p>
+                                    			 <p><b>Sản phẩm bán chạy nhất	</b>Top 100 sản phẩm Marketing - Bán Hàng bán chạy của tháng</p>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <!-- Modal footer -->
+                                    <div class="modal-footer">
+										 <button type="button" class="btn btn-danger" data-dismiss="modal" onclick="alert('Bạn cần phải Đăng Nhập')">Mua ngay</button>
+                                        <button type="button" class="btn btn-secondary" data-dismiss="modal" onclick="alert('Bạn cần phải Đăng Nhập')">Thêm vào giỏ hàng<i class="fas fa-shopping-cart"></i></button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <p><b>NGƯỜI BÁN HÀNG VĨ ĐẠI NHẤT THẾ GIỚI - TẬP 1 </b></p>
+                    <p class="profsp">58.000 VNĐ</p>
+                </div>
+				  <!--slide1--sp3--31-->
+					<div class="col-sm-3 sp">
+                    <div class="sp">
+                        <!-- Button to Open the Modal -->
+                        <button type="button" class="btn btn-link" data-toggle="modal" data-target="#myModal31">
+                            <img src="sachkinhte/mt3.jpg" class="rounded"
+                                 width="100%" height="100%" style="margin-left: 0%;">
+                        </button>
+
+                        <!-- The Modal -->
+                        <div class="modal fade" id="myModal31">
+                            <div class="modal-dialog modal-lg">
+                                <div class="modal-content">
+
+                                    <!-- Modal Header -->
+                                    <div class="modal-header">
+                                        <img src="img1\TriThuc (1).png" width="100px" height="100px" style="margin-left:10px; margin-top:5px">
+                                        <h4 class="modal-title" style="margin: 5% 1%;">KỸ NĂNG BÁN HÀNG TUYỆT ĐỈNH</h4>
+                                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                    </div>
+
+                                    <!-- Modal body -->
+                                    <div class="modal-body spp" style="background-color: none;">
+                                        <p><b>KỸ NĂNG BÁN HÀNG TUYỆT ĐỈNH</b></p>
+                                        <p>109.000 VNĐ</p>
+                                        <div class="row">
+                                            <div class="col-sm-5">
+                                                <img src="sachkinhte/mt3.jpg" class="rounded" width="100%" height="70%">
+                                            </div>
+                                            <div class="col-sm-6">
+
+                                                 <p>Kỹ năng bán hàng tuyệt đỉnh sẽ cho bạn đọc biết được những quy tắc bán hàng, vốn là điều kiện tiên quyết để gặt hái thành công trong bất kỳ lĩnh vực nào, với bất kỳ ai, bất kỳ ở đâu.</p>
+												<p>Trong từng trang sách, tác giả Cardone giới thiệu và phân tích kỹ lưỡng những kỹ thuật và bước tiếp cận thiết yếu để bạn có thể làm chủ nghệ thuật bán hàng trong mọi tình huống. Bạn sẽ học được cách xử trí khi bị khách hàng từ chối, cách lật ngược tình thế, rút ngắn quy trình bán hàng và làm sao để bản thân ngày càng chuyên nghiệp hơn. Cardone cũng sẽ chỉ cho bạn thấy đâu là những yếu tố quyết định thành công, sẽ luôn giúp bạn:</p>
+												<p>...</p>
+												<p><b>Tác giả</b>	Grant Cardone</p>
+												<p><b>Người dịch</b>	Bùi Thị Ngọc Hương</p>
+                                    			 <p><b>Sản phẩm bán chạy nhất	</b>Top 100 sản phẩm Marketing - Bán Hàng bán chạy của tháng</p>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <!-- Modal footer -->
+                                    <div class="modal-footer">
+										 <button type="button" class="btn btn-danger" data-dismiss="modal" onclick="alert('Bạn cần phải Đăng Nhập')">Mua ngay</button>
+                                        <button type="button" class="btn btn-secondary" data-dismiss="modal" onclick="alert('Bạn cần phải Đăng Nhập')">Thêm vào giỏ hàng<i class="fas fa-shopping-cart"></i></button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <p><b>KỸ NĂNG BÁN HÀNG TUYỆT ĐỈNH</b></p>
+                    <p class="profsp">109.000 VNĐ</p>
+                </div>
+				  <!--slide1--sp4--32-->
+					<div class="col-sm-3 sp">
+                    <div class="sp">
+                        <!-- Button to Open the Modal -->
+                        <button type="button" class="btn btn-link" data-toggle="modal" data-target="#myModal32">
+                            <img src="sachkinhte/mt4.jpg" class="rounded"
+                                 width="100%" height="100%" style="margin-left: 0%;">
+                        </button>
+
+                        <!-- The Modal -->
+                        <div class="modal fade" id="myModal32">
+                            <div class="modal-dialog modal-lg">
+                                <div class="modal-content">
+
+                                    <!-- Modal Header -->
+                                    <div class="modal-header">
+                                        <img src="img1\TriThuc (1).png" width="100px" height="100px" style="margin-left:10px; margin-top:5px">
+                                        <h4 class="modal-title" style="margin: 5% 1%;">BÙNG NỔ DOANH SỐ VỚI GOOGLE ADS</h4>
+                                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                    </div>
+
+                                    <!-- Modal body -->
+                                    <div class="modal-body spp" style="background-color: none;">
+                                        <p><b>BÙNG NỔ DOANH SỐ VỚI GOOGLE ADS</b></p>
+                                        <p>199.000 VNĐ</p>
+                                        <div class="row">
+                                            <div class="col-sm-5">
+                                                <img src="sachkinhte/mt4.jpg" class="rounded" width="100%" height="70%">
+                                            </div>
+                                            <div class="col-sm-6">
+
+                                                 <p>Google Ads là chương trình quảng cáo trực tuyến của Google cho phép người dùng mua những vị trí quảng cáo bằng văn bản, danh sách sản phẩm, hình ảnh hoặc nội dung video tại các kết quả tìm kiếm hoặc trang web do Google cung cấp để tạo và thực hiện chiến dịch quảng cáo sản phẩm của mình. Hình thức quảng cáo này sẽ giúp cho nhà quảng cáo dễ dàng thu hút được đúng đối tượng vào thời điểm họ cần bạn nhất, tiết kiệm chi phí quảng cáo với hiệu suất tối đa, thực hiện quảng cáo một cách đơn giản, nhanh chóng và chính xác.</p>
+												<p>Bạn có thể tiếp cận khách hàng khi họ tìm kiếm bạn trên công cụ Google Search, tiếp thị bám đuổi bằng Google Display Network, quảng cáo video với Youtube hay bán hàng trên công cụ vừa ra mắt thị trường cuối năm 2018 - Google Shopping.</p>
+												<p>Bất kỳ ai cũng có thể trở thành một nhà quảng cáo với Google Ads, dù bạn là doanh nghiệp lớn, vừa hay nhỏ hoặc thậm chí chỉ là một cá nhân bán hàng online muốn khởi đầu với chi phí cực kỳ nhỏ thì đều thích hợp sử dụng Google Ads. </p>
+												<p>Để bắt đầu tiếp cận hình thức quảng cáo này của Google, hãy cùng MZ Book khám phá ngay những kiến thức cơ bản nhất, những hướng dẫn cụ thể chi tiết về Google Ads nằm trong ấn phẩm sách #017 "Bùng nổ doanh số với Google Ads" được thực hiện bởi chính đội ngũ đang làm trong ngành và đặc biệt có sự đóng góp, hỗ trợ về nội dung từ GOOGLE.</p>
+												<p><b>Tác giả</b>	Mediaz</p>
+                                    			 <p><b>Sản phẩm bán chạy nhất	</b>Top 100 sản phẩm Marketing - Bán Hàng bán chạy của tháng</p>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <!-- Modal footer -->
+                                    <div class="modal-footer">
+										 <button type="button" class="btn btn-danger" data-dismiss="modal" onclick="alert('Bạn cần phải Đăng Nhập')">Mua ngay</button>
+                                        <button type="button" class="btn btn-secondary" data-dismiss="modal" onclick="alert('Bạn cần phải Đăng Nhập')">Thêm vào giỏ hàng<i class="fas fa-shopping-cart"></i></button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <p><b>BÙNG NỔ DOANH SỐ VỚI GOOGLE ADS</b></p>
+                    <p class="profsp">199.000 VNĐ</p>
+                </div>
+			  </div>
+			  <div class="row">
+				  <!--slide3--sp5--33-->
+					<div class="col-sm-3 sp">
+                    <div class="sp">
+                        <!-- Button to Open the Modal -->
+                        <button type="button" class="btn btn-link" data-toggle="modal" data-target="#myModal33">
+                            <img src="sachkinhte/mt5.jpg" class="rounded"
+                                 width="100%" height="100%" style="margin-left: 0%;">
+                        </button>
+
+                        <!-- The Modal -->
+                        <div class="modal fade" id="myModal33">
+                            <div class="modal-dialog modal-lg">
+                                <div class="modal-content">
+
+                                    <!-- Modal Header -->
+                                    <div class="modal-header">
+                                        <img src="img1\TriThuc (1).png" width="100px" height="100px" style="margin-left:10px; margin-top:5px">
+                                        <h4 class="modal-title" style="margin: 5% 1%;">CONTENT HAY NÓI THAY NƯỚC BỌT - BÍ QUYẾT THÀNH CÔNG CỦA CONTENT CREATOR </h4>
+                                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                    </div>
+
+                                    <!-- Modal body -->
+                                    <div class="modal-body spp" style="background-color: none;">
+                                        <p><b>CONTENT HAY NÓI THAY NƯỚC BỌT - BÍ QUYẾT THÀNH CÔNG CỦA CONTENT CREATOR </b></p>
+                                        <p>199.000 VNĐ</p>
+                                        <div class="row">
+                                            <div class="col-sm-5">
+                                                <img src="sachkinhte/mt5.jpg" class="rounded" width="100%" height="50%">
+                                            </div>
+                                            <div class="col-sm-6">
+
+                                                 <p><i>Content - thế giới của quyền năng sáng tạo, của tình yêu với ngôn từ câu chữ ẩn chứa biết bao mảnh ghép muôn màu và chi tiết thú vị. “Content Hay Nói Thay Nước Bọt - Bí Quyết Thành Công Của Content Creator” - một ấn phẩm đặc biệt dành tặng riêng bạn trong hành trình khám phá, chu du những miền đất sáng tạo, kiếm tìm những mảnh ghép để hoàn thiện hơn cho thế giới Content của riêng mình.</i></p>
+												<p>Với 4 phần chính lần lượt đi từ tổng quan về content, về những kiến thức nền của thế giới digital content cho đến cách thức sáng tạo content chạm được vào cảm xúc của khách hàng cùng các xu hướng content trong thời đại ngày nay, Content Hay Nói Thay Nước Bọt đem đến các định nghĩa đầy đủ và dễ hiểu, các ví dụ thực tế trực quan, các bài tập thực hành cụ thể nhằm giúp cho người đọc có cái nhìn cơ bản nhất, định hướng rõ hơn về ý tưởng sáng tạo và giúp bạn xây dựng đúng content ngay từ đầu.</p>
+												<p>Được coi như những tấm ván chắc chắn để làm nên một con thuyền content vững chãi, sẵn sàng bước ra biển khơi sáng tạo trong tương lai, cuốn sách sẽ là người thầy, người đồng hành của bạn trong quá trình chinh chiến với nghề Content. </p>
+												<p><b>Tác giả</b>	Mediaz</p>
+                                    			 <p><b>Sản phẩm bán chạy nhất	</b>Top 100 sản phẩm Marketing - Bán Hàng bán chạy của tháng</p>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <!-- Modal footer -->
+                                    <div class="modal-footer">
+										 <button type="button" class="btn btn-danger" data-dismiss="modal" onclick="alert('Bạn cần phải Đăng Nhập')">Mua ngay</button>
+                                        <button type="button" class="btn btn-secondary" data-dismiss="modal" onclick="alert('Bạn cần phải Đăng Nhập')">Thêm vào giỏ hàng<i class="fas fa-shopping-cart"></i></button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <p><b>CONTENT HAY NÓI THAY NƯỚC BỌT - BÍ QUYẾT THÀNH CÔNG CỦA CONTENT CREATOR </b></p>
+                    <p class="profsp">199.000 VNĐ</p>
+                </div>
+				  <!--slide3--sp6--34-->
+					<div class="col-sm-3 sp">
+                    <div class="sp">
+                        <!-- Button to Open the Modal -->
+                        <button type="button" class="btn btn-link" data-toggle="modal" data-target="#myModal33">
+                            <img src="sachkinhte/mt6.jpg" class="rounded"
+                                 width="100%" height="100%" style="margin-left: 0%;">
+                        </button>
+
+                        <!-- The Modal -->
+                        <div class="modal fade" id="myModal33">
+                            <div class="modal-dialog modal-lg">
+                                <div class="modal-content">
+
+                                    <!-- Modal Header -->
+                                    <div class="modal-header">
+                                        <img src="img1\TriThuc (1).png" width="100px" height="100px" style="margin-left:10px; margin-top:5px">
+                                        <h4 class="modal-title" style="margin: 5% 1%;">ĐỪNG BÁN KHI CHƯA ĐƯỢC GIÁ</h4>
+                                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                    </div>
+
+                                    <!-- Modal body -->
+                                    <div class="modal-body spp" style="background-color: none;">
+                                        <p><b>ĐỪNG BÁN KHI CHƯA ĐƯỢC GIÁ</b></p>
+                                        <p>119.000 VNĐ</p>
+                                        <div class="row">
+                                            <div class="col-sm-5">
+                                                <img src="sachkinhte/mt6.jpg" class="rounded" width="100%" height="50%">
+                                            </div>
+                                            <div class="col-sm-6">
+
+                                                 <p><i>Bạn có muốn xây dựng một doanh nghiệp phát triển vượt trội mà vẫn được tự do tự tại sống theo ý mình? Bạn có muốn tạo dựng một công ty mà bạn có thể sang nhượng lại được để có thể nghỉ ngơi thoải mái hoặc theo đuổi các ý tưởng lớn tiếp theo?</i></p>
+												<p>Trong Đừng bán khi chưa được giá, hai ý tưởng này không hề mâu thuẫn với nhau. Nếu bạn cho rằng chỉ cần làm việc cật lực là có thể bán được công ty, thì bạn đã lầm. Ngược lại, để bán được công ty với giá cao nhất, bạn phải xây dựng doanh nghiệp của mình phát triển thịnh vượng mà không cần tới bạn, để chủ sở hữu tiếp theo có thể tiếp tục phát triển doanh nghiệp và thu lợi nhuận từ thành quả bạn đã tạo dựng khi bạn rời đi.</p>
+												<p>Tác giả John Warrilow sẽ hướng dẫn bạn cách tạo ra một công ty phát triển nhanh, thu được nhiều lợi nhuận và có thể mở rộng được, trao cho bạn cơ hội được tự do và giấc ngủ ngon mỗi đêm mà bạn khao khát. Chỉ cần bạn luôn nhớ rằng: BẠN LÀ NGƯỜI ĐIỀU HÀNH CÔNG TY, ĐỪNG ĐỂ CÔNG TY ĐIỀU KHIỂN CUỘC SỐNG CỦA BẠN!</p>
+												<p><b>Tác giả</b>	John Warrillow</p>
+												<p><b>Người dịch</b>	Nguyễn Mai Khanh</p>
+                                    			 <p><b>Sản phẩm bán chạy nhất	</b>Top 100 sản phẩm Marketing - Bán Hàng bán chạy của tháng</p>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <!-- Modal footer -->
+                                    <div class="modal-footer">
+										 <button type="button" class="btn btn-danger" data-dismiss="modal" onclick="alert('Bạn cần phải Đăng Nhập')">Mua ngay</button>
+                                        <button type="button" class="btn btn-secondary" data-dismiss="modal" onclick="alert('Bạn cần phải Đăng Nhập')">Thêm vào giỏ hàng<i class="fas fa-shopping-cart"></i></button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <p><b>ĐỪNG BÁN KHI CHƯA ĐƯỢC GIÁ</b></p>
+                    <p class="profsp">119.000 VNĐ</p>
+                </div>
+			  </div><nav aria-label="Page navigation example">
+   <ul class="pagination">
+      <li class="page-item">
+         <a class="page-link" href="#" aria-label="Previous">
+         <span aria-hidden="true">&laquo;</span>
+         <span class="sr-only">Previous</span>
+         </a>
+      </li>
+      <li class="page-item">
+         <a class="page-link" href="kinhte.html">1</a>
+      </li>
+      <li class="page-item">
+         <a class="page-link" href="kinhte1.html">2</a>
+      </li>
+      <li class="page-item active"  >
+         <a class="page-link" href="kinhte2.html">3</a>
+      </li>
+      <li class="page-item">
+         <a class="page-link" href="#" aria-label="Next">
+         <span aria-hidden="true">&raquo;</span>
+         <span class="sr-only">Next</span>
+         </a>
+      </li>
+   </ul>
+</nav>
+</div>
+		  </div>
+</div><!--container-->
+                   <!--Footer-->
+                                <div id="lienhe"></div>
+                                <div class="footer">
+                                    <a class="btn-top" href="javascript:void(0);" title="Top" style="display: inline;"></a>
+                                </div>
+                                <div style="text-align: center;margin-top: 100px;">
+                                    <h3>LIÊN HỆ NGAY VỚI CHÚNG TÔI !</h3>
+                                </div>
+                                <div class="row" style="color: #797979;">
+                                    <div class=" col-sm-3 footer ">
+                                        <p style="margin-top: 20px; "><strong>Thông tin cửa hàng</strong></p>
+                                        <p>Địa chỉ:273 An Dương Vương, phường 10, quận 5, TPHCM</p>
+                                        <p>SĐT: 0906751622</p>
+                                        <p>E-mail: nhasachtrithuc@gmail.com</p>
+                                    </div>
+
+                                    <div class="col-sm-3 footer ">
+                                        <p style="margin-top: 20px; "><strong>Giờ làm việc</strong></p>
+                                        <p>Từ thứ 2 - thứ 6 : 7:00 đến 22:00</p>
+                                        <p>Thứ 7 - Chủ nhật : 9:00 đến 18:00</p>
+                                    </div>
+
+                                    <div class="col-sm-3 footer ">
+                                        <p style="margin-top: 20px; "><strong>Hỗ Trợ</strong></p>
+                                        <p>Hãy để lại email, chúng tôi sẽ tư vấn cho bạn.</p>
+                                        <p><input type="text " placeholder="email@example.com " name="email " size="30 " style="border: 0px;border-bottom: 1px solid #636363; "></p>
+                                        <p><input type="submit" value="Gửi Ngay!!! " style="color: white; background-color: #636363;border: 0px; "></p>
+                                    </div>
+
+                                    <div class="col-sm-3 footer">
+                                        <p style="margin-top: 20px; margin-left: 0px;"><strong>Kết Nối</strong></p>
+                                        <span>
+                                            <i class="fab fa-facebook-f fa-2x" style="padding-left: 30px;"></i>
+                                            <i class="fab fa-twitter fa-2x"></i>
+                                            <i class="fab fa-youtube fa-2x"></i>
+                                            <i class="fab fa-instagram fa-2x"></i>
+                                            <i class="fab fa-pinterest fa-2x"></i>
+                                            <i class="fab fa-flickr fa-2x"></i>
+                                        </span>
+                                    </div>
+	</div>
+<button type="button" onclick="topFunction()" id="myBtn" title="Go to top"><i class="fas fa-arrow-circle-up fa-3x" style="color: #66ccff" ;></i></button>
+	<script>
+function change() {
+  var element = document.getElementById('dangnhap');
+    element.innerHTML = 'ĐĂNG XUẤT';
+}
+function changea() {
+  var element = document.getElementById('dangnhap');
+    element.innerHTML = 'ĐĂNG NHẬP';
+}
+</script>
+<script>//Get the button:
+var mybutton = document.getElementById("myBtn");
+
+// When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    mybutton.style.display = "block";
+  } else {
+    mybutton.style.display = "none";
+  }
+}
+
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+  document.body.scrollTop = 0; // For Safari
+  document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+}
+</script>
+ <script src="jquery-3.4.1.min.js"></script>
+    <script src="popper.min.js"></script>
+    <script src="bootstrap/js/bootstrap.min.js"></script>
+</body>
+
+</html>

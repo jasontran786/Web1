@@ -1,0 +1,1214 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+	  <link rel="icon" type="image/png" href="img1/favicon.png">
+    <script language="javascript" src="index.js"></script>
+    <link rel="stylesheet" href="for1821.css" type="text/css">
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="fontawesome/css/all.css">
+   
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+        
+        body {
+            font-family: "Myriadpro", serif;
+         
+        }
+    </style>
+    <title>Nhà sách Tri thức |&reg</title>
+</head>
+
+<body>
+
+      <div class="row banner-top" style="background-color: #eeeeee;">
+            <div class="col-sm-9 headerr">
+                <h4 style="display: block;font-family: myriadpro"><strong style="margin-left:55%;">Miễn phí giao hàng</strong> Hóa đơn trên 150000VND</h4>
+            </div>
+            <div class="col-sm-3 headerr">
+                <span style="float:right;">
+                    <i class="fab fa-facebook-f fa-2x" title="facebook"></i>
+                    <i class="fab fa-twitter fa-2x" title="twitter"></i>
+                    <i class="fab fa-youtube fa-2x" title="youtobe"></i>
+                    <i class="fab fa-instagram fa-2x" title="instagram"></i>
+                    <i class="fab fa-pinterest fa-2x" title="pinterest"></i>
+                    <i class="fab fa-flickr fa-2x" title="flickr"></i>
+                </span>
+            </div>
+        </div>
+            <!--Đây là Line Giới thiệu-->
+	  <div class="container">
+            <div id="gioithieu"></div>
+            <div class="row">
+                <div class="col-sm-4 chuthich">
+                    <a href="index.html"><img src="img1/logo1.png" style="height: 100px;width: auto;" /></a>
+                </div>
+                <div class="col-sm-5">
+                   <div class="search">
+			   <input type="search" name="search" placeholder="Tìm kiếm...">
+                <a href="kinhte.html"><button type="button" ><i class="fa fa-search"></i></button></a>
+                
+                 </div>
+                </div>
+				<div class="col-sm-3 cart">
+					<a href="giohang.html" style="color: #66ccff">
+						<i class="fas fa-shopping-cart fa-2x"></i></a>
+				</div>
+            </div>
+            <!----------------------------------------------------------------------------------------------------------------------------------------------------------------->
+            <!--Day la Menu-->
+
+            <div style="display:flex; padding:8px; align-items: center; position: sticky; top:0; background: #66ccff; z-index: 1000;height: 40px;">
+                <div style="min-width: 250px; display: flex;justify-content: center; align-items: center;">
+                    <nav class="menuheader">
+                        <ul>
+                            <li><a href="index.html"><i class="fas fa-home"></i>TRANG CHỦ</a></li>
+                            <li>
+                                <a href="#" data-toggle="dropdown">SÁCH TIẾNG VIỆT <i class="fas fa-caret-down"></i></a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="kinhte.html">Kinh tế</a></li>
+                                    <li><a href="giaoduc.html">Giáo dục</a></li>
+                                    <li><a href="vanhoc.html">Văn học</a></li>
+                                    <li><a href="thieunhi.html">Thiếu Nhi</a></li>
+                                    <li><a href="truyentranh.html">Truyện tranh</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="tieuthuyet.html" >SÁCH NƯỚC NGOÀI </a>
+                            </li>
+                            <li><a href="#products">SÁCH BÁN CHẠY</a></li>
+                            <li><a href="map.html">LIÊN HỆ<i class="fas fa-phone"></i></a></li>
+                            <li>
+
+                                <a href="#" data-toggle="modal" data-target="#sign_in">ĐĂNG NHẬP</a>
+
+                            </li>
+                         
+                        </ul>
+                        <div class="icon">
+                            <i class="fas fa-bars"></i>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+        <hr style="margin-bottom: -4px;">
+        <!--sign in-->
+        <div class="modal fade" id="sign_in">
+            <div class="modal-dialog">
+                <div class="modal-content p-3">
+
+                    <!--modal header-->
+                    <div class="modal-header">
+                        <h2 class="modal-title sign_header">Đăng Nhập</h2>
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    </div>
+
+                    <!--modal body-->
+                    <div class="modal-body">
+                        <form action="">
+                            <!--email-->
+                            <div class="form-group">
+                                <label id="sign" for="email">Tên tài khoản:</label>
+                                <input type="email" name="email" class="form-control" id="email" placeholder="Email:">
+                            </div><!--end form group-->
+
+                            <div class="form-group">
+                                <label for="pwd">Mật khẩu</label>
+                                <input type="password" name="pwd" class="form-control" id="pwd" placeholder="Mật khẩu của bạn">
+                            </div><!--end form group-->
+                            <!--remember me-->
+                            <div class="form-group form-check">
+                                <label class="form-check-label">
+                                    <input type="checkbox" name="remember" class="form-check-input">Ghi nhớ tài khoản
+                                </label>
+                            </div><!--end form group-->
+                            <!--button-->
+                            <button type="submit" class="btn btn_buy" style="background-color:#66ccff;">Đăng nhập</button>
+                            <a href="#" class="font_16 text-secondary"> &nbsp Bạn quên mật khẩu?</a>
+                            <div class="row">
+                                <div class="col-6">
+                                    <button type="submit" class="btn btn-outline-primary border_30 mt-4"><i class="fab fa-facebook-f"></i> &nbsp;Đăng nhập bằng Facebook</button>
+                                </div>
+                                <div class="col-6">
+                                    <button type="submit" class="btn btn-outline-danger border_30 mt-4">
+                                        <i class="fab fa-google"></i>
+                                        &nbsp; Đăng nhập bằng Google
+                                    </button>
+                                </div>
+                            </div><br>
+                        </form>
+                    </div><!--end modal body-->
+
+                    <div class="modal-footer">
+                        <div class="d-flex justify-content-begin">
+                            <div>
+                                <p class="font_16">Bạn không có tài khoản?</p>
+                            </div>&nbsp; &nbsp;
+                            <div>
+                                 <a href="#" class="btn btn_view" data-dismiss="modal" data-toggle="modal" data-target="#sign_up" style="background-color:#66ccff;">Đăng Ký Ngay</a>
+                            </div>
+                        </div>
+                    </div>
+                </div><!--end modal content-->
+            </div><!--end modal dialog-->
+        </div><!---end modal-->
+       <div class="modal fade" id="sign_up">
+            <div class="modal-dialog">
+                <div class="modal-content p-3">
+                    <!--modal header-->
+                    <div class="modal-header">
+                        <h2>Đăng Ký</h2>
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    </div>
+
+                    <!--modal body-->
+
+                    <div class="modal-body">
+                        <p class="font_16">Bạn hãy điền vào form bên dưới</p>
+                        <form action="">
+                            <!--name-->
+
+
+                            <div class="form-group">
+                                <label for="hoten">Tên</label>
+                                <input type="name" name="hoten" class="form-control" id="hoten" placeholder="Tên của bạn">
+                            </div><!--end form group-->
+
+
+                            <div class="form-group">
+                                <label for="email1">Tên tài khoản</label>
+                                <input type="email" name="email1" class="form-control" id="email1" placeholder="Tên tài khoản">
+                            </div><!--end form group-->
+
+                            <div class="form-group">
+                                <label for="pwd1">Mật khẩu</label>
+                                <input type="password" name="pwd1" class="form-control" id="pwd1" placeholder="Mật khẩu">
+                            </div><!--end form group-->
+
+                            <div class="form-group">
+                                <label for="pwd2">Nhập lại mật khẩu</label>
+                                <input type="password" name="pwd2" class="form-control" id="pwd2" placeholder="Nhập lại mật khẩu">
+                            </div>
+                            <!--button-->
+                            <button type="submit" class="btn btn_buy"  style="background-color:#66ccff;">Đăng ký</button>
+                        </form>
+                    </div><!--end modal body-->
+                    <div class="modal-footer">
+                        <a href="#" class="btn btn_view" data-dismiss="modal" data-toggle="modal" data-target="#sign_in" style="background-color:yellow;">Quay lại Đăng nhập</a>
+                    </div>
+                </div><!--end modal content-->
+            </div><!--end modal dialog-->
+		  </div><!--end modal-->
+		<!--gioithieusach1-->
+			<div>
+            <h3 style="text-align: center;margin: 35px;font-family: 'myriadpro';"><b>NHÂN VẬT BÀI HỌC KINH DOANH</b></h3>
+        	</div>
+		<!--Sáhktnvbhkd-->
+			<div class="main1">
+				<div class="row">
+					<!--slide 1- sa1ch1-->
+					<div class="col-sm-3 sp">
+                    <div class="sp">
+                        <!-- Button to Open the Modal -->
+                        <button type="button" class="btn btn-link" data-toggle="modal" data-target="#myModal1">
+                            <img src="sachkinhte/kt1.jpg" class="rounded"
+                                 width="100%" height="100%" style="margin-left: 0%;">
+                        </button>
+
+                        <!-- The Modal -->
+                        <div class="modal fade" id="myModal1">
+                            <div class="modal-dialog modal-lg">
+                                <div class="modal-content">
+
+                                    <!-- Modal Header -->
+                                    <div class="modal-header">
+                                        <img src="img1\TriThuc (1).png" width="100px" height="100px" style="margin-left:10px; margin-top:5px">
+                                        <h4 class="modal-title" style="margin: 5% 1%;">TỪ TỐT ĐẾN VĨ ĐẠI - JIM COLLINS</h4>
+                                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                    </div>
+
+                                    <!-- Modal body -->
+                                    <div class="modal-body spp" style="background-color: none;">
+                                        <p><b>TỪ TỐT ĐẾN VĨ ĐẠI - JIM COLLINS</b></p>
+                                        <p>115.000 VNĐ</p>
+                                        <div class="row">
+                                            <div class="col-sm-5">
+                                                <img src="sachkinhte/kt1.jpg" class="rounded" width="100%" height="70%">
+                                            </div>
+                                            <div class="col-sm-6">
+
+                                                <p>Jim Collins cùng nhóm nghiên cứu đã miệt mài nghiên cứu những công ty có bước nhảy vọt và bền vững để rút ra những kết luận sát sườn, những yếu tố cần kíp để đưa công ty từ tốt đến vĩ đại.</p>
+                                                <p> Đó là những yếu tố khả năng lãnh đạo, con người, văn hóa, kỷ luật, công nghệ… Những yếu tố này được nhóm nghiên cứu xem xét tỉ mỉ và kiểm chứng cụ thể qua 11 công ty nhảy vọt lên vĩ đại. Mỗi kết luận của nhóm nghiên cứu đều hữu ích, vượt thời gian, ý nghĩa vô cùng to lớn đối với mọi lãnh đạo và quản lý ở mọi loại hình công ty (từ công ty có nền tảng và xuất phát tốt đến những công ty mới khởi nghiệp), và mọi lĩnh vực ngành nghề. Đây là cuốn sách nên đọc đối với bất kỳ lãnh đạo hay quản lý nào!</p>
+                                                <p><b>Tác giả - Jim Collins</b></p>
+                                                <p>Tên thật là Fujimoto Hiroshi. Ông sinh ngày 1 tháng 12 năm 1933 tại tỉnh Toyama, Nhật Bản. </p>
+												<p><b>Sản phẩm bán chạy nhất</b>Top 100 sản phẩm Nhân vật - Bài Học Kinh doanh bán chạy của tháng</p>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <!-- Modal footer -->
+                                    <div class="modal-footer">
+										<button type="button" class="btn btn-danger" data-dismiss="modal" onclick="alert('Bạn cần phải Đăng Nhập')" >Mua ngay</button>
+                                        <button type="button" class="btn btn-secondary" data-dismiss="modal" onclick="alert('Bạn cần phải Đăng Nhập')">Thêm vào giỏ hàng<i class="fas fa-shopping-cart"></i></button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <p><b>TỪ TỐT ĐẾN VĨ ĐẠI - JIM COLLINS</b></p>
+                    <p class="profsp">115.000 VNĐ</p>
+                </div>
+					<!--slide 1- sa1ch2-->
+					<div class="col-sm-3 sp">
+                    <div class="sp">
+                        <!-- Button to Open the Modal -->
+                        <button type="button" class="btn btn-link" data-toggle="modal" data-target="#myModal2">
+                            <img src="sachkinhte/kt2.jpg" class="rounded"
+                                 width="100%" height="80%" style="margin-left: 0%;">
+                        </button>
+
+                        <!-- The Modal -->
+                        <div class="modal fade" id="myModal2">
+                            <div class="modal-dialog modal-lg">
+                                <div class="modal-content">
+
+                                    <!-- Modal Header -->
+                                    <div class="modal-header">
+                                        <img src="img1\TriThuc (1).png" width="100px" height="100px" style="margin-left:10px; margin-top:5px">
+                                        <h4 class="modal-title" style="margin: 5% 1%;">THINK AND GROW RICH - NGHĨ GIÀU VÀ LÀM GIÀU</h4>
+                                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                    </div>
+
+                                    <!-- Modal body -->
+                                    <div class="modal-body spp" style="background-color: none;">
+                                        <p><b>THINK AND GROW RICH - NGHĨ GIÀU VÀ LÀM GIÀU</b></p>
+                                        <p>80.000 VNĐ</p>
+                                        <div class="row">
+                                            <div class="col-sm-5">
+                                                <img src="sachkinhte/kt2.jpg" class="rounded" width="100%" height="70%">
+                                            </div>
+                                            <div class="col-sm-6">
+
+                                                <p><i>CThink and Grow Rich - Nghĩ giàu và Làm giàu</i>là một trong những cuốn sách bán chạy nhất mọi thời đại. Đã hơn 60 triệu bản được phát hành với gần trăm ngôn ngữ trên toàn thế giới và được công nhận là cuốn sách tạo ra nhiều triệu phú hơn, một cuốn sách truyền cảm hứng thành công nhiều hơn bất cứ cuốn sách kinh doanh nào trong lịch sử.</p>
+                                                <p>Tác phẩm này đã giúp tác giả của nó, Napoleon Hill, được tôn vinh bằng danh hiệu “người tạo ra những nhà triệu phú”. Đây cũng là cuốn sách hiếm hoi được đứng trong top của rất nhiều bình chọn theo nhiều tiêu chí khác nhau - bình chọn của độc giả, của giới chuyên môn, của báo chí.</p>
+                                                <p>Lý do để Think and Grow Rich - Nghĩ giàu và Làm giàu có được vinh quang này thật hiển nhiên và dễ hiểu: Bằng việc đọc và áp dụng những phương pháp đơn giản, cô đọng này vào đời sống của mỗi cá nhân mà đã có hàng ngàn người trên thế giới trở thành triệu phú và thành công bền vững. Điều thú vị nhất là các bí quyết này có thể được hiểu và áp dụng bởi bất kỳ một người bình thường nào, hoạt động trong bất cứ lĩnh vực nào. Qua hơn 70 năm tồn tại, những đúc kết về thành công của Napoleon Hill đến nay vẫn không hề bị lỗi thời, ngược lại, thời gian chính là minh chứng sống động cho tính đúng đắn của những bí quyết mà ông chia sẻ.</p>
+                                                <p><b>Triệu phú hành xử khác người không phải triệu phú như thế nào?</b></p>
+												<p>...</p>
+												<p><b>Tác giả</b>:Napoleon Hill</p>
+												<p><b>Sản phẩm bán chạy nhất</b>Top 100 sản phẩm Nhân vật - Bài Học Kinh doanh bán chạy của tháng</p>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <!-- Modal footer -->
+                                    <div class="modal-footer">
+										<button type="button" class="btn btn-danger" data-dismiss="modal" onclick="alert('Bạn cần phải Đăng Nhập')">Mua ngay</button>
+                                        <button type="button" class="btn btn-secondary" data-dismiss="modal" onclick="alert('Bạn cần phải Đăng Nhập')">Thêm vào giỏ hàng<i class="fas fa-shopping-cart"></i></button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <p><b>THINK AND GROW RICH - NGHĨ GIÀU VÀ LÀM GIÀU</b></p>
+                    <p class="profsp">80.000 VNĐ</p>
+                </div>
+					<!--slide 1- sa1ch3-->
+					<div class="col-sm-3 sp">
+                    <div class="sp">
+                        <!-- Button to Open the Modal -->
+                        <button type="button" class="btn btn-link" data-toggle="modal" data-target="#myModal3">
+                            <img src="sachkinhte/kt3.jpg" class="rounded"
+                                 width="100%" height="100%" style="margin-left: 0%;">
+                        </button>
+
+                        <!-- The Modal -->
+                        <div class="modal fade" id="myModal3">
+                            <div class="modal-dialog modal-lg">
+                                <div class="modal-content">
+
+                                    <!-- Modal Header -->
+                                    <div class="modal-header">
+                                        <img src="img1\TriThuc (1).png" width="100px" height="100px" style="margin-left:10px; margin-top:5px">
+                                        <h4 class="modal-title" style="margin: 5% 1%;">KHÔNG BAO GIỜ LÀ THẤT BẠI! TẤT CẢ LÀ THỬ THÁCH (TÁI BẢN 2019)</h4>
+                                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                    </div>
+
+                                    <!-- Modal body -->
+                                    <div class="modal-body spp" style="background-color: none;">
+                                        <p><b>KHÔNG BAO GIỜ LÀ THẤT BẠI! TẤT CẢ LÀ THỬ THÁCH (TÁI BẢN 2019)</b></p>
+                                        <p>98.000 VNĐ</p>
+                                        <div class="row">
+                                            <div class="col-sm-5">
+                                                <img src="sachkinhte/kt3.jpg" class="rounded" width="100%" height="70%">
+                                            </div>
+                                            <div class="col-sm-6">
+
+                                                <p>Người viết cuốn tự truyện độc đáo này là một con người kiên định, với ý chí tự lập của mình dám đương đầu với mọi thử thách, trở ngại trong cuộc đời, dám nghĩ dám làm, dám ước mơ và dám vượt qua những khó khăn thử thách để thực hiện những ước mơ và dự định tưởng chừng không thể của mình.</p>
+                                                <p>Đây là một minh chứng sống về ý chí và năng lực không giới hạn của con người khi đã có lòng nhiệt huyết, say mê - một người đã xem những thất bại - cho dù là thất bại cay đắng nhất - không phải là thất bại - mà chỉ là thử thách của cuộc sống tôi rèn bản lĩnh của chính mình. Tác giả và nhân vật trong cuốn tự truyện này là một người Hàn Quốc nổi tiếng: Chung Ju Yung - người đã sáng lập và là cố chủ tịch của tập đoàn Huyndai.</p>
+                                                <p>LQua từng trang sách chúng ta sẽ cùng khám phá cuộc đời thăng trầm rất thực và tính cách thú vị của cậu thanh niên vùng nông thôn với ước mơ lớn từ hai bàn tay trắng đã trở thành một trong những doanh nhân nổi tiếng nhất trong lịch sử các tập đoàn công nghiệp hàng đầu Hàn Quốc và châu Á.</p>
+                                                <p>"Một người không tin là có vận xấu, người đó sẽ không có vận xấu. Mọi thứ đều quân bình, vận may rủi đều đến với con người như nhau.Quan trọng nhất là phải nỗ lực, nỗ lực không ngừng và biết chớp thời cơ."</p>
+												<p>...</p>
+												<p><b>Tác giả</b>:Chung Ju Yung</p>
+												<p><b>Sản phẩm bán chạy nhất</b>Top 100 sản phẩm Nhân vật - Bài Học Kinh doanh bán chạy của tháng</p>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <!-- Modal footer -->
+                                    <div class="modal-footer">
+										<button type="button" class="btn btn-danger" data-dismiss="modal" onclick="alert('Bạn cần phải Đăng Nhập')">Mua ngay</button>
+                                        <button type="button" class="btn btn-secondary" data-dismiss="modal" onclick="alert('Bạn cần phải Đăng Nhập')">Thêm vào giỏ hàng<i class="fas fa-shopping-cart"></i></button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <p><b>KHÔNG BAO GIỜ LÀ THẤT BẠI! TẤT CẢ LÀ THỬ THÁCH (TÁI BẢN 2019)</b></p>
+                    <p class="profsp">98.000 VNĐ</p>
+                </div>
+					<!--slide 1- sa1ch4-->
+					<div class="col-sm-3 sp">
+                    <div class="sp">
+                        <!-- Button to Open the Modal -->
+                        <button type="button" class="btn btn-link" data-toggle="modal" data-target="#myModal4">
+                            <img src="sachkinhte/kt4.jpg" class="rounded"
+                                 width="100%" height="40%" style="margin-left: 0%;">
+                        </button>
+
+                        <!-- The Modal -->
+                        <div class="modal fade" id="myModal4">
+                            <div class="modal-dialog modal-lg">
+                                <div class="modal-content">
+
+                                    <!-- Modal Header -->
+                                    <div class="modal-header">
+                                        <img src="img1\TriThuc (1).png" width="100px" height="100px" style="margin-left:10px; margin-top:5px">
+                                        <h4 class="modal-title" style="margin: 5% 1%;">SAI LẦM CHẾT NGƯỜI TRONG ĐẦU TƯ: NHỮNG THƯƠNG VỤ TỆ NHẤT CỦA NHỮNG NHÀ ĐẦU TƯ ĐỈNH NHẤT</h4>
+                                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                    </div>
+
+                                    <!-- Modal body -->
+                                    <div class="modal-body spp" style="background-color: none;">
+                                        <p><b>SAI LẦM CHẾT NGƯỜI TRONG ĐẦU TƯ: NHỮNG THƯƠNG VỤ TỆ NHẤT CỦA NHỮNG NHÀ ĐẦU TƯ ĐỈNH NHẤT</b></p>
+                                        <p>120.000 VNĐ</p>
+                                        <div class="row">
+                                            <div class="col-sm-5">
+                                                <img src="sachkinhte/kt4.jpg" class="rounded" width="100%" height="70%">
+                                            </div>
+                                            <div class="col-sm-6">
+
+                                                <p>Nghiên cứu và sao chép những chiến lược và hành vi của các nhà đầu tư thành công để tăng lợi nhuận là một con đường đã mòn cũ, nhưng tìm hiểu những ý tưởng điên rồ và những cơ hội bị bỏ lỡ đã không thể làm chệch đường sự nghiệp hiển hách của họ còn khiến ta vỡ vạc khôn ngoan. Sai lầm chết người trong đầu tư: Những thương vụ tệ nhất của những nhà đầu tư đỉnh nhất soi rọi ánh sáng khai mở lên những bài học hổ thẹn của hơn một chục nhà đầu tư nổi tiếng nhất thế giới.</p>
+                                                <p>Trong cuốn sách được nghiên cứu xuất sắc này, tìm hiểu chi tiết một tập hợp đa dạng các nhà đầu tư vượt ra ngoài những thành tựu nổi tiếng của họ cho thấy việc đầu tư là không dễ dàng – ngay cả với những người được trời phú cho tài năng xuất sắc và thời điểm đúng đắn không chê vào đâu được. Nếu bạn nghĩ là bạn biết những câu chuyện đằng sau những người khổng lồ đầu tư như Warren Buffett,  Bill Ackman, Chris Sacca, Jack Bogle, Ben Graham, và John Maynard Keynes, xin kể tên vài người, những nghiên cứu độc đáo trong sách này sẽ bổ sung một góc nhìn mới và giàu sắc thái cho các tiểu sử quen thuộc của họ.</p>
+                                                <p>Sau khi đọc cuốn sách này, bạn sẽ trở thành một nhà đầu tư khôn ngoan hơn khi biết:</p>
+												<p>Tầm quan trọng của việc quản trị rủi ro và không bám giữ các khoản đầu tư.Tại sao bạn cần đầu tư với những điểm mạnh của bạn, đồng thời nhớ rằng bạn không thông minh như bạn nghĩ</p>
+												<p>...</p>
+												<p><b>Tác giả</b>:Michael Batnick</p>
+												<p><b>Sản phẩm bán chạy nhất</b>	Top 100 sản phẩm Nhân vật - Bài Học Kinh doanh bán chạy của tháng</p>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <!-- Modal footer -->
+                                    <div class="modal-footer">
+										<button type="button" class="btn btn-danger" data-dismiss="modal" onclick="alert('Bạn cần phải Đăng Nhập')">Mua ngay</button>
+                                        <button type="button" class="btn btn-secondary" data-dismiss="modal" onclick="alert('Bạn cần phải Đăng Nhập')">Thêm vào giỏ hàng<i class="fas fa-shopping-cart"></i></button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <p class><b>SAI LẦM CHẾT NGƯỜI TRONG ĐẦU TƯ</b></p>
+                    <p class="profsp">120.000 VNĐ</p>
+                </div>
+				</div>
+				<div class="row">
+					<!--slide 2- sa1ch5-->
+					<div class="col-sm-3 sp">
+                    <div class="sp">
+                        <!-- Button to Open the Modal -->
+                        <button type="button" class="btn btn-link" data-toggle="modal" data-target="#myModal5">
+                            <img src="sachkinhte/kt5.jpg" class="rounded"
+                                 width="100%" height="100%" style="margin-left: 0%;">
+                        </button>
+
+                        <!-- The Modal -->
+                        <div class="modal fade" id="myModal5">
+                            <div class="modal-dialog modal-lg">
+                                <div class="modal-content">
+
+                                    <!-- Modal Header -->
+                                    <div class="modal-header">
+                                        <img src="img1\TriThuc (1).png" width="100px" height="100px" style="margin-left:10px; margin-top:5px">
+                                        <h4 class="modal-title" style="margin: 5% 1%;">SỨC MẠNH CỦA NHỮNG Ý TƯỞNG NHỎ</h4>
+                                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                    </div>
+
+                                    <!-- Modal body -->
+                                    <div class="modal-body spp" style="background-color: none;">
+                                        <p><b>SỨC MẠNH CỦA NHỮNG Ý TƯỞNG NHỎ</b></p>
+                                        <p>130.000 VNĐ</p>
+                                        <div class="row">
+                                            <div class="col-sm-5">
+                                                <img src="sachkinhte/kt5.jpg" class="rounded" width="100%" height="70%">
+                                            </div>
+                                            <div class="col-sm-6">
+
+                                                <p>Jim Collins cùng nhóm nghiên cứu đã miệt mài nghiên cứu những công ty có bước nhảy vọt và bền vững để rút ra những kết luận sát sườn, những yếu tố cần kíp để đưa công ty từ tốt đến vĩ đại.</p>
+                                                <p> Đó là những yếu tố khả năng lãnh đạo, con người, văn hóa, kỷ luật, công nghệ… Những yếu tố này được nhóm nghiên cứu xem xét tỉ mỉ và kiểm chứng cụ thể qua 11 công ty nhảy vọt lên vĩ đại. Mỗi kết luận của nhóm nghiên cứu đều hữu ích, vượt thời gian, ý nghĩa vô cùng to lớn đối với mọi lãnh đạo và quản lý ở mọi loại hình công ty (từ công ty có nền tảng và xuất phát tốt đến những công ty mới khởi nghiệp), và mọi lĩnh vực ngành nghề. Đây là cuốn sách nên đọc đối với bất kỳ lãnh đạo hay quản lý nào!</p>
+                                                <p><b>Tác giả - Jim Collins</b></p>
+                                                <p>Tên thật là Fujimoto Hiroshi. Ông sinh ngày 1 tháng 12 năm 1933 tại tỉnh Toyama, Nhật Bản. </p>
+												<p><b>Sản phẩm bán chạy nhất</b>Top 100 sản phẩm Nhân vật - Bài Học Kinh doanh bán chạy của tháng</p>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <!-- Modal footer -->
+                                    <div class="modal-footer">
+										<button type="button" class="btn btn-danger" data-dismiss="modal" onclick="alert('Bạn cần phải Đăng Nhập')">Mua ngay</button>
+                                        <button type="button" class="btn btn-secondary" data-dismiss="modal" onclick="alert('Bạn cần phải Đăng Nhập')">Thêm vào giỏ hàng<i class="fas fa-shopping-cart"></i></button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <p><b>SỨC MẠNH CỦA NHỮNG Ý TƯỞNG NHỎ</b></p>
+                    <p class="profsp">130.000 VNĐ</p>
+                </div>
+					<!--slide 2- sa1ch7-->
+					<div class="col-sm-3 sp">
+                    <div class="sp">
+                        <!-- Button to Open the Modal -->
+                        <button type="button" class="btn btn-link" data-toggle="modal" data-target="#myModal6">
+                            <img src="sachkinhte/kt6.jpg" class="rounded"
+                                 width="100%" height="100%" style="margin-left: 0%;">
+                        </button>
+
+                        <!-- The Modal -->
+                        <div class="modal fade" id="myModal6">
+                            <div class="modal-dialog modal-lg">
+                                <div class="modal-content">
+
+                                    <!-- Modal Header -->
+                                    <div class="modal-header">
+                                        <img src="img1\TriThuc (1).png" width="100px" height="100px" style="margin-left:10px; margin-top:5px">
+                                        <h4 class="modal-title" style="margin: 5% 1%;">DONALD TRUMP - CHIẾN LƯỢC ĐẦU TƯ BẤT ĐỘNG SẢN (TÁI BẢN 2018)</h4>
+                                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                    </div>
+
+                                    <!-- Modal body -->
+                                    <div class="modal-body spp" style="background-color: none;">
+                                        <p><b>DONALD TRUMP - CHIẾN LƯỢC ĐẦU TƯ BẤT ĐỘNG SẢN (TÁI BẢN 2018)</b></p>
+                                        <p>129.000 VNĐ</p>
+                                        <div class="row">
+                                            <div class="col-sm-5">
+                                                <img src="sachkinhte/kt6.jpg" class="rounded" width="100%" height="70%">
+                                            </div>
+                                            <div class="col-sm-6">
+
+                                                <p>Berkshire Hathaway đúng như tên gọi của nó được viết lên từ chính câu chuyện của tập đoàn lừng danh thế giới với sự dẫn dắt của tỉ phú Warrent Buffett.</p>
+                                                <p>Berkshire Hathaway đúng như tên gọi của nó được viết lên từ chính câu chuyện của tập đoàn lừng danh thế giới với sự dẫn dắt của tỉ phú Warrent Buffett.</p>
+												<p>Từ hàng ghế đầu này, bạn sẽ thấy một trong những kỷ lục xây dựng sự giàu có lớn nhất trong lịch sử mở ra hàng năm.</p>
+												<p><b>Tác giả -	Daniel Pecaut, Corey Wrenn</b></p>
+												<p><b>Sản phẩm bán chạy nhất</b>Top 100 sản phẩm Nhân vật - Bài Học Kinh doanh bán chạy của tháng</p>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <!-- Modal footer -->
+                                    <div class="modal-footer">
+										<button type="button" class="btn btn-danger" data-dismiss="modal" onclick="alert('Bạn cần phải Đăng Nhập')">Mua ngay</button>
+                                        <button type="button" class="btn btn-secondary" data-dismiss="modal" onclick="alert('Bạn cần phải Đăng Nhập')">Thêm vào giỏ hàng<i class="fas fa-shopping-cart"></i></button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+						<p><b>DONALD TRUMP - CHIẾN LƯỢC ĐẦU TƯ BẤT ĐỘNG SẢN (TÁI BẢN 2018)SỨC MẠNH CỦA NHỮNG Ý TƯỞNG NHỎ</b></p>
+                    <p class="profsp">129.000 VNĐ</p>
+                </div>
+				<div class="col-sm-3 sp">
+                    <div class="sp">
+                        <!-- Button to Open the Modal -->
+                        <button type="button" class="btn btn-link" data-toggle="modal" data-target="#myModal7">
+                            <img src="sachkinhte/kt7.jpg" class="rounded"
+                                 width="100%" height="100%" style="margin-left: 0%;">
+                        </button>
+
+                        <!-- The Modal -->
+                        <div class="modal fade" id="myModal7">
+                            <div class="modal-dialog modal-lg">
+                                <div class="modal-content">
+
+                                    <!-- Modal Header -->
+                                    <div class="modal-header">
+                                        <img src="img1\TriThuc (1).png" width="100px" height="100px" style="margin-left:10px; margin-top:5px">
+                                        <h4 class="modal-title" style="margin: 5% 1%;">BERKSHIRE HATHAWAY: NHỮNG BÀI HỌC TUYỆT VỜI TỪ WARREN BUFFETT VÀ CHARLIE MUNGER TẠI ĐẠI HỘI CỔ ĐÔNG THƯỜNG NIÊN CỦA TẬP ĐOÀN TRONG SUỐT 30 NĂM</h4>
+                                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                    </div>
+
+                                    <!-- Modal body -->
+                                    <div class="modal-body spp" style="background-color: none;">
+                                        <p><b>BERKSHIRE HATHAWAY: NHỮNG BÀI HỌC TUYỆT VỜI TỪ WARREN BUFFETT VÀ CHARLIE MUNGER TẠI ĐẠI HỘI CỔ ĐÔNG THƯỜNG NIÊN CỦA TẬP ĐOÀN TRONG SUỐT 30 NĂM</b></p>
+                                        <p>199.000 VNĐ</p>
+                                        <div class="row">
+                                            <div class="col-sm-5">
+                                                <img src="sachkinhte/kt7.jpg" class="rounded" width="100%" height="70%">
+                                            </div>
+                                            <div class="col-sm-6">
+
+                                                <p>Các chiến lược kinh doanh của nhà tỷ phú Trump có thể giúp các nhà đầu tư trung bình như thế nào? Ross cho rằng những nguyên tắc cơ bản đã làm cho các toà nhà của Trump ở Manhattan tạo ra siêu lợi nhuận vẫn có thể áp dụng cho tất cả các nhà kinh doanh bất động sản khác ở mọi cấp độ, cho dù vốn của họ là bao nhiêu.</p>
+                                                <p> Chiến lược đầu tư bât động sản của Trump trình bày một cái nhìn toàn cảnh về ý tưởng sáng tạo đã đưa Trump lên đến đỉnh cao thành công. Kể cả bạn là một nhà kinh doanh bất động sản dày dặn kinh nghiệm hay là người mới học việc trong lĩnh vực này, bạn sẽ kiếm được nhiêù tiền hơn trong các thương vụ đầu tư của mình nếu áp dụng các chiến lược của tỷ phú Trump.</p>
+												<p><b>Tác giả -	Daniel Pecaut, Corey Wrenn</b></p>
+												 <p><b>Người dịch</b>Thảo Phương</p>
+												<p><b>Sản phẩm bán chạy nhất</b>Top 100 sản phẩm Nhân vật - Bài Học Kinh doanh bán chạy của tháng</p>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <!-- Modal footer -->
+                                    <div class="modal-footer">
+										<button type="button" class="btn btn-danger" data-dismiss="modal" onclick="alert('Bạn cần phải Đăng Nhập')">Mua ngay</button>
+                                        <button type="button" class="btn btn-secondary" data-dismiss="modal" onclick="alert('Bạn cần phải Đăng Nhập')">Thêm vào giỏ hàng<i class="fas fa-shopping-cart"></i></button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+						<p><b>DONALD TRUMP - CHIẾN LƯỢC ĐẦU TƯ BẤT ĐỘNG SẢN (TÁI BẢN 2018)SỨC MẠNH CỦA NHỮNG Ý TƯỞNG NHỎ</b></p>
+                    <p class="profsp">199.000 VNĐ</p>
+                </div>
+					<!--slide 2- sa1ch8-->
+					<div class="col-sm-3 sp">
+                    <div class="sp">
+                        <!-- Button to Open the Modal -->
+                        <button type="button" class="btn btn-link" data-toggle="modal" data-target="#myModal8">
+                            <img src="sachkinhte/kt8.jpg" class="rounded"
+                                 width="100%" height="100%" style="margin-left: 0%;">
+                        </button>
+
+                        <!-- The Modal -->
+                        <div class="modal fade" id="myModal8">
+                            <div class="modal-dialog modal-lg">
+                                <div class="modal-content">
+
+                                    <!-- Modal Header -->
+                                    <div class="modal-header">
+                                        <img src="img1\TriThuc (1).png" width="100px" height="100px" style="margin-left:10px; margin-top:5px">
+                                        <h4 class="modal-title" style="margin: 5% 1%;">BỘ BA XUẤT CHÚNG NHẬT BẢN (TÁI BẢN 2019)</h4>
+                                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                    </div>
+
+                                    <!-- Modal body -->
+                                    <div class="modal-body spp" style="background-color: none;">
+                                        <p><b>BỘ BA XUẤT CHÚNG NHẬT BẢN (TÁI BẢN 2019)</b></p>
+                                        <p>85.000 VNĐ</p>
+                                        <div class="row">
+                                            <div class="col-sm-5">
+                                                <img src="sachkinhte/kt8.jpg" class="rounded" width="100%" height="70%">
+                                            </div>
+                                            <div class="col-sm-6">
+
+                                                <p>Mặc dù cái tên Kaizen nghe có vẻ lạ lẫm nhưng khái niệm những bước đi nhỏ tạo ra sự cải thiện liên tục đã được áp dụng lần đầu tiên một cách có hệ thống trong thời kỳ Đại suy thoái kinh tế ở Mỹ. Kaizen là một triết lý cổ với tinh thần được thể hiện qua những tuyên ngôn đầy sức mạnh trong tác phẩm Đạo đức Kinh: “Thiên lý hành trình thủy vu túc hạ” (Hành trình vạn dặm bắt đầu từ bước đầu tiên).</p>
+												<p>Qua quyển sách này, bạn sẽ hiểu rằng thay đổi không phải là một phản ứng chống trả chỉ xảy ra trong các tình huống nguy cấp. Những sự thay đổi vĩ đại đều có thể thực hiện thông qua các bước nhỏ:</p>
+                                                <p>Đặt ra những câu hỏi nhỏ</p>
+												<p>Đi theo những suy nghĩ nhỏ</p>
+												<p>Thực hiện những hành động nhỏ</p>
+												<p>Giải quyết các vấn đề nhỏ</p>
+												<p>Các bước nhỏ đánh lừa không cho bộ não tạo ra sự chống đối với các thói quen, hành vi mới. Vì vậy, cho dù mục tiêu của bạn là gì – giảm cân, bỏ thuốc lá, viết một cuốn sách, bắt đầu một chương trình luyện tập, hoặc tìm kiếm tình yêu của cuộc đời mình – thì kỹ thuật Kaizen đầy sức mạnh chính là phương thức để giúp bạn đạt được chúng.</p>
+												<p>Nếu bạn mong muốn tạo ra một sự thay đổi – sự thay đổi bền vững – hy vọng bạn sẽ tiếp tục đọc cuốn sách này. Phương pháp này là một bí quyết mở, vốn được lưu hành rộng rãi giữa các công ty kinh doanh Nhật Bản hàng thập kỷ qua và được sử dụng hàng ngày một cách riêng tư bởi các cá nhân trên toàn thế giới.</p>
+												<p>“Bạn sẽ cảm thấy nhẹ nhõm khi đọc được quyển sách này! Thật là một phương pháp nhẹ nhàng và đơn giản để giải quyết tất cả mọi khó khăn trong cuộc sống của chúng ta”</p>
+												<p><b>Tác giả -		Robert Maurer</b></p>
+												<p><b>Người Dịch-	Huỳnh Ngọc Song Minh</b></p>
+												<p><b>Sản phẩm bán chạy nhất</b>Top 100 sản phẩm Nhân vật - Bài Học Kinh doanh bán chạy của tháng</p>
+                                            </div>
+                                        </div>
+
+                                    <!-- Modal footer -->
+                                    <div class="modal-footer">
+										<button type="button" class="btn btn-danger" data-dismiss="modal" onclick="alert('Bạn cần phải Đăng Nhập')">Mua ngay</button>
+                                        <button type="button" class="btn btn-secondary" data-dismiss="modal" onclick="alert('Bạn cần phải Đăng Nhập')">Thêm vào giỏ hàng<i class="fas fa-shopping-cart"></i></button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+						<p><b>BỘ BA XUẤT CHÚNG NHẬT BẢN (TÁI BẢN 2019)</b></p>
+                    <p class="profsp">109.000 VNĐ</p>
+                </div>
+				</div>
+				</div>
+				<div class="row">
+					<!--slide 3- sa1ch9-->
+					<div class="col-sm-3 sp">
+                    <div class="sp">
+                        <!-- Button to Open the Modal -->
+                        <button type="button" class="btn btn-link" data-toggle="modal" data-target="#myModal9">
+                            <img src="sachkinhte/kt9.jpg" class="rounded"
+                                 width="100%" height="100%" style="margin-left: 0%;">
+                        </button>
+
+                        <!-- The Modal -->
+                        <div class="modal fade" id="myModal9">
+                            <div class="modal-dialog modal-lg">
+                                <div class="modal-content">
+
+                                    <!-- Modal Header -->
+                                    <div class="modal-header">
+                                        <img src="img1\TriThuc (1).png" width="100px" height="100px" style="margin-left:10px; margin-top:5px">
+                                        <h4 class="modal-title" style="margin: 5% 1%;">PHƯƠNG PHÁP KAIZEN - THE KAIZEN WAY</h4>
+                                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                    </div>
+
+                                    <!-- Modal body -->
+                                    <div class="modal-body spp" style="background-color: none;">
+                                        <p><b>PHƯƠNG PHÁP KAIZEN - THE KAIZEN WAY</b></p>
+                                        <p>85.000 VNĐ</p>
+                                        <div class="row">
+                                            <div class="col-sm-5">
+                                                <img src="sachkinhte/kt9.jpg" class="rounded" width="100%" height="60%">
+                                            </div>
+                                            <div class="col-sm-6">
+
+                                                <p>Jim Collins cùng nhóm nghiên cứu đã miệt mài nghiên cứu những công ty có bước nhảy vọt và bền vững để rút ra những kết luận sát sườn, những yếu tố cần kíp để đưa công ty từ tốt đến vĩ đại.</p>
+                                                <p> Đó là những yếu tố khả năng lãnh đạo, con người, văn hóa, kỷ luật, công nghệ… Những yếu tố này được nhóm nghiên cứu xem xét tỉ mỉ và kiểm chứng cụ thể qua 11 công ty nhảy vọt lên vĩ đại. Mỗi kết luận của nhóm nghiên cứu đều hữu ích, vượt thời gian, ý nghĩa vô cùng to lớn đối với mọi lãnh đạo và quản lý ở mọi loại hình công ty (từ công ty có nền tảng và xuất phát tốt đến những công ty mới khởi nghiệp), và mọi lĩnh vực ngành nghề. Đây là cuốn sách nên đọc đối với bất kỳ lãnh đạo hay quản lý nào!</p>
+                                                <p><b>Tác giả - Jim Collins</b></p>
+                                                <p>Tên thật là Fujimoto Hiroshi. Ông sinh ngày 1 tháng 12 năm 1933 tại tỉnh Toyama, Nhật Bản. </p>
+												<p><b>Sản phẩm bán chạy nhất</b>Top 100 sản phẩm Nhân vật - Bài Học Kinh doanh bán chạy của tháng</p>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <!-- Modal footer -->
+                                    <div class="modal-footer">
+										<button type="button" class="btn btn-danger" data-dismiss="modal" onclick="alert('Bạn cần phải Đăng Nhập')">Mua ngay</button>
+                                        <button type="button" class="btn btn-secondary" data-dismiss="modal" onclick="alert('Bạn cần phải Đăng Nhập')">Thêm vào giỏ hàng<i class="fas fa-shopping-cart"></i></button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <p><b>PHƯƠNG PHÁP KAIZEN - THE KAIZEN WAY</b></p>
+                    <p class="profsp">85.000 VNĐ</p>
+                </div>
+				<!--slide 3- sa1ch10-->
+					<div class="col-sm-3 sp">
+                    <div class="sp">
+                        <!-- Button to Open the Modal -->
+                        <button type="button" class="btn btn-link" data-toggle="modal" data-target="#myModal10">
+                            <img src="sachkinhte/kt10.jpg" class="rounded"
+                                 width="100%" height="100%" style="margin-left: 0%;">
+                        </button>
+
+                        <!-- The Modal -->
+                        <div class="modal fade" id="myModal10">
+                            <div class="modal-dialog modal-lg">
+                                <div class="modal-content">
+
+                                    <!-- Modal Header -->
+                                    <div class="modal-header">
+                                        <img src="img1\TriThuc (1).png" width="100px" height="100px" style="margin-left:10px; margin-top:5px">
+                                        <h4 class="modal-title" style="margin: 5% 1%;">GOOGLE - CÁCH QUẢN TRỊ MỘT CÔNG TY SÁNG TẠO</h4>
+                                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                    </div>
+
+                                    <!-- Modal body -->
+                                    <div class="modal-body spp" style="background-color: none;">
+                                        <p><b>GOOGLE - CÁCH QUẢN TRỊ MỘT CÔNG TY SÁNG TẠO</b></p>
+                                        <p>140.000 VNĐ</p>
+                                        <div class="row">
+                                            <div class="col-sm-5">
+                                                <img src="sachkinhte/kt10.jpg" class="rounded" width="100%" height="60%">
+                                            </div>
+                                            <div class="col-sm-6">
+
+                                                 <p>Eric Schmidt – Cựu Chủ tịch điều hành Alphabet và cựu CEO của Google cùng với Jonathan Rosenberg – cựu phó chủ tịch cấp cao của Google và hiện là cố vấn của CEO của Alphabet, chia sẻ với độc giả nhiều điều thú vị về cách thức Google vận hành, từ lịch sử công ty, phỏng vấn tuyển dụng, chiến lược đột phá công ty đến việc phát triển triết lý quản lý và xây dựng nền văn hóa công ty – nơi nuôi dưỡng cải tiến và sáng tạo.</p>
+                                                 <p>Eric và Jonathan chia sẻ những bài học mình có được khi giúp xây dựng Google. Hai tác giả giải thích cách công nghệ đã giúp chuyển quyền lực từ công ty sang khách hàng và cách duy nhất để thành công trong bối cảnh không ngừng thay đổi là tạo ra được những sản phẩm vượt trội và thu hút thế hệ nhân viên mới đa tài năng.</p>
+                                                 <p>Quyển sách viết về nhiều đề tài khác nhau để xây dựng thành một công ty quốc tế thành công và lớn mạnh, từ văn hóa công ty, chiến lược, tại năng, ra quyết định, đổi mới, ứng phó với sự phá vỡ,… Và trong một kỷ nguyên mà mọi thứ tăng tốc, cách tốt nhất để bất kỳ doanh nghiệp nào cũng có thể thành công là thu hút được những nhân viên sáng tạo – thông minh và tạo cho họ môi trường để họ phát triển. Quyển sách này sẽ giải thích cách Google đã làm được điều đó như thế nào</p>
+                                                 <p><b>Tác giả</b>	Eric Schmidt, Jonathan Rosenberg, Alan Eagle</p>
+                                    			 <p><b>Sản phẩm bán chạy nhất	</b>Top 100 sản phẩm Nhân vật - Bài Học Kinh doanh bán chạy của tháng</p>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <!-- Modal footer -->
+                                    <div class="modal-footer">
+										<button type="button" class="btn btn-danger" data-dismiss="modal" onclick="alert('Bạn cần phải Đăng Nhập')">Mua ngay</button>
+                                        <button type="button" class="btn btn-secondary" data-dismiss="modal" onclick="alert('Bạn cần phải Đăng Nhập')">Thêm vào giỏ hàng<i class="fas fa-shopping-cart"></i></button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <p><b>GOOGLE - CÁCH QUẢN TRỊ MỘT CÔNG TY SÁNG TẠO</b></p>
+                    <p class="profsp">140.000 VNĐ</p>
+                </div>
+					<!--slide 3- sa1ch11-->
+					<div class="col-sm-3 sp">
+                    <div class="sp">
+                        <!-- Button to Open the Modal -->
+                        <button type="button" class="btn btn-link" data-toggle="modal" data-target="#myModal11">
+                            <img src="sachkinhte/kt11.jpg" class="rounded"
+                                 width="100%" height="100%" style="margin-left: 0%;">
+                        </button>
+
+                        <!-- The Modal -->
+                        <div class="modal fade" id="myModal11">
+                            <div class="modal-dialog modal-lg">
+                                <div class="modal-content">
+
+                                    <!-- Modal Header -->
+                                    <div class="modal-header">
+                                        <img src="img1\TriThuc (1).png" width="100px" height="100px" style="margin-left:10px; margin-top:5px">
+                                        <h4 class="modal-title" style="margin: 5% 1%;">CẢI TỔ DOANH NGHIỆP TRONG THỜI ĐẠI SỐ</h4>
+                                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                    </div>
+
+                                    <!-- Modal body -->
+                                    <div class="modal-body spp" style="background-color: none;">
+                                        <p><b>CẢI TỔ DOANH NGHIỆP TRONG THỜI ĐẠI SỐ</b></p>
+                                        <p>155.000 VNĐ</p>
+                                        <div class="row">
+                                            <div class="col-sm-5">
+                                                <img src="sachkinhte/kt11.jpg" class="rounded" width="100%" height="60%">
+                                            </div>
+                                            <div class="col-sm-6">
+
+                                                 <p>“Mọi người đều nói về những biến đổi trong thời đại số, nhưng đây mới là cơ hội để bạn thực sự triển khai hiệu quả quá trình này. Rogers cung cấp một lộ trình mà mọi cấp điều hành cần tham khảo. Nếu bạn không tham gia vào quá trình chuyển đổi trong doanh nghiệp, nó vẫn sẽ diễn ra! Hãy đọc cuốn sách này và sẵn sàng cho việc cải tổ doanh nghiệp trong thời đại số”.</p>
+												<p><b>Sree Sreenivasan</b></p>
+												 <p>Giám đốc kỹ thuật số, Metropolitan Museum of Art</p>
+                                                 <p>Cuộc cách mạng kỹ thuật số đã thực sự làm đảo lộn các chiến lược kinh doanh truyền thống. Các nguyên tắc trong kinh doanh đã thay đổi. Trong mỗi ngành công nghiệp, chúng ta đang chứng kiến sự lan rộng của các công nghệ số mới, sự nổi lên của những nguy cơ gây gián đoạn, thay thế, cũng như sự biến đổi về mô hình và quy trình kinh doanh.</p>
+                                                 <p>Cải tổ doanh nghiệp trong thời đại số không phải là vấn đề về công nghệ - mà đó là vấn đề về chiến lược và cách tư duy mới. Chuyển đổi trong thời đại kỹ thuật số đòi hỏi doanh nghiệp phải nâng cao nhận thức về chiến lược chứ không phải nâng cao chất lượng hạ tầng công nghệ thông tin. Sự thật này được phản ánh ở vai trò thay đổi của lãnh đạo công nghệ trong kinh doanh.</p>
+												 <p>Dựa trên một thập kỷ nghiên cứu và giảng dạy tại Trường kinh doanh Columbia, cũng như kinh nghiệm tư vấn cho nhiều doanh nghiệp trên thế giới, Cải tổ doanh nghiệp trong thời đại số trình bày cách thức mà các doanh nghiệp có xuất phát điểm từ giai đoạn trước thời đại số có thể chuyển đổi, tái tạo các kế hoạch và chiến lược của họ, từ đó tận dụng được những cơ hội mới trong thế giới kỹ thuật số ngày nay.</p>
+												<p>Rất nhiều cuốn sách đưa ra lời khuyên cho các công ty khởi nghiệp trong thời đại số, nhưng đây là cuốn sách đầu tiên chỉ ra cách tiếp cận để chuyển đổi một doanh nghiệp thành lập từ trước thời kỳ phát triển của Internet, giúp họ tiếp tục thành công trong thời đại số. Có thể xem đây là một cẩm nang không thể bỏ qua của các nhà lãnh đạo đang có mong muốn đưa tổ chức của mình tiến lên một giai đoạn tăng trưởng có lợi nhuận tiếp theo.</p>
+                                                 <p><b>Tác giả</b>	David L Rogerse</p>
+												 <p><b>Người Dịch-Phạm Anh Tuấn</b></p>
+                                    			 <p><b>Sản phẩm bán chạy nhất	</b>Top 100 sản phẩm Nhân vật - Bài Học Kinh doanh bán chạy của tháng</p>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <!-- Modal footer -->
+                                    <div class="modal-footer">
+										<button type="button" class="btn btn-danger" data-dismiss="modal" onclick="alert('Bạn cần phải Đăng Nhập')">Mua ngay</button>
+                                        <button type="button" class="btn btn-secondary" data-dismiss="modal" onclick="alert('Bạn cần phải Đăng Nhập')">Thêm vào giỏ hàng<i class="fas fa-shopping-cart"></i></button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <p><b>CẢI TỔ DOANH NGHIỆP TRONG THỜI ĐẠI SỐ</b></p>
+                    <p class="profsp">155.000 VNĐ</p>
+                </div>
+				<!--slide 3- sa1ch12-->
+					<div class="col-sm-3 sp">
+                    <div class="sp">
+                        <!-- Button to Open the Modal -->
+                        <button type="button" class="btn btn-link" data-toggle="modal" data-target="#myModal12">
+                            <img src="sachkinhte/kt12.jpg" class="rounded"
+                                 width="100%" height="100%" style="margin-left: 0%;">
+                        </button>
+
+                        <!-- The Modal -->
+                        <div class="modal fade" id="myModal12">
+                            <div class="modal-dialog modal-lg">
+                                <div class="modal-content">
+
+                                    <!-- Modal Header -->
+                                    <div class="modal-header">
+                                        <img src="img1\TriThuc (1).png" width="100px" height="100px" style="margin-left:10px; margin-top:5px">
+                                        <h4 class="modal-title" style="margin: 5% 1%;">QUÂN ĐOÀN THÉP HUAWEI</h4>
+                                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                    </div>
+
+                                    <!-- Modal body -->
+                                    <div class="modal-body spp" style="background-color: none;">
+                                        <p><b>QUÂN ĐOÀN THÉP HUAWEI</b></p>
+                                        <p>188.000 VNĐ</p>
+                                        <div class="row">
+                                            <div class="col-sm-5">
+                                                <img src="sachkinhte/kt12.jpg" class="rounded" width="100%" height="60%">
+                                            </div>
+                                            <div class="col-sm-6">
+
+                                                 <p>Là một trong những công ty công nghệ cao hàng đầu Trung Quốc, Huawei trở thành một hình mẫu của thương mại thế giới. Hơn 20 năm, Huawei từ một trang giấy trắng trở thành doanh nghiệp công nghệ cao đẳng cấp thế giới, trở thành hình mẫu của các doanh nghiệp Trung Quốc.</p>
+                                                 <p>Một công ty thành công, một công ty xuất sắc chắc chắn sẽ khiến cho người ta vô cùng hứng thú, nhưng những công ty thành công như vậy lại luôn giữ cho mình sự khiêm tốn và sự thần bí. Cũng chính vì vậy lại càng kích thích trí tò mò của mọi người với Huawei. Mọi người ở đây bao gồm đối thủ cạnh tranh và cả những “người trẻ” mới lập nghiệp. Họ đều hi vọng học hỏi được điều gì đó từ Huawei, có thể áp dụng nó vào thực tế và càng khao khát có được bí quyết thành công của Huawei.</p>
+                                                 <p><b>Tại Sao Lại Là Quân Đoàn Thép Huawei? </b></p>
+												 <p><b>Quân Đoàn Thép Huawei – Vì sao có thể “vượt mặt” Apple?</b></p>
+												 
+                                                 <p><b>Tác giả</b>	Hoàng Vệ Hoa</p>
+												 <p><b>NXB	NXB Hồng Đức</b></p>
+                                    			 <p><b>Sản phẩm bán chạy nhất	</b>Top 100 sản phẩm Nhân vật - Bài Học Kinh doanh bán chạy của tháng</p>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <!-- Modal footer -->
+                                    <div class="modal-footer">
+										 <button type="button" class="btn btn-danger" data-dismiss="modal" onclick="alert('Bạn cần phải Đăng Nhập')">Mua ngay</button>
+                                        <button type="button" class="btn btn-secondary" data-dismiss="modal" onclick="alert('Bạn cần phải Đăng Nhập')">Thêm vào giỏ hàng<i class="fas fa-shopping-cart"></i></button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <p><b>QUÂN ĐOÀN THÉP HUAWEI</b></p>
+                    <p class="profsp">188.000 VNĐ</p>
+                </div>
+		  </div>
+				<div class="row">
+					<!--slide 4 - sa1ch13-->
+					<div class="col-sm-3 sp">
+                    <div class="sp">
+                        <!-- Button to Open the Modal -->
+                        <button type="button" class="btn btn-link" data-toggle="modal" data-target="#myModal13">
+                            <img src="sachkinhte/kt13.jpg" class="rounded"
+                                 width="100%" height="100%" style="margin-left: 0%;">
+                        </button>
+
+                        <!-- The Modal -->
+                        <div class="modal fade" id="myModal13">
+                            <div class="modal-dialog modal-lg">
+                                <div class="modal-content">
+
+                                    <!-- Modal Header -->
+                                    <div class="modal-header">
+                                        <img src="img1\TriThuc (1).png" width="100px" height="100px" style="margin-left:10px; margin-top:5px">
+                                        <h4 class="modal-title" style="margin: 5% 1%;">NOKIA - TỪ SỤP ĐỔ ĐẾN HỒI SINH</h4>
+                                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                    </div>
+
+                                    <!-- Modal body -->
+                                    <div class="modal-body spp" style="background-color: none;">
+                                        <p><b>NOKIA - TỪ SỤP ĐỔ ĐẾN HỒI SINH</b></p>
+                                        <p>198.000 VNĐ</p>
+                                        <div class="row">
+                                            <div class="col-sm-5">
+                                                <img src="sachkinhte/kt13.jpg" class="rounded" width="100%" height="30%">
+                                            </div>
+                                            <div class="col-sm-6">
+
+                                                 <p>Sự thống trị tuyệt đối của Nokia tạo nên sự tự mãn trong công ty. Các cấp lãnh đạo trở nên chủ quan và không hề nắm bắt tình hình thực tế. Nokia dần tụt lại trong cuộc chiến smartphone và đứng trước nguy cơ phá sản.</p>
+                                                 <p>Vị chủ tịch mới Risto Siilasma đã giúp công ty trỗi dậy mạnh mẽ với tinh thần “lạc quan hoang tưởng”. Trong Nokia – Từ sụp đổ đến hồi sinh, ông sẽ kể về hành trình đưa Nokia từ vực sâu trở lại vị thế một người khổng lồ công nghệ.</p>
+												<p>Đầu những năm 2000, Nokia thống trị hoàn toàn ngành điện thoại di động. Tuy vậy, khi “cuộc chiến smartphone” mới mẻ nổ ra với sự trỗi dậy của iPhone – Apple và điện thoại Android – Google, Nokia ngày càng tụt hậu và dần sụp đổ.</p>
+												<p>Trong Nokia – Từ sụp đổ đến hồi sinh, bạn sẽ học được rằng:</p>
+												<p>Việc đủ hoang tưởng để luôn chuẩn bị sẵn sàng cho tình huống tồi tệ nhất thực chất giúp bạn lạc quan về những cơ hội.</p>
+												<p>Tinh thần trách nhiệm và niềm tin là chìa khóa để thành công, và cần liên tục được củng cố.</p>
+												<p>Cốt yếu của lãnh đạo với tinh thần khởi nghiệp là học hỏi – là coi từng thách thức, từng vấn đề, từng tin tức xấu là một cơ hội để học hỏi và hoàn thiện. Cuốn sách này là một bộ quy tắc mang t犈nh cảnh báo và thực tiễn về cách xác định và hành động trước những mối đe dọa và cơ hội. Bạn sẽ phát triển khả năng tiên đoán sự việc nhạy bén, mở rộng các lựa chọn, đổi mới – nếu cần thiết – bản thân bạn và tổ chức của bạn.</p>
+												<p>Cho dù bạn đang quản lý một đội nhóm hay một phòng ban trong doanh nghiệp, đang lãnh đạo một công ty nhỏ hay một tập đoàn đa quốc gia, đang gây dựng một công ty khởi nghiệp hay theo đuổi một sự nghiệp độc lập, những kỹ năng và chiến lược thực tế trong cuốn sách này sẽ giúp bạn và tổ chức phát triển mạnh mẽ, bất chấp những biến động trong tương lai.</p>
+												<p><b>Tác giả</b>		Risto Siilasmaa</p>
+												<p><b>NXB	</b>NXB Công Thương</p>
+                                    			 <p><b>Sản phẩm bán chạy nhất	</b>Top 100 sản phẩm Nhân vật - Bài Học Kinh doanh bán chạy của tháng</p>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <!-- Modal footer -->
+                                    <div class="modal-footer">
+										 <button type="button" class="btn btn-danger" data-dismiss="modal" onclick="alert('Bạn cần phải Đăng Nhập')">Mua ngay</button>
+                                        <button type="button" class="btn btn-secondary" data-dismiss="modal" onclick="alert('Bạn cần phải Đăng Nhập')">Thêm vào giỏ hàng<i class="fas fa-shopping-cart"></i></button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <p><b>NOKIA - TỪ SỤP ĐỔ ĐẾN HỒI SINH</b></p>
+                    <p class="profsp">198.000 VNĐ</p>
+                </div>
+					<!--slide 4 - sa1ch14-->
+					<div class="col-sm-3 sp">
+                    <div class="sp">
+                        <!-- Button to Open the Modal -->
+                        <button type="button" class="btn btn-link" data-toggle="modal" data-target="#myModal14">
+                            <img src="sachkinhte/kt14.jpg" class="rounded"
+                                 width="100%" height="100%" style="margin-left: 0%;">
+                        </button>
+
+                        <!-- The Modal -->
+                        <div class="modal fade" id="myModal14">
+                            <div class="modal-dialog modal-lg">
+                                <div class="modal-content">
+
+                                    <!-- Modal Header -->
+                                    <div class="modal-header">
+                                        <img src="img1\TriThuc (1).png" width="100px" height="100px" style="margin-left:10px; margin-top:5px">
+                                        <h4 class="modal-title" style="margin: 5% 1%;">JEFF BEZOS VÀ KỶ NGUYÊN AMAZON (TÁI BẢN 2019)</h4>
+                                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                    </div>
+
+                                    <!-- Modal body -->
+                                    <div class="modal-body spp" style="background-color: none;">
+                                        <p><b>JEFF BEZOS VÀ KỶ NGUYÊN AMAZON (TÁI BẢN 2019)</b></p>
+                                        <p>110.000 VNĐ</p>
+                                        <div class="row">
+                                            <div class="col-sm-5">
+                                                <img src="sachkinhte/kt14.jpg" class="rounded" width="100%" height="40%">
+                                            </div>
+                                            <div class="col-sm-6">
+
+                                                 <p><i>Amazon là câu chuyện của một người sáng lập đầy tài năng đã hoàn toàn tự mình định hướng tầm nhìn chiến lược,” Eric Schmidt, chủ tịch của Google – một đối thủ cạnh tranh trực tiếp của Amazon, phát biểu. Chính bản thân ông cũng là thành viên của dịch vụ Amazon Prime – giao hàng trong hai ngày của Amazon. “Sẽ chẳng có ví dụ nào hay hơn. Có lẽ chỉ có thể là Apple, nhưng người ta quên rằng hầu hết mọi người tin Amazon đã sụp đổ do không đạt được quy mô kinh doanh cần thiết để trang trải kết cấu chi phí. Công ty liên tục thua lỗ hàng trăm triệu đô la. Nhưng Jeff quả thực là người có tài ăn nói và rất thông minh. Ông là một mẫu người sáng lập doanh nghiệp có chuyên môn điển hình nên hiểu từng chi tiết nhỏ nhất và cẩn trọng xem xét mọi khía cạnh hơn bất kỳ ai.”</i></p>
+                                                 <p>Mặc dù giá cổ phiếu của công ty tăng cao chóng mặt trong thời gian gần đây, nhưng Amazon vẫn là công ty ẩn chứa những vấn đề kỳ lạ. Những chỉ số quan trọng trên bảng cân đối kế toán nổi tiếng là thiếu sức sống, và việc mở rộng vào thị trường và phân mục sản phẩm mới thậm chí khiến công ty có kết quả kinh doanh thua lỗ trong năm 2012. Nhưng Phố Wall dường như không quan tâm đến số liệu này. Jeff Bezos đưa ra những tuyên bố mạnh mẽ về việc đầu tư xây dựng công ty dài hạn nên tạo dựng lòng tin từ những cổ đông. Những nhà đầu tư sẵn sàng kiên nhẫn chờ đợi một ngày Jeff quyết định chậm lại quá trình mở rộng và nhận được lợi nhuận bền vững.</p>
+												<p>....</p>
+												<p><b>Tác giả</b>	Brad Stone</p>
+												 <p><b>NXB	NXB Công Thương</b></p>
+                                    			 <p><b>Sản phẩm bán chạy nhất	</b>Top 100 sản phẩm Nhân vật - Bài Học Kinh doanh bán chạy của tháng</p>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <!-- Modal footer -->
+                                    <div class="modal-footer">
+										 <button type="button" class="btn btn-danger" data-dismiss="modal" onclick="alert('Bạn cần phải Đăng Nhập')">Mua ngay</button>
+                                        <button type="button" class="btn btn-secondary" data-dismiss="modal" onclick="alert('Bạn cần phải Đăng Nhập')">Thêm vào giỏ hàng<i class="fas fa-shopping-cart"></i></button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <p><b>JEFF BEZOS VÀ KỶ NGUYÊN AMAZON (TÁI BẢN 2019)</b></p>
+                    <p class="profsp">110.000 VNĐ</p>
+                </div>
+					<!--slide 4 - sa1ch15-->
+					<div class="col-sm-3 sp">
+                    <div class="sp">
+                        <!-- Button to Open the Modal -->
+                        <button type="button" class="btn btn-link" data-toggle="modal" data-target="#myModal15">
+                            <img src="sachkinhte/kt15.jpg" class="rounded"
+                                 width="100%" height="100%" style="margin-left: 0%;">
+                        </button>
+
+                        <!-- The Modal -->
+                        <div class="modal fade" id="myModal15">
+                            <div class="modal-dialog modal-lg">
+                                <div class="modal-content">
+
+                                    <!-- Modal Header -->
+                                    <div class="modal-header">
+                                        <img src="img1\TriThuc (1).png" width="100px" height="100px" style="margin-left:10px; margin-top:5px">
+                                        <h4 class="modal-title" style="margin: 5% 1%;">CÔNG THỨC THÀNH CÔNG</h4>
+                                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                    </div>
+
+                                    <!-- Modal body -->
+                                    <div class="modal-body spp" style="background-color: none;">
+                                        <p><b>CÔNG THỨC THÀNH CÔNG</b></p>
+                                        <p>90.000 VNĐ</p>
+                                        <div class="row">
+                                            <div class="col-sm-5">
+                                                <img src="sachkinhte/kt15cover.jpg" class="rounded" width="100%" height="70%">
+                                            </div>
+                                            <div class="col-sm-6">
+
+                                                 <p><i>“Nếu là vài năm trước đây, tôi đã không thể viết quyển sách này, bởi như Henry David Thoreau đã viết: “Thật hão huyền khi ngồi viết sách trong khi bạn còn chưa trải nghiệm cuộc sống”</i></p>
+                                                 <p>Tuy nhiên, từ khi may mắn được sống một cuộc đời mà nhiều người mơ ước, tác giả đã quyết định viết ra để những người khác có thể học hỏi từ quyển sách này – cũng giống như ông đã học được từ những người khác.</p>
+												<p>Don M. Green là một món quà quý giá cho những ai từng gặp gỡ ông. Và bây giờ bạn cũng sẽ có cơ hội nhận được món quà đó vì bạn đang cầm trên tay quyển sách Công thức thành công – Những bí quyết thành công vượt thời gian của Napoleon Hill. Trong quyển sách này, Don đã chia sẻ câu chuyện cuộc đời ông, một minh chứng cho thấy rằng dù chỉ được thụ hưởng một nền giáo dục “khiêm tốn” nhất, thì bạn vẫn có thể vươn đến một cuộc đời đầy thành tựu vĩ đại.</p>
+												<p>....</p>
+												<p><b>Tác giả</b>	Don M. Green</p>
+												<p><b>Người dịch</b>	Trần Thụy Hương Quỳnh</p>
+												 <p><b>NXB	NXB Công Thương</b></p>
+                                    			 <p><b>Sản phẩm bán chạy nhất	</b>Top 100 sản phẩm Nhân vật - Bài Học Kinh doanh bán chạy của tháng</p>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <!-- Modal footer -->
+                                    <div class="modal-footer">
+										 <button type="button" class="btn btn-danger" data-dismiss="modal" onclick="alert('Bạn cần phải Đăng Nhập')">Mua ngay</button>
+                                        <button type="button" class="btn btn-secondary" data-dismiss="modal" onclick="alert('Bạn cần phải Đăng Nhập')">Thêm vào giỏ hàng<i class="fas fa-shopping-cart"></i></button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <p><b>CÔNG THỨC THÀNH CÔNG</b></p>
+                    <p class="profsp">90.000 VNĐ</p>
+                </div>
+					<!--slide 4 - sa1ch16-->
+					<div class="col-sm-3 sp">
+                    <div class="sp">
+                        <!-- Button to Open the Modal -->
+                        <button type="button" class="btn btn-link" data-toggle="modal" data-target="#myModal16">
+                            <img src="sachkinhte/kt16.jpg" class="rounded"
+                                 width="100%" height="100%" style="margin-left: 0%;">
+                        </button>
+
+                        <!-- The Modal -->
+                        <div class="modal fade" id="myModal16">
+                            <div class="modal-dialog modal-lg">
+                                <div class="modal-content">
+
+                                    <!-- Modal Header -->
+                                    <div class="modal-header">
+                                        <img src="img1\TriThuc (1).png" width="100px" height="100px" style="margin-left:10px; margin-top:5px">
+                                        <h4 class="modal-title" style="margin: 5% 1%;">7 PHƯƠNG PHÁP ĐẦU TƯ WARREN BUFFET</h4>
+                                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                    </div>
+
+                                    <!-- Modal body -->
+                                    <div class="modal-body spp" style="background-color: none;">
+                                        <p><b>7 PHƯƠNG PHÁP ĐẦU TƯ WARREN BUFFET</b></p>
+                                        <p>139.000 VNĐ</p>
+                                        <div class="row">
+                                            <div class="col-sm-5">
+                                                <img src="sachkinhte/kt16.jpg" class="rounded" width="100%" height="40%">
+                                            </div>
+                                            <div class="col-sm-6">
+
+                                                 <p>Warren Buffett là chuyên gia đầu tư và là một trong những doanh nhân giàu có, được kính trọng nhất thế giới. Với 12 năm học hỏi trực tiếp các chiến lược và thói quen đầu tư của Warren Buffett, Marry Buffett, cùng với Sean Sear, đã viết nên một cuốn sách hướng dẫn hoàn chỉnh dành cho những nhà đầu tư mới muốn học theo cách đầu tư thành công của Warren Buffett.</p>
+                                                 <p>Thông qua cuốn sách, Mary và Sean sẽ mang lại cho người đọc hướng dẫn chi tiết từng bước về cách phân tích và mua cổ phiếu, đồng thời chỉ ra những cạm bẫy thường gặp trên thị trường cổ phiếu. Cuốn sách sẽ liệt kê những thói quen cần rèn luyện để trở thành một người thành công và giàu có, những phương pháp cụ thể, từ những phương pháp lâu đời nhất theo phong cách của Benjamin Graham đến những phương pháp tân tiến nhất để chọn cổ phiếu thích hợp.</p>
+												<p>Ngoài ra, cuốn sách cũng sẽ hướng dẫn người đọc cách đọc báo cáo tài chính, chuẩn bị bảng cân đối kế toán cá nhân và doanh nghiệp… </p>
+												<p>Với nội dung đơn giản, dễ hiểu và đầy đủ, cuốn sách 7 phương pháp đầu tư Warren Buffett thực sự là một cuốn sách không thể thiếu của mọi nhà đầu tư..</p>
+												<p><b>Tác giả</b>Mary Buffett, Sean Seahn</p>
+												<p><b>Người dịch</b>	Huy Nguyễn</p>
+                                    			 <p><b>Sản phẩm bán chạy nhất	</b>Top 100 sản phẩm Nhân vật - Bài Học Kinh doanh bán chạy của tháng</p>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <!-- Modal footer -->
+                                    <div class="modal-footer">
+										 <button type="button" class="btn btn-danger" data-dismiss="modal" onclick="alert('Bạn cần phải Đăng Nhập')">Mua ngay</button>
+                                        <button type="button" class="btn btn-secondary" data-dismiss="modal" onclick="alert('Bạn cần phải Đăng Nhập')">Thêm vào giỏ hàng<i class="fas fa-shopping-cart"></i></button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <p><b>7 PHƯƠNG PHÁP ĐẦU TƯ WARREN BUFFET</b></p>
+                    <p class="profsp">139.000 VNĐ</p>
+                </div>
+				</div>
+		</div><!--rowr-->
+<nav aria-label="Page navigation example">
+   <ul class="pagination">
+      <li class="page-item" >
+         <a class="page-link" href="#" aria-label="Previous">
+         <span aria-hidden="true">&laquo;</span>
+         <span class="sr-only">Previous</span>
+         </a>
+      </li>
+      <li class="page-item active" >
+         <a class="page-link" href="#">1</a>
+      </li>
+      <li class="page-item">
+         <a class="page-link" href="kinhte1.html">2</a>
+      </li>
+      <li class="page-item">
+         <a class="page-link" href="kinhte2.html">3</a>
+      </li>
+      <li class="page-item">
+         <a class="page-link" href="#" aria-label="Next">
+         <span aria-hidden="true">&raquo;</span>
+         <span class="sr-only">Next</span>
+         </a>
+      </li>
+   </ul>
+</nav>
+
+		 
+				 <!--gioithieusach1-->
+			
+	
+	</div><!--container-->
+	                           <!--Footer-->
+                                <div id="lienhe"></div>
+                                <div class="footer">
+                                    <a class="btn-top" href="javascript:void(0);" title="Top" style="display: inline;"></a>
+                                </div>
+                                <div style="text-align: center;margin-top: 100px;">
+                                    <h3> LIÊN HỆ NGAY VỚI CHÚNG TÔI !</h3>
+                                   
+                                </div>
+                                <div class="row" style="color: #797979;">
+                                    <div class=" col-sm-3 footer ">
+                                        <p style="margin-top: 20px; "><strong>Thông tin cửa hàng</strong></p>
+                                        <p>Địa chỉ:273 An Dương Vương, phường 10, quận 5, TPHCMM</p>
+                                        <p>SĐT: 0906751622</p>
+                                        <p>E-mail: nhasachtrithuc@gmail.com</p>
+                                    </div>
+
+                                    <div class="col-sm-3 footer ">
+                                        <p style="margin-top: 20px; "><strong>Giờ làm việc</strong></p>
+                                        <p>Từ thứ 2 - thứ 6 : 7:00 đến 22:00</p>
+                                        <p>Thứ 7 - Chủ nhật : 9:00 đến 18:00</p>
+
+                                    </div>
+
+                                    <div class="col-sm-3 footer ">
+                                        <p style="margin-top: 20px; "><strong>Hỗ Trợ</strong></p>
+                                        <p>Hãy để lại email, chúng tôi sẽ tư vấn cho bạn.</p>
+                                        <p><input type="text " placeholder="email@example.com " name="email " size="30 " style="border: 0px;border-bottom: 1px solid #636363; "></p>
+                                        <p><input type="submit" value="Gửi Ngay!!! " style="color: white; background-color: #636363;border: 0px; "></p>
+                                    </div>
+
+                                    <div class="col-sm-3 footer">
+                                        <p style="margin-top: 20px; margin-left: 0px;"><strong>Kết Nối</strong></p>
+                                        <span>
+                                            <i class="fab fa-facebook-f fa-2x" style="padding-left: 30px;"></i>
+                                            <i class="fab fa-twitter fa-2x"></i>
+                                            <i class="fab fa-youtube fa-2x"></i>
+                                            <i class="fab fa-instagram fa-2x"></i>
+                                            <i class="fab fa-pinterest fa-2x"></i>
+                                            <i class="fab fa-flickr fa-2x"></i>
+                                        </span>
+                                    </div>
+		  </div>
+	<!--<script language="javascript">
+          function validate()
+          {
+            
+             // Lấy giá trị
+             var username = document.getElementById("email").value;
+             var password = document.getElementById("pwd1").value;
+             var re_password = document.getElementById("pwd2").value;
+          	
+              // Kiểm tra các giá trị
+            if (email == ""){
+              alert("Bạn chưa nhập tên đăng nhập");
+              return false;
+            }
+          
+            if (pwd1 == ""){
+              alert("Bạn chưa nhập mật khẩu");
+              return false;
+            }
+            
+          
+            if (password != re_password){
+              alert("Mật khẩu nhập lại không đúng");
+              return false;
+            }
+          
+            return true;
+          }
+        </script>-->
+<button type="button" onclick="topFunction()" id="myBtn" title="Go to top"><i class="fas fa-arrow-circle-up fa-3x" style="color: #66ccff" ;></i></button>
+<script>//Get the button:
+var mybutton = document.getElementById("myBtn");
+
+// When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    mybutton.style.display = "block";
+  } else {
+    mybutton.style.display = "none";
+  }
+}
+
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+  document.body.scrollTop = 0; // For Safari
+  document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+}
+</script>
+<script src="jquery-3.4.1.min.js"></script>
+    <script src="popper.min.js"></script>
+    <script src="bootstrap/js/bootstrap.min.js"></script>
+              
+</body>
+</html>

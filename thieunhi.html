@@ -1,0 +1,951 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+	  <link rel="icon" type="image/png" href="img1/favicon.png">
+    <script language="javascript" src="index.js"></script>
+    <link rel="stylesheet" href="for1821.css" type="text/css">
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="fontawesome/css/all.css">
+   
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+        
+        body {
+            font-family: "Myriadpro", serif;
+         
+        }
+    </style>
+    <title>Nhà sách Tri thức</title>
+</head>
+
+<body>
+
+      <div class="row banner-top" style="background-color: #eeeeee;">
+            <div class="col-sm-9 headerr">
+                <h4 style="display: block;font-family: myriadpro"><strong style="margin-left:55%;">Miễn phí giao hàng</strong> Hóa đơn trên 150000VND</h4>
+            </div>
+            <div class="col-sm-3 headerr">
+                <span style="float:right;">
+                    <i class="fab fa-facebook-f fa-2x" title="facebook"></i>
+                    <i class="fab fa-twitter fa-2x" title="twitter"></i>
+                    <i class="fab fa-youtube fa-2x" title="youtobe"></i>
+                    <i class="fab fa-instagram fa-2x" title="instagram"></i>
+                    <i class="fab fa-pinterest fa-2x" title="pinterest"></i>
+                    <i class="fab fa-flickr fa-2x" title="flickr"></i>
+                </span>
+            </div>
+        </div>
+            <!--Đây là Line Giới thiệu-->
+      <div class="container">
+   <div id="gioithieu"></div>
+            <div class="row">
+                <div class="col-sm-4 chuthich">
+                    <a href="index.html"><img src="img1/logo1.png" style="height: 100px;width: auto;" /></a>
+                </div>
+                <div class="col-sm-5">
+                    <div class="search">
+               <input type="search" name="search" placeholder="Tìm kiếm...">
+                <a href="kinhte.html"><button type="button" ><i class="fa fa-search"></i></button></a>
+                
+                 </div>
+                </div>
+                <div class="col-sm-3 cart">
+                    <a href="giohang.html" style="color: #66ccff">
+                        <i class="fas fa-shopping-cart fa-2x"></i></a>
+                </div>
+            </div>
+            <!----------------------------------------------------------------------------------------------------------------------------------------------------------------->
+            <!--Day la Menu-->
+
+            <div style="display:flex; padding:8px; align-items: center; position: sticky; top:0; background: #66ccff; z-index: 1000;height: 40px;">
+                <div style="min-width: 250px; display: flex;justify-content: center; align-items: center;">
+                    <nav class="menuheader">
+                        <ul>
+                            <li><a href="index.html">TRANG CHỦ <i class="fas fa-home"></i></a></li>
+                            <li>
+                                <a href="#" data-toggle="dropdown">SÁCH TIẾNG VIỆT <i class="fas fa-caret-down"></i></a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="kinhte.html">Kinh tế</a></li>
+                                    <li><a href="giaoduc.html">Giáo dục</a></li>
+                                    <li><a href="vanhoc.html">Văn học</a></li>
+                                    <li><a href="thieunhi.html">Thiếu Nhi</a></li>
+                                    <li><a href="truyentranh.html">Truyện tranh</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="tieuthuyet.html"> SÁCH NƯỚC NGOÀI </a>
+                            </li>
+                            <li><a href="#products">SÁCH BÁN CHẠY</a></li>
+                            <li><a href="map.html">LIÊN HỆ <i class="fas fa-phone"></i></a></li>
+                            <li>
+
+                                <a href="#" data-toggle="modal" data-target="#sign_in">ĐĂNG NHẬP</a>
+
+                            </li>
+                           
+                        </ul>
+                        <div class="icon">
+                            <i class="fas fa-bars"></i>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+        <hr style="margin-bottom: -4px;">
+        <!--sign in-->
+        <div class="modal fade" id="sign_in">
+            <div class="modal-dialog">
+                <div class="modal-content p-3">
+
+                    <!--modal header-->
+                    <div class="modal-header">
+                        <h2 class="modal-title sign_header">Đăng Nhập</h2>
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    </div>
+
+                    <!--modal body-->
+                    <div class="modal-body">
+                        <form action="">
+                            <!--email-->
+                            <div class="form-group">
+                                <label id="sign" for="email">Tên tài khoản:</label>
+                                <input type="email" name="email" class="form-control" id="email" placeholder="Email:">
+                            </div><!--end form group-->
+
+                            <div class="form-group">
+                                <label for="pwd">Mật khẩu</label>
+                                <input type="password" name="pwd" class="form-control" id="pwd" placeholder="Mật khẩu của bạn">
+                            </div><!--end form group-->
+                            <!--remember me-->
+                            <div class="form-group form-check">
+                                <label class="form-check-label">
+                                    <input type="checkbox" name="remember" class="form-check-input">Ghi nhớ tài khoản
+                                </label>
+                            </div><!--end form group-->
+                            <!--button-->
+                            <button type="submit" class="btn btn_buy" style="background-color:#66ccff;">Đăng nhập</button>
+                            <a href="#" class="font_16 text-secondary"> &nbsp Bạn quên mật khẩu?</a>
+                            <div class="row">
+                                <div class="col-6">
+                                    <button type="submit" class="btn btn-outline-primary border_30 mt-4"><i class="fab fa-facebook-f"></i> &nbsp;Đăng nhập bằng Facebook</button>
+                                </div>
+                                <div class="col-6">
+                                    <button type="submit" class="btn btn-outline-danger border_30 mt-4">
+                                        <i class="fab fa-google"></i>
+                                        &nbsp; Đăng nhập với Google
+                                    </button>
+                                </div>
+                            </div><br>
+                        </form>
+                    </div><!--end modal body-->
+
+                    <div class="modal-footer">
+                        <div class="d-flex justify-content-begin">
+                            <div>
+                                <p class="font_16">Bạn không có tài khoản?</p>
+                            </div>&nbsp; &nbsp;
+                            <div>
+                                <a href="#" class="btn btn_view" data-dismiss="modal" data-toggle="modal" data-target="#sign_up">Đăng Ký</a>
+                            </div>
+                        </div>
+                    </div>
+                </div><!--end modal content-->
+            </div><!--end modal dialog-->
+        </div><!---end modal-->
+       <div class="modal fade" id="sign_up">
+            <div class="modal-dialog">
+                <div class="modal-content p-3">
+                    <!--modal header-->
+                    <div class="modal-header">
+                        <h2>Đăng Ký</h2>
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    </div>
+
+                    <!--modal body-->
+
+                    <div class="modal-body">
+                        <p class="font_16">Bạn hãy điền vào form bên dưới</p>
+                        <form action="">
+                            <!--name-->
+
+
+                            <div class="form-group">
+                                <label for="hoten">Tên</label>
+                                <input type="name" name="hoten" class="form-control" id="hoten" placeholder="Tên của bạn">
+                            </div><!--end form group-->
+
+
+                            <div class="form-group">
+                                <label for="email1">Tên tài khoản</label>
+                                <input type="email" name="email1" class="form-control" id="email1" placeholder="Tên tài khoản">
+                            </div><!--end form group-->
+
+                            <div class="form-group">
+                                <label for="pwd1">Mật khẩu</label>
+                                <input type="password" name="pwd1" class="form-control" id="pwd1" placeholder="Mật khẩu">
+                            </div><!--end form group-->
+
+                            <div class="form-group">
+                                <label for="pwd2">Nhập lại mật khẩu</label>
+                                <input type="password" name="pwd2" class="form-control" id="pwd2" placeholder="Nhập lại mật khẩu">
+                            </div>
+                            <!--button-->
+                            <button type="submit" class="btn btn_buy">Đăng ký</button>
+                        </form>
+                    </div><!--end modal body-->
+                    <div class="modal-footer">
+                        <a href="#" class="btn btn_view" data-dismiss="modal" data-toggle="modal" data-target="#sign_in">Quay lại Đăng nhập</a>
+                    </div>
+                </div><!--end modal content-->
+            </div><!--end modal dialog-->
+          </div><!--end modal-->
+
+          <div class="main1">
+          <!--gioithieusach1-->
+            <div>
+                <h3 style="text-align: center;margin: 35px;font-family: 'myriadpro';"><b>SÁCH THIẾU NHI</b></h3>
+            </div>
+            <!--novel-->
+            <div class="main1">
+                <div class="row">
+                    <!--slide 1- sa1ch1-->
+                    <div class="col-sm-3 sp">
+                        <div class="sp">
+                            <!-- Button to Open the Modal -->
+                            <button type="button" class="btn btn-link" data-toggle="modal" data-target="#myModal1">
+                                <img src="thieunhi/tn1.jpg" class="rounded"
+                                     width="100%" height="100px" style="margin-left: 0%;">
+                            </button>
+
+                            <!-- The Modal -->
+                            <div class="modal fade" id="myModal1">
+                                <div class="modal-dialog modal-lg">
+                                    <div class="modal-content">
+
+                                        <!-- Modal Header -->
+                                        <div class="modal-header">
+                                            <img src="img1\TriThuc (1).png" width="100px" height="100px" style="margin-left:10px; margin-top:5px">
+                                            <h4 class="modal-title" style="margin: 5% 1%;">NGHIÊN CỨU KHOA HỌC LÀ GÌ?</h4>
+                                            <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                        </div>
+
+                                        <!-- Modal body -->
+                                        <div class="modal-body spp" style="background-color: none;">
+                                            <p><b>NGHIÊN CỨU KHOA HỌC LÀ GÌ?</b></p>
+                                            <p><font color="red">38.500 VNĐ</font></p>
+                                            <div class="row">
+                                                <div class="col-sm-5">
+                                                    <img src="thieunhi/tn1.jpg" class="rounded" width="125%" height="60%">
+                                                </div>
+                                                <div class="col-sm-6">
+                                                    <p><b>TỔNG QUAN VỀ SÁCH:</b></p>
+                                                    <p> Một đam mê, một hứng thú, một trò chơi của tác giả Pierre Joliot, cháu ngoại của bà. Pierre Joliot (sinh năm 1932) là con trai của Frédéric và Irène Joliot-Curie, và là cháu ngoại của Pierre và Marie Curie. Sinh ra và trưởng thành trong gia đình xuất chúng với năm lần nhận giải thưởng Nobel danh giá, có truyền thống nghiên cứu khoa học, Pierre Joliot cũng say mê vẻ đẹp của nghiên cứu cơ bản và đạt tới những đỉnh cao trong ngành.</p>
+                                                    <p>Cuốn sách được viết bằng hình thức hỏi đáp, tràn đầy tinh thần đối thoại, phong cách hài hước, phóng khoáng. Pierre Joliot khẳng định: Nghiên cứu trước hết phải là một trò chơi và một thú vui. Người nghiên cứu, cũng như một người tham gia vào một trò chơi, cố gắng tìm hiểu những bí ẩn của tự nhiên: đặt ra một câu hỏi, kiếm được một câu trả lời, thường là bất ngờ, câu trả lời ấy gợi ra một thử nghiệm mới. Đó là cách mà người ta dần đạt tới những kiến thức mới.</p>
+                                                    <p>Cuốn sách cùng lúc giúp người đọc khám phá những câu chuyện thú vị của gia đình Marie Curie, hiểu biết hơn về lược sử nghiên cứu khoa học từ đầu thế kỉ 20 đến nay và tìm ra câu trả lời căn cốt: Nghiên cứu khoa học là gì? Làm thế nào để khích lệ giới trẻ đi vào nghiên cứu?.</p>
+                                                    <p>60 trang sách tạo cảm giác thích thú với phần minh họa độc đáo, kho dữ liệu hình ảnh đắt giá với độ nén thông tin đặc sắc. Như thế, cuộc trò chuyện của Pierre Joliot đã xóa tan định kiến của chúng ta về nghiên cứu khoa học. Không cứng nhắc, khô khan, không chỉ có con số hay phòng thí nghiệm, tác giả đã khai sáng một tinh thần khác: nghiên cứu là trò chơi, là đam mê, là hứng thú, là sự tự do thưởng thức vẻ đẹp của khoa học cơ bản.</p>
+                                                    <p><b>Tác giả</b>:Pierre Joliot</p>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <!-- Modal footer -->
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-danger" data-dismiss="modal">Mua ngay</button>
+                                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Thêm vào giỏ hàng<i class="fas fa-shopping-cart"></i></button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <p class><b>NGHIÊN CỨU KHOA HỌC LÀ GÌ?</b></p>
+                        <p class="profsp"><font color="red">38.500 VNĐ</font></p>
+                    </div>
+                    <!--slide 1- sa1ch2-->
+                    <div class="col-sm-3 sp">
+                        <div class="sp">
+                            <!-- Button to Open the Modal -->
+                            <button type="button" class="btn btn-link" data-toggle="modal" data-target="#myModal2">
+                                <img src="thieunhi/tn2.jpg" class="rounded"
+                                     width="100%" height="100%" style="margin-left: 0%;">
+                            </button>
+
+                            <!-- The Modal -->
+                            <div class="modal fade" id="myModal2">
+                                <div class="modal-dialog modal-lg">
+                                    <div class="modal-content">
+
+                                        <!-- Modal Header -->
+                                        <div class="modal-header">
+                                            <img src="img1\TriThuc (1).png" width="100px" height="100px" style="margin-left:10px; margin-top:5px">
+                                            <h4 class="modal-title" style="margin: 5% 1%;">COMBO THẾ GIỚI Ô TÔ (6 CUỐN)</h4>
+                                            <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                        </div>
+
+                                        <!-- Modal body -->
+                                        <div class="modal-body spp" style="background-color: none;">
+                                            <p><b>COMBO THẾ GIỚI Ô TÔ (6 CUỐN)</b></p>
+                                            <p><font color="red">147.000 VNĐ</font></p>
+                                            <div class="row">
+                                                <div class="col-sm-5">
+                                                    <img src="thieunhi/tn2.jpg" class="rounded" width="115%" height="70%">
+                                                </div>
+                                                <div class="col-sm-6">
+                                                    <p><b>TỔNG QUAN VỀ SÁCH:</b></p>
+                                                    <p>Chào các bạn nhỏ, ngày nào các bạn cũng trông thấy xe tắc-xi phải không? Tớ là tắc-xi vàng. Tớ là một chiếc tắc-xi rất đặc biệt. Mau mau giở sách xem tớ nhiệt tình giúp đỡ mọi người thế nào nhé!</p>
+                                                    <p>Bộ sách này gồm 6 cuốn: Xe chở hàng tốt bụng, Chiếc xe buýt chu đáo, Xe cảnh sát thần tốc, Xe tắc xi nhanh nhẹn, Xe cứu hỏa thiện nghệ, Xe cứu thương nhiệt tình. Mỗi cuốn sách kể về một loại xe với đặc tính riêng, nhân cách hóa như người. Khổ sách nhỏ gọn, cầm đọc dễ dàng, hình dáng bộ sách như chiếc ô tô nhỏ, khiến các em thích mê.</p>
+                                                    <p>Nhiều tác giả - Người dịch: Huyền Trâm</p>
+                                                </div>
+                                            </div>
+                                        </div>j
+
+                                        <!-- Modal footer -->
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-danger" data-dismiss="modal">Mua ngay</button>
+                                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Thêm vào giỏ hàng<i class="fas fa-shopping-cart"></i></button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <p class><b>COMBO THẾ GIỚI Ô TÔ (6 CUỐN)</b></p>
+                        <p class="profsp"><font color="red">147.000 VNĐ</font></p>
+                    </div>
+                    <!--slide 1- sa1ch3-->
+                    <div class="col-sm-3 sp">
+                        <div class="sp">
+                            <!-- Button to Open the Modal -->
+                            <button type="button" class="btn btn-link" data-toggle="modal" data-target="#myModal3">
+                                <img src="thieunhi/tn3.jpg" class="rounded"
+                                     width="100%" height="100%" style="margin-left: 0%;">
+                            </button>
+
+                            <!-- The Modal -->
+                            <div class="modal fade" id="myModal3">
+                                <div class="modal-dialog modal-lg">
+                                    <div class="modal-content">
+
+                                        <!-- Modal Header -->
+                                        <div class="modal-header">
+                                            <img src="img1\TriThuc (1).png" width="100px" height="100px" style="margin-left:10px; margin-top:5px">
+                                            <h4 class="modal-title" style="margin: 5% 1%;">COMBO THẾ GIỚI XE CÔNG TRÌNH (6 CUỐN)</h4>
+                                            <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                        </div>
+
+                                        <!-- Modal body -->
+                                        <div class="modal-body spp" style="background-color: none;">
+                                            <p><b>COMBO THẾ GIỚI XE CÔNG TRÌNH (6 CUỐN)</b></p>
+                                            <p><font color="red">109.200 VNĐ</font></p>
+                                            <div class="row">
+                                                <div class="col-sm-5">
+                                                    <img src="thieunhi/tn3.jpg" class="rounded" width="100%" height="70%">
+                                                </div>
+                                                <div class="col-sm-6">
+                                                    <p><b>TỔNG QUAN VỀ SÁCH:</b></p>
+                                                    <p>Bộ sách này đặc biệt phù hợp với các bé trai 2-6 tuổi. Không chỉ có hình ảnh các xe công trình vô cùng cuốn hút, những câu chuyện trong sách sẽ khiến các bé biết yêu thương, sẻ chia quý trọng tình bạn, yêu lao động, yêu ngôi nhà chung - Trái Đất mến thương.</p>
+                                                    <p>Nhiều Tác Giả</p>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <!-- Modal footer -->
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-danger" data-dismiss="modal">Mua ngay</button>
+                                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Thêm vào giỏ hàng<i class="fas fa-shopping-cart"></i></button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <p><b>COMBO THẾ GIỚI XE CÔNG TRÌNH (6 CUỐN)</b></p>
+                        <p class="profsp"><font color="red">109.200 VNĐ</font></p>
+                    </div>
+                    <!--slide 1- sa1ch4-->
+                    <div class="col-sm-3 sp">
+                        <div class="sp">
+                            <!-- Button to Open the Modal -->
+                            <button type="button" class="btn btn-link" data-toggle="modal" data-target="#myModal4">
+                                <img src="thieunhi/tn4.jpg" class="rounded"
+                                     width="100%" height="100%" style="margin-left: 0%;">
+                            </button>
+
+                            <!-- The Modal -->
+                            <div class="modal fade" id="myModal4">
+                                <div class="modal-dialog modal-lg">
+                                    <div class="modal-content">
+
+                                        <!-- Modal Header -->
+                                        <div class="modal-header">
+                                            <img src="img1\TriThuc (1).png" width="100px" height="100px" style="margin-left:10px; margin-top:5px">
+                                            <h4 class="modal-title" style="margin: 5% 1%;">COMBO EHON NHẬT BẢN AI Ở SAU LƯNG BẠN THẾ: DÀNH CHO TRẺ TỪ 0 - 3 TUỔI</h4>
+                                            <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                        </div>
+
+                                        <!-- Modal body -->
+                                        <div class="modal-body spp" style="background-color: none;">
+                                            <p><b>COMBO EHON NHẬT BẢN AI Ở SAU LƯNG BẠN THẾ: DÀNH CHO TRẺ TỪ 0 - 3 TUỔI</b></p>
+                                            <p><font color="red">126.979 VNĐ</font></p>
+                                            <div class="row">
+                                                <div class="col-sm-5">
+                                                    <img src="thieunhi/tn4.jpg" class="rounded" width="120%" height="60%">
+                                                </div>
+                                                <div class="col-sm-6">
+                                                    <p><b>TỔNG QUAN VỀ SÁCH:</b></p>
+                                                    <p>Ehon là dòng sách được ví như “thực phẩm cho tâm hồn bé” tại Nhật. Đây là dòng sách tranh cho lứa tuổi từ 0 tới 10. Mỗi cuốn sách là một câu chuyện ngắn, với cấu trúc rõ ràng.</p>
+                                                    <p>Mỗi trang chỉ gồm một tới hai câu ngắn phù hợp với khả năng ngôn ngữ của trẻ. Nội dung và nhân vật trong sách là những sự vật, hiện tượng gần gũi trong cuộc sống hàng ngày của các bé như ăn, ngủ, chơi đùa, các loài động, thực vật.</p>
+                                                    <p>Cha mẹ đọc ehon thường ngày với con, như cách trò chuyện, thể hiện tình yêu thương và giáo dục con. Sách ehon chứa đựng nhiều bài học giúp bé phát triển ngôn ngữ, trí tưởng tượng, nuôi dưỡng nhân cách, làm phong phú tâm hồn con.</p>
+                                                    <p>Ai Ở Sau Lưng Bạn Thế với chủ đề về các loài động vật. Điểm thú vị của truyện chính là những bức tranh gồm một loài động vật cụ thể và một phần chi tiết về một con vật khác. Các mẹ và các bé có thể cùng đọc và cùng chơi trò chơi đoán xem bộ phận đó của con vật nào. Bộ truyện bao gồm 6 cuốn:</p>
+                                                    <p>Ehon Ai ở sau lưng bạn thế: Những người bạn trên hoang mạc (0-3 tuổi).</p>
+                                                    <p>Ehon Ai ở sau lưng bạn thế: Những người bạn trên cánh đồng (0-3 tuổi).</p>
+                                                    <p>Ehon Ai ở sau lưng bạn thế: Những người bạn dưới biển (0-3 tuổi).</p>
+                                                    <p>Ehon Ai ở sau lưng bạn thế (0-3 tuổi).</p>
+                                                    <p>Ehon Ai ở sau lưng bạn thế: Những người bạn bên bờ hồ (0-3 tuổi).</p>
+                                                    <p>Ehon Ai ở sau lưng bạn thế: Những người bạn ở hòn đảo phía Nam Nhật Bản (0-3 tuổi).</p>
+                                                    <p>Tác giả:  Toshio Fukuda, Akiko Fukuda</p>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <!-- Modal footer -->
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-danger" data-dismiss="modal">Mua ngay</button>
+                                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Thêm vào giỏ hàng<i class="fas fa-shopping-cart"></i></button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <p><b>COMBO EHON NHẬT BẢN AI Ở SAU LƯNG BẠN THẾ: DÀNH CHO TRẺ TỪ 0 - 3 TUỔI </b></p>
+                        <p class="profsp"><font color="red">126.979 VNĐ</font></p>
+                    </div>
+                    <!--slide 1- sa1ch5-->
+                    <div class="col-sm-3 sp">
+                        <div class="sp">
+                            <!-- Button to Open the Modal -->
+                            <button type="button" class="btn btn-link" data-toggle="modal" data-target="#myModal5">
+                                <img src="thieunhi/tn5.jpg" class="rounded"
+                                     width="100%" height="100%" style="margin-left: 0%;">
+                            </button>
+
+                            <!-- The Modal -->
+                            <div class="modal fade" id="myModal5">
+                                <div class="modal-dialog modal-lg">
+                                    <div class="modal-content">
+
+                                        <!-- Modal Header -->
+                                        <div class="modal-header">
+                                            <img src="img1\TriThuc (1).png" width="100px" height="100px" style="margin-left:10px; margin-top:5px">
+                                            <h4 class="modal-title" style="margin: 5% 1%;">COMBO MẸ HỎI BÉ TRẢ LỜI (4 CUỐN)</h4>
+                                            <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                        </div>
+
+                                        <!-- Modal body -->
+                                        <div class="modal-body spp" style="background-color: none;">
+                                            <p><b>COMBO MẸ HỎI BÉ TRẢ LỜI (4 CUỐN)</b></p>
+                                            <p><font color="red">84.000 VNĐ</font></p>
+                                            <div class="row">
+                                                <div class="col-sm-5">
+                                                    <img src="thieunhi/tn5.jpg" class="rounded" width="100%" height="100%">
+                                                </div>
+                                                <div class="col-sm-6">
+                                                    <p><b>TỔNG QUAN VỀ SÁCH:</b></p>
+                                                    <p>Bộ sách nhỏ xinh “Mẹ hỏi bé trả lời” tập hợp những trò chơi phong phú, câu đố thông minh giúp bé và cha mẹ có thể “học mà chơi, chơi mà học” qua các chủ đề: cách ứng xử, câu hỏi về tự nhiên, không gian, phân biệt hình khối, ngôn ngữ, toán học.</p>
+                                                    <p>Sách phân chia theo từng lứa tuổi với nội dung phong phú, những câu hỏi đáp hàm súc trí tuệ, hình ảnh dễ thương cùng nhiều phương pháp rèn luyện, hoàn toàn có thể khơi dậy trí thông minh và khả năng tiềm ẩn của bé.</p>
+                                                    <p>Tác giả: Xiao Li, Yosbook</p>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <!-- Modal footer -->
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-danger" data-dismiss="modal">Mua ngay</button>
+                                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Thêm vào giỏ hàng<i class="fas fa-shopping-cart"></i></button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <p><b>COMBO MẸ HỎI BÉ TRẢ LỜI (4 CUỐN) </b></p>
+                        <p class="profsp"><font color="red">84.000 VNĐ</font></p>
+                    </div>
+                    <!--slide 1- sa1ch6-->
+                    <div class="col-sm-3 sp">
+                        <div class="sp">
+                            <!-- Button to Open the Modal -->
+                            <button type="button" class="btn btn-link" data-toggle="modal" data-target="#myModal6">
+                                <img src="thieunhi/tn6.jpg" class="rounded"
+                                     width="100%" height="100%" style="margin-left: 0%;">
+                            </button>
+
+                            <!-- The Modal -->
+                            <div class="modal fade" id="myModal6">
+                                <div class="modal-dialog modal-lg">
+                                    <div class="modal-content">
+
+                                        <!-- Modal Header -->
+                                        <div class="modal-header">
+                                            <img src="img1\TriThuc (1).png" width="100px" height="100px" style="margin-left:10px; margin-top:5px">
+                                            <h4 class="modal-title" style="margin: 5% 1%;">COMBO MÙI GÌ THẾ NHỈ (5 CUỐN) </h4>
+                                            <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                        </div>
+
+                                        <!-- Modal body -->
+                                        <div class="modal-body spp" style="background-color: none;">
+                                            <p><b>COMBO MÙI GÌ THẾ NHỈ (5 CUỐN) </b></p>
+                                            <p><font color="red">133.000 VNĐ</font></p>
+                                            <div class="row">
+                                                <div class="col-sm-5">
+                                                    <img src="thieunhi/tn6.jpg" class="rounded" width="120%" height="100%">
+                                                </div>
+                                                <div class="col-sm-6">
+                                                    <p><b>TỔNG QUAN VỀ SÁCH:</b></p>
+                                                    <p>Phân được tạo ra như thế nào?</p>
+                                                    <p>Tại sao phân của các loài lại có hình dáng khác nhau?</p>
+                                                    <p>Ai đã dọn tất cả phân trên Trái Đất?</p>
+                                                    <p>Có vật nào được tạo ra từ phân không?</p>
+                                                    <p>Cơ thể chúng ta tiết ra những mùi rất khó chịu. Những mùi đó chứa bí mật gì thế nhỉ? Hãy cùng tìm hiểu để biết cách bảo vệ và giúp cơ thể luôn khỏe mạnh nhé!</p>
+                                                    <p>Tại sao khi xì hơi lại có mùi khó chịu?</p>
+                                                    <p>Nếu nhịn xì hơi thì sẽ thế nào?</p>
+                                                    <p>Nếu xì hơi trong tàu vũ trụ thì sẽ thế nào?</p>
+                                                    <p>Xì hơi ảnh hưởng ra sao tới sự nóng lên của Trái Đất?</p>
+                                                    <p>Cơ thể chúng ta tiết ra những mùi rất khó chịu. Những mùi đó chứa bí mật gì thế nhỉ? Hãy cùng tìm hiểu để biết cách bảo vệ và giúp cơ thể luôn khỏe mạnh nhé! </p>
+                                                    <p>Tại sao mồ hôi lại có vị mặn?</p>
+
+                                                    <p>Tác giả:  Baek MyoungSik</p>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <!-- Modal footer -->
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-danger" data-dismiss="modal">Mua ngay</button>
+                                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Thêm vào giỏ hàng<i class="fas fa-shopping-cart"></i></button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <p><b>COMBO MÙI GÌ THẾ NHỈ (5 CUỐN) </b></p>
+                        <p class="profsp"><font color="red">133.000 VNĐ</font></p>
+                    </div>
+                    <!--slide 1- sa1ch7-->
+                    <div class="col-sm-3 sp">
+                        <div class="sp">
+                            <!-- Button to Open the Modal -->
+                            <button type="button" class="btn btn-link" data-toggle="modal" data-target="#myModal7">
+                                <img src="thieunhi/tn7.jpg" class="rounded"
+                                     width="100%" height="100%" style="margin-left: 0%;">
+                            </button>
+
+                            <!-- The Modal -->
+                            <div class="modal fade" id="myModal7">
+                                <div class="modal-dialog modal-lg">
+                                    <div class="modal-content">
+
+                                        <!-- Modal Header -->
+                                        <div class="modal-header">
+                                            <img src="img1\TriThuc (1).png" width="100px" height="100px" style="margin-left:10px; margin-top:5px">
+                                            <h4 class="modal-title" style="margin: 5% 1%;"> COMBO THỜI THƠ ẤU CỦA CÁC THIÊN TÀI ( 5 CUỐN )</h4>
+                                            <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                        </div>
+
+                                        <!-- Modal body -->
+                                        <div class="modal-body spp" style="background-color: none;">
+                                            <p><b> COMBO THỜI THƠ ẤU CỦA CÁC THIÊN TÀI ( 5 CUỐN ) </b></p>
+                                            <p><font color="red">176.900 VNĐ</font></p>
+                                            <div class="row">
+                                                <div class="col-sm-5">
+                                                    <img src="thieunhi/tn7.jpg" class="rounded" width="120%" height="100%">
+                                                </div>
+                                                <div class="col-sm-6">
+                                                    <p><b>TỔNG QUAN VỀ SÁCH:</b></p>
+                                                    <p>Chúng ta ai cũng có ước mơ, có những ước mơ tưởng chừng như rất khó thực hiện, nhưng các em chớ vội từ bỏ nó. Các em hãy học tập những thiên tài, luôn cố gắng nỗ lực hết mình, cống hiến hết mình để thực hiện ước mơ.</p>
+                                                    <p>Các vĩ nhân đã không ngừng cố gắng để thỏa mãn tính hiếu kì và thực hiện ước mơ như nhà khảo cổ Suliman - Khám phá di tích thành Tơ-roa, Giáo sư Gốt-đát - phát minh ra tên lửa, đặt nền móng cho du hành vũ trụ hay Mác-cô Pô-lô - tác giả của cuốn sách quý Đông Phương kiến văn.</p>
+
+                                                    <p>Tác giả: Sin Ueng Seop</p>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <!-- Modal footer -->
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-danger" data-dismiss="modal">Mua ngay</button>
+                                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Thêm vào giỏ hàng<i class="fas fa-shopping-cart"></i></button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <p><b> COMBO THỜI THƠ ẤU CỦA CÁC THIÊN TÀI ( 5 CUỐN ) </b></p>
+                        <p class="profsp"><font color="red">175.000 VNĐ</font></p>
+                    </div>
+                    <!--slide 1- sa1ch8-->
+                    <div class="col-sm-3 sp">
+                        <div class="sp">
+                            <!-- Button to Open the Modal -->
+                            <button type="button" class="btn btn-link" data-toggle="modal" data-target="#myModal8">
+                                <img src="thieunhi/tn8.jpg" class="rounded"
+                                     width="100%" height="100%" style="margin-left: 0%;">
+                            </button>
+
+                            <!-- The Modal -->
+                            <div class="modal fade" id="myModal8">
+                                <div class="modal-dialog modal-lg">
+                                    <div class="modal-content">
+
+                                        <!-- Modal Header -->
+                                        <div class="modal-header">
+                                            <img src="img1\TriThuc (1).png" width="100px" height="100px" style="margin-left:10px; margin-top:5px">
+                                            <h4 class="modal-title" style="margin: 5% 1%;">COMBO BẠN HỢP VỚI NGHỀ GÌ NHỈ (6 CUỐN)</h4>
+                                            <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                        </div>
+
+                                        <!-- Modal body -->
+                                        <div class="modal-body spp" style="background-color: none;">
+                                            <p><b>COMBO BẠN HỢP VỚI NGHỀ GÌ NHỈ (6 CUỐN) </b></p>
+                                            <p><font color="red">115.000 VNĐ</font></p>
+                                            <div class="row">
+                                                <div class="col-sm-5">
+                                                    <img src="thieunhi/tn8.jpg" class="rounded" width="100%" height="100%">
+                                                </div>
+                                                <div class="col-sm-6">
+                                                    <p><b>TỔNG QUAN VỀ SÁCH:</b></p>
+                                                    <p>Chúng ta ai cũng có ước mơ, có những ước mơ tưởng chừng như rất khó thực hiện, nhưng các em chớ vội từ bỏ nó. Các em hãy học tập những thiên tài, luôn cố gắng nỗ lực hết mình, cống hiến hết mình để thực hiện ước mơ.</p>
+                                                    <p>Các vĩ nhân đã không ngừng cố gắng để thỏa mãn tính hiếu kì và thực hiện ước mơ như nhà khảo cổ Suliman - Khám phá di tích thành Tơ-roa, Giáo sư Gốt-đát - phát minh ra tên lửa, đặt nền móng cho du hành vũ trụ hay Mác-cô Pô-lô - tác giả của cuốn sách quý Đông Phương kiến văn.</p>
+
+                                                    <p>Tác giả: Wang Xiaoxiao</p>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <!-- Modal footer -->
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-danger" data-dismiss="modal">Mua ngay</button>
+                                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Thêm vào giỏ hàng<i class="fas fa-shopping-cart"></i></button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <p><b>COMBO BẠN HỢP VỚI NGHỀ GÌ NHỈ (6 CUỐN) </b></p>
+                        <p class="profsp"><font color="red">115.000 VNĐ</font></p>
+                    </div>
+                    <!--slide 1- sa1ch9-->
+                    <div class="col-sm-3 sp">
+                        <div class="sp">
+                            <!-- Button to Open the Modal -->
+                            <button type="button" class="btn btn-link" data-toggle="modal" data-target="#myModal9">
+                                <img src="thieunhi/tn9.jpg" class="rounded"
+                                     width="100%" height="100%" style="margin-left: 0%;">
+                            </button>
+
+                            <!-- The Modal -->
+                            <div class="modal fade" id="myModal9">
+                                <div class="modal-dialog modal-lg">
+                                    <div class="modal-content">
+
+                                        <!-- Modal Header -->
+                                        <div class="modal-header">
+                                            <img src="img1\TriThuc (1).png" width="100px" height="100px" style="margin-left:10px; margin-top:5px">
+                                            <h4 class="modal-title" style="margin: 5% 1%;">BỘ SÁCH BỐ MẸ CŨNG TỪNG LÀ TRẺ CON (TRỌN BỘ 7 TẬP)</h4>
+                                            <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                        </div>
+
+                                        <!-- Modal body -->
+                                        <div class="modal-body spp" style="background-color: none;">
+                                            <p><b>BỘ SÁCH BỐ MẸ CŨNG TỪNG LÀ TRẺ CON (TRỌN BỘ 7 TẬP)</b></p>
+                                            <p><font color="red">236.250  VNĐ</font></p>
+                                            <div class="row">
+                                                <div class="col-sm-5">
+                                                    <img src="thieunhi/tn9.jpg" class="rounded" width="115%" height="100%">
+                                                </div>
+                                                <div class="col-sm-6">
+                                                    <p><b>TỔNG QUAN VỀ SÁCH:</b></p>
+                                                    <p>Bố mẹ cũng từng là trẻ con, từng khóc lóc ăn vạ, từng ăn uống vô độ, không tuân thủ giờ giấc, từng sợ hãi khi xa rời vòng tay của người thân, từng ghét phải đi học hay có những cơn cáu giận vô cớ. Thế nên, nếu bây giờ trẻ có những biểu hiện giống y hệt như chúng ta lúc nhỏ thì bố mẹ cũng đừng tức giận, bởi ai cũng từng là trẻ con. </p>
+                                                    <p>Là tác giả của hơn 100 cuốn sách viết cho trẻ em theo cách viết rất mới và là chuyên gia về các trò chơi giáo dục, Madeleine Deny đã quan sát rất tỉ mỉ các mối quan hệ giữa bố mẹ và con cái. Giờ đây, cô viết sách cho các bậc phụ huynh để chia sẻ với họ những kinh nghiệm của mình.</p>
+                                                    <p>Bộ sách Bố mẹ cũng từng là trẻ con của Madeleine Deny sẽ giải đáp gần như đầy đủ các thắc mắc cơ bản của bố mẹ về tính cách con trẻ, giúp bố mẹ hiểu được những điều con chưa thể nói và là đồng minh tốt nhất cho một cuộc sống gia đình thành công!</p>
+
+                                                    <p>Tác giả: Madeleine Deny</p>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <!-- Modal footer -->
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-danger" data-dismiss="modal">Mua ngay</button>
+                                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Thêm vào giỏ hàng<i class="fas fa-shopping-cart"></i></button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <p><b>BỘ SÁCH BỐ MẸ CŨNG TỪNG LÀ TRẺ CON (TRỌN BỘ 7 TẬP) </b></p>
+                        <p class="profsp"><font color="red">236.250  VNĐ</font></p>
+                    </div>
+                    <!--slide 1- sa1ch10-->
+                    <div class="col-sm-3 sp">
+                        <div class="sp">
+                            <!-- Button to Open the Modal -->
+                            <button type="button" class="btn btn-link" data-toggle="modal" data-target="#myModal10">
+                                <img src="thieunhi/tn10.jpg" class="rounded"
+                                     width="100%" height="100%" style="margin-left: 0%;">
+                            </button>
+
+                            <!-- The Modal -->
+                            <div class="modal fade" id="myModal10">
+                                <div class="modal-dialog modal-lg">
+                                    <div class="modal-content">
+
+                                        <!-- Modal Header -->
+                                        <div class="modal-header">
+                                            <img src="img1\TriThuc (1).png" width="100px" height="100px" style="margin-left:10px; margin-top:5px">
+                                            <h4 class="modal-title" style="margin: 5% 1%;">COMBO GÌ THẾ NHỈ? CÙNG BÉ KHÁM PHÁ CUỘC SỐNG (TRỌN BỘ 10 QUYỂN)</h4>
+                                            <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                        </div>
+
+                                        <!-- Modal body -->
+                                        <div class="modal-body spp" style="background-color: none;">
+                                            <p><b>COMBO GÌ THẾ NHỈ? CÙNG BÉ KHÁM PHÁ CUỘC SỐNG (TRỌN BỘ 10 QUYỂN) </b></p>
+                                            <p><font color="red">406.000  VNĐ</font></p>
+                                            <div class="row">
+                                                <div class="col-sm-5">
+                                                    <img src="thieunhi/tn10.jpg" class="rounded" width="120%" height="100%">
+                                                </div>
+                                                <div class="col-sm-6">
+                                                    <p><b>TỔNG QUAN VỀ SÁCH:</b></p>
+                                                    <p>Bộ sách tranh màu thú vị mang đến những câu chuyện khám phá đầu tiên cho trẻ từ 3 tuổi:</p>
+                                                    <p>Chủ đề đến từ đời sống thực tế</p>
+                                                    <p>Câu đố thú vị kèm đáp án dưới ô lật</p>
+                                                    <p>Mô hình hỏi - đáp phù hợp với trẻ em</p>
+                                                    <p>Nhiều Tác Giả</p>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <!-- Modal footer -->
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-danger" data-dismiss="modal">Mua ngay</button>
+                                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Thêm vào giỏ hàng<i class="fas fa-shopping-cart"></i></button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <p><b>COMBO GÌ THẾ NHỈ? CÙNG BÉ KHÁM PHÁ CUỘC SỐNG (TRỌN BỘ 10 QUYỂN)</b></p>
+                        <p class="profsp"><font color="red">406.000  VNĐ</font></p>
+                    </div>
+                    <!--slide 1- sa1ch11-->
+                    <div class="col-sm-3 sp">
+                        <div class="sp">
+                            <!-- Button to Open the Modal -->
+                            <button type="button" class="btn btn-link" data-toggle="modal" data-target="#myModal11">
+                                <img src="thieunhi/tn11.jpg" class="rounded"
+                                     width="100%" height="100%" style="margin-left: 0%;">
+                            </button>
+
+                            <!-- The Modal -->
+                            <div class="modal fade" id="myModal11">
+                                <div class="modal-dialog modal-lg">
+                                    <div class="modal-content">
+
+                                        <!-- Modal Header -->
+                                        <div class="modal-header">
+                                            <img src="img1\TriThuc (1).png" width="100px" height="100px" style="margin-left:10px; margin-top:5px">
+                                            <h4 class="modal-title" style="margin: 5% 1%;">COMBO ĐỂ EM LUÔN NGOAN NGOÃN (10 CUỐN) - TÁI BẢN 2019</h4>
+                                            <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                        </div>
+
+                                        <!-- Modal body -->
+                                        <div class="modal-body spp" style="background-color: none;">
+                                            <p><b>COMBO ĐỂ EM LUÔN NGOAN NGOÃN (10 CUỐN) - TÁI BẢN 2019 </b></p>
+                                            <p><font color="red">126.000   VNĐ</font></p>
+                                            <div class="row">
+                                                <div class="col-sm-5">
+                                                    <img src="thieunhi/tn11.jpg" class="rounded" width="120%" height="100%">
+                                                </div>
+                                                <div class="col-sm-6">
+                                                    <p><b>TỔNG QUAN VỀ SÁCH:</b></p>
+                                                    <p>Các em cùng tìm đọc trọn bộ 10 cuốn “Để em ngoan ngoãn - Vì sao tớ không nên”</p>
+                                                    <p>Mỗi câu chuyện sẽ giúp em hiểu và tránh được các thói hư tật xấu, để trở thành một em bé ngoan ngoãn, được người lớn và bạn bè yêu quý.</p>
+                                                    <p>Nhiều Tác Giả</p>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <!-- Modal footer -->
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-danger" data-dismiss="modal">Mua ngay</button>
+                                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Thêm vào giỏ hàng<i class="fas fa-shopping-cart"></i></button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <p><b>COMBO ĐỂ EM LUÔN NGOAN NGOÃN (10 CUỐN) - TÁI BẢN 2019</b></p>
+                        <p class="profsp"><font color="red">126.000   VNĐ</font></p>
+                    </div>
+    
+                 <!--slide 1- sa1ch12-->
+                    <div class="col-sm-3 sp">
+                        <div class="sp">
+                            <!-- Button to Open the Modal -->
+                            <button type="button" class="btn btn-link" data-toggle="modal" data-target="#myModal12">
+                                <img src="thieunhi/tn12.jpg" class="rounded"
+                                     width="100%" height="100%" style="margin-left: 0%;">
+                            </button>
+
+                            <!-- The Modal -->
+                            <div class="modal fade" id="myModal12">
+                                <div class="modal-dialog modal-lg">
+                                    <div class="modal-content">
+
+                                        <!-- Modal Header -->
+                                        <div class="modal-header">
+                                            <img src="img1\TriThuc (1).png" width="100px" height="100px" style="margin-left:10px; margin-top:5px">
+                                            <h4 class="modal-title" style="margin: 5% 1%;">COMBO CHUYỆN KỂ CHO BÉ HIẾU THẢO - TRỌN BỘ 10 CUỐN (TÁI BẢN 2017)</h4>
+                                            <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                        </div>
+
+                                        <!-- Modal body -->
+                                        <div class="modal-body spp" style="background-color: none;">
+                                            <p><b>COMBO CHUYỆN KỂ CHO BÉ HIẾU THẢO - TRỌN BỘ 10 CUỐN (TÁI BẢN 2017) </b></p>
+                                            <p><font color="red">59.500 VNĐ</font></p>
+                                            <div class="row">
+                                                <div class="col-sm-5">
+                                                    <img src="thieunhi/tn12.jpg" class="rounded" width="115%" height="60%">
+                                                </div>
+                                                <div class="col-sm-6">
+                                                    <p><b>TỔNG QUAN VỀ SÁCH:</b></p>
+                                                    <p><b>Combo Chuyện Kể Cho Bé Hiếu Thảo - Trọn Bộ 10  Cuốn (Tái Bản 2017)</b> gồm các cuốn:</p>
+                                                    <p>Chuyện Kể Cho Bé Hiếu Thảo: Đi Tìm Báu Vật </p>
+                                                    <p>Chuyện Kể Cho Bé Hiếu Thảo: Nghe Lời Mẹ Khuyên </p>
+                                                    <p>Chuyện Kể Cho Bé Hiếu Thảo: Chuyện Chú Rô Con </p>
+                                                    <p>Chuyện Kể Cho Bé Hiếu Thảo: Nòng Nọc Tìm Mẹ</p>
+                                                    <p>Chuyện Kể Cho Bé Hiếu Thảo: Ngôi Nhà Ấm Áp </p>
+                                                    <p>Chuyện Kể Cho Bé Hiếu Thảo: Khỉ Con Ngoan Quá </p>
+                                                    <p>Chuyện Kể Cho Bé Hiếu Thảo: Ếch Xanh Ham Chơi </p>
+                                                    <p>Chuyện Kể Cho Bé Hiếu Thảo: Sẻ Nâu Hiếu Thảo </p>
+                                                    <p>Chuyện Kể Cho Bé Hiếu Thảo: Thỏ Min Chia Quà </p>
+                                                    <p>Chuyện Kể Cho Bé Hiếu Thảo: Niềm Vui Của Bà </p>
+                                                    <p>Những câu chuyện đồng thoại ám áp tình yêu thương, dạy bé biết hiếu thảo, biết nghe lời, biết chăm sóc, nhường nhịn và yêu quý những người thân yêu nhất của bé: ông bà, cha mẹ, anh chị em.</p>
+                                                    <p>Với nét vẽ tự nhiên, sinh động, màu sắc tươi vui của họa sĩ Phùng Duy Tùng, các bé không chỉ đọc truyện mà còn được làm quen với những bạn động vật đáng yêu như bạn Thỏ Con, Khỉ Con, Dê Con, Ếch Xanh, Cá Chuồn, Chim Sâu... Qua những câu chuyện của các bạn nhỏ này, bé sẽ cảm nhận được sự ấm áp của tình cảm gia đình, và biết hiếu thảo với những người than yêu.</p>
+                                                    <p>Tất cả các cuốn trong bộ sách được thiết kế một trang đặt lời riêng có những chi tiết trang trí đáng yêu bên cạnh một trang tranh minh họa. Phần lời được in chữ to, rõ ràng, phù hợp với các bé mẫu giáo, với các bé biết đọc sớm thì đây là những cuốn sách tuyệt vời để bé hứng thú tập đọc.</p>
+                                                    <p>Nhiều Tác Giả</p>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <!-- Modal footer -->
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-danger" data-dismiss="modal">Mua ngay</button>
+                                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Thêm vào giỏ hàng<i class="fas fa-shopping-cart"></i></button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <p><b>COMBO CHUYỆN KỂ CHO BÉ HIẾU THẢO - TRỌN BỘ 10 CUỐN (TÁI BẢN 2017)</b></p>
+                        <p class="profsp"><font color="red">59.500  VNĐ</font></p>
+                    </div>
+                </div>
+           </div>
+            <nav aria-label="Page navigation example">
+   <ul class="pagination">
+      <li class="page-item">
+         <a class="page-link" href="#" aria-label="Previous">
+         <span aria-hidden="true">&laquo;</span>
+         <span class="sr-only">Previous</span>
+         </a>
+      </li>
+      <li class="page-item active"  >
+         <a class="page-link" href="#">1</a>
+      </li>
+      <li class="page-item">
+         <a class="page-link" href="#">2</a>
+      </li>
+      <li class="page-item">
+         <a class="page-link" href="#">3</a>
+      </li>
+      <li class="page-item">
+         <a class="page-link" href="#" aria-label="Next">
+         <span aria-hidden="true">&raquo;</span>
+         <span class="sr-only">Next</span>
+         </a>
+      </li>
+   </ul>
+</nav>
+</div>
+          
+</div><!--container-->
+                   <!--Footer-->
+                                <div id="lienhe"></div>
+                                <div class="footer">
+                                    <a class="btn-top" href="javascript:void(0);" title="Top" style="display: inline;"></a>
+                                </div>
+                                <div style="text-align: center;margin-top: 100px;">
+                                    <h3> LIÊN HỆ NGAY VỚI CHÚNG TÔI !</h3>
+                                   
+                                </div>
+                                <div class="row" style="color: #797979;">
+                                    <div class=" col-sm-3 footer ">
+                                        <p style="margin-top: 20px; "><strong>Thông tin cửa hàng</strong></p>
+                                        <p>Địa chỉ:273 An Dương Vương, phường 10, quận 5, TPHCMM</p>
+                                        <p>SĐT: 0906751622</p>
+                                        <p>E-mail: nhasachtrithuc@gmail.com</p>
+                                    </div>
+
+                                    <div class="col-sm-3 footer ">
+                                        <p style="margin-top: 20px; "><strong>Giờ làm việc</strong></p>
+                                        <p>Từ thứ 2 - thứ 6 : 7:00 đến 22:00</p>
+                                        <p>Thứ 7 - Chủ nhật : 9:00 đến 18:00</p>
+
+                                    </div>
+
+                                    <div class="col-sm-3 footer ">
+                                        <p style="margin-top: 20px; "><strong>Hỗ Trợ</strong></p>
+                                        <p>Hãy để lại email, chúng tôi sẽ tư vấn cho bạn.</p>
+                                        <p><input type="text " placeholder="email@example.com " name="email " size="30 " style="border: 0px;border-bottom: 1px solid #636363; "></p>
+                                        <p><input type="submit" value="Gửi Ngay!!! " style="color: white; background-color: #636363;border: 0px; "></p>
+                                    </div>
+
+                                    <div class="col-sm-3 footer">
+                                        <p style="margin-top: 20px; margin-left: 0px;"><strong>Liên Hệ</strong></p>
+                                        <span>
+                                            <i class="fab fa-facebook-f fa-2x" style="padding-left: 30px;"></i>
+                                            <i class="fab fa-twitter fa-2x"></i>
+                                            <i class="fab fa-youtube fa-2x"></i>
+                                            <i class="fab fa-instagram fa-2x"></i>
+                                            <i class="fab fa-pinterest fa-2x"></i>
+                                            <i class="fab fa-flickr fa-2x"></i>
+                                        </span>
+                                    </div>
+    </div>
+ <button type="button" onclick="topFunction()" id="myBtn" title="Go to top"><i class="fas fa-arrow-circle-up fa-3x" style="color: #66ccff" ;></i></button>
+<script>//Get the button:
+var mybutton = document.getElementById("myBtn");
+
+// When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    mybutton.style.display = "block";
+  } else {
+    mybutton.style.display = "none";
+  }
+}
+
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+  document.body.scrollTop = 0; // For Safari
+  document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+}
+	</script>
+				  <script src="jquery-3.4.1.min.js"></script>
+    <script src="popper.min.js"></script>
+    <script src="bootstrap/js/bootstrap.min.js"></script>
+</body>
+</html>

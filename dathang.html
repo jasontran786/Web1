@@ -1,0 +1,416 @@
+ <!doctype html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+	  <link rel="icon" type="image/png" href="img1/favicon.png">
+    <script language="javascript" src="index.js"></script>
+    <link rel="stylesheet" href="for1821.css" type="text/css">
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="fontawesome/css/all.css">
+   
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+        
+        body {
+            font-family: "Myriadpro", serif;
+         
+        }
+    </style>
+    <title>Nhà sách Tri thức</title>
+</head>
+
+<body>
+
+      <div class="row banner-top" style="background-color: #eeeeee;">
+            <div class="col-sm-9 headerr">
+                <h4 style="display: block;font-family: myriadpro"><strong style="margin-left:55%;">Miễn phí giao hàng</strong> Hóa đơn trên 150000VND</h4>
+            </div>
+            <div class="col-sm-3 headerr">
+                <span style="float:right;">
+                    <i class="fab fa-facebook-f fa-2x" title="facebook"></i>
+                    <i class="fab fa-twitter fa-2x" title="twitter"></i>
+                    <i class="fab fa-youtube fa-2x" title="youtobe"></i>
+                    <i class="fab fa-instagram fa-2x" title="instagram"></i>
+                    <i class="fab fa-pinterest fa-2x" title="pinterest"></i>
+                    <i class="fab fa-flickr fa-2x" title="flickr"></i>
+                </span>
+            </div>
+        </div>
+            <!--Đây là Line Giới thiệu-->
+	  <div class="container">
+        <div id="gioithieu"></div>
+            <div class="row">
+                <div class="col-sm-4 chuthich">
+                    <a href="index.html"><img src="img1/logo1.png" style="height: 100px;width: auto;" /></a>
+                </div>
+                <div class="col-sm-5">
+                    <div class="search">
+			   <input type="search" name="search" placeholder="Tìm kiếm...">
+                <a href="kinhte.html"><button type="button" ><i class="fa fa-search"></i></button></a>
+                
+                 </div>
+                </div>
+				<div class="col-sm-3 cart">
+					<a href="giohang.html" style="color: #66ccff">
+						<i class="fas fa-shopping-cart fa-2x"></i></a>
+				</div>
+            </div>
+            <!----------------------------------------------------------------------------------------------------------------------------------------------------------------->
+            <!--Day la Menu-->
+
+            <div style="display:flex; padding:8px; align-items: center; position: sticky; top:0; background: #66ccff; z-index: 1000;height: 40px;">
+                <div style="min-width: 250px; display: flex;justify-content: center; align-items: center;">
+                    <nav class="menuheader">
+                        <ul>
+                            <li><a href="index.html"><i class="fas fa-home"></i>TRANG CHỦ</a></li>
+                            <li>
+                                <a href="#" data-toggle="dropdown">SÁCH TIẾNG VIỆT <i class="fas fa-caret-down"></i></a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="kinhte.html">Kinh tế</a></li>
+                                    <li><a href="giaoduc.html">Giáo dục</a></li>
+                                    <li><a href="vanhoc.html">Văn học</a></li>
+                                    <li><a href="thieunhi.html">Thiếu Nhi</a></li>
+                                    <li><a href="truyentranh.html">Truyện tranh</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="tieuthuyet.html" data-toggle="dropdown">SÁCH NƯỚC NGOÀI</a>
+                            </li>
+                            <li><a href="#products">SÁCH BÁN CHẠY</a></li>
+                            <li><a href="map.html">LIÊN HỆ<i class="fas fa-phone"></i></a></li>
+                            <li>
+
+                                <a href="#" data-toggle="modal" data-target="#sign_in">ĐĂNG NHẬP</a>
+
+                            </li>
+                          
+                        </ul>
+                        <div class="icon">
+                            <i class="fas fa-bars"></i>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+        <hr style="margin-bottom: -4px;">
+        <!--sign in-->
+        <div class="modal fade" id="sign_in">
+            <div class="modal-dialog">
+                <div class="modal-content p-3">
+
+                    <!--modal header-->
+                    <div class="modal-header">
+                        <h2 class="modal-title sign_header">Đăng Nhập</h2>
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    </div>
+
+                    <!--modal body-->
+                    <div class="modal-body">
+                        <form action="">
+                            <!--email-->
+                            <div class="form-group">
+                                <label id="sign" for="email">Tên tài khoản:</label>
+                                <input type="email" name="email" class="form-control" id="email" placeholder="Email:">
+                            </div><!--end form group-->
+
+                            <div class="form-group">
+                                <label for="pwd">Mật khẩu</label>
+                                <input type="password" name="pwd" class="form-control" id="pwd" placeholder="Mật khẩu của bạn">
+                            </div><!--end form group-->
+                            <!--remember me-->
+                            <div class="form-group form-check">
+                                <label class="form-check-label">
+                                    <input type="checkbox" name="remember" class="form-check-input">Ghi nhớ tài khoản
+                                </label>
+                            </div><!--end form group-->
+                            <!--button-->
+                            <button type="submit" class="btn btn_buy" style="background-color:#66ccff;">Đăng nhập</button>
+                            <a href="#" class="font_16 text-secondary"> &nbsp Bạn quên mật khẩu?</a>
+                            <div class="row">
+                                <div class="col-6">
+                                    <button type="submit" class="btn btn-outline-primary border_30 mt-4"><i class="fab fa-facebook-f"></i> &nbsp;Đăng nhập bằng Facebook</button>
+                                </div>
+                                <div class="col-6">
+                                    <button type="submit" class="btn btn-outline-danger border_30 mt-4">
+                                        <i class="fab fa-google"></i>
+                                        &nbsp; Đăng nhập với Google
+                                    </button>
+                                </div>
+                            </div><br>
+                        </form>
+                    </div><!--end modal body-->
+
+                    <div class="modal-footer">
+                        <div class="d-flex justify-content-begin">
+                            <div>
+                                <p class="font_16">Bạn không có tài khoản?</p>
+                            </div>&nbsp; &nbsp;
+                            <div>
+                                <a href="#" class="btn btn_view" data-dismiss="modal" data-toggle="modal" data-target="#sign_up">Đăng Ký</a>
+                            </div>
+                        </div> 
+                    </div>
+                </div><!--end modal content-->
+            </div><!--end modal dialog-->
+        </div><!---end modal-->
+       <div class="modal fade" id="sign_up">
+            <div class="modal-dialog">
+                <div class="modal-content p-3">
+                    <!--modal header-->
+                    <div class="modal-header">
+                        <h2>Đăng Ký</h2>
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    </div>
+
+                    <!--modal body-->
+
+                    <div class="modal-body">
+                        <p class="font_16">Bạn hãy điền vào form bên dưới</p>
+                        <form action="">
+                            <!--name-->
+
+
+                            <div class="form-group">
+                                <label for="hoten">Tên</label>
+                                <input type="name" name="hoten" class="form-control" id="hoten" placeholder="Tên của bạn">
+                            </div><!--end form group-->
+
+
+                            <div class="form-group">
+                                <label for="email1">Tên tài khoản</label>
+                                <input type="email" name="email1" class="form-control" id="email1" placeholder="Tên tài khoản">
+                            </div><!--end form group-->
+
+                            <div class="form-group">
+                                <label for="pwd1">Mật khẩu</label>
+                                <input type="password" name="pwd1" class="form-control" id="pwd1" placeholder="Mật khẩu">
+                            </div><!--end form group-->
+
+                            <div class="form-group">
+                                <label for="pwd2">Nhập lại mật khẩu</label>
+                                <input type="password" name="pwd2" class="form-control" id="pwd2" placeholder="Nhập lại mật khẩu">
+                            </div>
+                            <!--button-->
+                            <button type="submit" class="btn btn_buy">Đăng ký</button>
+                        </form>
+                    </div><!--end modal body-->
+                    <div class="modal-footer">
+                        <a href="#" class="btn btn_view" data-dismiss="modal" data-toggle="modal" data-target="#sign_in">Quay lại Đăng nhập</a>
+                    </div>
+                </div><!--end modal content-->
+            </div><!--end modal dialog-->
+		  </div><!--end modal-->
+		  <div class="breadcumb_area bg-img">
+        <div class="container h-100">
+            <div class="row h-100 align-items-center">
+                <div class="col-12">
+                    <div class="page-title text-center" style="background-color: #eeeeee">
+                        <h2>ĐẶT HÀNG</h2>
+                    </div>
+                </div>
+				
+            </div>
+        </div>
+    </div>
+    <!-- ##### Breadcumb Area End ##### -->
+
+    <!-- ##### Checkout Area Start ##### -->
+    <div class="checkout_area section-padding-80">
+        <div class="container">
+            <div class="row">
+
+                <div class="col-12 col-md-6">
+                    <div class="checkout_details_area mt-50 clearfix">
+
+                        <div class="cart-page-heading mb-30">
+                            <h5 style="text-align: center">Điền thông tin của bạn</h5>
+                        </div>
+
+                        <form action="#" method="post">
+                            <div class="row">
+                                <div class="col-md-6 mb-3">
+                                    <label for="first_name">Họ <span>*</span></label>
+                                    <input type="text" class="form-control" id="first_name" value="" required style="width: 250px;">
+                                </div>
+                                <div class="col-md-6 mb-3">
+                                    <label for="last_name">Tên<span>*</span></label>
+                                    <input type="text" class="form-control" id="last_name" value="" required>
+                                </div>
+                                <div class="col-12 mb-3">
+                                    <label for="company">TÊN CÔNG TY(NẾU CÓ)</label>
+                                    <input type="text" class="form-control" id="company" value="">
+                                </div>
+                                <div class="col-12 mb-3">
+                                    <label for="country">QUỐC GIA<span>*</span></label>
+                                    <select class="w-100" id="country" >
+										 <option value="vn">VietNam</option>
+                                        <option value="usa">United States</option>
+                                        <option value="uk">United Kingdom</option>
+                                        <option value="ger">Germany</option>
+                                        <option value="fra">France</option>
+                                        <option value="ind">India</option>
+                                        <option value="aus">Australia</option>
+                                        <option value="bra">Brazil</option>
+                                       
+                                    </select>
+                                </div>
+                                <div class="col-12 mb-3">
+                                    <label for="street_address">ĐỊA CHỈ NHÀ <span>*</span></label>
+<input type="text" class="form-control" id="street_address2" value="">
+                                </div>
+                                <div class="col-12 mb-3">
+                                    <label for="postcode">GHI CHÚ<span>*</span></label>
+                                    <input type="text" class="form-control" id="postcode" value="">
+                                </div>
+                                <div class="col-12 mb-3">
+                                    <label for="city">THÀNH PHỐ<span>*</span></label>
+                                    <input type="text" class="form-control" id="city" value="">
+                                </div>
+                                <div class="col-12 mb-3">
+                                    <label for="state">TỈNH<span>*</span></label>
+                                    <input type="text" class="form-control" id="state" value="">
+                                </div>
+                                <div class="col-12 mb-3">
+                                    <label for="phone_number">SỐ ĐIỆN THOẠI<span>*</span></label>
+									<input type="phone" class="form-control" id="phone_number" value="">
+</div>
+                                <div class="col-12 mb-4">
+                                    <label for="email_address">EMAIL <span>*</span></label>
+                                    <input type="email" class="form-control" id="email_address" value="">
+                                </div>
+
+                                <div class="col-12">
+                                    <div class="custom-control custom-checkbox d-block mb-2">
+                                        <input type="checkbox" class="custom-control-input" id="customCheck1">
+                                        <label class="custom-control-label" for="customCheck1">Chấp nhận điều kiện</label>
+                                    </div>
+                                    <div class="custom-control custom-checkbox d-block mb-2">
+                                        <input type="checkbox" class="custom-control-input" id="customCheck2">
+                                        <label class="custom-control-label" for="customCheck2">Tạo một tài khoản</label>
+                                    </div>
+                                    <div class="custom-control custom-checkbox d-block">
+                                        <input type="checkbox" class="custom-control-input" id="customCheck3">
+                                        <label class="custom-control-label" for="customCheck3">Theo dõi bản tin của chúng tôi</label>
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+
+                <div class="col-12 col-md-6 col-lg-5 ml-lg-auto">
+                    <div class="order-details-confirmation">
+
+                        <div class="cart-page-heading">
+							<img src="img1\TriThuc (1).png" width="80px" height="80px" style="margin-left:10px; margin-top:5px">
+                            <h5 style="text-align: center;"><b>ĐƠN HÀNG CỦA BẠN</b></h5>
+                            <p>Chi tiết hóa đơn </p>
+                        </div>
+
+                        <ul class="order-details-form mb-4">
+                            <li><span>Sách</span> <span>Giá tiền</span></li>
+                            <li><span>FUJIKO F FUJIO ĐẠI TUYỂN TẬP - DORAEMON TRUYỆN NGẮN TẬP 16</span> <span>145.000VNĐ</span></li>
+                            <li><span>CARDCAPTOR SAKURA - THẺ BÀI PHA LÊ - TẬP 4 - TẶNG KÈM THẺ BÀI PHA LÊ</span> <span>20.000VNĐ</span></li>
+                            <li><span>DẠY CON LÀM GIÀU - TẬP 1 (TÁI BẢN 2018)</span> <span>65.000VNĐ</span></li>
+                            <li><span>GIAO HÀNG</span> <span>MIỄN PHÍ</span></li>
+							 <li><span>TỔNG CỘNG = </span> <span>230.000VNĐ</span></li>
+							
+                        </ul>
+					      <div class="custom-control custom-checkbox d-block mb-2">
+                                        <input type="checkbox" class="custom-control-input" id="customCheck4">
+                                        <label class="custom-control-label" for="customCheck4">Thanh toán tại nhà</label>
+                                    </div>
+                                    <div class="custom-control custom-checkbox d-block mb-2">
+                                        <input type="checkbox" class="custom-control-input" id="customCheck5">
+                                        <label class="custom-control-label" for="customCheck5">Chuyển khoảng</label>
+                                    </div>
+                                    <div class="custom-control custom-checkbox d-block">
+                                        <input type="checkbox" class="custom-control-input" id="customCheck6">
+                                        <label class="custom-control-label" for="customCheck6">Ví Điện Tử</label>
+						</div>
+                       
+
+                        <a href="index.html" class="btn btn-primary">Thay đổi đơn hàng</a>
+						<button type="button" class="btn btn-info">Tiến hành Giao Hàng <i class="fas fa-shipping-fast"></i></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+		  </div></div>
+    <!-- ##### Checkout Area End ##### -->
+
+
+
+	
+	
+	                               <div id="lienhe"></div>
+                                <div class="footer">
+                                    <a class="btn-top" href="javascript:void(0);" title="Top" style="display: inline;"></a>
+                                </div>
+                                <div style="text-align: center;margin-top: 35px;">
+                                    <h3>LIÊN HỆ VỚI CHÚNG TÔI</h3>
+                                    <p style="color: #797979;margin-top: 15px;margin-bottom: 30px;">Nếu bạn có những thắc mắc gì, thì đừng ngần ngại hãy liên hệ với chúng tôi!Chúng tôi luôn 24/7 sẵn sàng và phục vụ Bạn...</p>
+                                </div>
+                                <div class="row" style="color: #797979;">
+                                    <div class=" col-sm-3 footer ">
+                                        <p style="margin-top: 20px; "><strong>Địa chỉ cửa hàng</strong></p>
+                                        <p>273 An Dương Vương ,phường 10 , quận 5,TPHCM</p>
+                                        <p>0906751622</p>
+                                        <p>nhasachtrithuc@gmail.com</p>
+                                    </div>
+
+                                    <div class="col-sm-3 footer ">
+                                        <p style="margin-top: 20px; "><strong>Giờ làm việc</strong></p>
+                                        <p>Ngày thường: 7:00AM đến 10:00PM</p>
+
+                                    </div>
+
+                                    <div class="col-sm-3 footer ">
+                                        <p style="margin-top: 20px; "><strong>Hỗ Trợ</strong></p>
+                                        <p>Hãy để lại email, chúng tôi sẽ tư vấn cho bạn.</p>
+                                        <p><input type="text " placeholder="email@example.com " name="email " size="30 " style="border: 0px;border-bottom: 1px solid #636363; "></p>
+                                        <p><input type="submit" value="Gửi Ngay!!! " style="color: white; background-color: #636363;border: 0px; "></p>
+                                    </div>
+
+                                    <div class="col-sm-3 footer">
+                                        <p style="margin-top: 20px; margin-left: 0px;"><strong>Liên Hệ</strong></p>
+                                        <span>
+                                            <i class="fab fa-facebook-f fa-2x" style="padding-left: 30px;"></i>
+                                            <i class="fab fa-twitter fa-2x"></i>
+                                            <i class="fab fa-youtube fa-2x"></i>
+                                            <i class="fab fa-instagram fa-2x"></i>
+                                            <i class="fab fa-pinterest fa-2x"></i>
+                                            <i class="fab fa-flickr fa-2x"></i>
+                                        </span>
+                                    </div>
+	</div>
+ <button type="button" onclick="topFunction()" id="myBtn" title="Go to top"><i class="fas fa-arrow-circle-up fa-3x" style="color: #66ccff" ;></i></button>
+<script>//Get the button:
+var mybutton = document.getElementById("myBtn");
+
+// When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    mybutton.style.display = "block";
+  } else {
+    mybutton.style.display = "none";
+  }
+}
+
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+  document.body.scrollTop = 0; // For Safari
+  document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+}
+</script>                    
+<script src="jquery-3.4.1.min.js"></script>
+    <script src="popper.min.js"></script>
+    <script src="bootstrap/js/bootstrap.min.js"></script>
+</body>
+
+</html>

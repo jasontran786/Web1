@@ -1,0 +1,987 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+	  <link rel="icon" type="image/png" href="img1/favicon.png">
+    <script language="javascript" src="index.js"></script>
+    <link rel="stylesheet" href="for1821.css" type="text/css">
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="fontawesome/css/all.css">
+   
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+        
+        body {
+            font-family: "Myriadpro", serif;
+         
+        }
+    </style>
+    <title>Nhà sách Tri thức</title>
+</head>
+
+<body>
+
+      <div class="row banner-top" style="background-color: #eeeeee;">
+            <div class="col-sm-9 headerr">
+                <h4 style="display: block;font-family: myriadpro"><strong style="margin-left:55%;">Miễn phí giao hàng</strong> Hóa đơn trên 150000VND</h4>
+            </div>
+            <div class="col-sm-3 headerr">
+                <span style="float:right;">
+                    <i class="fab fa-facebook-f fa-2x" title="facebook"></i>
+                    <i class="fab fa-twitter fa-2x" title="twitter"></i>
+                    <i class="fab fa-youtube fa-2x" title="youtobe"></i>
+                    <i class="fab fa-instagram fa-2x" title="instagram"></i>
+                    <i class="fab fa-pinterest fa-2x" title="pinterest"></i>
+                    <i class="fab fa-flickr fa-2x" title="flickr"></i>
+                </span>
+            </div>
+        </div>
+            <!--Đây là Line Giới thiệu-->
+	  <div class="container">
+          <div id="gioithieu"></div>
+            <div class="row">
+                <div class="col-sm-4 chuthich">
+                    <a href="index.html"><img src="img1/logo1.png" style="height: 100px;width: auto;" /></a>
+                </div>
+                <div class="col-sm-5">
+                    <div class="search">
+			   <input type="search" name="search" placeholder="Tìm kiếm...">
+                <a href="kinhte.html"><button type="button" ><i class="fa fa-search"></i></button></a>
+                
+                 </div>
+                </div>
+				<div class="col-sm-3 cart">
+					<a href="giohang.html" style="color: #66ccff">
+						<i class="fas fa-shopping-cart fa-2x"></i></a>
+				</div>
+            </div>
+            <!----------------------------------------------------------------------------------------------------------------------------------------------------------------->
+            <!--Day la Menu-->
+
+            <div style="display:flex; padding:8px; align-items: center; position: sticky; top:0; background: #66ccff; z-index: 1000;height: 40px;">
+                <div style="min-width: 250px; display: flex;justify-content: center; align-items: center;">
+                    <nav class="menuheader">
+                        <ul>
+                            <li><a href="index.html"><i class="fas fa-home"></i>TRANG CHỦ</a></li>
+                            <li>
+                                <a href="#" data-toggle="dropdown">SÁCH TIẾNG VIỆT <i class="fas fa-caret-down"></i></a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="kinhte.html">Kinh tế</a></li>
+                                    <li><a href="giaoduc.html">Giáo dục</a></li>
+                                    <li><a href="vanhoc.html">Văn học</a></li>
+                                    <li><a href="thieunhi.html">Thiếu Nhi</a></li>
+                                    <li><a href="truyentranh.html">Truyện tranh</a></li>
+                                </ul>
+                            </li>
+                            <li>
+								<a href="tieuthuyet.html" >SÁCH NƯỚC NGOÀI </a>
+                            </li>
+                            <li><a href="#products">SÁCH BÁN CHẠY</a></li>
+                            <li><a href="map.html">LIÊN HỆ<i class="fas fa-phone"></i></a></li>
+                            <li>
+
+                                <a href="#" data-toggle="modal" data-target="#sign_in">ĐĂNG NHẬP</a>
+
+                            </li>
+                           
+                        </ul>
+                        <div class="icon">
+                            <i class="fas fa-bars"></i>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+        <hr style="margin-bottom: -4px;">
+        <!--sign in-->
+        <div class="modal fade" id="sign_in">
+            <div class="modal-dialog">
+                <div class="modal-content p-3">
+
+                    <!--modal header-->
+                    <div class="modal-header">
+                        <h2 class="modal-title sign_header">Đăng Nhập</h2>
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    </div>
+
+                    <!--modal body-->
+                    <div class="modal-body">
+                        <form action="">
+                            <!--email-->
+                            <div class="form-group">
+                                <label id="sign" for="email">Tên tài khoản:</label>
+                                <input type="email" name="email" class="form-control" id="email" placeholder="Email:">
+                            </div><!--end form group-->
+
+                            <div class="form-group">
+                                <label for="pwd">Mật khẩu</label>
+                                <input type="password" name="pwd" class="form-control" id="pwd" placeholder="Mật khẩu của bạn">
+                            </div><!--end form group-->
+                            <!--remember me-->
+                            <div class="form-group form-check">
+                                <label class="form-check-label">
+                                    <input type="checkbox" name="remember" class="form-check-input">Ghi nhớ tài khoản
+                                </label>
+                            </div><!--end form group-->
+                            <!--button-->
+                            <button type="submit" class="btn btn_buy" style="background-color:#66ccff;">Đăng nhập</button>
+                            <a href="#" class="font_16 text-secondary"> &nbsp Bạn quên mật khẩu?</a>
+                            <div class="row">
+                                <div class="col-6">
+                                    <button type="submit" class="btn btn-outline-primary border_30 mt-4"><i class="fab fa-facebook-f"></i> &nbsp;Đăng nhập bằng Facebook</button>
+                                </div>
+                                <div class="col-6">
+                                    <button type="submit" class="btn btn-outline-danger border_30 mt-4">
+                                        <i class="fab fa-google"></i>
+                                        &nbsp; Đăng nhập bằng Google
+                                    </button>
+                                </div>
+                            </div><br>
+                        </form>
+                    </div><!--end modal body-->
+
+                    <div class="modal-footer">
+                        <div class="d-flex justify-content-begin">
+                            <div>
+                                <p class="font_16">Bạn không có tài khoản?</p>
+                            </div>&nbsp; &nbsp;
+                            <div>
+                                <a href="#" class="btn btn_view" data-dismiss="modal" data-toggle="modal" data-target="#sign_up" style="background-color:#66ccff;">Đăng Ký Ngay</a>
+                            </div>
+                        </div>
+                    </div>
+                </div><!--end modal content-->
+            </div><!--end modal dialog-->
+        </div><!---end modal-->
+       <div class="modal fade" id="sign_up">
+            <div class="modal-dialog">
+                <div class="modal-content p-3">
+                    <!--modal header-->
+                    <div class="modal-header">
+                        <h2>Đăng Ký</h2>
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    </div>
+
+                    <!--modal body-->
+
+                    <div class="modal-body">
+                        <p class="font_16">Bạn hãy điền vào form bên dưới</p>
+                        <form action="">
+                            <!--name-->
+
+
+                            <div class="form-group">
+                                <label for="hoten">Tên</label>
+                                <input type="name" name="hoten" class="form-control" id="hoten" placeholder="Tên của bạn">
+                            </div><!--end form group-->
+
+
+                            <div class="form-group">
+                                <label for="email1">Tên tài khoản</label>
+                                <input type="email" name="email1" class="form-control" id="email1" placeholder="Tên tài khoản">
+                            </div><!--end form group-->
+
+                            <div class="form-group">
+                                <label for="pwd1">Mật khẩu</label>
+                                <input type="password" name="pwd1" class="form-control" id="pwd1" placeholder="Mật khẩu">
+                            </div><!--end form group-->
+
+                            <div class="form-group">
+                                <label for="pwd2">Nhập lại mật khẩu</label>
+                                <input type="password" name="pwd2" class="form-control" id="pwd2" placeholder="Nhập lại mật khẩu">
+                            </div>
+                            <!--button-->
+                            <button type="submit" class="btn btn_buy" style="background-color:#66ccff;">Đăng ký</button>
+                        </form>
+                    </div><!--end modal body-->
+                    <div class="modal-footer">
+                        <a href="#" class="btn btn_view" data-dismiss="modal" data-toggle="modal" data-target="#sign_in" style="background-color:yellow;">Quay lại Đăng nhập</a>
+                    </div>
+                </div><!--end modal content-->
+            </div><!--end modal dialog-->
+		  </div><!--end modal-->
+		  <!--gioithieusach1-->
+			<div>
+            <h3 style="text-align: center;margin: 35px;font-family: 'myriadpro';"><b>QUẢN TRỊ-LÃNH ĐẠO</b></h3>
+        	</div>
+		  <div class="main1">
+		  
+		<!--Sáchqtld-->
+			<div class="main1">
+				<div class="row">
+					<!--slide1--sp1--17-->
+					<div class="col-sm-3 sp">
+                    <div class="sp">
+                        <!-- Button to Open the Modal -->
+                        <button type="button" class="btn btn-link" data-toggle="modal" data-target="#myModal17">
+                            <img src="sachkinhte/kd1.jpg" class="rounded"
+                                 width="100%" height="100%" style="margin-left: 0%;">
+                        </button>
+
+                        <!-- The Modal -->
+                        <div class="modal fade" id="myModal17">
+                            <div class="modal-dialog modal-lg">
+                                <div class="modal-content">
+
+                                    <!-- Modal Header -->
+                                    <div class="modal-header">
+                                        <img src="img1\TriThuc (1).png" width="100px" height="100px" style="margin-left:10px; margin-top:5px">
+                                        <h4 class="modal-title" style="margin: 5% 1%;">ĐỂ XÂY DỰNG DOANH NGHIỆP HIỆU QUẢ (TÁI BẢN 2019)</h4>
+                                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                    </div>
+
+                                    <!-- Modal body -->
+                                    <div class="modal-body spp" style="background-color: none;">
+                                        <p><b>ĐỂ XÂY DỰNG DOANH NGHIỆP HIỆU QUẢ (TÁI BẢN 2019)</b></p>
+                                        <p>119.000 VNĐ</p>
+                                        <div class="row">
+                                            <div class="col-sm-5">
+                                                <img src="sachkinhte/kd1.jpg" class="rounded" width="100%" height="40%">
+                                            </div>
+                                            <div class="col-sm-6">
+
+                                                 <p>Xây dựng một doanh nghiệp cho riêng mình là ước mơ của rất nhiều người. Nhưng phần lớn các doanh nghiệp nhỏ sau khi thành lập đều đi theo mô hình:</p>
+                                                 <p> Thành lập - phát triển nhanh chóng</p>
+												<p> Phát triển chậm lại.- Ổn định, không phát triển - suy yếu - chuyển nhượng.</p>
+												<p><i>Tại sao rất nhiều người bước vào kinh doanh để cuối cùng thất bại?</i></p>
+												<p><i> Họ đã rút ra những bài học gì?</i></p>
+												<p><i>Tại sao hiện nay có rất nhiều tài liệu hướng dẫn để một doanh nghiệp nhỏ thành công, nhưng rất ít người làm được?</i></p>
+												<p>...</p>
+												<p><b>Tác giả</b>Michael E Gerber</p>
+												<p><b>Người dịch</b>Phương Thúy</p>
+                                    			 <p><b>Sản phẩm bán chạy nhất	</b>Top 100 sản phẩm Quản Trị - Lãnh Đạo bán chạy của tháng</p>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <!-- Modal footer -->
+                                    <div class="modal-footer">
+										 <button type="button" class="btn btn-danger" data-dismiss="modal">Mua ngay</button>
+                                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Thêm vào giỏ hàng<i class="fas fa-shopping-cart"></i></button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <p><b>ĐỂ XÂY DỰNG DOANH NGHIỆP HIỆU QUẢ (TÁI BẢN 2019)</b></p>
+                    <p class="profsp">119.000 VNĐ</p>
+                </div>
+					<!--slide1--sp2--18-->
+					<div class="col-sm-3 sp">
+                    <div class="sp">
+                        <!-- Button to Open the Modal -->
+                        <button type="button" class="btn btn-link" data-toggle="modal" data-target="#myModal18">
+                            <img src="sachkinhte/kd2.jpg" class="rounded"
+                                 width="100%" height="100%" style="margin-left: 0%;">
+                        </button>
+
+                        <!-- The Modal -->
+                        <div class="modal fade" id="myModal18">
+                            <div class="modal-dialog modal-lg">
+                                <div class="modal-content">
+
+                                    <!-- Modal Header -->
+                                    <div class="modal-header">
+                                        <img src="img1\TriThuc (1).png" width="100px" height="100px" style="margin-left:10px; margin-top:5px">
+                                        <h4 class="modal-title" style="margin: 5% 1%;">TÀI CHÍNH DÀNH CHO NHÀ QUẢN LÝ (TÁI BẢN 2019)</h4>
+                                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                    </div>
+
+                                    <!-- Modal body -->
+                                    <div class="modal-body spp" style="background-color: none;">
+                                        <p><b>TÀI CHÍNH DÀNH CHO NHÀ QUẢN LÝ (TÁI BẢN 2019)</b></p>
+                                        <p>129.000 VNĐ</p>
+                                        <div class="row">
+                                            <div class="col-sm-5">
+                                                <img src="sachkinhte/kd2.jpg" class="rounded" width="100%" height="40%">
+                                            </div>
+                                            <div class="col-sm-6">
+
+                                                 <p>Các báo cáo tài chính có ngôn ngữ riêng, một ngôn ngữ mà không phải nhà quản lý nào cũng có thể hiểu thấu đáo và chính xác. Đây là lý do khiến nhà quản lý đôi khi không nắm được bản chất vấn đề và đưa ra những quyết định sai lầm có tác động tiêu cực đến hoạt động kinh doanh của doanh nghiệp.</p>
+                                                 <p>Với mục đích xóa tan khoảng cách giữa báo cáo tài chính và nhà quản lý, Tài chính dành cho nhà quản lý sẽ giúp bạn: </p>
+												<p>Có cái nhìn cận cảnh về các báo cáo tài chính.</p>
+												<p><i>Tại sao rất nhiều người bước vào kinh doanh để cuối cùng thất bại?</i></p>
+												<p><i>Nhận biết ý nghĩa của các con số;</i></p>
+												<p><i>Từng bước phân tích thông tin có trong các báo cáo tài chính;</i></p>
+												<p>Nâng cao hiệu quả hoạt động của doanh nghiệp bằng việc ra quyết định đúng đắn, sáng suốt dựa trên những dữ kiện tài chính quan trọng.</p>
+												<p><b>Tác giả</b>Gene Siciliano</p>
+												<p><b>Người dịch</b>Hương Giangy</p>
+												 <p><b>NXB	NXB Lao Động - Xã Hội</b></p>
+                                    			 <p><b>Sản phẩm bán chạy nhất	</b>Top 100 sản phẩm Quản Trị - Lãnh Đạo bán chạy của tháng</p>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <!-- Modal footer -->
+                                    <div class="modal-footer">
+										 <button type="button" class="btn btn-danger" data-dismiss="modal" onclick="alert('Bạn cần phải Đăng Nhập')">Mua ngay</button>
+                                        <button type="button" class="btn btn-secondary" data-dismiss="modal" onclick="alert('Bạn cần phải Đăng Nhập')">Thêm vào giỏ hàng<i class="fas fa-shopping-cart"></i></button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <p><b>TÀI CHÍNH DÀNH CHO NHÀ QUẢN LÝ (TÁI BẢN 2019)</b></p>
+                    <p class="profsp">129.000 VNĐ</p>
+                </div>
+					<!--slide1--sp3--19-->
+					<div class="col-sm-3 sp">
+                    <div class="sp">
+                        <!-- Button to Open the Modal -->
+                        <button type="button" class="btn btn-link" data-toggle="modal" data-target="#myModal19">
+                            <img src="sachkinhte/kd3.jpg" class="rounded"
+                                 width="100%" height="100%" style="margin-left: 0%;">
+                        </button>
+
+                        <!-- The Modal -->
+                        <div class="modal fade" id="myModal19">
+                            <div class="modal-dialog modal-lg">
+                                <div class="modal-content">
+
+                                    <!-- Modal Header -->
+                                    <div class="modal-header">
+                                        <img src="img1\TriThuc (1).png" width="100px" height="100px" style="margin-left:10px; margin-top:5px">
+                                        <h4 class="modal-title" style="margin: 5% 1%;">THE BOOK OF LEADERSHIP - DẪN DẮT BẢN THÂN, ĐỘI NHÓM VÀ TỔ CHỨC VƯƠN XA</h4>
+                                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                    </div>
+
+                                    <!-- Modal body -->
+                                    <div class="modal-body spp" style="background-color: none;">
+                                        <p><b>THE BOOK OF LEADERSHIP - DẪN DẮT BẢN THÂN, ĐỘI NHÓM VÀ TỔ CHỨC VƯƠN XA</b></p>
+                                        <p>219.000 VNĐ</p>
+                                        <div class="row">
+                                            <div class="col-sm-5">
+                                                <img src="sachkinhte/kd3.jpg" class="rounded" width="100%" height="40%">
+                                            </div>
+                                            <div class="col-sm-6">
+
+                                                 <p>Cuốn sách này dành cho những con người giàu khát vọng, mong muốn tạo ra sự khác biệt to lớn trong thế giới tuyệt vời mà chúng ta đang sống - những người muốn truyền cảm hứng và giúp đỡ mọi người xung quanh. Cho những người muốn sống một cuộc sống đam mê và đạt được những kết quả lớn lao trên chặng đường đi. Cho những người muốn tách khỏi đám đông và vươn đến đỉnh cao cuộc chơi. Cho những người đã chán ngấy những vị lãnh đạo yếu kém, chuyên quyền, vị kỉ hay đơn giản những lãnh đạo tầm thường, và thay vào đó những người muốn nâng cao tiêu chuẩn và nâng tầm bản thân
+												</p>
+                                                 <p>Cuốn sách này dành cho cả những lãnh đạo dày dạn kinh nghiệm, đủ thông minh để biết rằng học tập không bao giờ ngừng nghỉ - rằng theo đuổi sự xuất chúng trong lãnh đạo là một hoạt động cả đời - và cho những lãnh đạo mới bổ nhiệm, ham học hỏi thói quen lãnh đạo tốt ngay từ đầu. Dành cho những người muốn đội nhóm của họ đạt kết quả phi thường, không phải bình thường, và cho lãnh đạo của những công ty lớn cũng như những công ty nhỏ (nhưng có hoài bão).</p>
+												<p>Về cơ bản, cuốn sách này dành cho những ai đang thèm khát (tôi không nói về nỗi thèm bánh nhé), đang tìm cách khai thác sức mạnh tuyệt vời mà lãnh đạo giỏi mang lại.</p>
+												<p>Nếu đó là bạn, thì tôi rất vinh hạnh khi có một người thực sự tuyệt vời trên thế giới đang cầm cuốn sách này, ngay lúc này, và tôi sẽ làm hết sức.</p>
+												<p><b>Tác giả</b>	Anthony Gell</p>
+                                    			 <p><b>Sản phẩm bán chạy nhất	</b>Top 100 sản phẩm Quản Trị - Lãnh Đạo bán chạy của tháng</p>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <!-- Modal footer -->
+                                    <div class="modal-footer">
+										 <button type="button" class="btn btn-danger" data-dismiss="modal" onclick="alert('Bạn cần phải Đăng Nhập')">Mua ngay</button>
+                                        <button type="button" class="btn btn-secondary" data-dismiss="modal" onclick="alert('Bạn cần phải Đăng Nhập')">Thêm vào giỏ hàng<i class="fas fa-shopping-cart"></i></button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <p><b>THE BOOK OF LEADERSHIP - DẪN DẮT BẢN THÂN, ĐỘI NHÓM VÀ TỔ CHỨC VƯƠN XA</b></p>
+                    <p class="profsp">219.000 VNĐ</p>
+                </div>
+					<!--slide1--sp4--20-->
+					<div class="col-sm-3 sp">
+                    <div class="sp">
+                        <!-- Button to Open the Modal -->
+                        <button type="button" class="btn btn-link" data-toggle="modal" data-target="#myModal20">
+                            <img src="sachkinhte/kd4.jpg" class="rounded"
+                                 width="100%" height="100%" style="margin-left: 0%;">
+                        </button>
+
+                        <!-- The Modal -->
+                        <div class="modal fade" id="myModal20">
+                            <div class="modal-dialog modal-lg">
+                                <div class="modal-content">
+
+                                    <!-- Modal Header -->
+                                    <div class="modal-header">
+                                        <img src="img1\TriThuc (1).png" width="100px" height="100px" style="margin-left:10px; margin-top:5px">
+                                        <h4 class="modal-title" style="margin: 5% 1%;">BÍ QUYẾT RA QUYẾT ĐỊNH DÀNH CHO NHÀ LÃNH ĐẠO</h4>
+                                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                    </div>
+
+                                    <!-- Modal body -->
+                                    <div class="modal-body spp" style="background-color: none;">
+                                        <p><b>BÍ QUYẾT RA QUYẾT ĐỊNH DÀNH CHO NHÀ LÃNH ĐẠO</b></p>
+                                        <p>99.000 VNĐ</p>
+                                        <div class="row">
+                                            <div class="col-sm-5">
+                                                <img src="sachkinhte/kd4.jpg" class="rounded" width="100%" height="40%">
+                                            </div>
+                                            <div class="col-sm-6">
+
+                                                 <p><i>Ai là nhà lãnh đạo? Những tố chất một nhà lãnh đạo cần có là gì? Và làm sao để trở thành nhà lãnh đạo thành công?</i>
+												</p>
+                                                 <p>Trong một thế giới cạnh tranh khốc liệt như hiện nay, việc trở thành một nhà lãnh đạo không khó, quan trọng là nhà lãnh đạo đó có giỏi để chiến thắng hay không. Là một nhà lãnh đạo, một trong những việc không thể nào thiếu đó là ra quyết định. Thực ra, ai cũng phải ra quyết định, dù là lớn hay nhỏ. Nhưng những quyết định của nhà lãnh đạo không chỉ liên quan đến một mình họ, mà có thể liên quan đến cả một công ty, một tập đoàn. Một quyết định sai lầm có thể lấy đi cơ hội làm việc, thậm chí là con đường sống của hàng trăm, hàng ngàn người đang trông chờ vào quyết định ấy.</p>
+												<p>Thương trường là một chiến trường, nếu bạn chậm trễ, cơ hội sẽ thuộc về người khác. Khi bạn là nhà lãnh đạo, có hàng trăm những vấn đề cần phải quyết định. Những câu hỏi mà ít nhiều bạn sẽ gặp như: Có nên tham gia vào lĩnh vực cạnh tranh với mảng kinh doanh sẵn có của công ty mình? Nên lựa chọn đối tác chiến lược như thế nào? Có nên đầu tư vào lĩnh vực mới? Thông thường, những người đi trước ít khi có thời gian để truyền tải cho bạn tất cả những kinh nghiệm mà họ có được, hoặc nếu có đi chăng nữa thì cũng sẽ không thực sự đủ cho một lượng kiến thức thực tế khổng lồ.</p>
+												<p>...</p>
+												<p><b>Tác giả</b>	Son Masayoshi</p>
+												<p><b>Người dịch</b>Nguyễn Cường</p>
+                                    			 <p><b>Sản phẩm bán chạy nhất	</b>Top 100 sản phẩm Quản Trị - Lãnh Đạo bán chạy của tháng</p>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <!-- Modal footer -->
+                                    <div class="modal-footer">
+										 <button type="button" class="btn btn-danger" data-dismiss="modal" onclick="alert('Bạn cần phải Đăng Nhập')">Mua ngay</button>
+                                        <button type="button" class="btn btn-secondary" data-dismiss="modal" onclick="alert('Bạn cần phải Đăng Nhập')">Thêm vào giỏ hàng<i class="fas fa-shopping-cart"></i></button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <p><b>BÍ QUYẾT RA QUYẾT ĐỊNH DÀNH CHO NHÀ LÃNH ĐẠO</b></p>
+                    <p class="profsp">99.000 VNĐ</p>
+                </div>
+					</div>
+				<div class="row">
+					<!--slide2--sp5--21-->
+					<div class="col-sm-3 sp">
+                    <div class="sp">
+                        <!-- Button to Open the Modal -->
+                        <button type="button" class="btn btn-link" data-toggle="modal" data-target="#myModal21">
+                            <img src="sachkinhte/kd5.jpg" class="rounded"
+                                 width="100%" height="100%" style="margin-left: 0%;">
+                        </button>
+
+                        <!-- The Modal -->
+                        <div class="modal fade" id="myModal21">
+                            <div class="modal-dialog modal-lg">
+                                <div class="modal-content">
+
+                                    <!-- Modal Header -->
+                                    <div class="modal-header">
+                                        <img src="img1\TriThuc (1).png" width="100px" height="100px" style="margin-left:10px; margin-top:5px">
+                                        <h4 class="modal-title" style="margin: 5% 1%;">9 BƯỚC TRIỂN KHAI BALANCED SCORECARD (TÁI BẢN)</h4>
+                                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                    </div>
+
+                                    <!-- Modal body -->
+                                    <div class="modal-body spp" style="background-color: none;">
+                                        <p><b>9 BƯỚC TRIỂN KHAI BALANCED SCORECARD (TÁI BẢN)</b></p>
+                                        <p>195.000 VNĐ</p>
+                                        <div class="row">
+                                            <div class="col-sm-5">
+                                                <img src="sachkinhte/kd5cover.jpg" class="rounded" width="100%" height="40%">
+                                            </div>
+                                            <div class="col-sm-6">
+
+                                                 <p><i>Nhiều nghiên cứu trên khắp thế giới đã chỉ ra rằng: “70% thất bại của các doanh nghiệp ngày nay không phải do chiến lược kém hay tầm nhìn sai, mà là do năng lực thực thi và hệ thống triển khai kém hiệu quả”</i>
+												</p>
+                                                 <p>Vậy làm sao giúp các doanh nghiệp nâng cao năng lực thực thi chiến lược và xây dựng hệ thống triển khai hiệu quả? “Balanced Scorecard/ Thẻ Điểm Cân bằng” (BSC) ra đời để giải quyết vấn đề trọng yếu này. Khái niệm BSC lần đầu tiên được giới thiệu rộng rãi vào năm 1992, thông qua một bài viết nổi tiếng của hai tiến sỹ Kaplan và Norton trên tạp chí Harvard Business Review (một diễn đàn đặc biệt của các tư tưởng gia quản trị hàng đầu thế giới). BSC đã tạo nên một cuộc cách mạng sâu rộng trên khắp thế giới về phương pháp hoạch định và triển khai chiến lược, về xây dựng hệ thống quản lý và phương pháp đo lường kết quả công việc.</p>
+												<p>Ở Việt Nam, từ năm 2006, khái niệm BSC cũng được biết đến khá nhiều trong cộng đồng doanh nghiệp và cộng đồng tư vấn quản lý và tư vấn chiến lược thông qua nhiều kênh, đặc biệt là 2 cuốn sách nổi tiếng: “Thẻ Điểm Cân Bằng/Balanced Scorecard và “Bản Đồ Chiến Lược/Strategy Map” do PACE sở hữu bản quyền, biên dịch và phát hành.</p>
+												<p>...</p>
+												<p><b>Tác giả</b>	Howard Rohm, David Wilsey, Gail Stout Perry, Dan Montgomery</p>
+												<p><b>Người dịch</b>Đinh Việt Lân</p>
+                                    			 <p><b>Sản phẩm bán chạy nhất	</b>Top 100 sản phẩm Quản Trị - Lãnh Đạo bán chạy của tháng</p>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <!-- Modal footer -->
+                                    <div class="modal-footer">
+										 <button type="button" class="btn btn-danger" data-dismiss="modal" onclick="alert('Bạn cần phải Đăng Nhập')">Mua ngay</button>
+                                        <button type="button" class="btn btn-secondary" data-dismiss="modal" onclick="alert('Bạn cần phải Đăng Nhập')">Thêm vào giỏ hàng<i class="fas fa-shopping-cart"></i></button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <p><b>9 BƯỚC TRIỂN KHAI BALANCED SCORECARD (TÁI BẢN)</b></p>
+                    <p class="profsp">195.000 VNĐ</p>
+                </div>
+					<!--slide2--sp6--22-->
+					<div class="col-sm-3 sp">
+                    <div class="sp">
+                        <!-- Button to Open the Modal -->
+                        <button type="button" class="btn btn-link" data-toggle="modal" data-target="#myModal22">
+                            <img src="sachkinhte/kd6.jpg" class="rounded"
+                                 width="100%" height="100%" style="margin-left: 0%;">
+                        </button>
+
+                        <!-- The Modal -->
+                        <div class="modal fade" id="myModal22">
+                            <div class="modal-dialog modal-lg">
+                                <div class="modal-content">
+
+                                    <!-- Modal Header -->
+                                    <div class="modal-header">
+                                        <img src="img1\TriThuc (1).png" width="100px" height="100px" style="margin-left:10px; margin-top:5px">
+                                        <h4 class="modal-title" style="margin: 5% 1%;">XÂY DỰNG VĂN HÓA DOANH NGHIỆP</h4>
+                                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                    </div>
+
+                                    <!-- Modal body -->
+                                    <div class="modal-body spp" style="background-color: none;">
+                                        <p><b>XÂY DỰNG VĂN HÓA DOANH NGHIỆP</b></p>
+                                        <p>129.000 VNĐ</p>
+                                        <div class="row">
+                                            <div class="col-sm-5">
+                                                <img src="sachkinhte/kd6cover.png" class="rounded" width="100%" height="40%">
+                                            </div>
+                                            <div class="col-sm-6">
+
+                                                 <p><i>Ngày càng có nhiều doanh nghiệp và các nhà lãnh đạo, các cấp quản lý tập trung vào việc xây dựng văn hóa doanh nghiệp. Văn hóa doanh nghiệp bắt nguồn từ các mối quan hệ chất lượng giữa các thành viên trong một nhóm, và đặc biệt, ở việc những cấp quản lý có thể dẫn dắt, trợ giúp người xung quanh bộc lộ hết tiềm năng, trở thành một phiên bản tốt hơn của chính họ.</i>
+												</p>
+                                                 <p>Cuốn sách “ Xây dựng văn hóa doanh nghiệp ” sẽ đưa chúng ta đến với 3 nguyên tắc cốt lõi:</p>
+												<p>1. Mục đích sâu xa nhất của một doanh nghiệp là thay đổi cuộc sống của những người làm việc tại đó.</p>
+												<p>2. Vai trò của các nhà lãnh đạo và nhà quản lý là giúp mọi người thấy phát triển sự nghiệp và phát triển con người là không thể tách rời.</p>
+												<p>3. Nếu muốn mọi người tăng cường gắn kết, hãy tương tác với họ nhiều hơn.</p>
+												<p>Ba nguyên tắc trên là khởi nguồn cho sự phát triển của doanh nghiệp bạn trong nhiều năm tới, giúp bạn đánh giá lại các định nghĩa về lãnh đạo, về mục đích công việc, và cho phép bạn yêu cầu mọi người phát triển vượt xa những gì họ đang đạt được ngày hôm nay.</p>
+												<p><b>Tác giả</b>	Jonathan Raymond</p>
+												<p><b>Người dịch</b>	Hoàng Trang</p>
+                                    			 <p><b>Sản phẩm bán chạy nhất	</b>Top 100 sản phẩm Quản Trị - Lãnh Đạo bán chạy của tháng</p>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <!-- Modal footer -->
+                                    <div class="modal-footer">
+										 <button type="button" class="btn btn-danger" data-dismiss="modal" onclick="alert('Bạn cần phải Đăng Nhập')">Mua ngay</button>
+                                        <button type="button" class="btn btn-secondary" data-dismiss="modal" onclick="alert('Bạn cần phải Đăng Nhập')">Thêm vào giỏ hàng<i class="fas fa-shopping-cart"></i></button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <p><b>XÂY DỰNG VĂN HÓA DOANH NGHIỆP</b></p>
+                    <p class="profsp">129.000 VNĐ</p>
+                </div>
+					<!--slide2--sp7--23-->
+					<div class="col-sm-3 sp">
+                    <div class="sp">
+                        <!-- Button to Open the Modal -->
+                        <button type="button" class="btn btn-link" data-toggle="modal" data-target="#myModal23">
+                            <img src="sachkinhte/kd7.jpg" class="rounded"
+                                 width="100%" height="100%" style="margin-left: 0%;">
+                        </button>
+
+                        <!-- The Modal -->
+                        <div class="modal fade" id="myModal23">
+                            <div class="modal-dialog modal-lg">
+                                <div class="modal-content">
+
+                                    <!-- Modal Header -->
+                                    <div class="modal-header">
+                                        <img src="img1\TriThuc (1).png" width="100px" height="100px" style="margin-left:10px; margin-top:5px">
+                                        <h4 class="modal-title" style="margin: 5% 1%;">NGHỆ THUẬT QUẢN LÝ CON NGƯỜI</h4>
+                                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                    </div>
+
+                                    <!-- Modal body -->
+                                    <div class="modal-body spp" style="background-color: none;">
+                                        <p><b>NGHỆ THUẬT QUẢN LÝ CON NGƯỜI</b></p>
+                                        <p>99.000 VNĐ</p>
+                                        <div class="row">
+                                            <div class="col-sm-5">
+                                                <img src="sachkinhte/kd7.jpg" class="rounded" width="100%" height="100%">
+                                            </div>
+                                            <div class="col-sm-6">
+
+                                                 <p><i>Nghệ thuật quản lý con người chứa đựng những quan điểm có giá trị về các kỹ năng cần thiết để trở thành nhà quản lý hiệu quả. Từ cách quản lý tốt các nhóm nội bộ đến việc tuyển dụng sao cho thành công, tác giả sẽ giúp bạn khai phá hết tiềm năng của nhân viên bằng cách thúc đẩy, khen thưởng cũng như thông qua khả năng lãnh đạo. Ngoài ra, tác giả còn đưa ra các lời khuyên dễ áp dụng cũng như các công cụ và danh sách kiểm tra thực tế, rất hữu ích cho những ai muốn đội ngũ của mình đạt được những kết quả tốt nhất..</i></p>
+												<p><b>Tác giả</b>Michael Armstrong</p>
+												<p><b>Người dịch</b>Lê Minh Quân</p>
+                                    			 <p><b>Sản phẩm bán chạy nhất	</b>Top 100 sản phẩm Quản Trị - Lãnh Đạo bán chạy của tháng</p>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <!-- Modal footer -->
+                                    <div class="modal-footer">
+										 <button type="button" class="btn btn-danger" data-dismiss="modal" onclick="alert('Bạn cần phải Đăng Nhập')">Mua ngay</button>
+                                        <button type="button" class="btn btn-secondary" data-dismiss="modal" onclick="alert('Bạn cần phải Đăng Nhập')">Thêm vào giỏ hàng<i class="fas fa-shopping-cart"></i></button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <p><b>NGHỆ THUẬT QUẢN LÝ CON NGƯỜI</b></p>
+                    <p class="profsp">99.000 VNĐ</p>
+                </div>
+					<!--slide2--sp8--24-->
+					<div class="col-sm-3 sp">
+                    <div class="sp">
+                        <!-- Button to Open the Modal -->
+                        <button type="button" class="btn btn-link" data-toggle="modal" data-target="#myModal24">
+                            <img src="sachkinhte/kd8.jpg" class="rounded"
+                                 width="100%" height="100%" style="margin-left: 0%;">
+                        </button>
+
+                        <!-- The Modal -->
+                        <div class="modal fade" id="myModal24">
+                            <div class="modal-dialog modal-lg">
+                                <div class="modal-content">
+
+                                    <!-- Modal Header -->
+                                    <div class="modal-header">
+                                        <img src="img1\TriThuc (1).png" width="100px" height="100px" style="margin-left:10px; margin-top:5px">
+                                        <h4 class="modal-title" style="margin: 5% 1%;">BÍ QUYẾT THÀNH CÔNG - BIẾT NGƯỜI DÙNG NGƯỜI QUẢN NGƯỜI</h4>
+                                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                    </div>
+
+                                    <!-- Modal body -->
+                                    <div class="modal-body spp" style="background-color: none;">
+                                        <p><b>BÍ QUYẾT THÀNH CÔNG - BIẾT NGƯỜI DÙNG NGƯỜI QUẢN NGƯỜI</b></p>
+                                        <p>160.000 VNĐ</p>
+                                        <div class="row">
+                                            <div class="col-sm-5">
+                                                <img src="sachkinhte/kd8.jpg" class="rounded" width="100%" height="100%">
+                                            </div>
+                                            <div class="col-sm-6">
+
+                                                 <p><i>Cuốn sách này sẽ mang đến cho bạn những phương pháp quan trọng để nhận biết người, phải nhanh trí, tỉnh táo khi dùng người. Phải nhận biết được cấp trên, cấp dưới, nhận biết từ dáng vẻ bên ngoài, đến nội tâm bên trọng, nhận biết người từ xa đến gần; nhận biết người theo thế lực, theo thời cuộc, nhận biết người lúc nhỏ, nhận biết người lúc lớn, nhận biết người lúc thiện, nhận biết người lúc ác. Mọi người trong thiên hạ học được các biết người này có thể thấy rõ hết mọi chuyện, việc biết người sẽ thông đồng bén giọt</i></p>
+												<p><b>Tác giả</b>	Văn Huân, Quốc Trung</p>
+                                    			 <p><b>Sản phẩm bán chạy nhất	</b>Top 100 sản phẩm Quản Trị - Lãnh Đạo bán chạy của tháng</p>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <!-- Modal footer -->
+                                    <div class="modal-footer">
+										 <button type="button" class="btn btn-danger" data-dismiss="modal" onclick="alert('Bạn cần phải Đăng Nhập')">Mua ngay</button>
+                                        <button type="button" class="btn btn-secondary" data-dismiss="modal" onclick="alert('Bạn cần phải Đăng Nhập')">Thêm vào giỏ hàng<i class="fas fa-shopping-cart"></i></button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <p><b>BÍ QUYẾT THÀNH CÔNG - BIẾT NGƯỜI DÙNG NGƯỜI QUẢN NGƯỜI</b></p>
+                    <p class="profsp">160.000 VNĐ</p>
+					</div></div>
+				   <div class="row">
+					<!--slide3--sp9--25-->
+					<div class="col-sm-3 sp">
+                    <div class="sp">
+                        <!-- Button to Open the Modal -->
+                        <button type="button" class="btn btn-link" data-toggle="modal" data-target="#myModal25">
+                            <img src="sachkinhte/kd9.jpg" class="rounded"
+                                 width="100%" height="100%" style="margin-left: 0%;">
+                        </button>
+
+                        <!-- The Modal -->
+                        <div class="modal fade" id="myModal25">
+                            <div class="modal-dialog modal-lg">
+                                <div class="modal-content">
+
+                                    <!-- Modal Header -->
+                                    <div class="modal-header">
+                                        <img src="img1\TriThuc (1).png" width="100px" height="100px" style="margin-left:10px; margin-top:5px">
+                                        <h4 class="modal-title" style="margin: 5% 1%;">LÃNH ĐẠO THEO NGUYÊN TẮC</h4>
+                                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                    </div>
+
+                                    <!-- Modal body -->
+                                    <div class="modal-body spp" style="background-color: none;">
+                                        <p><b>LÃNH ĐẠO THEO NGUYÊN TẮC</b></p>
+                                        <p>135.000 VNĐ</p>
+                                        <div class="row">
+                                            <div class="col-sm-5">
+                                                <img src="sachkinhte/kd9.jpg" class="rounded" width="100%" height="50%">
+                                            </div>
+                                            <div class="col-sm-6">
+
+                                                 <p><i>Quyển sách Lãnh Đạo Theo Nguyên Tắc (Principle-Centered Leadership) sẽ giúp bạn giải quyết những vấn đề nan giải sau đây:</i></p>
+												<p>
+													1. Làm cách nào để tạo ra, duy trì được sự cân bằng mới giữa công việc và gia đình, giữa chuyên môn và cuộc sống, khi ta luôn bị vây quanh bởi áp lực và khủng hoảng</p>
+													<p>2. Làm cách nào để giải phóng sự sáng tạo, tài năng và năng lượng của đại đa số lực lượng lao động?</p>
+													<p>3. Làm cách nào để tạo ra tinh thần đội nhóm và sự hài hòa giữa những con người và những phòng ban?</p>
+													<p>4. Làm cách nào chúng ta có thể nhận ra rằng nên lựa chọn quản trị theo cách quản trị "cứng rắn", hay quản trị "mềm mỏng"?</p>
+													<p>5. Làm cách nào có được một nền văn hóa được đặc trưng bởi sự thay đổi, linh hoạt, và cải thiện liên tục mà vẫn duy trì được tính ổn định và an toàn?</p>
+													<p>6. Làm cách nào để con người và văn hóa song hành cùng với chiến lược?</p>
+													<p>7. Làm cách nào để tất cả mọi người ở mọi cấp độ của tố chức đều nhập tâm vào những nguyên lý chất lượng toàn diện và sự cải thiện liên tục?</p>
+													<p>8. Làm cách nào tạo ra một tập thể bù đắp hỗ trợ cho nhau, dựa trên sự tôn trọng lẫn nhau, khi mà giá trị của sự đa dạng và tính đa nguyên còn quá ít ỏi?</p>
+													<p>9. Làm cách nào để biến một tuyên ngôn sứ mệnh thành một "hiến pháp"?</p>
+													<p>10. Làm cách nào duy trì kiểm soát mà vẫn cho mọi người sự tự do và tự quyết mà họ cần để hoàn thành hiệu quả công việc?</p>
+												
+												<p><b>Tác giả</b>Stephen R Covey</p>
+                                    			 <p><b>Sản phẩm bán chạy nhất	</b>Top 100 sản phẩm Quản Trị - Lãnh Đạo bán chạy của tháng</p>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <!-- Modal footer -->
+                                    <div class="modal-footer">
+										 <button type="button" class="btn btn-danger" data-dismiss="modal" onclick="alert('Bạn cần phải Đăng Nhập')">Mua ngay</button>
+                                        <button type="button" class="btn btn-secondary" data-dismiss="modal" onclick="alert('Bạn cần phải Đăng Nhập')">Thêm vào giỏ hàng<i class="fas fa-shopping-cart"></i></button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <p><b>LÃNH ĐẠO THEO NGUYÊN TẮC</b></p>
+                    <p class="profsp">135.000 VNĐ</p>
+                </div>
+					   <!--slide3--sp10--26-->
+					<div class="col-sm-3 sp">
+                    <div class="sp">
+                        <!-- Button to Open the Modal -->
+                        <button type="button" class="btn btn-link" data-toggle="modal" data-target="#myModal26">
+                            <img src="sachkinhte/kd10.jpg" class="rounded"
+                                 width="100%" height="100%" style="margin-left: 0%;">
+                        </button>
+
+                        <!-- The Modal -->
+                        <div class="modal fade" id="myModal26">
+                            <div class="modal-dialog modal-lg">
+                                <div class="modal-content">
+
+                                    <!-- Modal Header -->
+                                    <div class="modal-header">
+                                        <img src="img1\TriThuc (1).png" width="100px" height="100px" style="margin-left:10px; margin-top:5px">
+                                        <h4 class="modal-title" style="margin: 5% 1%;">MƯU LƯỢC TRONG CHÍNH TRỊ QUÂN SỰ & ĐỜI SỐNG</h4>
+                                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                    </div>
+
+                                    <!-- Modal body -->
+                                    <div class="modal-body spp" style="background-color: none;">
+                                        <p><b>MƯU LƯỢC TRONG CHÍNH TRỊ QUÂN SỰ & ĐỜI SỐNG</b></p>
+                                        <p>118.000 VNĐ</p>
+                                        <div class="row">
+                                            <div class="col-sm-5">
+                                                <img src="sachkinhte/kd10cover.jpg" class="rounded" width="100%" height="100%">
+                                            </div>
+                                            <div class="col-sm-6">
+
+                                                 <p><i>Xã hội không ngừng phát triển, trên mọi phương diện đều có sự cạnh tranh gay gắt, vì thế việc vận dụng mưu lược là không thể thiếu. Trong các lĩnh vực chính trị, quân sự hay kinh tế, ngoại giao, ngoài tầm nhìn xa trông rộng, tài phân tích, phán đoán nhạy bén, người lãnh đạo còn phải biết cách nhìn người và dùng người trong mọi hoàn cảnh.
+												MƯU LƯỢC TRONG CHÍNH TRỊ - QUÂN SỰ & ĐỜI SỐNG tập hợp nhiều kế sách cũng như thuật dùng người khôn khéo của các nhân vật nổi tiếng trong lịch sử giúp chúng ta nhìn lại quá khứ, học hỏi kinh nghiệm, từ đó vận dụng một cách sáng tạo trong cuộc sống hàng ngày.</i></p>	
+												<p><b>Tác giả</b>	Quách Thành</p>
+												<p><b>Người dịch</b>	Tiến Thành</p>
+                                    			 <p><b>Sản phẩm bán chạy nhất	</b>Top 100 sản phẩm Quản Trị - Lãnh Đạo bán chạy của tháng</p>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <!-- Modal footer -->
+                                    <div class="modal-footer">
+										 <button type="button" class="btn btn-danger" data-dismiss="modal" onclick="alert('Bạn cần phải Đăng Nhập')">Mua ngay</button>
+                                        <button type="button" class="btn btn-secondary" data-dismiss="modal" onclick="alert('Bạn cần phải Đăng Nhập')">Thêm vào giỏ hàng<i class="fas fa-shopping-cart"></i></button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <p><b>MƯU LƯỢC TRONG CHÍNH TRỊ QUÂN SỰ & ĐỜI SỐNG</b></p>
+                    <p class="profsp">118.000 VNĐ</p>
+                </div>
+					    <!--slide3--sp11--27-->
+					<div class="col-sm-3 sp">
+                    <div class="sp">
+                        <!-- Button to Open the Modal -->
+                        <button type="button" class="btn btn-link" data-toggle="modal" data-target="#myModal27">
+                            <img src="sachkinhte/kd11.jpg" class="rounded"
+                                 width="100%" height="100%" style="margin-left: 0%;">
+                        </button>
+
+                        <!-- The Modal -->
+                        <div class="modal fade" id="myModal27">
+                            <div class="modal-dialog modal-lg">
+                                <div class="modal-content">
+
+                                    <!-- Modal Header -->
+                                    <div class="modal-header">
+                                        <img src="img1\TriThuc (1).png" width="100px" height="100px" style="margin-left:10px; margin-top:5px">
+                                        <h4 class="modal-title" style="margin: 5% 1%;">QUẢN LÝ DỰ ÁN HIỆU QUẢ THEO PHONG CÁCH NGƯỜI NHẬT</h4>
+                                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                    </div>
+
+                                    <!-- Modal body -->
+                                    <div class="modal-body spp" style="background-color: none;">
+                                        <p><b>QUẢN LÝ DỰ ÁN HIỆU QUẢ THEO PHONG CÁCH NGƯỜI NHẬT</b></p>
+                                        <p>110.000 VNĐ</p>
+                                        <div class="row">
+                                            <div class="col-sm-5">
+                                                <img src="sachkinhte/kd11.jpg" class="rounded" width="100%" height="100%">
+                                            </div>
+                                            <div class="col-sm-6">
+
+                                                 <p>Công việc quản lý nhóm hoặc quản lý dự án thường gặp muôn vàn khó khăn và trắc trở. Tuy nhiên quản lý không phải là việc mang đến áp lực cho người quản lý là tận dụng tối đa khả năng của mọi người và tạo nên môi trường để có thể phát huy tối đa năng lực một cách thoải mái nhất. Quản lý dự án hiệu quả theo phong cách người Nhật đúc kết nhiều bài học hay cùng những kinh nghiệm thực tế của tác giả. Những kỹ năng, thuật ngữ quản lý dự án khó hiểu được truyền đạt và diễn giải bằng ngôn từ gần gũi nhất giúp người đọc dễ dàng nắm bắt và vận dụng.</p>
+												<p>Để hiểu được bức tranh toàn cảnh về quản lý dự án, hãy đọc cuốn sách này, bạn sẽ rút ra được những bài học hữu ích giúp bạn lập dự án, lên kế hoạch và thực hiện thành công!</p>
+												<p><b>Tác giả</b>		Hidenori Shibamoto</p>
+												<p><b>Người dịch</b>	Châm Blue</p>
+                                    			 <p><b>Sản phẩm bán chạy nhất	</b>Top 100 sản phẩm Quản Trị - Lãnh Đạo bán chạy của tháng</p>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <!-- Modal footer -->
+                                    <div class="modal-footer">
+										 <button type="button" class="btn btn-danger" data-dismiss="modal" onclick="alert('Bạn cần phải Đăng Nhập')">Mua ngay</button>
+                                        <button type="button" class="btn btn-secondary" data-dismiss="modal" onclick="alert('Bạn cần phải Đăng Nhập')">Thêm vào giỏ hàng<i class="fas fa-shopping-cart"></i></button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <p><b>QUẢN LÝ DỰ ÁN HIỆU QUẢ THEO PHONG CÁCH NGƯỜI NHẬT</b></p>
+                    <p class="profsp">110.000 VNĐ</p>
+                </div>
+					    <!--slide3--sp12--28-->
+					<div class="col-sm-3 sp">
+                    <div class="sp">
+                        <!-- Button to Open the Modal -->
+                        <button type="button" class="btn btn-link" data-toggle="modal" data-target="#myModal28">
+                            <img src="sachkinhte/kd12.jpg" class="rounded"
+                                 width="100%" height="100%" style="margin-left: 0%;">
+                        </button>
+
+                        <!-- The Modal -->
+                        <div class="modal fade" id="myModal28">
+                            <div class="modal-dialog modal-lg">
+                                <div class="modal-content">
+
+                                    <!-- Modal Header -->
+                                    <div class="modal-header">
+                                        <img src="img1\TriThuc (1).png" width="100px" height="100px" style="margin-left:10px; margin-top:5px">
+                                        <h4 class="modal-title" style="margin: 5% 1%;">TRÍ TUỆ BĂNG GIÁM </h4>
+                                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                    </div>
+
+                                    <!-- Modal body -->
+                                    <div class="modal-body spp" style="background-color: none;">
+                                        <p><b>TRÍ TUỆ BĂNG GIÁM </b></p>
+                                        <p>165.000 VNĐ</p>
+                                        <div class="row">
+                                            <div class="col-sm-5">
+                                                <img src="sachkinhte/kd12.jpg" class="rounded" width="100%" height="70%">
+                                            </div>
+                                            <div class="col-sm-6">
+
+                                                 <p>Tăng Quốc Phiên (1811 - 1872) là một bậc kì tài, là rường cột nước Trung Quốc dưới thời nhà Thanh, ông được người đời sau mệnh danh là " Trung Hưng Danh Thần" và "Nhất Đại Quan Thánh" (thánh quan một thuở).  Trong cuộc đời mình ông là hai chuyện đại sự kinh thiên động địa: một là, luyện tập quân sĩ vùng Tương (Hồ Nam ngày nay), trấn áp cuộc vận động Thái Bình Thiên Quốc, giúp cho triều đại nhà Thanh sắp diệt vong tồn tại thêm 50 năm nữa; hai là, tổ chức phong trào " Sư di chi trường kĩ" (ý chỉ học hỏi sở trường, điểm mạnh, đặc biệt là kĩ thuật tiên tiến của người Tây Dương) phát triển mạnh, thúc đẩy sự phát triển của Trung Quốc thời cận đại.</p>
+												<p>Tăng Quốc Phiên có tổng cộng 13 cuốn về học vấn, nhưng còn lưu truyền lại đến nay thì chỉ còn Gia Thư và Băng Giám. Từ cuốn Tăng Quốc Phiên gia thư có thể thấy được phong cách đặc sắc của ông trên nhiều phương diện như: chính trị, điều quân, dạy học, trị gia.</p>
+												<p><b>Tác giả</b>Tăng Quốc Phiên</p>
+												<p><b>Người dịch</b>	Châm Blue</p>
+                                    			 <p><b>Sản phẩm bán chạy nhất	</b>Top 100 sản phẩm Quản Trị - Lãnh Đạo bán chạy của tháng</p>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <!-- Modal footer -->
+                                    <div class="modal-footer">
+										 <button type="button" class="btn btn-danger" data-dismiss="modal" onclick="alert('Bạn cần phải Đăng Nhập')">Mua ngay</button>
+                                        <button type="button" class="btn btn-secondary" data-dismiss="modal" onclick="alert('Bạn cần phải Đăng Nhập')">Thêm vào giỏ hàng<i class="fas fa-shopping-cart"></i></button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <p><b>TRÍ TUỆ BĂNG GIÁM </b></p>
+                    <p class="profsp">165.000 VNĐ</p>
+                </div>
+				</div><nav aria-label="Page navigation example">
+   <ul class="pagination">
+      <li class="page-item">
+         <a class="page-link" href="#" aria-label="Previous">
+         <span aria-hidden="true">&laquo;</span>
+         <span class="sr-only">Previous</span>
+         </a>
+      </li>
+      <li class="page-item ">
+         <a class="page-link" href="kinhte.html">1</a>
+      </li>
+      <li class="page-item active" >
+         <a class="page-link" href="kinhte1.html">2</a>
+      </li>
+      <li class="page-item">
+         <a class="page-link" href="kinhte2.html">3</a>
+      </li>
+      <li class="page-item">
+         <a class="page-link" href="#" aria-label="Next">
+         <span aria-hidden="true">&raquo;</span>
+         <span class="sr-only">Next</span>
+         </a>
+      </li>
+   </ul>
+</nav>
+</div>
+		  </div>
+</div><!--container-->
+	
+                   <!--Footer-->
+                                <div id="lienhe"></div>
+                                <div class="footer">
+                                    <a class="btn-top" href="javascript:void(0);" title="Top" style="display: inline;"></a>
+                                </div>
+                                <div style="text-align: center;margin-top: 100px;">
+                                    <h3>LIÊN HỆ NGAY VỚI CHÚNG TÔI !</h3>
+                                </div>
+                                <div class="row" style="color: #797979;">
+                                    <div class=" col-sm-3 footer ">
+                                        <p style="margin-top: 20px; "><strong>Thông tin cửa hàng</strong></p>
+                                        <p>Địa chỉ:273 An Dương Vương, phường 10, quận 5, TPHCM</p>
+                                        <p>SĐT: 0906751622</p>
+                                        <p>E-mail: nhasachtrithuc@gmail.com</p>
+                                    </div>
+
+                                    <div class="col-sm-3 footer ">
+                                        <p style="margin-top: 20px; "><strong>Giờ làm việc</strong></p>
+                                         <p>Từ thứ 2 - thứ 6 : 7:00 đến 22:00</p>
+                                        <p>Thứ 7 - Chủ nhật : 9:00 đến 18:00</p>
+
+
+                                    </div>
+
+                                    <div class="col-sm-3 footer ">
+                                        <p style="margin-top: 20px; "><strong>Hỗ Trợ</strong></p>
+                                        <p>Hãy để lại email, chúng tôi sẽ tư vấn cho bạn.</p>
+                                        <p><input type="text " placeholder="email@example.com " name="email " size="30 " style="border: 0px;border-bottom: 1px solid #636363; "></p>
+                                        <p><input type="submit" value="Gửi Ngay!!! " style="color: white; background-color: #636363;border: 0px; "></p>
+                                    </div>
+
+                                    <div class="col-sm-3 footer">
+                                        <p style="margin-top: 20px; margin-left: 0px;"><strong>Kết Nối</strong></p>
+                                        <span>
+                                            <i class="fab fa-facebook-f fa-2x" style="padding-left: 30px;"></i>
+                                            <i class="fab fa-twitter fa-2x"></i>
+                                            <i class="fab fa-youtube fa-2x"></i>
+                                            <i class="fab fa-instagram fa-2x"></i>
+                                            <i class="fab fa-pinterest fa-2x"></i>
+                                            <i class="fab fa-flickr fa-2x"></i>
+                                        </span>
+                                    </div>
+	</div>
+<button type="button" onclick="topFunction()" id="myBtn" title="Go to top"><i class="fas fa-arrow-circle-up fa-3x" style="color: #66ccff" ;></i></button>
+<script>
+function change() {
+  var element = document.getElementById('dangnhap');
+    element.innerHTML = 'ĐĂNG XUẤT';
+}
+function changea() {
+  var element = document.getElementById('dangnhap');
+    element.innerHTML = 'ĐĂNG NHẬP';
+}
+</script>
+<script>//Get the button:
+var mybutton = document.getElementById("myBtn");
+
+// When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    mybutton.style.display = "block";
+  } else {
+    mybutton.style.display = "none";
+  }
+}
+
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+  document.body.scrollTop = 0; // For Safari
+  document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+}
+</script>
+<script src="jquery-3.4.1.min.js"></script>
+    <script src="popper.min.js"></script>
+    <script src="bootstrap/js/bootstrap.min.js"></script>
+
+</body>
+</html>

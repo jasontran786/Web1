@@ -1,0 +1,407 @@
+@font-face{
+ font-family: 'MyriadPro';
+ src:url("fonts/MYRIADPRO-REGULAR.OTF")
+}
+@font-face{
+    font-family: Pattaya;
+    src:url("fonts/Pattaya-Regular.ttf")
+}
+.chuthich {
+    height: 100%;
+}
+
+.carousel-inner img {
+    width: 100%;
+    height: 10%;
+    height: 350px;
+}
+
+html {
+    scroll-behavior: smooth;
+	
+}
+
+
+
+
+body {
+    font-family: "Myriadpro";
+}
+
+
+.headerr>h4 {
+    height: 35px;
+    color: black;
+    font-size: 15px;
+    padding: 10px;
+    margin: 0px;
+}
+
+.headerr>span>i {
+    margin: 5px 10px;
+    font-size: 20px;
+    color: black;
+}
+
+.menuheader {
+    margin-top: 20px;
+    margin-left: 30px;
+}
+
+.menuheader>ul>li>a {
+    font-weight: bold;
+    color: black;
+    margin-left: 5px;
+    width: 10px;
+}
+
+.menuheader>ul>li>a:hover {
+    text-decoration: none;
+    color: rgb(209, 205, 205);
+}
+
+.menuheader>span>a>i {
+    margin: 0px 10px;
+    font-size: 20px;
+    color: #202020;
+}
+
+
+.search
+{
+    border: 2px solid white;
+    width: 350px;
+    height: 50px;
+    position: relative;
+    margin-top: 25px;
+    margin-left: 50px;
+    border-radius: 200px;
+    background-color:white;
+	border: 1px solid black;
+}
+.search input[type=search]
+{
+   float: left;
+    margin-top: 1px;
+    margin-bottom: 1px;
+    margin-left: 15px;
+    width: 280px;
+    height: 43px;
+    outline:none;
+    border: none;
+    font-size: 15px;
+    color: black;
+}
+
+.search button[type=button]
+{
+    float: left;
+    height: 50.1px;
+    width: 52px;
+  color:black;
+  background: #66ccff;
+  border-top-right-radius: 100px;
+  border-bottom-right-radius: 100px;
+    border:1px solid black;
+    outline: none;
+    cursor: pointer;
+    margin-top: -1.5px;
+	margin-right: 1px;
+}
+
+
+/*.box{
+  margin-top: 25px;
+  margin-left: 50px;
+}
+  .input[type="text"] {
+      width: 350px;
+      box-sizing: border-box;
+      border: 1px solid black;
+      border-radius: 200px;
+      outline:none;
+      padding: 12px 14px;
+	 font-family: 'MyriadPro';
+	 background-color: #66ccff;
+    }
+.box button[type="submit"]
+{
+    
+    height: 50.1px;
+    width: 50px;
+  color:black;
+  background: #eb76df;
+  border-top-right-radius: 100px;
+  border-bottom-right-radius: 100px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    margin-top: -1.5px;
+}*/
+
+.chuthich p{
+    color: #33ccff;
+    font-size: 18px;
+    text-align: center;
+    margin-top:20px;
+    font-family: 'MyriadPro';
+}
+
+#gioithieu {
+
+    position: absolute;
+    top: 1065px;
+}
+
+#products {
+    position: absolute;
+    top: 350px;
+}
+.main1{
+	background-color: #eeeeee;
+}
+.sp>button>img {
+    margin-left: 25%;
+    border: 0px;
+    width: 50%;
+    height: 80%;
+}
+.sp>p {
+    text-align: center;
+    font-size: 13px;
+    color: black;
+    padding-top: 10px;
+	font-family: 'myriadpro';
+}
+
+.profsp {
+    margin-top: -30px;
+    font-size: 17px;
+    font-weight: bold;
+    margin-bottom: 40px;
+}
+
+.bgwe1821 {
+    background-image: url("img1/logo1.png");
+    background-position: center;
+    background-size: cover;
+    max-width: 100%;
+    margin: auto;
+    height: 800px;
+    position: relative;
+}
+
+.bgwe1821>p {
+    float: right;
+    position: absolute;
+    color: antiquewhite;
+    left: 0px;
+    top: 400px;
+    padding-left: 30px;
+    font-size: 50px;
+    font-weight: bold;
+}
+.footer{
+    background-color: #eeeeee;
+}
+.footer>span>i {
+    margin-top: -7px;
+    margin-left: 8px;
+    color: #636363;
+}
+
+.btn-top {
+
+    background-repeat: no-repeat;
+    border: medium none;
+    bottom: 20px;
+    cursor: pointer;
+    display: none;
+    height: 50px;
+    outline: medium none;
+    padding: 0;
+    position: fixed;
+    right: 20px;
+    width: 50px;
+    z-index: 9999;
+}
+
+.footer>p {
+    padding-left: 40px;
+    color: #636363;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    border: none;
+}
+
+ul {
+    float: right;
+
+}
+
+li {
+    display: inline;
+    transition: 0.3s;
+    padding: 12px 18px;
+   
+}
+.logo {
+    float: left;
+    cursor: pointer;
+}
+
+li a {
+    color: black;
+    text-decoration:none;
+}
+.icon {
+    float: right;
+    display: none;
+}
+
+ul li:hover {
+    background-color: #66CCFF;
+    border-radius: 3px;
+    transition: 0.3s;
+}
+
+li {
+    position: relative;
+}
+
+ul.dropdown-menu{
+    width: 150px;
+    height: auto;
+    border: 1px solid #66CCFF;
+    background-color: #66CCFF;
+    position: absolute;
+    top: 39px;
+    left: -13px;
+    box-shadow: 2px 2px 4px 1px #00000057;
+    display: none;
+
+}
+ 
+ul.dropdown-menu li {
+    display: block;
+    color: white;
+    border-bottom: 1px solid white;
+    padding: 0;
+    text-align: center;
+    cursor: pointer;
+}
+ 
+ul.dropdown-menu li:last-child {
+    border: none;
+}
+ 
+li{
+    position: relative;
+}
+li:hover ul.dropdown-menu {
+    display: block;
+}
+@media(max-width:1000px) {
+    ul {
+        display: none;
+    }
+    ul.active {
+        margin-top: 10px;
+        background-color: rgb(255, 255, 255);
+        width: 100%;
+        height: 100%;
+        position: fixed;
+        top: 50px;
+        left: 0px;
+        display: block;
+    }
+    ul li {
+        display: block;
+        text-align: center;
+        border-bottom: 1px solid white
+    }
+    .icon {
+        display: block;
+    }
+     ul.dropdown-menu{
+        width: 100%;
+        height: auto;
+        position: fixed;
+        z-index: 9999;
+        left: 0px;
+    }
+}
+#myBtn {
+  display: none; /* Hidden by default */
+  position: fixed; /* Fixed/sticky position */
+  bottom: 20px; /* Place the button at the bottom of the page */
+  right: 30px; /* Place the button 30px from the right */
+  z-index: 9999; /* Make sure it does not overlap */
+  outline: none; /* Remove outline */
+  cursor: pointer; /* Add a mouse pointer on hover */
+  padding: 15px; /* Some padding */
+  border-radius: 10px; /* Rounded corners */
+  font-size: 18px; /* Increase font size */
+}
+
+
+#myBtn:hover {
+  background-color: #555; /* Add a dark-grey background on hover */
+}
+
+.cart{
+	padding-top:30px;
+	
+}
+/* :: 14.0 Checkout Area CSS */
+.checkout_details_area form label {
+  font-size: 12px;
+  text-transform: uppercase;
+  font-weight: 600; }
+  .checkout_details_area form label span {
+    color: red; }
+.checkout_details_area form .form-control {
+  height: 42px;
+  border: 2px solid #eeeeee;
+  background-color: transparent;
+  border-radius: 0; }
+.checkout_details_area form .nice-select {
+  border-radius: 0;
+  border: 2px solid #eeeeee; }
+  .checkout_details_area form .nice-select .list {
+    width: 100%;
+    border-radius: 0; }
+
+.order-details-confirmation {
+  width: 100%;
+  border: 2px solid #eeeeee;
+  padding: 40px; }
+.order-details-confirmation .order-details-form li {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -ms-grid-row-align: center;
+    align-items: center;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    margin-bottom: 0;
+    font-size: 12px;
+    text-transform: uppercase;
+    padding: 20px 0;
+    border-bottom: 2px solid #ebebeb;
+    font-weight: 600; }
+  .order-details-confirmation .card-header h6 a {
+    display: block;
+    font-size: 14px;
+    text-transform: uppercase; }
+    .order-details-confirmation .card-header h6 a i {
+      color: #9f9f9f; }
+
+
+

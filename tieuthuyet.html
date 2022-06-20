@@ -1,0 +1,926 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+	  <link rel="icon" type="image/png" href="img1/favicon.png">
+    <script language="javascript" src="index.js"></script>
+   <link rel="stylesheet" href="for1821.css" type="text/css">
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="fontawesome/css/all.css">
+   
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+        
+        body {
+            font-family: "Myriadpro", serif;
+         
+        }
+    </style>
+    <title>Nhà sách Tri thức</title>
+</head>
+
+<body>
+
+      <div class="row banner-top" style="background-color: #eeeeee;">
+            <div class="col-sm-9 headerr">
+                <h4 style="display: block;font-family: myriadpro"><strong style="margin-left:55%;">Miễn phí giao hàng</strong> Hóa đơn trên 150000VND</h4>
+            </div>
+            <div class="col-sm-3 headerr">
+                <span style="float:right;">
+                    <i class="fab fa-facebook-f fa-2x" title="facebook"></i>
+                    <i class="fab fa-twitter fa-2x" title="twitter"></i>
+                    <i class="fab fa-youtube fa-2x" title="youtobe"></i>
+                    <i class="fab fa-instagram fa-2x" title="instagram"></i>
+                    <i class="fab fa-pinterest fa-2x" title="pinterest"></i>
+                    <i class="fab fa-flickr fa-2x" title="flickr"></i>
+                </span>
+            </div>
+        </div>
+            <!--Đây là Line Giới thiệu-->
+      <div class="container">
+   <div id="gioithieu"></div>
+            <div class="row">
+                <div class="col-sm-4 chuthich">
+                    <a href="index.html"><img src="img1/logo1.png" style="height: 100px;width: auto;" /></a>
+                </div>
+                <div class="col-sm-5">
+                    <div class="search">
+               <input type="search" name="search" placeholder="Tìm kiếm...">
+                <a href="kinhte.html"><button type="button" ><i class="fa fa-search"></i></button></a>
+                
+                 </div>
+                </div>
+                <div class="col-sm-3 cart">
+                    <a href="giohang.html" style="color: #66ccff">
+                        <i class="fas fa-shopping-cart fa-2x"></i></a>
+                </div>
+            </div>
+            <!----------------------------------------------------------------------------------------------------------------------------------------------------------------->
+            <!--Day la Menu-->
+
+            <div style="display:flex; padding:8px; align-items: center; position: sticky; top:0; background: #66ccff; z-index: 1000;height: 40px;">
+                <div style="min-width: 250px; display: flex;justify-content: center; align-items: center;">
+                    <nav class="menuheader">
+                        <ul>
+                            <li><a href="index.html">TRANG CHỦ <i class="fas fa-home"></i></a></li>
+                            <li>
+                                <a href="#" data-toggle="dropdown">SÁCH TIẾNG VIỆT <i class="fas fa-caret-down"></i></a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="kinhte.html">Kinh tế</a></li>
+                                    <li><a href="giaoduc.html">Giáo dục</a></li>
+                                    <li><a href="vanhoc.html">Văn học</a></li>
+                                    <li><a href="thieunhi.html">Thiếu Nhi</a></li>
+                                    <li><a href="truyentranh.html">Truyện tranh</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="tieuthuyet.html" data-toggle="dropdown"> SÁCH NƯỚC NGOÀI </a>
+                            </li>
+                            <li><a href="#products">SÁCH BÁN CHẠY</a></li>
+                            <li><a href="map.html">LIÊN HỆ <i class="fas fa-phone"></i></a></li>
+                            <li>
+
+                                <a href="#" data-toggle="modal" data-target="#sign_in">ĐĂNG NHẬP</a>
+
+                            </li>
+                           
+                        </ul>
+                        <div class="icon">
+                            <i class="fas fa-bars"></i>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+        <hr style="margin-bottom: -4px;">
+        <!--sign in-->
+        <div class="modal fade" id="sign_in">
+            <div class="modal-dialog">
+                <div class="modal-content p-3">
+
+                    <!--modal header-->
+                    <div class="modal-header">
+                        <h2 class="modal-title sign_header">Đăng Nhập</h2>
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    </div>
+
+                    <!--modal body-->
+                    <div class="modal-body">
+                        <form action="">
+                            <!--email-->
+                            <div class="form-group">
+                                <label id="sign" for="email">Tên tài khoản:</label>
+                                <input type="email" name="email" class="form-control" id="email" placeholder="Email:">
+                            </div><!--end form group-->
+
+                            <div class="form-group">
+                                <label for="pwd">Mật khẩu</label>
+                                <input type="password" name="pwd" class="form-control" id="pwd" placeholder="Mật khẩu của bạn">
+                            </div><!--end form group-->
+                            <!--remember me-->
+                            <div class="form-group form-check">
+                                <label class="form-check-label">
+                                    <input type="checkbox" name="remember" class="form-check-input">Ghi nhớ tài khoản
+                                </label>
+                            </div><!--end form group-->
+                            <!--button-->
+                            <button type="submit" class="btn btn_buy" style="background-color:#66ccff;">Đăng nhập</button>
+                            <a href="#" class="font_16 text-secondary"> &nbsp Bạn quên mật khẩu?</a>
+                            <div class="row">
+                                <div class="col-6">
+                                    <button type="submit" class="btn btn-outline-primary border_30 mt-4"><i class="fab fa-facebook-f"></i> &nbsp;Đăng nhập bằng Facebook</button>
+                                </div>
+                                <div class="col-6">
+                                    <button type="submit" class="btn btn-outline-danger border_30 mt-4">
+                                        <i class="fab fa-google"></i>
+                                        &nbsp; Đăng nhập với Google
+                                    </button>
+                                </div>
+                            </div><br>
+                        </form>
+                    </div><!--end modal body-->
+
+                    <div class="modal-footer">
+                        <div class="d-flex justify-content-begin">
+                            <div>
+                                <p class="font_16">Bạn không có tài khoản?</p>
+                            </div>&nbsp; &nbsp;
+                            <div>
+                                <a href="#" class="btn btn_view" data-dismiss="modal" data-toggle="modal" data-target="#sign_up">Đăng Ký</a>
+                            </div>
+                        </div>
+                    </div>
+                </div><!--end modal content-->
+            </div><!--end modal dialog-->
+        </div><!---end modal-->
+       <div class="modal fade" id="sign_up">
+            <div class="modal-dialog">
+                <div class="modal-content p-3">
+                    <!--modal header-->
+                    <div class="modal-header">
+                        <h2>Đăng Ký</h2>
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    </div>
+
+                    <!--modal body-->
+
+                    <div class="modal-body">
+                        <p class="font_16">Bạn hãy điền vào form bên dưới</p>
+                        <form action="">
+                            <!--name-->
+
+
+                            <div class="form-group">
+                                <label for="hoten">Tên</label>
+                                <input type="name" name="hoten" class="form-control" id="hoten" placeholder="Tên của bạn">
+                            </div><!--end form group-->
+
+
+                            <div class="form-group">
+                                <label for="email1">Tên tài khoản</label>
+                                <input type="email" name="email1" class="form-control" id="email1" placeholder="Tên tài khoản">
+                            </div><!--end form group-->
+
+                            <div class="form-group">
+                                <label for="pwd1">Mật khẩu</label>
+                                <input type="password" name="pwd1" class="form-control" id="pwd1" placeholder="Mật khẩu">
+                            </div><!--end form group-->
+
+                            <div class="form-group">
+                                <label for="pwd2">Nhập lại mật khẩu</label>
+                                <input type="password" name="pwd2" class="form-control" id="pwd2" placeholder="Nhập lại mật khẩu">
+                            </div>
+                            <!--button-->
+                            <button type="submit" class="btn btn_buy">Đăng ký</button>
+                        </form>
+                    </div><!--end modal body-->
+                    <div class="modal-footer">
+                        <a href="#" class="btn btn_view" data-dismiss="modal" data-toggle="modal" data-target="#sign_in">Quay lại Đăng nhập</a>
+                    </div>
+                </div><!--end modal content-->
+            </div><!--end modal dialog-->
+          </div><!--end modal-->
+  <div>
+                <h3 style="text-align: center;margin: 35px;font-family: 'myriadpro';"><b>NOVEL</b></h3>
+            </div>
+          <div class="main1">
+          
+          
+            </div>
+            <!--novel-->
+            <div class="main1">
+                <div class="row">
+                    <!--slide 1- sa1ch1-->
+                    <div class="col-sm-3 sp">
+                        <div class="sp">
+                            <!-- Button to Open the Modal -->
+                            <button type="button" class="btn btn-link" data-toggle="modal" data-target="#myModal1">
+                                <img src="novel/nvl1.jpg" class="rounded"
+                                     width="100%" height="100px" style="margin-left: 0%;">
+                            </button>
+
+                            <!-- The Modal -->
+                            <div class="modal fade" id="myModal1">
+                                <div class="modal-dialog modal-lg">
+                                    <div class="modal-content">
+
+                                        <!-- Modal Header -->
+                                        <div class="modal-header">
+                                            <img src="img1\TriThuc (1).png" width="100px" height="100px" style="margin-left:10px; margin-top:5px">
+                                            <h4 class="modal-title" style="margin: 5% 1%;">SHERLOCK HOLMES: THE COMPLETE NOVELS AND STORIES VOLUME I</h4>
+                                            <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                        </div>
+
+                                        <!-- Modal body -->
+                                        <div class="modal-body spp" style="background-color: none;">
+                                            <p><b>SHERLOCK HOLMES: THE COMPLETE NOVELS AND STORIES VOLUME I </b></p>
+                                            <p><font color="red">165.000 VNĐ</font></p>
+                                            <div class="row">
+                                                <div class="col-sm-5">
+                                                    <img src="novel/nvl1.jpg" class="rounded" width="100%" height="70%">
+                                                </div>
+                                                <div class="col-sm-6">
+                                                    <p><b>BOOK OVERVIEW:</b></p>
+                                                    <p>Volume I</p>
+                                                    <p>Since his first appearance in Beeton’s Christmas Annual in 1887, Sir Arthur Conan Doyle’s Sherlock Holmes has been one of the most beloved fictional characters ever created. Now, in two paperback volumes, Bantam presents all fifty-six short stories and four novels featuring Conan Doyle’s classic hero--a truly complete collection of Sherlock Holmes’s adventures in crime!</p>
+                                                    <p>Volume I includes the early novel A Study in Scarlet, which introduced the eccentric genius of Sherlock Holmes to the world. This baffling murder mystery, with the cryptic word Rache written in blood, first brought Holmes together with Dr. John Watson. Next, The Sign of Four presents Holmes’s famous “seven percent solution” and the strange puzzle of Mary Morstan in the quintessential locked-room mystery.</p>
+                                                    <p>Also included are Holmes’s feats of extraordinary detection in such famous cases as the chilling “ The Adventure of the Speckled Band,” the baffling riddle of “The Musgrave Ritual,” and the ingeniously plotted “The Five Orange Pips,” tales that bring to life a Victorian England of horse-drawn cabs, fogs, and the famous lodgings at 221B Baker Street, where Sherlock Holmes earned his undisputed reputation as the greatest fictional detective of all time.</p>
+                                                    <p><b>Tác giả</b>:Sir Arthur Conan Doyle</p>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <!-- Modal footer -->
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-danger" data-dismiss="modal">Mua ngay</button>
+                                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Thêm vào giỏ hàng<i class="fas fa-shopping-cart"></i></button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <p class><b>SHERLOCK HOLMES: THE COMPLETE NOVELS AND STORIES VOLUME I</b></p>
+                        <p class="profsp"><font color="red">165.000 VNĐ</font></p>
+                    </div>
+                    <!--slide 1- sa1ch2-->
+                    <div class="col-sm-3 sp">
+                        <div class="sp">
+                            <!-- Button to Open the Modal -->
+                            <button type="button" class="btn btn-link" data-toggle="modal" data-target="#myModal2">
+                                <img src="novel/nvl2.jpg" class="rounded"
+                                     width="100%" height="100%" style="margin-left: 0%;">
+                            </button>
+
+                            <!-- The Modal -->
+                            <div class="modal fade" id="myModal2">
+                                <div class="modal-dialog modal-lg">
+                                    <div class="modal-content">
+
+                                        <!-- Modal Header -->
+                                        <div class="modal-header">
+                                            <img src="img1\TriThuc (1).png" width="100px" height="100px" style="margin-left:10px; margin-top:5px">
+                                            <h4 class="modal-title" style="margin: 5% 1%;">SHERLOCK HOLMES: THE COMPLETE NOVELS AND STORIES VOLUME II</h4>
+                                            <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                        </div>
+
+                                        <!-- Modal body -->
+                                        <div class="modal-body spp" style="background-color: none;">
+                                            <p><b>SHERLOCK HOLMES: THE COMPLETE NOVELS AND STORIES VOLUME II</b></p>
+                                            <p><font color="red">107.000 VNĐ</font></p>
+                                            <div class="row">
+                                                <div class="col-sm-5">
+                                                    <img src="novel/nvl2.jpg" class="rounded" width="100%" height="70%">
+                                                </div>
+                                                <div class="col-sm-6">
+                                                    <p><b>BOOK OVERVIEW:</b></p>
+                                                    <p>Volume II</p>
+                                                    <p>Since his first appearance in Beeton’s Christmas Annual in 1887, Sir Arthur Conan Doyle’s Sherlock Holmes has been one of the most beloved fictional characters ever created. Now, in two paperback volumes, Bantam presents all fifty-six short stories and four novels featuring Conan Doyle’s classic hero--a truly complete collection of Sherlock Holmes’s adventures in crime!</p>
+                                                    <p>Volume II begins with The Hound of the Baskervilles, a haunting novel of murder on eerie Grimpen Moor, which has rightly earned its reputation as the finest murder mystery ever written. The Valley of Fear matches Holmes against his archenemy, the master of imaginative crime, Professor Moriarty. In addition, the loyal Dr. Watson has faithfully recorded Holmes’s feats of extraordinary detection in such famous cases as the thrilling The Adventure of the Red Circle, Holmes’s tragic and fortunately premature farewell in The Final Problem, and the twelve baffling adventures from The Case Book of Sherlock Holmes.</p>
+                                                    <p>Conan Doyle’s incomparable tales bring to life a Victorian England of horse-drawn cabs, fogs, and the famous lodgings at 221B Baker Street, where for more than forty years Sherlock Holmes earned his undisputed reputation as the greatest fictional detective of all time.</p>
+                                                    <p><b>Tác giả</b>:Sir Arthur Conan Doyle</p>
+                                                </div>
+                                            </div>
+                                        </div>j
+
+                                        <!-- Modal footer -->
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-danger" data-dismiss="modal">Mua ngay</button>
+                                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Thêm vào giỏ hàng<i class="fas fa-shopping-cart"></i></button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <p class><b>SHERLOCK HOLMES: THE COMPLETE NOVELS AND STORIES VOLUME II</b></p>
+                        <p class="profsp"><font color="red">107.000 VNĐ</font></p>
+                    </div>
+                    <!--slide 1- sa1ch3-->
+                    <div class="col-sm-3 sp">
+                        <div class="sp">
+                            <!-- Button to Open the Modal -->
+                            <button type="button" class="btn btn-link" data-toggle="modal" data-target="#myModal3">
+                                <img src="novel/nvl3.jpg" class="rounded"
+                                     width="100%" height="100%" style="margin-left: 0%;">
+                            </button>
+
+                            <!-- The Modal -->
+                            <div class="modal fade" id="myModal3">
+                                <div class="modal-dialog modal-lg">
+                                    <div class="modal-content">
+
+                                        <!-- Modal Header -->
+                                        <div class="modal-header">
+                                            <img src="img1\TriThuc (1).png" width="100px" height="100px" style="margin-left:10px; margin-top:5px">
+                                            <h4 class="modal-title" style="margin: 5% 1%;">THE COMPLETE SHERLOCK HOLMES COLLECTION</h4>
+                                            <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                        </div>
+
+                                        <!-- Modal body -->
+                                        <div class="modal-body spp" style="background-color: none;">
+                                            <p><b>THE COMPLETE SHERLOCK HOLMES COLLECTION</b></p>
+                                            <p><font color="red">599.000 VNĐ</font></p>
+                                            <div class="row">
+                                                <div class="col-sm-5">
+                                                    <img src="novel/nvl3.jpg" class="rounded" width="100%" height="70%">
+                                                </div>
+                                                <div class="col-sm-6">
+                                                    <p><b>BOOK OVERVIEW:</b></p>
+                                                    <p>The perfect gift for any Sherlock Holmes fan for only GBP19.99.</p>
+                                                    <p>Each boxset contains seven books, together creating a comprehensive collection of the notorious detective's best cases and adventures.</p>
+                                                    <p>Beautifully packaged in a ridged, matt-laminated slipcase with metallic detailing, complete with strikingly attractive, bespoke artwork.</p>
+                                                    <p>Includes:</p>
+                                                    <p>9781853260339 - Adventures & Memoirs of Sherlock Holmes.</p>
+                                                    <p>9781853267482 - Best of Sherlock Holmes.</p>
+                                                    <p>9781853260704 - Casebook of Sherlock Holmes & His Last Bow.</p>
+                                                    <p>9781840224009 - Hound of the Baskervilles & The Valley of Fear.</p>
+                                                    <p>9781853260582 - Return of Sherlock Holmes.</p>
+                                                    <p>9781853267444 - Shadows of Sherlock Holmes.</p>
+                                                    <p>9781840224115 - Study in Scarlet & Sign of the Four.</p>
+                                                    <p><b>Tác giả</b>:Sir Arthur Conan Doyle</p>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <!-- Modal footer -->
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-danger" data-dismiss="modal">Mua ngay</button>
+                                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Thêm vào giỏ hàng<i class="fas fa-shopping-cart"></i></button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <p><b>THE COMPLETE SHERLOCK HOLMES COLLECTION</b></p>
+                        <p class="profsp"><font color="red">599.000 VNĐ</font></p>
+                    </div>
+                    <!--slide 1- sa1ch4-->
+                    <div class="col-sm-3 sp">
+                        <div class="sp">
+                            <!-- Button to Open the Modal -->
+                            <button type="button" class="btn btn-link" data-toggle="modal" data-target="#myModal4">
+                                <img src="novel/nvl4.jpg" class="rounded"
+                                     width="100%" height="100%" style="margin-left: 0%;">
+                            </button>
+
+                            <!-- The Modal -->
+                            <div class="modal fade" id="myModal4">
+                                <div class="modal-dialog modal-lg">
+                                    <div class="modal-content">
+
+                                        <!-- Modal Header -->
+                                        <div class="modal-header">
+                                            <img src="img1\TriThuc (1).png" width="100px" height="100px" style="margin-left:10px; margin-top:5px">
+                                            <h4 class="modal-title" style="margin: 5% 1%;">HARRY POTTER PART 1: HARRY POTTER AND THE PHILOSOPHER'S STONE </h4>
+                                            <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                        </div>
+
+                                        <!-- Modal body -->
+                                        <div class="modal-body spp" style="background-color: none;">
+                                            <p><b>HARRY POTTER PART 1: HARRY POTTER AND THE PHILOSOPHER'S STONE </b></p>
+                                            <p><font color="red">191.000 VNĐ</font></p>
+                                            <div class="row">
+                                                <div class="col-sm-5">
+                                                    <img src="novel/nvl4.jpg" class="rounded" width="100%" height="100%">
+                                                </div>
+                                                <div class="col-sm-6">
+                                                    <p><b>BOOK OVERVIEW:</b></p>
+                                                    <p>Harry Potter has never even heard of Hogwarts when the letters start dropping on the doormat at number four, Privet Drive. Addressed in green ink on yellowish parchment with a purple seal, they are swiftly confiscated by his grisly aunt and uncle. Then, on Harry's eleventh birthday, a great beetle-eyed giant of a man called Rubeus Hagrid bursts in with some astonishing news: Harry Potter is a wizard, and he has a place at Hogwarts School of Witchcraft and Wizardry.</p>
+                                                    <p>An incredible adventure is about to begin! These new editions of the classic and internationally bestselling, multi-award-winning series feature instantly pick-up-able new jackets by Jonny Duddle, with huge child appeal, to bring Harry Potter to the next generation of readers. It's time to PASS THE MAGIC ON ...</p>
+                                                    <p>Tác giả: J. K. Rowling</p>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <!-- Modal footer -->
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-danger" data-dismiss="modal">Mua ngay</button>
+                                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Thêm vào giỏ hàng<i class="fas fa-shopping-cart"></i></button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <p><b>HARRY POTTER PART 1: HARRY POTTER AND THE PHILOSOPHER'S STONE </b></p>
+                        <p class="profsp"><font color="red">191.000 VNĐ</font></p>
+                    </div>
+                    <!--slide 1- sa1ch5-->
+                    <div class="col-sm-3 sp">
+                        <div class="sp">
+                            <!-- Button to Open the Modal -->
+                            <button type="button" class="btn btn-link" data-toggle="modal" data-target="#myModal5">
+                                <img src="novel/nvl5.jpg" class="rounded"
+                                     width="100%" height="100%" style="margin-left: 0%;">
+                            </button>
+
+                            <!-- The Modal -->
+                            <div class="modal fade" id="myModal5">
+                                <div class="modal-dialog modal-lg">
+                                    <div class="modal-content">
+
+                                        <!-- Modal Header -->
+                                        <div class="modal-header">
+                                            <img src="img1\TriThuc (1).png" width="100px" height="100px" style="margin-left:10px; margin-top:5px">
+                                            <h4 class="modal-title" style="margin: 5% 1%;">HARRY POTTER PART 2: HARRY POTTER AND THE CHAMBER OF SECRETS</h4>
+                                            <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                        </div>
+
+                                        <!-- Modal body -->
+                                        <div class="modal-body spp" style="background-color: none;">
+                                            <p><b>HARRY POTTER PART 2: HARRY POTTER AND THE CHAMBER OF SECRETS </b></p>
+                                            <p><font color="red">138.894 VNĐ</font></p>
+                                            <div class="row">
+                                                <div class="col-sm-5">
+                                                    <img src="novel/nvl5.jpg" class="rounded" width="100%" height="100%">
+                                                </div>
+                                                <div class="col-sm-6">
+                                                    <p><b>BOOK OVERVIEW:</b></p>
+                                                    <p>Harry Potter has never even heard of Hogwarts when the letters start dropping on the doormat at number four, Privet Drive. Addressed in green ink on yellowish parchment with a purple seal, they are swiftly confiscated by his grisly aunt and uncle. Then, on Harry's eleventh birthday, a great beetle-eyed giant of a man called Rubeus Hagrid bursts in with some astonishing news: Harry Potter is a wizard, and he has a place at Hogwarts School of Witchcraft and Wizardry.</p>
+                                                    <p>An incredible adventure is about to begin! These new editions of the classic and internationally bestselling, multi-award-winning series feature instantly pick-up-able new jackets by Jonny Duddle, with huge child appeal, to bring Harry Potter to the next generation of readers. It's time to PASS THE MAGIC ON ...</p>
+                                                    <p>Tác giả: J. K. Rowling</p>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <!-- Modal footer -->
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-danger" data-dismiss="modal">Mua ngay</button>
+                                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Thêm vào giỏ hàng<i class="fas fa-shopping-cart"></i></button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <p><b>HARRY POTTER PART 2: HARRY POTTER AND THE CHAMBER OF SECRETS </b></p>
+                        <p class="profsp"><font color="red">138.894 VNĐ</font></p>
+                    </div>
+                    <!--slide 1- sa1ch6-->
+                    <div class="col-sm-3 sp">
+                        <div class="sp">
+                            <!-- Button to Open the Modal -->
+                            <button type="button" class="btn btn-link" data-toggle="modal" data-target="#myModal6">
+                                <img src="novel/nvl6.jpg" class="rounded"
+                                     width="100%" height="100%" style="margin-left: 0%;">
+                            </button>
+
+                            <!-- The Modal -->
+                            <div class="modal fade" id="myModal6">
+                                <div class="modal-dialog modal-lg">
+                                    <div class="modal-content">
+
+                                        <!-- Modal Header -->
+                                        <div class="modal-header">
+                                            <img src="img1\TriThuc (1).png" width="100px" height="100px" style="margin-left:10px; margin-top:5px">
+                                            <h4 class="modal-title" style="margin: 5% 1%;">HARRY POTTER PART 3: HARRY POTTER AND THE PRISONER OF AZKABAN </h4>
+                                            <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                        </div>
+
+                                        <!-- Modal body -->
+                                        <div class="modal-body spp" style="background-color: none;">
+                                            <p><b>HARRY POTTER PART 3: HARRY POTTER AND THE PRISONER OF AZKABAN </b></p>
+                                            <p><font color="red">139.000 VNĐ</font></p>
+                                            <div class="row">
+                                                <div class="col-sm-5">
+                                                    <img src="novel/nvl6.jpg" class="rounded" width="100%" height="100%">
+                                                </div>
+                                                <div class="col-sm-6">
+                                                    <p><b>BOOK OVERVIEW:</b></p>
+                                                    <p>When the Knight Bus crashes through the darkness and screeches to a halt in front of him, it's the start of another far from ordinary year at Hogwarts for Harry Potter. Sirius Black, escaped mass-murderer and follower of Lord Voldemort, is on the run - and they say he is coming after Harry. In his first ever Divination class, Professor Trelawney sees an omen of death in Harry's tea leaves ...But perhaps most terrifying of all are the Dementors patrolling the school grounds, with their soul-sucking kiss. These new editions of the classic and internationally bestselling, multi-award-winning series feature instantly pick-up-able new jackets by Jonny Duddle, with huge child appeal, to bring Harry Potter to the next generation of readers. It's time to PASS THE MAGIC ON...</p>
+
+                                                    <p>Tác giả: J. K. Rowling</p>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <!-- Modal footer -->
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-danger" data-dismiss="modal">Mua ngay</button>
+                                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Thêm vào giỏ hàng<i class="fas fa-shopping-cart"></i></button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <p><b>HARRY POTTER PART 3: HARRY POTTER AND THE PRISONER OF AZKABAN </b></p>
+                        <p class="profsp"><font color="red">139.000 VNĐ</font></p>
+                    </div>
+                    <!--slide 1- sa1ch7-->
+                    <div class="col-sm-3 sp">
+                        <div class="sp">
+                            <!-- Button to Open the Modal -->
+                            <button type="button" class="btn btn-link" data-toggle="modal" data-target="#myModal7">
+                                <img src="novel/nvl7.jpg" class="rounded"
+                                     width="100%" height="100%" style="margin-left: 0%;">
+                            </button>
+
+                            <!-- The Modal -->
+                            <div class="modal fade" id="myModal7">
+                                <div class="modal-dialog modal-lg">
+                                    <div class="modal-content">
+
+                                        <!-- Modal Header -->
+                                        <div class="modal-header">
+                                            <img src="img1\TriThuc (1).png" width="100px" height="100px" style="margin-left:10px; margin-top:5px">
+                                            <h4 class="modal-title" style="margin: 5% 1%;">HARRY POTTER PART 4: HARRY POTTER AND THE GOBLET OF FIRE</h4>
+                                            <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                        </div>
+
+                                        <!-- Modal body -->
+                                        <div class="modal-body spp" style="background-color: none;">
+                                            <p><b>HARRY POTTER PART 4: HARRY POTTER AND THE GOBLET OF FIRE </b></p>
+                                            <p><font color="red">176.900 VNĐ</font></p>
+                                            <div class="row">
+                                                <div class="col-sm-5">
+                                                    <img src="novel/nvl7.jpg" class="rounded" width="100%" height="100%">
+                                                </div>
+                                                <div class="col-sm-6">
+                                                    <p><b>BOOK OVERVIEW:</b></p>
+                                                    <p>The Triwizard Tournament is to be held at Hogwarts. Only wizards who are over seventeen are allowed to enter - but that doesn't stop Harry dreaming that he will win the competition. Then at Hallowe'en, when the Goblet of Fire makes its selection, Harry is amazed to find his name is one of those that the magical cup picks out. He will face death-defying tasks, dragons and Dark wizards, but with the help of his best friends, Ron and Hermione, he might just make it through - alive! These new editions of the classic and internationally bestselling, multi-award-winning series feature instantly pick-up-able new jackets by Jonny Duddle, with huge child appeal, to bring Harry Potter to the next generation of readers. It's time to PASS THE MAGIC ON ...</p>
+
+                                                    <p>Tác giả: J. K. Rowling</p>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <!-- Modal footer -->
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-danger" data-dismiss="modal">Mua ngay</button>
+                                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Thêm vào giỏ hàng<i class="fas fa-shopping-cart"></i></button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <p><b>HARRY POTTER PART 4: HARRY POTTER AND THE GOBLET OF FIRE </b></p>
+                        <p class="profsp"><font color="red">176.900 VNĐ</font></p>
+                    </div>
+                    <!--slide 1- sa1ch8-->
+                    <div class="col-sm-3 sp">
+                        <div class="sp">
+                            <!-- Button to Open the Modal -->
+                            <button type="button" class="btn btn-link" data-toggle="modal" data-target="#myModal8">
+                                <img src="novel/nvl8.jpg" class="rounded"
+                                     width="100%" height="100%" style="margin-left: 0%;">
+                            </button>
+
+                            <!-- The Modal -->
+                            <div class="modal fade" id="myModal8">
+                                <div class="modal-dialog modal-lg">
+                                    <div class="modal-content">
+
+                                        <!-- Modal Header -->
+                                        <div class="modal-header">
+                                            <img src="img1\TriThuc (1).png" width="100px" height="100px" style="margin-left:10px; margin-top:5px">
+                                            <h4 class="modal-title" style="margin: 5% 1%;">HARRY POTTER PART 5: HARRY POTTER AND THE ORDER OF THE PHOENIX</h4>
+                                            <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                        </div>
+
+                                        <!-- Modal body -->
+                                        <div class="modal-body spp" style="background-color: none;">
+                                            <p><b>HARRY POTTER PART 5: HARRY POTTER AND THE ORDER OF THE PHOENIX </b></p>
+                                            <p><font color="red">115.000 VNĐ</font></p>
+                                            <div class="row">
+                                                <div class="col-sm-5">
+                                                    <img src="novel/nvl8.jpg" class="rounded" width="100%" height="100%">
+                                                </div>
+                                                <div class="col-sm-6">
+                                                    <p><b>BOOK OVERVIEW:</b></p>
+                                                    <p>Harry Potter's summer has included the worst birthday ever, doomy warnings from a house-elf called Dobby, and rescue from the Dursleys by his friend Ron Weasley in a magical flying car! Back at Hogwarts School of Witchcraft and Wizardry for his second year, Harry hears strange whispers echo through empty corridors - and then the attacks start. Students are found as though turned to stone ...Dobby's sinister predictions seem to be coming true. These new editions of the classic and internationally bestselling, multi-award-winning series feature instantly pick-up-able new jackets by Jonny Duddle, with huge child appeal, to bring Harry Potter to the next generation of readers. It's time to PASS THE MAGIC ON...</p>
+
+                                                    <p>Tác giả: J. K. Rowling</p>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <!-- Modal footer -->
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-danger" data-dismiss="modal">Mua ngay</button>
+                                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Thêm vào giỏ hàng<i class="fas fa-shopping-cart"></i></button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <p><b>HARRY POTTER PART 5: HARRY POTTER AND THE ORDER OF THE PHOENIX </b></p>
+                        <p class="profsp"><font color="red">115.000 VNĐ</font></p>
+                    </div>
+                    <!--slide 1- sa1ch9-->
+                    <div class="col-sm-3 sp">
+                        <div class="sp">
+                            <!-- Button to Open the Modal -->
+                            <button type="button" class="btn btn-link" data-toggle="modal" data-target="#myModal9">
+                                <img src="novel/nvl9.jpg" class="rounded"
+                                     width="100%" height="100%" style="margin-left: 0%;">
+                            </button>
+
+                            <!-- The Modal -->
+                            <div class="modal fade" id="myModal9">
+                                <div class="modal-dialog modal-lg">
+                                    <div class="modal-content">
+
+                                        <!-- Modal Header -->
+                                        <div class="modal-header">
+                                            <img src="img1\TriThuc (1).png" width="100px" height="100px" style="margin-left:10px; margin-top:5px">
+                                            <h4 class="modal-title" style="margin: 5% 1%;">HARRY POTTER PART 6: HARRY POTTER AND THE HALF-BLOOD PRINCE</h4>
+                                            <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                        </div>
+
+                                        <!-- Modal body -->
+                                        <div class="modal-body spp" style="background-color: none;">
+                                            <p><b>HARRY POTTER PART 6: HARRY POTTER AND THE HALF-BLOOD PRINCE </b></p>
+                                            <p><font color="red">146.000  VNĐ</font></p>
+                                            <div class="row">
+                                                <div class="col-sm-5">
+                                                    <img src="novel/nvl9.jpg" class="rounded" width="100%" height="100%">
+                                                </div>
+                                                <div class="col-sm-6">
+                                                    <p><b>BOOK OVERVIEW:</b></p>
+                                                    <p>When Dumbledore arrives at Privet Drive one summer night to collect Harry Potter, his wand hand is blackened and shrivelled, but he does not reveal why. Secrets and suspicion are spreading through the wizarding world, and Hogwarts itself is not safe. Harry is convinced that Malfoy bears the Dark Mark: there is a Death Eater amongst them. Harry will need powerful magic and true friends as he explores Voldemort's darkest secrets, and Dumbledore prepares him to face his destiny.</p>
+                                                    <p>These new editions of the classic and internationally bestselling, multi-award-winning series feature instantly pick-up-able new jackets by Jonny Duddle, with huge child appeal, to bring Harry Potter to the next generation of readers. It's time to PASS THE MAGIC ON...</p>
+
+                                                    <p>Tác giả: J. K. Rowling</p>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <!-- Modal footer -->
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-danger" data-dismiss="modal">Mua ngay</button>
+                                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Thêm vào giỏ hàng<i class="fas fa-shopping-cart"></i></button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <p><b>HARRY POTTER PART 6: HARRY POTTER AND THE HALF-BLOOD PRINCE </b></p>
+                        <p class="profsp"><font color="red">146.000  VNĐ</font></p>
+                    </div>
+                    <!--slide 1- sa1ch10-->
+                    <div class="col-sm-3 sp">
+                        <div class="sp">
+                            <!-- Button to Open the Modal -->
+                            <button type="button" class="btn btn-link" data-toggle="modal" data-target="#myModal10">
+                                <img src="novel/nvl10.jpg" class="rounded"
+                                     width="100%" height="100%" style="margin-left: 0%;">
+                            </button>
+
+                            <!-- The Modal -->
+                            <div class="modal fade" id="myModal10">
+                                <div class="modal-dialog modal-lg">
+                                    <div class="modal-content">
+
+                                        <!-- Modal Header -->
+                                        <div class="modal-header">
+                                            <img src="img1\TriThuc (1).png" width="100px" height="100px" style="margin-left:10px; margin-top:5px">
+                                            <h4 class="modal-title" style="margin: 5% 1%;">HARRY POTTER PART 7: HARRY POTTER AND THE DEATHLY HALLOWS</h4>
+                                            <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                        </div>
+
+                                        <!-- Modal body -->
+                                        <div class="modal-body spp" style="background-color: none;">
+                                            <p><b>HARRY POTTER PART 7: HARRY POTTER AND THE DEATHLY HALLOWS </b></p>
+                                            <p><font color="red">138.095  VNĐ</font></p>
+                                            <div class="row">
+                                                <div class="col-sm-5">
+                                                    <img src="novel/nvl10.jpg" class="rounded" width="100%" height="100%">
+                                                </div>
+                                                <div class="col-sm-6">
+                                                    <p><b>BOOK OVERVIEW:</b></p>
+                                                    <p>As he climbs into the sidecar of Hagrid's motorbike and takes to the skies, leaving Privet Drive for the last time, Harry Potter knows that Lord Voldemort and the Death Eaters are not far behind. The protective charm that has kept Harry safe until now is now broken, but he cannot keep hiding. The Dark Lord is breathing fear into everything Harry loves, and to stop him Harry will have to find and destroy the remaining Horcruxes. The final battle must begin - Harry must stand and face his enemy. These new editions of the classic and internationally bestselling, multi-award-winning series feature instantly pick-up-able new jackets by Jonny Duddle, with huge child appeal, to bring Harry Potter to the next generation of readers. It's time to PASS THE MAGIC ON ...</p>
+                                                    <p>Tác giả: J. K. Rowling</p>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <!-- Modal footer -->
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-danger" data-dismiss="modal">Mua ngay</button>
+                                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Thêm vào giỏ hàng<i class="fas fa-shopping-cart"></i></button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <p><b>HARRY POTTER PART 7: HARRY POTTER AND THE DEATHLY HALLOWS</b></p>
+                        <p class="profsp"><font color="red">138.095  VNĐ</font></p>
+                    </div>
+                    <!--slide 1- sa1ch11-->
+                    <div class="col-sm-3 sp">
+                        <div class="sp">
+                            <!-- Button to Open the Modal -->
+                            <button type="button" class="btn btn-link" data-toggle="modal" data-target="#myModal11">
+                                <img src="novel/nvl11.jpg" class="rounded"
+                                     width="100%" height="100%" style="margin-left: 0%;">
+                            </button>
+
+                            <!-- The Modal -->
+                            <div class="modal fade" id="myModal11">
+                                <div class="modal-dialog modal-lg">
+                                    <div class="modal-content">
+
+                                        <!-- Modal Header -->
+                                        <div class="modal-header">
+                                            <img src="img1\TriThuc (1).png" width="100px" height="100px" style="margin-left:10px; margin-top:5px">
+                                            <h4 class="modal-title" style="margin: 5% 1%;">HARRY POTTER: SPECIAL EDITION PAPERBACK BOXED SET: BOOKS #1-7 - SCHOLASTIC US VERSION</h4>
+                                            <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                        </div>
+
+                                        <!-- Modal body -->
+                                        <div class="modal-body spp" style="background-color: none;">
+                                            <p><b>HARRY POTTER: SPECIAL EDITION PAPERBACK BOXED SET: BOOKS #1-7 - SCHOLASTIC US VERSION </b></p>
+                                            <p><font color="red">1.485.000   VNĐ</font></p>
+                                            <div class="row">
+                                                <div class="col-sm-5">
+                                                    <img src="novel/nvl11.jpg" class="rounded" width="100%" height="100%">
+                                                </div>
+                                                <div class="col-sm-6">
+                                                    <p><b>BOOK OVERVIEW:</b></p>
+                                                    <p>The perfect gift for collectors and new readers alike, we now present a breathtaking special edition boxed set of J. K. Rowling's seven bestselling Harry Potter books! The box itself is beautifully designed with new artwork by Kazu Kibuishi, and the books create a gorgeous, magical vista when the spines are lined up together. The Harry Potter series has been hailed as "one for the ages" by Stephen King and "a spellbinding saga" by USA Today. Now is your chance to give this set to a reader who is ready to embark on the series that has changed so many young readers' lives.</p>
+                                                    <p>Tác giả: J. K. Rowling</p>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <!-- Modal footer -->
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-danger" data-dismiss="modal">Mua ngay</button>
+                                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Thêm vào giỏ hàng<i class="fas fa-shopping-cart"></i></button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <p><b>HARRY POTTER: SPECIAL EDITION PAPERBACK BOXED SET: BOOKS #1-7 - SCHOLASTIC US VERSION</b></p>
+                        <p class="profsp"><font color="red">1.485.000   VNĐ</font></p>
+                    </div>
+
+              <!--slide 1- sa1ch12-->
+                    <div class="col-sm-3 sp">
+                        <div class="sp">
+                            <!-- Button to Open the Modal -->
+                            <button type="button" class="btn btn-link" data-toggle="modal" data-target="#myModal12">
+                                <img src="novel/nvl12.jpg" class="rounded"
+                                     width="100%" height="100%" style="margin-left: 0%;">
+                            </button>
+
+                            <!-- The Modal -->
+                            <div class="modal fade" id="myModal12">
+                                <div class="modal-dialog modal-lg">
+                                    <div class="modal-content">
+
+                                        <!-- Modal Header -->
+                                        <div class="modal-header">
+                                            <img src="img1\TriThuc (1).png" width="100px" height="100px" style="margin-left:10px; margin-top:5px">
+                                            <h4 class="modal-title" style="margin: 5% 1%;">PINOCCHIO</h4>
+                                            <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                        </div>
+
+                                        <!-- Modal body -->
+                                        <div class="modal-body spp" style="background-color: none;">
+                                            <p><b>PINOCCHIO </b></p>
+                                            <p><font color="red">79.900  VNĐ</font></p>
+                                            <div class="row">
+                                                <div class="col-sm-5">
+                                                    <img src="novel/nvl12.jpg" class="rounded" width="100%" height="100%">
+                                                </div>
+                                                <div class="col-sm-6">
+                                                    <p><b>BOOK OVERVIEW:</b></p>
+                                                    <p>Carved by Old Gepetto, Pinocchio has an enormous nose which grows even longer whenever he tells a lie. And Pinocchio is such a scamp that he gets into all sorts of mischief. He runs away and joins a circus but eventually the conscience of a talking cricket and Pinocchio's guardian fairy restore him to good behaviour, obedience and care for others</p>
+                                                    <p>Tác giả:  Carlo Collodi</p>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <!-- Modal footer -->
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-danger" data-dismiss="modal">Mua ngay</button>
+                                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Thêm vào giỏ hàng<i class="fas fa-shopping-cart"></i></button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <p><b>PINOCCHIO</b></p>
+                        <p class="profsp"><font color="red">79.900  VNĐ</font></p>
+                    </div>
+                </div>
+            </div>
+            <nav aria-label="Page navigation example">
+   <ul class="pagination">
+      <li class="page-item">
+         <a class="page-link" href="#" aria-label="Previous">
+         <span aria-hidden="true">&laquo;</span>
+         <span class="sr-only">Previous</span>
+         </a>
+      </li>
+      <li class="page-item active" >
+         <a class="page-link" href="#">1</a>
+      </li>
+      <li class="page-item">
+         <a class="page-link" href="ykhoa.html">2</a>
+      </li>
+      <li class="page-item">
+         <a class="page-link" href="#">3</a>
+      </li>
+      <li class="page-item">
+         <a class="page-link" href="#" aria-label="Next">
+         <span aria-hidden="true">&raquo;</span>
+         <span class="sr-only">Next</span>
+         </a>
+      </li>
+   </ul>
+</nav>
+
+          
+</div><!--container-->
+                   <!--Footer-->
+                                <div id="lienhe"></div>
+                                <div class="footer">
+                                    <a class="btn-top" href="javascript:void(0);" title="Top" style="display: inline;"></a>
+                                </div>
+                                <div style="text-align: center;margin-top: 100px;">
+                                    <h3> LIÊN HỆ NGAY VỚI CHÚNG TÔI !</h3>
+                                   
+                                </div>
+                                <div class="row" style="color: #797979;">
+                                    <div class=" col-sm-3 footer ">
+                                        <p style="margin-top: 20px; "><strong>Thông tin cửa hàng</strong></p>
+                                        <p>Địa chỉ:273 An Dương Vương, phường 10, quận 5, TPHCMM</p>
+                                        <p>SĐT: 0906751622</p>
+                                        <p>E-mail: nhasachtrithuc@gmail.com</p>
+                                    </div>
+
+                                    <div class="col-sm-3 footer ">
+                                        <p style="margin-top: 20px; "><strong>Giờ làm việc</strong></p>
+                                        <p>Từ thứ 2 - thứ 6 : 7:00 đến 22:00</p>
+                                        <p>Thứ 7 - Chủ nhật : 9:00 đến 18:00</p>
+
+                                    </div>
+
+                                    <div class="col-sm-3 footer ">
+                                        <p style="margin-top: 20px; "><strong>Hỗ Trợ</strong></p>
+                                        <p>Hãy để lại email, chúng tôi sẽ tư vấn cho bạn.</p>
+                                        <p><input type="text " placeholder="email@example.com " name="email " size="30 " style="border: 0px;border-bottom: 1px solid #636363; "></p>
+                                        <p><input type="submit" value="Gửi Ngay!!! " style="color: white; background-color: #636363;border: 0px; "></p>
+                                    </div>
+
+                                    <div class="col-sm-3 footer">
+                                        <p style="margin-top: 20px; margin-left: 0px;"><strong>Liên Hệ</strong></p>
+                                        <span>
+                                            <i class="fab fa-facebook-f fa-2x" style="padding-left: 30px;"></i>
+                                            <i class="fab fa-twitter fa-2x"></i>
+                                            <i class="fab fa-youtube fa-2x"></i>
+                                            <i class="fab fa-instagram fa-2x"></i>
+                                            <i class="fab fa-pinterest fa-2x"></i>
+                                            <i class="fab fa-flickr fa-2x"></i>
+                                        </span>
+                                    </div>
+    </div>
+ <button type="button" onclick="topFunction()" id="myBtn" title="Go to top"><i class="fas fa-arrow-circle-up fa-3x" style="color: #66ccff" ;></i></button>
+<script>//Get the button:
+var mybutton = document.getElementById("myBtn");
+
+// When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    mybutton.style.display = "block";
+  } else {
+    mybutton.style.display = "none";
+  }
+}
+
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+  document.body.scrollTop = 0; // For Safari
+  document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+}
+	</script>
+				  <script src="jquery-3.4.1.min.js"></script>
+    <script src="popper.min.js"></script>
+    <script src="bootstrap/js/bootstrap.min.js"></script>
+</body>
+</html>
